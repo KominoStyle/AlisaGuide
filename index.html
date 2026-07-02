@@ -20,7 +20,7 @@
   --r:10px;
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%; overflow-x:clip}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 body{margin:0; background:var(--void); color:var(--ink); font-family:var(--body); font-size:16px; line-height:1.62;
   background-image:radial-gradient(1100px 520px at 80% -10%, rgba(255,79,139,.09), transparent 60%),radial-gradient(900px 500px at 0% 2%, rgba(70,221,208,.045), transparent 55%),linear-gradient(var(--void),var(--void));
@@ -338,6 +338,9 @@ footer p{margin:8px 0; max-width:840px; line-height:1.6} footer a{color:var(--in
   .mu-pick-img{width:48px; height:48px}
   .mu-pick-name{font-size:11.5px}
 }
+.movecard,.mc-top,.mc-cmdwrap,.mu-txt,.sh-stat,.sh-cmd,.cb-line{min-width:0}
+.mu-txt,.movecard,.sh-notes-list,.cb-line{overflow-wrap:anywhere}
+@media(max-width:560px){ .movegrid{grid-template-columns:1fr} .tr-now{font-size:20px; padding:10px 12px} .table-scroll table{min-width:380px} .sh-stats{gap:6px} }
 </style>
 </head>
 <body>
