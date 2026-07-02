@@ -32,6 +32,13 @@ p{margin:12px 0}
 #progress{height:3px; width:0%; background:linear-gradient(90deg,var(--alisa),var(--spark)); box-shadow:0 0 8px var(--alisa-glow); transition:width .12s linear}
 .topwrap{position:sticky; top:0; z-index:100; background:rgba(11,12,17,.92); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid var(--line)}
 .topbar{position:relative; z-index:1}
+.nav-toggle{display:none; align-items:center; justify-content:center; width:38px; height:34px; margin-right:6px; border:1px solid var(--line); border-radius:9px; background:var(--panel-2); cursor:pointer; flex-shrink:0}
+.nav-toggle i{position:relative; width:17px; height:2px; background:var(--ink); border-radius:2px; display:block}
+.nav-toggle i::before,.nav-toggle i::after{content:""; position:absolute; left:0; width:17px; height:2px; background:var(--ink); border-radius:2px}
+.nav-toggle i::before{top:-6px}
+.nav-toggle i::after{top:6px}
+.nav-backdrop{position:fixed; inset:0; background:rgba(6,7,11,.6); -webkit-backdrop-filter:blur(3px); backdrop-filter:blur(3px); opacity:0; pointer-events:none; transition:opacity .2s; z-index:200}
+body.nav-open .nav-backdrop{opacity:1; pointer-events:auto}
 .topinner{max-width:1280px; margin:0 auto; padding:19px 20px 9px; display:flex; align-items:center; gap:16px; flex-wrap:wrap}
 .tb-brand{font-family:var(--display); font-weight:700; font-size:15px; letter-spacing:1px; color:var(--ink); white-space:nowrap; display:flex; align-items:center; gap:9px}
 .tb-brand b{color:var(--alisa)}
@@ -65,13 +72,15 @@ header{max-width:1280px; margin:0 auto; padding:62px 20px 38px; border-bottom:1p
 .content{min-width:0; padding:0 30px}
 @media(max-width:900px){
   .shell{grid-template-columns:1fr}
-  .sidebar{position:sticky; top:0; max-height:none; display:flex; gap:6px; overflow-x:auto; overflow-y:hidden; padding:10px 14px; border-right:none; border-bottom:1px solid var(--line); background:rgba(11,12,17,.96); backdrop-filter:blur(10px); z-index:80}
-  .side-h{display:none}
-  .sidelink{white-space:nowrap; border-left:none; border-bottom:2px solid transparent; padding:6px 10px}
-  .sidelink.active{border-left:none; border-bottom-color:var(--alisa)}
   .content{padding:0 18px}
-  .topwrap{position:relative}
   header{padding:32px 18px 24px}
+  .nav-toggle{display:inline-flex}
+  .sidebar{position:fixed; top:0; left:0; height:100%; width:min(280px,82vw); max-height:none; transform:translateX(-100%); transition:transform .22s ease; z-index:210; background:var(--panel); border-right:1px solid var(--line); border-bottom:none; padding:16px 10px 40px; overflow-y:auto}
+  body.nav-open .sidebar{transform:translateX(0); box-shadow:0 0 60px rgba(0,0,0,.6)}
+  .side-h{display:block; padding:0 12px 12px}
+  #sidenav{display:block}
+  .sidelink{white-space:normal; border-left:2px solid transparent; border-bottom:none; padding:10px 12px; font-size:14px}
+  .sidelink.active{border-left-color:var(--alisa); border-bottom-color:transparent}
 }
 .module{padding:54px 0; border-bottom:1px solid var(--line-soft)}
 .module[hidden]{display:none}
@@ -335,6 +344,7 @@ footer p{margin:8px 0; max-width:840px; line-height:1.6} footer a{color:var(--in
 <div class="topwrap">
 <div id="progress"></div>
 <div class="topbar"><div class="topinner">
+  <button id="navToggle" class="nav-toggle" aria-label="Menu" aria-expanded="false"><i></i></button>
   <span class="tb-brand"><span class="dot"></span>ALISA <b>/ TEKKEN 8</b></span>
   <div class="controls">
     <div class="cgroup" id="langGroup"></div>
@@ -353,6 +363,7 @@ footer p{margin:8px 0; max-width:840px; line-height:1.6} footer a{color:var(--in
   <aside class="sidebar"><div class="side-h" data-i="nav_h">Sections</div><div id="sidenav"></div></aside>
   <main class="content" id="content"></main>
 </div>
+<div class="nav-backdrop" id="navBackdrop"></div>
 <footer>
   <h4 data-i="foot_h">Sources &amp; notes</h4>
   <p data-i="foot_1"></p>
@@ -1858,7 +1869,7 @@ function buildControls(){
   document.querySelectorAll('.pill').forEach(function(p){ p.addEventListener('click',function(){ state[p.getAttribute('data-grp')]=p.getAttribute('data-val'); render(); }); });
 }
 function wireSidebar(){
-  document.querySelectorAll('.sidelink').forEach(function(a){ a.addEventListener('click',function(e){ e.preventDefault(); var el=document.getElementById(a.getAttribute('data-sec')); if(el){ var y=el.getBoundingClientRect().top+window.pageYOffset-80; window.scrollTo({top:y,behavior:'smooth'}); } }); });
+  document.querySelectorAll('.sidelink').forEach(function(a){ a.addEventListener('click',function(e){ e.preventDefault(); document.body.classList.remove('nav-open'); var el=document.getElementById(a.getAttribute('data-sec')); if(el){ var y=el.getBoundingClientRect().top+window.pageYOffset-80; window.scrollTo({top:y,behavior:'smooth'}); } }); });
 }
 var sectObserver=null;
 function observeSections(){
@@ -2075,9 +2086,10 @@ function updateProgress(){
 /* ===== init ===== */
 load();
 render();
+(function(){ var nt=document.getElementById('navToggle'), nb=document.getElementById('navBackdrop'); if(nt) nt.addEventListener('click', function(){ var o=document.body.classList.toggle('nav-open'); nt.setAttribute('aria-expanded', o?'true':'false'); }); if(nb) nb.addEventListener('click', function(){ document.body.classList.remove('nav-open'); if(nt) nt.setAttribute('aria-expanded','false'); }); })();
 document.addEventListener('keydown', onKeyDown);
 document.addEventListener('keyup', onKeyUp);
-document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeSheet(); });
+document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ closeSheet(); document.body.classList.remove('nav-open'); } });
 document.addEventListener('click', onDocClick);
 (function(){ var ov=document.getElementById('overlay'); if(ov) ov.addEventListener('click', function(e){ if(e.target===ov) closeSheet(); }); })();
 window.addEventListener('scroll', updateProgress, {passive:true});
