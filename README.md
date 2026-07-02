@@ -2,7 +2,7 @@
 
 An interactive, bilingual (German/English) **Tekken 8 Alisa guide** – playable directly in your browser, no download or install needed.
 
-**▶ Play it here:** https://<your-username>.github.io/<repo-name>/
+**▶ Play it here:** [https://<your-username>.github.io/<repo-name>/](https://kominostyle.github.io/AlisaGuide/)
 
 ## Features
 
