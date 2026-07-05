@@ -1,0 +1,42 @@
+// @ts-nocheck
+/* ===== opponent move frame data (OPP) =====
+   keyed "Char|move". Fields mirror Alisa moves: lv(hit level), s(startup),
+   dmg, b(on block), h(on hit), ch(counterhit), note{en,de}[]. Missing -> shown as "\u2014". */
+var OPP = {
+  "Lili|ws3": {lv:"Mid", s:"i15~16", dmg:"26", b:"-21", h:"+62a (+46)", ch:"", note:{en:["Whiff-punish / CH launcher; instant Tornado on hit.","\u221221 on block \u2192 launch punish with df+2."],de:["Whiff-Punish / CH-Launcher; sofort Tornado bei Treffer.","\u221221 auf Block \u2192 Launch-Punish mit df+2."]}},
+  "Lili|db4": {lv:"Low", s:"i30~31", dmg:"20", b:"-24", h:"+76a (+60)", ch:"", note:{en:["Snake edge \u2014 slow, reactable, instant Tornado on hit.","Block on read \u2192 \u221224 full launch punish."],de:["Snake Edge \u2014 langsam, reaktionsbar, sofort Tornado bei Treffer.","Auf Read blocken \u2192 \u221224 voller Launch-Punish."]}},
+  "Lili|f2,3": {lv:"High, Mid", s:"i12~13", dmg:"10, 20", b:"-15", h:"+24a (+7)", ch:"", note:{en:["Balcony Break; launch-punishable at \u221215."],de:["Balcony Break; bei \u221215 launchbar."]}},
+  "Lili|3,2,3": {lv:"Mid, High, High", s:"i15~16", dmg:"12, 8, 22", b:"-9~-6", h:"+13a (+4)", ch:"", note:{en:["The 2nd and 3rd hits are high \u2014 duck after the opening mid."],de:["2. und 3. Hit sind High \u2014 nach dem ersten Mid ducken."]}},
+  "Lili|1,1,3": {lv:"High, High, Mid", s:"i10", dmg:"5, 16, 17", b:"-15", h:"+6d", ch:"+25a", note:{en:["First two hits high \u2014 duckable. \u221215 on block \u2192 launch punish."],de:["Erste zwei Hits High \u2014 duckbar. \u221215 auf Block \u2192 Launch-Punish."]}},
+  "Lili|2,4": {lv:"High, High", s:"i10", dmg:"8, 20", b:"-2~+2", h:"+24a (+15)", ch:"", note:{en:["Both hits high \u2014 duck the string. Balcony Break."],de:["Beide Hits High \u2014 den String ducken. Balcony Break."]}},
+  "Lili|ws1,2": {lv:"Mid, High", s:"i13~14", dmg:"10, 16", b:"-3", h:"+8", ch:"", note:{en:["Duck the second hit (high)."],de:["Den zweiten Hit ducken (High)."]}},
+  "Lili|3,1": {lv:"Mid, Mid", s:"i15~16", dmg:"12, 20", b:"-13", h:"+14d", ch:"", note:{en:["Heat engager. \u221213 on block \u2192 punish with df+1 / 3,2."],de:["Heat-Engager. \u221213 auf Block \u2192 mit df+1 / 3,2 bestrafen."]}},
+  "Lili|d3+4": {lv:"Mid", s:"i17~21", dmg:"23", b:"-21", h:"+45a (+35)", ch:"", note:{en:["Tornado; evasive under some mids/highs. \u221221 \u2192 launch punish."],de:["Tornado; weicht unter manchen Mids/Highs aus. \u221221 \u2192 Launch-Punish."]}},
+  "Lili|f3+4,3,4": {lv:"Mid, Mid, Mid, Mid", s:"i18~20", dmg:"6, 20, 20, 20", b:"-20", h:"+10 (+3)", ch:"", note:{en:["Big pushback on block, hard to punish, but \u221220 \u2192 launch if in range."],de:["Gro\u00dfer Pushback auf Block, schwer bestrafbar, aber \u221220 \u2192 Launch in Reichweite."]}},
+  "Lili|uf3+4,3+4": {lv:"Mid, Mid", s:"i15~18", dmg:"15, 23", b:"-21", h:"+45a (+35)", ch:"", note:{en:["Tornado ender; \u221221 on block \u2192 launch punish."],de:["Tornado-Ender; \u221221 auf Block \u2192 Launch-Punish."]}},
+  "Lili|df1": {lv:"Mid", s:"i13", dmg:"10", b:"-1", h:"+8", ch:"", note:{en:["Standard mid poke; sidestep left."],de:["Standard-Mid-Poke; nach links steppen."]}},
+  "Lili|df2": {lv:"Mid", s:"i16~17", dmg:"15", b:"-11", h:"+31a (+21)", ch:"", note:{en:["Her main launcher; launches crouchers. \u221211 on block."],de:["Ihr Haupt-Launcher; launcht Duckende. \u221211 auf Block."]}},
+  "Lili|df4": {lv:"Mid", s:"i13~14", dmg:"12", b:"-8", h:"-2", ch:"+5", note:{en:["Knee poke; sidestep RIGHT to beat it."],de:["Knie-Poke; nach RECHTS steppen."]}},
+  "Lili|d1": {lv:"Low", s:"i18~19", dmg:"10", b:"-11", h:"+0", ch:"", note:{en:["Small poke low; transitions to full crouch. Sidestep right."],de:["Kleiner Poke-Low; geht in Full Crouch. Nach rechts steppen."]}},
+  "Lili|1+2": {lv:"Mid", s:"i12~13", dmg:"26", b:"-12", h:"+20a (+10)", ch:"", note:{en:["Balcony Break; \u221212 on block. Sidestep right."],de:["Balcony Break; \u221212 auf Block. Nach rechts steppen."]}},
+  "Lili|DEW.1,2": {lv:"Mid, Mid", s:"i15~16", dmg:"12, 20", b:"-14", h:"+20a (+10)", ch:"+54a", note:{en:["Dew Glide string (DEW.1,2), Balcony Break; \u221214 \u2192 punish with f+2,1."],de:["Dew-Glide-String (DEW.1,2), Balcony Break; \u221214 \u2192 mit f+2,1 bestrafen."]}},
+  "Lili|DEW.2,1": {lv:"Mid, Mid", s:"i14", dmg:"13, 20", b:"-13", h:"+17d", ch:"", note:{en:["Dew Glide Heat engager (DEW.2,1), Spike; \u221213 on block."],de:["Dew-Glide-Heat-Engager (DEW.2,1), Spike; \u221213 auf Block."]}},
+  "Lili|ws2": {lv:"Mid", s:"i16~18", dmg:"17", b:"-12", h:"+39a (+29)", ch:"", note:{en:["While-standing launcher; \u221212 on block."],de:["While-Standing-Launcher; \u221212 auf Block."]}},
+  "Lili|3": {lv:"Mid", s:"i15~16", dmg:"12", b:"-11", h:"-3", ch:"", note:{en:["Mid poke; sidestep left."],de:["Mid-Poke; nach links steppen."]}},
+  "Lili|uf3": {lv:"Mid", s:"i15~17", dmg:"13", b:"-13~-11", h:"+30a (+20)", ch:"", note:{en:["Launches on hit; \u221213~\u221211 on block. Sidestep left."],de:["Launcht bei Treffer; \u221213~\u221211 auf Block. Nach links steppen."]}},
+  "Dragunov|WR2": {lv:"Mid", s:"i15~17", dmg:"22", b:"+4", h:"+32d (-26)", ch:"+44a", note:{en:["Running approach, +4 on block \u2014 his turn. CH f,f+1+2 as it starts up.","Spike / Balcony Break; powered-up (bluespark) version does 26."],de:["Lauf-Approach, +4 auf Block \u2014 sein Zug. Mit f,f+1+2 im Anlauf countern.","Spike / Balcony Break; Bluespark-Version macht 26."]}},
+  "Dragunov|f,F+2": {lv:"Mid", s:"i15~16", dmg:"20", b:"-12", h:"+15a", ch:"+30d (+22)", note:{en:["Dash spike mid; \u221212 on block \u2192 launch punish. Balcony Break."],de:["Dash-Spike-Mid; \u221212 auf Block \u2192 Launch-Punish. Balcony Break."]}},
+  "Dragunov|b1+2": {lv:"Mid", s:"i22~23", dmg:"26", b:"+6", h:"+13c", ch:"", note:{en:["+6 on block \u2014 his turn. Floor Break. Slow (i22), steppable."],de:["+6 auf Block \u2014 sein Zug. Floor Break. Langsam (i22), steppbar."]}},
+  "Dragunov|1,1": {lv:"High, High", s:"i10", dmg:"5, 8", b:"-4", h:"+7", ch:"", note:{en:["Both hits high \u2014 duckable."],de:["Beide Hits High \u2014 duckbar."]}},
+  "Dragunov|3,1": {lv:"Mid, High", s:"i15~16", dmg:"10, 8", b:"-2", h:"+7", ch:"", note:{en:["2nd hit high; can shift into Sneak (SNK) with df."],de:["2. Hit High; kann per df in Sneak (SNK)."]}},
+  "Dragunov|d3,2": {lv:"Low, High", s:"i17~18", dmg:"13, 18", b:"-8", h:"+6", ch:"", note:{en:["Low into high; combos only on CH. Duck the 2 on reaction / block the low."],de:["Low in High; nur auf CH Combo. Die 2 auf Reaktion ducken / den Low blocken."]}},
+  "Dragunov|b2,1": {lv:"Mid, High", s:"i15", dmg:"14, 11", b:"-5", h:"+6", ch:"", note:{en:["2nd hit high \u2014 duck after the mid to launch."],de:["2. Hit High \u2014 nach dem Mid ducken zum Launchen."]}},
+  "Dragunov|ws1,2": {lv:"Mid, High", s:"i12~13", dmg:"11, 14", b:"-7", h:"+10g", ch:"", note:{en:["While-standing; 2nd hit high. Balcony Break."],de:["While-Standing; 2. Hit High. Balcony Break."]}},
+  "Dragunov|QCB2": {lv:"Mid", s:"i26~27", dmg:"23", b:"-15", h:"+32a", ch:"", note:{en:["Tornado elbow; slow (i26). \u221215 on block \u2192 launch punish."],de:["Tornado-Elbow; langsam (i26). \u221215 auf Block \u2192 Launch-Punish."]}},
+  "Dragunov|d4,1,3": {lv:"Low, High, High", s:"i15~16", dmg:"12, 8, 21", b:"-16", h:"+9a (+0)", ch:"", note:{en:["Low starter; last two hits high. \u221216 on block \u2192 launch punish."],de:["Low-Starter; letzte zwei Hits High. \u221216 auf Block \u2192 Launch-Punish."]}},
+  "Dragunov|1,2,1": {lv:"High, Mid, Mid", s:"i10", dmg:"5, 8, 20", b:"-14", h:"+15g", ch:"", note:{en:["Heat engager; \u221214 on block \u2192 launch punish. Recovers crouching."],de:["Heat-Engager; \u221214 auf Block \u2192 Launch-Punish. Recovert crouching."]}},
+  "Dragunov|1+2": {lv:"Mid", s:"i21~22", dmg:"25", b:"-14", h:"+19a", ch:"", note:{en:["Power crush, Spike; \u221214 on block \u2192 launch punish."],de:["Power Crush, Spike; \u221214 auf Block \u2192 Launch-Punish."]}},
+  "Dragunov|ws1+2": {lv:"Mid", s:"i12~13", dmg:"28", b:"-14", h:"+19a (+9)", ch:"", note:{en:["Heat engager shoulder, fast from crouch; \u221214 \u2192 launch punish."],de:["Heat-Engager-Shoulder, schnell aus Crouch; \u221214 \u2192 Launch-Punish."]}},
+  "Dragunov|df2": {lv:"Mid", s:"i15~16", dmg:"14", b:"-12", h:"+28a (+18)", ch:"", note:{en:["Launches crouchers; \u221212 on block \u2192 launch punish."],de:["Launcht Duckende; \u221212 auf Block \u2192 Launch-Punish."]}}
+};
+export { OPP };
