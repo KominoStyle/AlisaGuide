@@ -1,0 +1,140 @@
+LEG:
+  - symbol: 'u'
+    text:
+      en: 'up / jump'
+      de: 'hoch / Sprung'
+  - symbol: 'd'
+    text:
+      en: 'down / crouch'
+      de: 'runter / Hocke'
+  - symbol: 'f'
+    text:
+      en: 'forward'
+      de: 'vorwärts'
+  - symbol: 'b'
+    text:
+      en: 'back'
+      de: 'zurück'
+  - symbol: 'uf'
+    text:
+      en: 'up-forward = u + f'
+      de: 'vorwärts-hoch = u + f'
+  - symbol: 'ub'
+    text:
+      en: 'up-back = u + b'
+      de: 'zurück-hoch = u + b'
+  - symbol: 'df'
+    text:
+      en: 'down-forward = d + f'
+      de: 'vorwärts-unten = d + f'
+  - symbol: 'db'
+    text:
+      en: 'down-back = d + b'
+      de: 'zurück-unten = d + b'
+  - symbol: '1'
+    text:
+      en: 'left punch'
+      de: 'linke Faust'
+  - symbol: '2'
+    text:
+      en: 'right punch'
+      de: 'rechte Faust'
+  - symbol: '3'
+    text:
+      en: 'left kick'
+      de: 'linker Tritt'
+  - symbol: '4'
+    text:
+      en: 'right kick'
+      de: 'rechter Tritt'
+  - symbol: '+'
+    text:
+      en: 'together, e.g. 1+2'
+      de: 'gleichzeitig, z.B. 1+2'
+  - symbol: ','
+    text:
+      en: 'then, e.g. 1,2'
+      de: 'dann, z.B. 1,2'
+  - symbol: '>'
+    text:
+      en: 'cancel into, e.g. df+2 > combo'
+      de: 'canceln in, z.B. df+2 > Combo'
+LEGP:
+  - symbol: 'WS'
+    text:
+      en: 'while standing (rising from crouch)'
+      de: 'beim Aufstehen (aus der Hocke)'
+  - symbol: 'WR'
+    text:
+      en: 'while running (f,f,F)'
+      de: 'beim Laufen (f,f,F)'
+  - symbol: 'FC'
+    text:
+      en: 'full crouch (fully ducking)'
+      de: 'Full Crouch (ganz geduckt)'
+  - symbol: 'SSL / SSR'
+    text:
+      en: 'sidestep left / right'
+      de: 'Sidestep links / rechts'
+  - symbol: 'BT'
+    text:
+      en: 'back turned'
+      de: 'Rücken zum Gegner'
+  - symbol: 'CH'
+    text:
+      en: 'counterhit'
+      de: 'Counterhit'
+  - symbol: 'n'
+    text:
+      en: 'neutral (no direction)'
+      de: 'Neutral (keine Richtung)'
+  - symbol: 'DES'
+    text:
+      en: 'chainsaw stance'
+      de: 'Kettensägen-Stance'
+  - symbol: 'SBT / DBT'
+    text:
+      en: 'spin / boot stances'
+      de: 'Spin- / Boot-Stances'
+  - symbol: 'BKP'
+    text:
+      en: 'Backup stance — after d+3, or db+1'
+      de: 'Backup-Stance — nach d+3, oder db+1'
+LEGF:
+  - symbol: 'i10'
+    text:
+      en: 'startup — first active frame is frame 10 (the move''s speed)'
+      de: 'Startup — erster aktiver Frame ist Frame 10 (die Speed)'
+  - symbol: '+N'
+    text:
+      en: 'YOUR turn — you recover N frames before them'
+      de: 'DEIN Zug — du erholst dich N Frames vor ihm'
+  - symbol: '−N'
+    text:
+      en: 'THEIR turn — they recover N frames before you'
+      de: 'SEIN Zug — er erholt sich N Frames vor dir'
+  - symbol: 'oB / oH'
+    text:
+      en: 'on Block / on Hit — the two columns you read'
+      de: 'on Block / on Hit — die zwei Spalten, die du liest'
+LEGS:
+  - symbol: 'a'
+    text:
+      en: 'airborne — you launched them, combo time'
+      de: 'airborne — du hast gelauncht, Combo-Zeit'
+  - symbol: 'c'
+    text:
+      en: 'crouching — they recover ducking'
+      de: 'crouching — er erholt sich geduckt'
+  - symbol: 'd'
+    text:
+      en: 'down — knocked down, you get a knockdown / oki'
+      de: 'down — am Boden, du bekommst Knockdown / Oki'
+  - symbol: 'g'
+    text:
+      en: 'guard/grounded recovery (often forced crouch, e.g. at the wall)'
+      de: 'Guard-/Boden-Recovery (oft Zwangshocke, z.B. an der Wand)'
+  - symbol: '(+N)'
+    text:
+      en: 'in brackets = when they can tech-roll — not your real advantage'
+      de: 'in Klammern = wann er techen kann — nicht dein echter Vorteil'

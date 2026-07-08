@@ -1,0 +1,47 @@
+id: 'df11'
+character: 'alisa'
+input:
+  notation: 'df+1,1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Mid,High'
+  de: 'Mid,High'
+frames:
+  startup: 'i13, i30~31'
+  block: '+1'
+  hit: '+8'
+  ch: null
+properties:
+  - 'Plus on block'
+  - 'Stop here or → df+1,1,2'
+guide:
+  en: 'The 2-hit version of your df+1 poke: +1 on block, so you keep your turn. Stop here to stay safe and plus, or add the last hit (df+1,1,2) for pressure. The 2nd hit is high.'
+  de: 'Die 2-Hit-Version deines df+1-Pokes: +1 auf Block, du behältst also den Zug. Hier stoppen für safe+plus, oder den letzten Hit anhängen (df+1,1,2) für Druck. Der 2. Hit ist High.'
+note:
+  en:
+    - '2nd hit is HIGH — duckable after df+1'
+    - '+1 on block, so it is a frame trap, not a guaranteed blockstring'
+    - 'Combo from 1st counter-hit'
+    - 'Balcony Break when it catches an airborne opponent'
+    - 'Move cannot be delayed'
+  de:
+    - '2. Hit ist HIGH — nach df+1 duckbar'
+    - '+1 auf Block — also Frame-Trap, kein garantierter Blockstring'
+    - 'Combo aus dem 1. Counter-Hit'
+    - 'Balcony Break bei Airborne-Treffer'
+    - 'Move nicht verzögerbar'
+damage: '10, 20'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

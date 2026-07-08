@@ -1,0 +1,17 @@
+character: 'Kunimitsu'
+deep: false
+tag:
+  en: 'Ninja — kunai, teleport, evasive'
+  de: 'Ninja — Kunai, Teleport, evasiv'
+hurt:
+  en: 'Launcher `df+2` (i15~16, -14). Lows: `d+3`, `d+3,4`, `db+4`, `db+3`. Heat engagers: `ws2,1`, `f+1+2`, `BT.1,4`. Plus on block: `BT.4` (+6), `b+1,1` (+5), `b+1,1,1` (+5).'
+  de: 'Launcher `df+2` (i15~16, -14). Lows: `d+3`, `d+3,4`, `db+4`, `db+3`. Heat-Engager: `ws2,1`, `f+1+2`, `BT.1,4`. Plus auf Block: `BT.4` (+6), `b+1,1` (+5), `b+1,1,1` (+5).'
+duck:
+  en: 'Duckable high strings — block the rest, duck the high: `f,F+4,2`, `1,2`, `1,2,2`, `1,2,4`. Homing (don''t step): `3`, `BT.4`.'
+  de: 'Duckbare High-Strings — Rest blocken, das High ducken: `f,F+4,2`, `1,2`, `1,2,2`, `1,2,4`. Homing (nicht steppen): `3`, `BT.4`.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `b+1,1,1,1,1,1` (-72), `uf,n,3` (-29), `b+3,4` (-20), `f,F+4` (-17~-15), `f,F+4,2` (-17~-16). Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `b+1,1,1,1,1,1` (-72), `uf,n,3` (-29), `b+3,4` (-20), `f,F+4` (-17~-15), `f,F+4,2` (-17~-16). −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Don''t whiff — she punishes from evasion. Block her lows, punish unsafe teleport/whip moves with [[uf44]]/[[df2]], and keep steady pokes with [[df1]].'
+  de: 'Nicht whiffen — sie bestraft aus der Evasion. Ihre Lows blocken, unsichere Teleport-/Whip-Moves mit [[uf44]]/[[df2]] bestrafen und mit [[df1]] stetig poken.'

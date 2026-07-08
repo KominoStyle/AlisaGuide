@@ -1,0 +1,49 @@
+id: 'df112'
+character: 'alisa'
+input:
+  notation: 'df+1,1,2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Mid, High, High'
+  de: 'Mid, High, High'
+frames:
+  startup: 'i13, i30~31, i22~25'
+  block: '+6'
+  hit: '+8'
+  ch: null
+properties:
+  - 'DES cancel'
+  - 'Pressure'
+guide:
+  en: 'Counterhit string into chainsaws, +6 on block(!). Third hit can be ducked — only commit when you read a press, else stop at df+1.'
+  de: 'Counterhit-String in die Kettensägen, +6 auf Block(!). Dritter Hit duckbar — nur committen, wenn du einen Press liest, sonst bei df+1 stoppen.'
+note:
+  en:
+    - '2nd and 3rd hits are HIGH — a ducking opponent ducks them and can launch you'
+    - '+6 on block, but only if they block instead of ducking'
+    - 'Best as a frame trap or once you have conditioned them to block'
+    - 'Weapon'
+    - 'Cancel into DES with 1+2'
+    - '2 chip damage on block (8 in Heat)'
+  de:
+    - '2. und 3. Hit sind HIGH — ein duckender Gegner weicht aus und kann launchen'
+    - '+6 auf Block — aber nur wenn geblockt statt geduckt wird'
+    - 'Am besten als Frame-Trap oder wenn du sie aufs Blocken konditioniert hast'
+    - 'Weapon'
+    - 'In DES mit 1+2 canceln'
+    - '2 Chip auf Block (8 in Heat)'
+damage: '10, 20, 28'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

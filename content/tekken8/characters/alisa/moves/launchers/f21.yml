@@ -1,0 +1,56 @@
+id: 'f21'
+character: 'alisa'
+input:
+  notation: 'f+2,1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 1
+range: 'm'
+levels:
+  en: 'Mid,Mid'
+  de: 'Mid,Mid'
+frames:
+  startup: 'i17~18, i24~25'
+  block: '-12'
+  hit: '+14g'
+  ch: null
+properties:
+  - 'Heat engager'
+guide:
+  en: 'Mid keepout and heat engager. -12 on block so use with purpose; as a mid it catches the ducking that beats uf+2.'
+  de: 'Mid-Keepout und Heat Engager. -12 auf Block, also gezielt setzen; als Mid fängt es das Ducken, das uf+2 schlägt.'
+note:
+  en:
+    - 'Heat Engager'
+    - 'Heat Dash +5, +62a (+42)'
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Combo from 1st hit'
+    - '6 chip damage on block'
+    - '10 chip damage on block in Heat'
+    - 'Opponent recovers crouching on hit'
+    - 'Does not transition to DES when using Heat Dash'
+  de:
+    - 'Heat Engager'
+    - 'Heat Dash +5, +62a (+42)'
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Combo aus 1. Hit'
+    - '6 Chip auf Block'
+    - '10 Chip auf Block in Heat'
+    - 'Gegner steht geduckt auf (auf Hit)'
+    - 'Kein DES beim Heat-Dash'
+damage: '12, 20'
+key: 1
+keytip:
+  en: 'Heat Engager off f+2.'
+  de: 'Heat-Engager aus f+2.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

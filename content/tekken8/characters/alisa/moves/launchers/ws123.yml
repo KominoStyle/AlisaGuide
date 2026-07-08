@@ -1,0 +1,39 @@
+id: 'ws123'
+character: 'alisa'
+input:
+  notation: 'ws1,2,3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 2
+range: 's'
+levels: 'Mid,High,Mid'
+frames:
+  startup: 'i13~14, i25~26'
+  block: '-10'
+  hit: '+33a (+23)'
+  ch: null
+properties:
+  - 'Launch'
+  - '→ DES'
+guide: null
+note:
+  en:
+    - 'Combo from 2nd CH with 5f delay'
+    - 'Input can be delayed 10f'
+    - 'Enter DES with 1+2'
+  de:
+    - 'Combo aus 2. CH mit 5f Delay'
+    - 'Eingabe bis 10f verzögerbar'
+    - 'In DES mit 1+2'
+damage: '12, 12, 23'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

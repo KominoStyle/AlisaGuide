@@ -1,0 +1,41 @@
+id: 'fcdb12'
+character: 'alisa'
+input:
+  notation: 'FC.db+1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'throw'
+difficulty: 3
+range: 's'
+levels: 'Throw'
+frames:
+  startup: 'i11'
+  block: '-4'
+  hit: '-4'
+  ch: null
+properties:
+  - 'Throw'
+guide: null
+note:
+  en:
+    - 'Crouching command throw'
+    - 'Throw break: 1+2'
+    - 'Opponent recovery: face-up feet-away'
+    - 'Side switch'
+  de:
+    - 'Geduckter Command-Throw'
+    - 'Wurf-Break: 1+2'
+    - 'Gegner-Recovery: Face-up, Füße weg'
+    - 'Seitenwechsel'
+damage: '45'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

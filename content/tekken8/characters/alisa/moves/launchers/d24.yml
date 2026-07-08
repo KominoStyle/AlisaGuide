@@ -1,0 +1,43 @@
+id: 'd24'
+character: 'alisa'
+input:
+  notation: 'd+2,4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Mid,Mid'
+  de: 'Mid,Mid'
+frames:
+  startup: 'i24~26, i18~21'
+  block: '-9'
+  hit: '+28a'
+  ch: null
+properties:
+  - 'Low crush'
+  - '→ DES'
+guide: null
+note:
+  en:
+    - 'Combo from 1st hit'
+    - 'Enter DES with 1+2'
+    - 'Low crush 21~43'
+    - 'Floating state 44~46'
+  de:
+    - 'Combo aus 1. Hit'
+    - 'In DES mit 1+2'
+    - 'Low Crush 21~43'
+    - 'Floating State 44~46'
+damage: '8, 20'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

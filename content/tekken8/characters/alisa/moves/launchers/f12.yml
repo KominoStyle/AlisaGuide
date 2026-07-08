@@ -1,0 +1,45 @@
+id: 'f12'
+character: 'alisa'
+input:
+  notation: 'f+1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i14~15'
+  block: '-12'
+  hit: '+14g'
+  ch: null
+properties:
+  - 'Balcony break'
+  - '→ SBT/DBT'
+guide:
+  en: 'Fast mid that wall-splats and feeds your stances (3/4 → SBT, f+3/f+4 → DBT). -12 on block. A combo and wall tool, not a poke.'
+  de: 'Schnelles Mid, das an die Wand splattet und in deine Stances führt (3/4 → SBT, f+3/f+4 → DBT). -12 auf Block. Combo- und Wand-Tool, kein Poke.'
+note:
+  en:
+    - 'Balcony Break'
+    - 'Enter SBT (-16 / +10g / r25) with 3_4'
+    - 'Enter DBT (-16 / +10g / r25) with f+3_f+4'
+    - 'Opponent recovers crouching'
+  de:
+    - 'Balcony Break'
+    - 'In SBT (-16 / +10g / r25) mit 3_4'
+    - 'In DBT (-16 / +10g / r25) mit f+3_f+4'
+    - 'Gegner steht geduckt auf'
+damage: '25'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

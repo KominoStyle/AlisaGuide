@@ -1,0 +1,44 @@
+id: 'clk3'
+character: 'alisa'
+input:
+  notation: 'CLK.3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Mid'
+frames:
+  startup: 'i13~14'
+  block: '-9'
+  hit: '+12g'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'Tailspin'
+guide: null
+note:
+  en:
+    - 'Strong Aerial Tailspin'
+    - 'Balcony Break'
+    - 'Combo from 1st hit'
+    - 'Powers up after 2 or more spins'
+    - 'Interrupt with i8 from 1st block'
+  de:
+    - 'Starker Aerial-Tailspin'
+    - 'Balcony Break'
+    - 'Combo aus 1. Hit'
+    - 'Stärker nach 2 oder mehr Spins'
+    - 'Mit i8 aus 1. Block unterbrechbar'
+damage: '20'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

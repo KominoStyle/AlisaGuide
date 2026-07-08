@@ -1,0 +1,37 @@
+id: 'univ123'
+character: 'alisa'
+input:
+  notation: '1+2+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 3
+range: 'm'
+levels:
+  en: 'Stance transition'
+  de: 'Stance-Übergang'
+frames:
+  startup: '—'
+  block: '—'
+  hit: '—'
+  ch: null
+properties:
+  - '→ DES'
+guide: null
+note:
+  en:
+    - 'Can transition to DES with held input 1+2'
+  de:
+    - 'Kann mit gehaltenem 1+2 in DES übergehen'
+damage: '—'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,64 @@
+- id: 'jab'
+  name:
+    en: 'Jabs & fast pokes'
+    de: 'Jabs & schnelle Pokes'
+- id: 'poke'
+  name:
+    en: 'Mid pokes & pressure'
+    de: 'Mid-Pokes & Druck'
+- id: 'keepout'
+  name:
+    en: 'Keepout & long range'
+    de: 'Keepout & Long Range'
+- id: 'low'
+  name:
+    en: 'Lows'
+    de: 'Lows'
+- id: 'launch'
+  name:
+    en: 'Launchers (block-punish)'
+    de: 'Launcher (Block-Punish)'
+- id: 'whiff'
+  name:
+    en: 'Whiff punishers'
+    de: 'Whiff-Punisher'
+- id: 'ch'
+  name:
+    en: 'Counterhit & frame traps'
+    de: 'Counterhit & Frame-Traps'
+- id: 'homing'
+  name:
+    en: 'Homing & anti-sidestep'
+    de: 'Homing & Anti-Sidestep'
+- id: 'combo'
+  name:
+    en: 'Combo tools & chains'
+    de: 'Combo-Tools & Ketten'
+- id: 'throw'
+  name:
+    en: 'Throws'
+    de: 'Würfe'
+- id: 'des'
+  name:
+    en: 'Destructive Form (DES)'
+    de: 'Destructive Form (DES)'
+- id: 'bkp'
+  name:
+    en: 'Backup stance (BKP)'
+    de: 'Backup-Stance (BKP)'
+- id: 'sbt'
+  name:
+    en: 'Single Boot (SBT)'
+    de: 'Single Boot (SBT)'
+- id: 'dbt'
+  name:
+    en: 'Dual Boot (DBT)'
+    de: 'Dual Boot (DBT)'
+- id: 'clk'
+  name:
+    en: 'Clockwork / spin (CLK)'
+    de: 'Clockwork / Spin (CLK)'
+- id: 'special'
+  name:
+    en: 'Heat, Rage & special'
+    de: 'Heat, Rage & Spezial'

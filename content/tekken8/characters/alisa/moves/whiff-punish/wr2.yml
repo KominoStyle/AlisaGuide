@@ -1,0 +1,51 @@
+id: 'wr2'
+character: 'alisa'
+input:
+  notation: 'f,f,F+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'whiffPunish'
+difficulty: 2
+range: 'l'
+levels:
+  en: 'High'
+  de: 'High'
+frames:
+  startup: 'i13~15'
+  block: '+5'
+  hit: '+28a'
+  ch: null
+properties:
+  - 'Running'
+  - 'Launch'
+  - '+ on block'
+  - '→ DES'
+guide:
+  en: 'Running high and a monster keepout: +5 on block and it LAUNCHES on hit for 30 damage. Run at them from range to threaten it. It''s high, so it can be ducked — but few people duck a runner in time.'
+  de: 'Running-High und ein Monster-Keepout: +5 auf Block und es LAUNCHT auf Hit für 30 Schaden. Aus der Distanz auf sie zulaufen und drohen. Es ist High, also duckbar — aber kaum jemand duckt einen Runner rechtzeitig.'
+note:
+  en:
+    - 'Balcony Break'
+    - '9 chip damage on block'
+    - 'Enter DES with 1+2'
+    - 'Low crush 3~27'
+    - 'Floating state 28~30'
+  de:
+    - 'Balcony Break'
+    - '9 Chip auf Block'
+    - 'In DES mit 1+2'
+    - 'Low Crush 3~27'
+    - 'Floating State 28~30'
+damage: '30'
+key: 1
+keytip:
+  en: 'Dash/whiff-punish launcher with big range.'
+  de: 'Dash-/Whiff-Punish-Launcher mit viel Reichweite.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

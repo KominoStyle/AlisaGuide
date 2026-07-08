@@ -1,0 +1,46 @@
+id: 'desb21'
+character: 'alisa'
+input:
+  notation: 'DES.b+2,1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels: 'Mid,Mid,Low ×4'
+frames:
+  startup: 'i18~20, i20~21'
+  block: '-3c'
+  hit: '+5'
+  ch: null
+properties:
+  - 'Spike'
+  - 'Weapon'
+guide: null
+note:
+  en:
+    - 'Spike'
+    - 'Weapon'
+    - 'Combo from 1st hit with 17f delay'
+    - 'Move can be delayed 10f'
+    - 'Input can be delayed 23f'
+    - '3 chip damage on block (7 in Heat)'
+  de:
+    - 'Spike'
+    - 'Weapon'
+    - 'Combo aus 1. Hit mit 17f Delay'
+    - 'Move bis 10f verzögerbar'
+    - 'Eingabe bis 23f verzögerbar'
+    - '3 Chip auf Block (7 in Heat)'
+damage: '17, 8,5,5,5,5'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

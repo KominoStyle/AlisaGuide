@@ -1,0 +1,66 @@
+wr2:
+  en: 'High — duckable (though hard to duck a runner in time).'
+  de: 'High — duckbar (einen Runner aber schwer rechtzeitig zu ducken).'
+ss4:
+  en: '-12 on block and slow (i24) — a read, not a habit.'
+  de: '-12 auf Block und langsam (i24) — ein Read, keine Gewohnheit.'
+b4:
+  en: '-13 on block — only worth it as a counterhit read.'
+  de: '-13 auf Block — nur als Counterhit-Read wert.'
+uf2:
+  en: 'High — duckable. If ducked, you''re launch-punishable.'
+  de: 'High — duckbar. Wenn geduckt, bist du launchbar.'
+k4:
+  en: 'High — duckable on a read.'
+  de: 'High — auf Read duckbar.'
+c11:
+  en: 'Both hits are high — duckable on prediction.'
+  de: 'Beide Hits sind High — auf Read duckbar.'
+s12:
+  en: 'Both hits are high — duckable on prediction.'
+  de: 'Beide Hits sind High — auf Read duckbar.'
+s22:
+  en: 'Both high & -13 on block — only use it as a punish.'
+  de: 'Beide High & -13 auf Block — nur als Punish nutzen.'
+f21:
+  en: '-12 on block — punishable by a fast poke, but safe from launches for almost everyone (a 12f launcher is very rare).'
+  de: '-12 auf Block — durch einen schnellen Poke bestrafbar, aber für fast alle launch-safe (ein 12f-Launcher ist sehr selten).'
+f12:
+  en: '-12 on block — punishable by a fast poke, but safe from launches for almost everyone.'
+  de: '-12 auf Block — durch einen schnellen Poke bestrafbar, aber für fast alle launch-safe.'
+df112:
+  en: 'Last hits are high — duckable. Only commit on a read; else stop at df+1.'
+  de: 'Letzte Hits sind High — duckbar. Nur auf Read committen; sonst bei df+1 stoppen.'
+b24:
+  en: '2nd hit is high — duckable on a read.'
+  de: '2. Hit ist High — auf Read duckbar.'
+b44:
+  en: '-37 on block — never raw, only on a whiff or inside a combo.'
+  de: '-37 auf Block — nie raw, nur auf Whiff oder im Combo.'
+d34:
+  en: '-37 on block — a hard read only.'
+  de: '-37 auf Block — nur ein harter Read.'
+db4:
+  en: '-14 on block — launch-punishable only by characters with a 14f (or faster) launcher.'
+  de: '-14 auf Block — nur von Charakteren mit 14f-(oder schneller-)Launcher launchbar.'
+d3:
+  en: 'Slow (i23) — reactable; don''t spam it vs players who react.'
+  de: 'Langsam (i23) — reaktionsbar; nicht gegen Reacter spammen.'
+ra:
+  en: '-18 on block — a full punish if blocked or whiffed.'
+  de: '-18 auf Block — voller Punish, wenn geblockt oder verfehlt.'
+pc:
+  en: 'Loses to lows & throws; -13 on block.'
+  de: 'Verliert gegen Lows & Würfe; -13 auf Block.'
+uf44:
+  en: '-13 on block — it''s a punish/launcher, not a poke.'
+  de: '-13 auf Block — Punisher/Launcher, kein Poke.'
+ws2:
+  en: '-13 on block — a launcher, not a poke.'
+  de: '-13 auf Block — Launcher, kein Poke.'
+b21:
+  en: '-13 on block — a counterhit read, not a free blockstring.'
+  de: '-13 auf Block — ein Counterhit-Read, kein gratis Blockstring.'
+b13p:
+  en: 'Only parries HIGHS — loses to mids and lows. A hard read.'
+  de: 'Parriert nur HIGHS — verliert gegen Mids und Lows. Ein harter Read.'

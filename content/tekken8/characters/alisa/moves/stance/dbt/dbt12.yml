@@ -1,0 +1,50 @@
+id: 'dbt12'
+character: 'alisa'
+input:
+  notation: 'DBT.1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Mid,Mid,Mid,Mid'
+frames:
+  startup: 'i12~15'
+  block: '+0'
+  hit: '+21a (+0)'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'Spike'
+  - 'Weapon'
+  - 'Jails'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Spike'
+    - 'Weapon'
+    - 'Jail from 1st attack'
+    - '6 chip damage on block (9 in Heat)'
+    - 'Low crush 17~66'
+    - 'Floating state 67~69'
+  de:
+    - 'Balcony Break'
+    - 'Spike'
+    - 'Weapon'
+    - 'Jailt aus dem 1. Angriff'
+    - '6 Chip auf Block (9 in Heat)'
+    - 'Low Crush 17~66'
+    - 'Floating State 67~69'
+damage: '5,5,5,20'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,39 @@
+id: 'desf1'
+character: 'alisa'
+input:
+  notation: 'DES.f+1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'High'
+frames:
+  startup: 'i11~13'
+  block: '+3'
+  hit: '+9'
+  ch: null
+properties:
+  - 'Weapon'
+guide: null
+note:
+  en:
+    - 'Fast chainsaw jab'
+    - 'Weapon'
+    - '1 chip damage on block (7 in Heat)'
+  de:
+    - 'Schneller Kettensägen-Jab'
+    - 'Weapon'
+    - '1 Chip auf Block (7 in Heat)'
+damage: '21'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,41 @@
+id: 'sbt12b'
+character: 'alisa'
+input:
+  notation: 'SBT.1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels: 'High (unblockable)'
+frames:
+  startup: 'i27~28'
+  block: '—'
+  hit: '+8'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'Weapon'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Low crush 26~53'
+  de:
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Low Crush 26~53'
+damage: '20'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

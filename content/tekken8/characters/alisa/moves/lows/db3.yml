@@ -1,0 +1,38 @@
+id: 'db3'
+character: 'alisa'
+input:
+  notation: 'db+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'low'
+difficulty: 1
+range: 's'
+levels:
+  en: 'Low'
+  de: 'Low'
+frames:
+  startup: 'i16'
+  block: '-13'
+  hit: '-2'
+  ch: null
+properties:
+  - 'High crush'
+guide:
+  en: 'Faster chip low that high-crushes. Low commitment — use it to make opponents block low so your mids open up.'
+  de: 'Schnelleres Chip-Low, das high-crusht. Wenig Risiko — damit blockt der Gegner low, sodass deine Mids aufgehen.'
+note:
+  en:
+    - 'High crush 4~'
+  de:
+    - 'High Crush 4~'
+damage: '11'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,45 @@
+id: 'b13p'
+character: 'alisa'
+input:
+  notation: 'b+1+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'counterHitTool'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Parry (highs)'
+  de: 'Parry (Highs)'
+frames:
+  startup: '3~15'
+  block: '—'
+  hit: 'launch'
+  ch: null
+properties:
+  - 'High parry'
+  - 'Panic option'
+guide:
+  en: 'A parry that catches ALL highs (active frames 3–15) and lets you follow up for a launch — a great panic button against a jab-happy opponent. But it does nothing against mids and lows, so it''s a hard read.'
+  de: 'Ein Parry, der ALLE Highs abfängt (aktiv Frames 3–15) und danach einen Launch erlaubt — ein top Panic-Button gegen jab-freudige Gegner. Gegen Mids und Lows macht er aber nichts, also ein harter Read.'
+note:
+  en:
+    - 'Parries all highs'
+    - 'Parry state frames 3~15'
+    - 'Loses to mids and lows'
+    - 'Follow-up (P) launches: i20, +27a on CH, Balcony Break'
+  de:
+    - 'Parriert alle Highs'
+    - 'Parry-State Frames 3~15'
+    - 'Verliert gegen Mids und Lows'
+    - 'Folge-Hit (P) launcht: i20, +27a bei CH, Balcony Break'
+damage: '—'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

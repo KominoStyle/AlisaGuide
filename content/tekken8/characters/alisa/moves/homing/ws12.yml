@@ -1,0 +1,41 @@
+id: 'ws12'
+character: 'alisa'
+input:
+  notation: 'ws1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'homing'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i20~21'
+  block: '-8'
+  hit: '+21'
+  ch: null
+properties:
+  - 'While standing'
+  - 'Homing'
+guide:
+  en: 'Homing while-standing mid, only -8 on block. Hold the input to power it up. A safer crouch-exit than ws2 when you''re not sure you can launch.'
+  de: 'Homing-While-Standing-Mid, nur -8 auf Block. Input halten zum Aufladen. Sichererer Crouch-Exit als ws2, wenn du nicht sicher launchen kannst.'
+note:
+  en:
+    - 'Homing'
+    - 'Hold the input to power it up'
+  de:
+    - 'Homing'
+    - 'Eingabe halten zum Aufladen'
+damage: '20'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

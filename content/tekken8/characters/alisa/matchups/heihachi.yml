@@ -1,0 +1,17 @@
+character: 'Heihachi'
+deep: false
+tag:
+  en: 'Mishima — hellsweep, WGF & electrics'
+  de: 'Mishima — Hellsweep, WGF & Electrics'
+hurt:
+  en: 'Launcher `df+2` (i13~14, -7 — only -7, don''t try to launch it). Lows: `db+3`, `f,n,d,DF+4`, `f,n,d,DF+4,4`, `f,n,d,DF+4,4,4`. Heat engagers: `f,F+1+2`, `qcf+2`, `uf+2,1`. Plus on block: `f,n,d,df+3` (+11g), `RAI.2` (+10), `f,n,d,DF+4,4,4,3` (+9).'
+  de: 'Launcher `df+2` (i13~14, -7 — nur -7, nicht launchen). Lows: `db+3`, `f,n,d,DF+4`, `f,n,d,DF+4,4`, `f,n,d,DF+4,4,4`. Heat-Engager: `f,F+1+2`, `qcf+2`, `uf+2,1`. Plus auf Block: `f,n,d,df+3` (+11g), `RAI.2` (+10), `f,n,d,DF+4,4,4,3` (+9).'
+duck:
+  en: 'Duckable high strings — block the rest, duck the high: `1,1`, `1,1,2`, `1,2`, `1,2,2`. Homing (don''t step): `b+3`, `uf+4`, `RAI.2`.'
+  de: 'Duckbare High-Strings — Rest blocken, das High ducken: `1,1`, `1,1,2`, `1,2`, `1,2,2`. Homing (nicht steppen): `b+3`, `uf+4`, `RAI.2`.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `1,1,2` (-17), `df+2,1` (-17), `qcf+2` (-17), `f,F+2` (-16), `1,b+2,1` (-15). His `df+2` (-7) is safe. Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `1,1,2` (-17), `df+2,1` (-17), `qcf+2` (-17), `f,F+2` (-16), `1,b+2,1` (-15). Sein `df+2` (-7) ist safe. −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Fundamentals beat the Mishima: block hellsweep on read and launch, block WGF standing, punish everything unsafe with [[df2]]. Stay at range so his mixups cost him a dash.'
+  de: 'Fundamentals schlagen den Mishima: Hellsweep auf Read blocken und launchen, WGF stehend blocken, alles Unsichere mit [[df2]] bestrafen. Auf Distanz bleiben, damit seine Mixups einen Dash kosten.'

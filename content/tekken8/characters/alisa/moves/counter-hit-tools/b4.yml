@@ -1,0 +1,39 @@
+id: 'b4'
+character: 'alisa'
+input:
+  notation: 'b+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'counterHitTool'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i15~16'
+  block: '-13'
+  hit: '-4'
+  ch: '+54a'
+properties:
+  - 'CH launch'
+  - 'Knee'
+guide:
+  en: 'A quick mid knee that launches hard on counterhit (+54a). On normal hit or block it''s minus, so it''s a read tool — press it when you expect them to press and take a full combo.'
+  de: 'Ein schnelles Mid-Knie, das bei Counterhit hart launcht (+54a). Bei normalem Hit oder Block minus, also ein Read-Tool — drück es, wenn du einen Press erwartest, und hol einen vollen Combo.'
+note:
+  en:
+    - 'Knee'
+  de:
+    - 'Knie'
+damage: '17'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

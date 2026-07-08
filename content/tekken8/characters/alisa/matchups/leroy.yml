@@ -1,0 +1,17 @@
+character: 'Leroy'
+deep: false
+tag:
+  en: 'Kung fu — cane, parries & keepout'
+  de: 'Kung Fu — Stock, Parries & Keepout'
+hurt:
+  en: 'Launcher `df+2` (i15~16, -6 — only -6, don''t try to launch it). Lows: `d+4`, `d+4,4`, `d+2`, `d+2,4`. Heat engagers: `1+2,1+2,1`, `f+4,4`, `d+1+2`. Plus on block: `b+3` (+9~+10), `SS.1+2` (+7), `f,f,F+3` (+6~+9).'
+  de: 'Launcher `df+2` (i15~16, -6 — nur -6, nicht launchen). Lows: `d+4`, `d+4,4`, `d+2`, `d+2,4`. Heat-Engager: `1+2,1+2,1`, `f+4,4`, `d+1+2`. Plus auf Block: `b+3` (+9~+10), `SS.1+2` (+7), `f,f,F+3` (+6~+9).'
+duck:
+  en: 'Duckable high strings — block the rest, duck the high: `1,1,1+2`, `1,1,1+2,1`, `1,2`, `1,2,1`. Homing (don''t step): `b+4`, `b+3`, `HRM.b+4`.'
+  de: 'Duckbare High-Strings — Rest blocken, das High ducken: `1,1,1+2`, `1,1,1+2,1`, `1,2`, `1,2,1`. Homing (nicht steppen): `b+4`, `b+3`, `HRM.b+4`.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `df+2,1+2` (-18), `1+2,1+2,1` (-17~-16), `1,1,1+2,1` (-16~-15), `f+3,1+2,4` (-16~-15), `f,F+2,2` (-15~-14). His `df+2` (-6) is safe. Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `df+2,1+2` (-18), `1+2,1+2,1` (-17~-16), `1,1,1+2,1` (-16~-15), `f+3,1+2,4` (-16~-15), `f,F+2,2` (-15~-14). Sein `df+2` (-6) ist safe. −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Don''t throw predictable strings into his parry; mix lows and throws. Whiff-punish his keepout with [[df2]] and stay patient — punish his unsafe cane pokes.'
+  de: 'Keine vorhersehbaren Strings in seinen Parry; Lows und Würfe mischen. Sein Keepout mit [[df2]] whiff-punishen und geduldig bleiben — seine unsicheren Cane-Pokes bestrafen.'

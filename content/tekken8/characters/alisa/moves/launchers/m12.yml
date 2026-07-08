@@ -1,0 +1,54 @@
+id: 'm12'
+character: 'alisa'
+input:
+  notation: '1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i19~20'
+  block: '-4'
+  hit: '+15d'
+  ch: null
+properties:
+  - 'Heat engager'
+  - 'Balcony break'
+  - 'Spike'
+guide:
+  en: 'A single-hit mid that spikes down and, in Heat, engages for a Heat Dash launch. Only -4 on block, so it''s a safe, hard-hitting poke that also opens your Heat combo.'
+  de: 'Ein Ein-Hit-Mid, das runterspiket und in Heat für einen Heat-Dash-Launch engaged. Nur -4 auf Block, also ein sicherer, harter Poke, der auch deinen Heat-Combo öffnet.'
+note:
+  en:
+    - 'Heat Engager'
+    - 'Heat Dash +5, +67a (+50)'
+    - 'Balcony Break'
+    - 'Spike'
+    - 'Head'
+    - '6 chip damage on block'
+    - 'Hit vs back-turned +10d'
+  de:
+    - 'Heat Engager'
+    - 'Heat Dash +5, +67a (+50)'
+    - 'Balcony Break'
+    - 'Spike'
+    - 'Head'
+    - '6 Chip auf Block'
+    - 'Gegen Backturned +10d'
+damage: '22'
+key: 1
+keytip:
+  en: 'Heat Engager launcher (1+2).'
+  de: 'Heat-Engager-Launcher (1+2).'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

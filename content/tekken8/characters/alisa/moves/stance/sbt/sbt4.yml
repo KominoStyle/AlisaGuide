@@ -1,0 +1,40 @@
+id: 'sbt4'
+character: 'alisa'
+input:
+  notation: 'SBT.4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Mid'
+frames:
+  startup: 'i17~19'
+  block: '-27'
+  hit: '+68a'
+  ch: null
+properties:
+  - 'Launch'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Steel pedal'
+    - 'Low crush 26~71'
+    - 'Floating state 72~74'
+  de:
+    - 'Steel Pedal'
+    - 'Low Crush 26~71'
+    - 'Floating State 72~74'
+damage: '22, 5'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

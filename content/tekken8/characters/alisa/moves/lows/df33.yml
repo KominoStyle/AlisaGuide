@@ -1,0 +1,43 @@
+id: 'df33'
+character: 'alisa'
+input:
+  notation: 'df+3,3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'low'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Mid,Low'
+  de: 'Mid,Low'
+frames:
+  startup: 'i16, i23~24'
+  block: '-12'
+  hit: '+1'
+  ch: '+14d'
+properties:
+  - 'Floor break'
+  - 'Mid-low mix'
+guide: null
+note:
+  en:
+    - 'Floor Break'
+    - 'Combo from 1st hit with 9f delay'
+    - 'Input can be delayed 16f'
+    - 'Move can be delayed 12f'
+  de:
+    - 'Floor Break'
+    - 'Combo aus 1. Hit mit 9f Delay'
+    - 'Eingabe bis 16f verzögerbar'
+    - 'Move bis 12f verzögerbar'
+damage: '14, 17'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

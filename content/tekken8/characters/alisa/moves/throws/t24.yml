@@ -1,0 +1,52 @@
+id: 't24'
+character: 'alisa'
+input:
+  notation: '2+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'throw'
+difficulty: 1
+range: 's'
+levels:
+  en: 'Throw'
+  de: 'Wurf'
+frames:
+  startup: 'i12'
+  block: '—'
+  hit: 'throw'
+  ch: null
+properties:
+  - 'Generic'
+  - 'Break: 1 or 2'
+guide:
+  en: 'The other generic throw. Same rule as 1+3: it breaks with **1 or 2**. Only a grab where **both** arms reach out (a 1+2 throw) needs a 1+2 break.'
+  de: 'Der andere generische Wurf. Gleiche Regel wie 1+3: bricht mit **1 oder 2**. Nur ein Grab, bei dem **beide** Arme rausgehen (ein 1+2-Wurf), braucht einen 1+2-Break.'
+note:
+  en:
+    - 'Generic throw — same animation on either side'
+    - 'Break with 1 or 2'
+    - 'Homing — catches sidesteps'
+    - 'Floor Break'
+    - 'Opponent lands face-down, feet toward you'
+    - 'Sides switch'
+    - 'Transition to DES with 1+2'
+  de:
+    - 'Generischer Wurf — gleiche Animation auf beiden Seiten'
+    - 'Brechbar mit 1 oder 2'
+    - 'Homing — fängt Sidesteps'
+    - 'Floor Break'
+    - 'Gegner landet mit dem Gesicht nach unten, Füße zu dir'
+    - 'Seitenwechsel'
+    - 'In DES mit 1+2'
+damage: '35'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

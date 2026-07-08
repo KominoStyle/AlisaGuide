@@ -1,0 +1,45 @@
+id: 'desf21'
+character: 'alisa'
+input:
+  notation: 'DES.f+2,1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels: 'Mid,Mid,Mid,Mid'
+frames:
+  startup: 'i15, i23'
+  block: '-12'
+  hit: '-3c'
+  ch: null
+properties:
+  - 'Weapon'
+guide: null
+note:
+  en:
+    - 'Weapon'
+    - 'Combo from 1st hit with ~1f delay'
+    - 'Move cannot be delayed'
+    - 'Timestop on hit'
+    - '2 chip damage on block (3 in Heat)'
+    - 'In Heat: transition to r20 DBT with 3_4'
+  de:
+    - 'Weapon'
+    - 'Combo aus 1. Hit mit ~1f Delay'
+    - 'Move nicht verzögerbar'
+    - 'Timestop auf Hit'
+    - '2 Chip auf Block (3 in Heat)'
+    - 'In Heat: in r20 DBT mit 3_4'
+damage: '9, 9'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

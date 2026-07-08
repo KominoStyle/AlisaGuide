@@ -1,0 +1,17 @@
+character: 'Zafina'
+deep: false
+tag:
+  en: 'Contortionist stances (SCR/MNT/TRT), tricky'
+  de: 'Kontortionisten-Stances (SCR/MNT/TRT), tricky'
+hurt:
+  en: 'Launcher `df+2` (i16~17, -12 — only -12, don''t try to launch it). Lows: `d+4`, `d+4,3`, `db+3`, `db+4`. Heat engagers: `df+4,1`, `f+1+2`, `SCR.2,1`. Plus on block: `MNT.df+1` (+10), `f,f,F+3` (+7), `f,f,F+1+2` (+6).'
+  de: 'Launcher `df+2` (i16~17, -12 — nur -12, nicht launchen). Lows: `d+4`, `d+4,3`, `db+3`, `db+4`. Heat-Engager: `df+4,1`, `f+1+2`, `SCR.2,1`. Plus auf Block: `MNT.df+1` (+10), `f,f,F+3` (+7), `f,f,F+1+2` (+6).'
+duck:
+  en: 'Duckable high strings — block the rest, duck the high: `1,2`, `1,2,3`, `1,3`, `df+1,4`. Homing (don''t step): `f,F+2`, `f,F+4`, `f,f,F+1+2`.'
+  de: 'Duckbare High-Strings — Rest blocken, das High ducken: `1,2`, `1,2,3`, `1,3`, `df+1,4`. Homing (nicht steppen): `f,F+2`, `f,F+4`, `f,f,F+1+2`.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `d+2,4` (-22), `f+2` (-18), `f+2,3,4` (-18), `2,1,3` (-17), `ub+3` (-17). His `df+2` (-12) is safe. Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `d+2,4` (-22), `f+2` (-18), `f+2,3,4` (-18), `2,1,3` (-17), `ub+3` (-17). Sein `df+2` (-12) ist safe. −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Block her stance lows and punish her unsafe mids with [[uf44]]/[[df2]]. Don''t respect the stances blindly — many transitions are steppable or launchable. Stay calm and hit mids.'
+  de: 'Ihre Stance-Lows blocken und ihre unsicheren Mids mit [[uf44]]/[[df2]] bestrafen. Die Stances nicht blind respektieren — viele Transitions sind steppbar oder launchbar. Ruhig bleiben und Mids setzen.'

@@ -1,0 +1,41 @@
+id: 'df14'
+character: 'alisa'
+input:
+  notation: 'df+1,4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Mid,Mid'
+  de: 'Mid,Mid'
+frames:
+  startup: 'i13, i26~27'
+  block: '-11'
+  hit: '+3c'
+  ch: null
+properties:
+  - 'Leaves them crouching'
+  - '→ DES'
+guide: null
+note:
+  en:
+    - 'Floor Break'
+    - 'Combo from 1st CH'
+    - 'Transition to DES with 1+2'
+  de:
+    - 'Floor Break'
+    - 'Combo aus 1. CH'
+    - 'In DES mit 1+2'
+damage: '10, 17'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

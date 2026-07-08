@@ -1,0 +1,40 @@
+id: 'fcd1'
+character: 'alisa'
+input:
+  notation: 'FC.d+1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'low'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Low'
+  de: 'Low'
+frames:
+  startup: 'i10'
+  block: '-5'
+  hit: '+6'
+  ch: null
+properties:
+  - 'Full crouch'
+  - 'High crush'
+  - 'Fast low'
+guide: null
+note:
+  en:
+    - 'Transition to standing with f'
+    - 'High crush 1~'
+  de:
+    - 'In den Stand mit f'
+    - 'High Crush 1~'
+damage: '5'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

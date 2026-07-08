@@ -1,0 +1,39 @@
+id: 'ss4'
+character: 'alisa'
+input:
+  notation: 'SS.4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'low'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Low'
+  de: 'Low'
+frames:
+  startup: 'i24~25'
+  block: '-12'
+  hit: '+2'
+  ch: null
+properties:
+  - 'Sidestep'
+  - 'High crush'
+guide:
+  en: 'A low done out of a sidestep — it high-crushes and steps off-axis at once, so it beats a linear attack while ducking a high. Slow (i24) and -12, so use it off a read.'
+  de: 'Ein Low aus einem Sidestep — es high-crusht und geht gleichzeitig aus der Achse, schlägt also einen linearen Angriff und duckt ein High. Langsam (i24) und -12, also auf Read nutzen.'
+note:
+  en:
+    - 'High crush 6~35'
+  de:
+    - 'High Crush 6~35'
+damage: '16'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,43 @@
+id: 'b3'
+character: 'alisa'
+input:
+  notation: 'b+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'homing'
+difficulty: 2
+range: 'l'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i20~22'
+  block: '-8'
+  hit: '+5a'
+  ch: null
+properties:
+  - 'Homing'
+  - 'Balcony break'
+guide:
+  en: 'Homing mid that tracks both ways and wall-splats. Slower at i20, so use it to call out steps, not as a fast check.'
+  de: 'Homing-Mid, das beidseitig trackt und an die Wand splattet. Langsamer mit i20, also gegen Steps, nicht als schneller Check.'
+note:
+  en:
+    - 'Homing'
+    - 'Balcony Break'
+  de:
+    - 'Homing'
+    - 'Balcony Break'
+damage: '22'
+key: 1
+keytip:
+  en: 'Homing mid — shuts down sidesteps.'
+  de: 'Homing-Mid — stoppt Sidesteps.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

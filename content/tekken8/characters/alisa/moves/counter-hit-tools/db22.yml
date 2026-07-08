@@ -1,0 +1,42 @@
+id: 'db22'
+character: 'alisa'
+input:
+  notation: 'db+2,2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'counterHitTool'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Mid,Mid'
+  de: 'Mid,Mid'
+frames:
+  startup: 'i18~19, i19~20'
+  block: '-9'
+  hit: '+5'
+  ch: null
+properties:
+  - '→ DES'
+guide: null
+note:
+  en:
+    - 'Combo from 1st hit with 12f delay'
+    - 'Input can be delayed 15f'
+    - 'Move can be delayed 14f'
+    - 'Enter DES with 1+2'
+  de:
+    - 'Combo aus 1. Hit mit 12f Delay'
+    - 'Eingabe bis 15f verzögerbar'
+    - 'Move bis 14f verzögerbar'
+    - 'In DES mit 1+2'
+damage: '10, 10'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

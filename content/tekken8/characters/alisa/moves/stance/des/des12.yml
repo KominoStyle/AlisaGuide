@@ -1,0 +1,49 @@
+id: 'des12'
+character: 'alisa'
+input:
+  notation: 'DES.1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels:
+  en: 'High,High,High'
+  de: 'High,High,High'
+frames:
+  startup: 'i16'
+  block: '+4'
+  hit: '+15g'
+  ch: null
+properties:
+  - 'Homing'
+  - 'Jails'
+  - 'Plus'
+guide:
+  en: 'Plus-on-block homing chainsaw that jails. Your main chainsaw pressure: stay +4 and threaten the lows.'
+  de: 'Plus-on-Block Homing-Kettensäge, die jailt. Dein Haupt-Kettensägen-Druck: bleib +4 und drohe die Lows.'
+note:
+  en:
+    - 'Homing'
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Jails'
+    - '6 chip damage on block (12 in Heat)'
+  de:
+    - 'Homing'
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Jailt'
+    - '6 Chip auf Block (12 in Heat)'
+damage: '7,7,20'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

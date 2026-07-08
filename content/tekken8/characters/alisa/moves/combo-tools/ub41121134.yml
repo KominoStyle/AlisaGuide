@@ -1,0 +1,35 @@
+id: 'ub41121134'
+character: 'alisa'
+input:
+  notation: 'ub+4,1,1,2,1,1,3+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'comboTool'
+difficulty: 3
+range: 'm'
+levels: '...,Low'
+frames:
+  startup: 'i18, i27~28'
+  block: '-29'
+  hit: '+15a'
+  ch: null
+properties:
+  - 'Launch'
+guide: null
+note:
+  en:
+    - 'Floating state 5~50'
+  de:
+    - 'Floating State 5~50'
+damage: '...,7'
+key: null
+keytip: null
+chain: 'ub4'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

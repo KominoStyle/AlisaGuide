@@ -1,0 +1,17 @@
+character: 'Clive'
+deep: false
+tag:
+  en: 'Sword guest — big damage, committal swings'
+  de: 'Sword-Gast — großer Schaden, committale Swings'
+hurt:
+  en: 'Launcher `df+2` (i15~16 i26~27, -13). Lows: `d+4`, `d+3`, `d+1`, `db+4`. Heat engagers: `1+2`, `f+2,2,2`, `f+1+2`. Plus on block: `PHX.3+4` (+7), `b+3,P,2` (+3), `f,F+1+2` (+3).'
+  de: 'Launcher `df+2` (i15~16 i26~27, -13). Lows: `d+4`, `d+3`, `d+1`, `db+4`. Heat-Engager: `1+2`, `f+2,2,2`, `f+1+2`. Plus auf Block: `PHX.3+4` (+7), `b+3,P,2` (+3), `f,F+1+2` (+3).'
+duck:
+  en: 'Duckable high strings — block the rest, duck the high: `1,1`, `1,f+2`, `2,1`, `4,4`. Homing (don''t step): `db+1`, `db+1,1`, `b+1`.'
+  de: 'Duckbare High-Strings — Rest blocken, das High ducken: `1,1`, `1,f+2`, `2,1`, `4,4`. Homing (nicht steppen): `db+1`, `db+1,1`, `b+1`.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `3,3` (-18~-16), `df+1,4,3` (-18~-16), `uf+2` (-17), `df+1,2` (-16), `1+4` (-15). Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `3,3` (-18~-16), `df+1,4,3` (-18~-16), `uf+2` (-17), `df+1,2` (-16), `1+4` (-15). −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'His sword moves hit hard but are slow and committal — whiff-punish hard with [[df2]] and block the gaps. Stay patient, don''t trade, and punish his unsafe Eikon moves.'
+  de: 'Seine Sword-Moves treffen hart, sind aber langsam und committal — hart mit [[df2]] whiff-punishen und die Lücken blocken. Geduldig bleiben, nicht traden, seine unsicheren Eikon-Moves bestrafen.'

@@ -1,0 +1,40 @@
+id: 'sbtD'
+character: 'alisa'
+input:
+  notation: 'SBT.D'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels:
+  en: 'Stance'
+  de: 'Stance'
+frames:
+  startup: '—'
+  block: '—'
+  hit: '—'
+  ch: null
+properties:
+  - '→ BKP'
+  - 'High crush'
+guide: null
+note:
+  en:
+    - 'Transition to r32 BKP with B (Backswing)'
+    - 'High crush 34~'
+  de:
+    - 'In r32 BKP mit B (Backswing)'
+    - 'High Crush 34~'
+damage: '—'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

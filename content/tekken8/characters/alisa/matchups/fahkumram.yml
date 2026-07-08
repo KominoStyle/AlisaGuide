@@ -1,0 +1,17 @@
+character: 'Fahkumram'
+deep: false
+tag:
+  en: 'Muay Thai — long range & big damage'
+  de: 'Muay Thai — große Reichweite & Schaden'
+hurt:
+  en: 'Launcher `df+2` (i15, -7 — only -7, don''t try to launch it). Lows: `d+4`, `d+3`, `d+3,4`, `d+3,4,3`. Heat engagers: `ws1,2`, `uf+3`, `df+1,4`. Plus on block: `...GRF.3*` (+13 RAM), `...GRF.4*` (+13 RAM), `1,2,4,3~4*` (+9).'
+  de: 'Launcher `df+2` (i15, -7 — nur -7, nicht launchen). Lows: `d+4`, `d+3`, `d+3,4`, `d+3,4,3`. Heat-Engager: `ws1,2`, `uf+3`, `df+1,4`. Plus auf Block: `...GRF.3*` (+13 RAM), `...GRF.4*` (+13 RAM), `1,2,4,3~4*` (+9).'
+duck:
+  en: 'Duckable high strings — block the rest, duck the high: `1,2`, `1,2,1`, `1,2,1,4`, `1,2,4`. Homing (don''t step): `1,2,4,3~4*~B`, `4,3~4*~B`, `3,4~3*~B`.'
+  de: 'Duckbare High-Strings — Rest blocken, das High ducken: `1,2`, `1,2,1`, `1,2,1,4`, `1,2,4`. Homing (nicht steppen): `1,2,4,3~4*~B`, `4,3~4*~B`, `3,4~3*~B`.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `uf+4` (-16), `1,2,4,4` (-15), `3,1,d+4` (-15), `4,4` (-15), `b+2` (-15). His `df+2` (-7) is safe. Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `uf+4` (-16), `1,2,4,4` (-15), `3,1,d+4` (-15), `4,4` (-15), `b+2` (-15). Sein `df+2` (-7) ist safe. −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Get inside his range where his long limbs whiff, then poke and punish. Whiff-punish his committal mids with [[df2]] and respect his power crushes. Don''t play his long-range game.'
+  de: 'In seine Reichweite kommen, wo seine langen Limbs whiffen, dann poken und bestrafen. Committale Mids mit [[df2]] whiff-punishen und seine Power Crushes respektieren. Nicht sein Long-Range-Spiel spielen.'

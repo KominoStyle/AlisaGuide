@@ -1,0 +1,37 @@
+id: 'ub41'
+character: 'alisa'
+input:
+  notation: 'ub+4,1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'comboTool'
+difficulty: 3
+range: 'm'
+levels: 'Mid,Mid'
+frames:
+  startup: 'i18, i25~27'
+  block: '-21'
+  hit: '-8'
+  ch: null
+properties:
+  - 'High crush'
+guide: null
+note:
+  en:
+    - 'Combo from 1st CH'
+    - 'High crush 24~'
+  de:
+    - 'Combo aus 1. CH'
+    - 'High Crush 24~'
+damage: '10, 12'
+key: null
+keytip: null
+chain: 'ub4'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

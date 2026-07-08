@@ -1,0 +1,42 @@
+id: 'clk2spin3'
+character: 'alisa'
+input:
+  notation: 'CLK(Two spins).3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels: 'Mid'
+frames:
+  startup: 'i13~14'
+  block: '+0'
+  hit: '+63a (+43)'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'Launch'
+guide: null
+note:
+  en:
+    - 'After two or more spins'
+    - 'Balcony Break'
+    - 'Effective startup is around i32~33'
+    - '8 chip damage on block'
+  de:
+    - 'Nach zwei oder mehr Spins'
+    - 'Balcony Break'
+    - 'Effektiver Startup ca. i32~33'
+    - '8 Chip auf Block'
+damage: '22'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

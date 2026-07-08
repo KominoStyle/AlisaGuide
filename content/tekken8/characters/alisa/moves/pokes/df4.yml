@@ -1,0 +1,41 @@
+id: 'df4'
+character: 'alisa'
+input:
+  notation: 'df+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 1
+range: 's'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i12'
+  block: '-7'
+  hit: '+4'
+  ch: null
+properties:
+  - 'Fastest mid'
+  - 'Step-catch'
+guide:
+  en: 'Fastest mid (i12). +4 on hit catches sidesteps; on block it pushes out, so backdash and whiff-punish.'
+  de: 'Schnellstes Mid (i12). +4 auf Hit fängt Sidesteps; auf Block schiebt es weg, also backdash und whiff-punishen.'
+note:
+  en:
+    - '+4c on hit against a crouching opponent'
+  de:
+    - '+4c auf Hit gegen geduckten Gegner'
+damage: '13'
+key: 1
+keytip:
+  en: 'Fast i12 mid poke to check buttons.'
+  de: 'Schneller i12-Mid-Poke zum Buttons-Checken.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

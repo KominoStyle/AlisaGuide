@@ -1,0 +1,37 @@
+id: 'ff2'
+character: 'alisa'
+input:
+  notation: 'f,F+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'keepout'
+difficulty: 2
+range: 'l'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i16~17'
+  block: '-18'
+  hit: '+5a'
+  ch: null
+properties:
+  - 'Running'
+  - 'Balcony break'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+  de:
+    - 'Balcony Break'
+damage: '18'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

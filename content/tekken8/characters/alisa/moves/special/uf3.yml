@@ -1,0 +1,43 @@
+id: 'uf3'
+character: 'alisa'
+input:
+  notation: 'uf+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 3
+range: 'm'
+levels: 'Mid'
+frames:
+  startup: 'i17~18'
+  block: '-52'
+  hit: '-25'
+  ch: null
+properties:
+  - '→ SBT'
+  - '→ DBT'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Transition to SBT with 3_4'
+    - 'Transition to DBT with f+3_f+4'
+    - 'On whiff: low crush 9~31, floating 32~34'
+    - 'On hit/block: low crush 9~61, floating 62~64'
+  de:
+    - 'In SBT mit 3_4'
+    - 'In DBT mit f+3_f+4'
+    - 'Bei Whiff: Low Crush 9~31, Floating 32~34'
+    - 'Bei Hit/Block: Low Crush 9~61, Floating 62~64'
+damage: '15'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

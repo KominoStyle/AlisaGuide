@@ -1,0 +1,43 @@
+id: 's22'
+character: 'alisa'
+input:
+  notation: '2,2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 1
+range: 'm'
+levels:
+  en: 'High,High'
+  de: 'High,High'
+frames:
+  startup: 'i12, i18~33'
+  block: '-13'
+  hit: '+15a'
+  ch: null
+properties:
+  - 'i12 punish'
+  - 'Balcony break'
+guide:
+  en: 'Your i12 block punisher, 32 damage. -13 on block, so don''t throw it raw — only as a punish. Both hits are high.'
+  de: 'Dein i12-Block-Punisher, 32 Schaden. -13 auf Block, also nicht raw werfen — nur als Punish. Beide Hits sind High.'
+note:
+  en:
+    - 'Balcony Break'
+    - 'Combo from 1st hit'
+    - '2nd hit available on hit or block only'
+  de:
+    - 'Balcony Break'
+    - 'Combo aus 1. Hit'
+    - '2. Hit nur auf Hit oder Block'
+damage: '10, 22'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,39 @@
+id: 'd12t'
+character: 'alisa'
+input:
+  notation: 'd+1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 3
+range: 'm'
+levels:
+  en: 'Transition'
+  de: 'Transition'
+frames:
+  startup: '—'
+  block: '—'
+  hit: '—'
+  ch: null
+properties:
+  - '→ DBT'
+guide: null
+note:
+  en:
+    - 'Transition to r30 with db or d+1+2'
+    - 'Transition to DBT with DES.f+3_f+4'
+  de:
+    - 'Übergang zu r30 mit db oder d+1+2'
+    - 'In DBT mit DES.f+3_f+4'
+damage: '—'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

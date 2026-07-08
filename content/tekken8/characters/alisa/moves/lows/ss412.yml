@@ -1,0 +1,44 @@
+id: 'ss412'
+character: 'alisa'
+input:
+  notation: 'SS.4,1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'low'
+difficulty: 3
+range: 's'
+levels: 'Low,High,High,High,Mid'
+frames:
+  startup: 'i24~25, i18~19'
+  block: '-10'
+  hit: '+8'
+  ch: null
+properties:
+  - 'Spike'
+  - 'Low crush'
+  - 'High crush'
+guide: null
+note:
+  en:
+    - 'Spike'
+    - 'Combo from 1st CH'
+    - 'High crush 6~35 (1st hit)'
+    - 'Low crush 15~34'
+    - 'Floating state 35~37'
+  de:
+    - 'Spike'
+    - 'Combo aus 1. CH'
+    - 'High Crush 6~35 (1. Hit)'
+    - 'Low Crush 15~34'
+    - 'Floating State 35~37'
+damage: '16, 5,5,5,5'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

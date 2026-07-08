@@ -1,0 +1,45 @@
+id: 'dbt2'
+character: 'alisa'
+input:
+  notation: 'DBT.2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Mid,Mid,High,High,High'
+frames:
+  startup: 'i16~18'
+  block: '-14'
+  hit: '+32a (+14)'
+  ch: null
+properties:
+  - 'Weapon'
+  - 'Jails'
+  - 'Launch'
+guide: null
+note:
+  en:
+    - 'Weapon'
+    - 'Jail from 1st attack'
+    - '2 chip damage on block (4 in Heat)'
+    - 'Low crush 17~66'
+    - 'Floating state 67~69'
+  de:
+    - 'Weapon'
+    - 'Jailt aus dem 1. Angriff'
+    - '2 Chip auf Block (4 in Heat)'
+    - 'Low Crush 17~66'
+    - 'Floating State 67~69'
+damage: '25'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

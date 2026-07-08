@@ -1,0 +1,42 @@
+id: 'desf12'
+character: 'alisa'
+input:
+  notation: 'DES.f+1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Mid ×8'
+frames:
+  startup: 'i23~27'
+  block: '+1'
+  hit: '+33a'
+  ch: null
+properties:
+  - 'Weapon'
+  - '→ DBT'
+guide: null
+note:
+  en:
+    - 'Weapon'
+    - 'Combo from any hit'
+    - 'Transition to DBT (+4/+36a) with 3_4'
+    - '5 chip damage on block (8 in Heat)'
+  de:
+    - 'Weapon'
+    - 'Combo aus jedem Hit'
+    - 'In DBT (+4/+36a) mit 3_4'
+    - '5 Chip auf Block (8 in Heat)'
+damage: '29'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

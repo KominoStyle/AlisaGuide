@@ -1,0 +1,48 @@
+id: 'f23'
+character: 'alisa'
+input:
+  notation: 'f+2,3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'counterHitTool'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid,High'
+  de: 'Mid,High'
+frames:
+  startup: 'i17~18, i22'
+  block: '-8'
+  hit: '+4'
+  ch: null
+properties:
+  - 'Low crush'
+  - 'CH combo'
+  - '→ DES'
+guide: null
+note:
+  en:
+    - 'Balcony Break (airborne)'
+    - 'Combo from 1st CH with 1f delay'
+    - 'Move cannot be delayed'
+    - 'Transition to r40 DES with 1+2'
+    - 'Low crush 17~38'
+    - 'Floating state 39~41'
+  de:
+    - 'Balcony Break (airborne)'
+    - 'Combo aus 1. CH mit 1f Delay'
+    - 'Move nicht verzögerbar'
+    - 'In r40 DES mit 1+2'
+    - 'Low Crush 17~38'
+    - 'Floating State 39~41'
+damage: '12, 8'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

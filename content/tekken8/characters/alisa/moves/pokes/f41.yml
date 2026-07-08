@@ -1,0 +1,41 @@
+id: 'f41'
+character: 'alisa'
+input:
+  notation: 'f+4,1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid,High'
+  de: 'Mid,High'
+frames:
+  startup: 'i16, i25~26'
+  block: '-9'
+  hit: '+15d'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'Head'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Head'
+    - 'Combo from 1st hit'
+  de:
+    - 'Balcony Break'
+    - 'Head'
+    - 'Combo aus 1. Hit'
+damage: '14, 14'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

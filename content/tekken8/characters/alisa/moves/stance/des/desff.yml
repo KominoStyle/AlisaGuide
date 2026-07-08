@@ -1,0 +1,37 @@
+id: 'desff'
+character: 'alisa'
+input:
+  notation: 'DES.f,f'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels:
+  en: 'Movement'
+  de: 'Movement'
+frames:
+  startup: '—'
+  block: '—'
+  hit: '—'
+  ch: null
+properties:
+  - 'Movement'
+guide: null
+note:
+  en:
+    - 'Dash forward in Destructive Form'
+  de:
+    - 'Vorwärts-Dash in der Destructive Form'
+damage: '—'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

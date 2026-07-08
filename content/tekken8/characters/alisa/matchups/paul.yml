@@ -1,0 +1,17 @@
+character: 'Paul'
+deep: false
+tag:
+  en: 'Heavy hitter — Deathfist & huge damage'
+  de: 'Heavy Hitter — Deathfist & riesiger Schaden'
+hurt:
+  en: 'Launcher `df+2` (i15~16, -8 — only -8, don''t try to launch it). Lows: `db+4`, `d+4`, `d+4,2`, `d+4,2,1+2`. Heat engagers: `qcf+2`, `qcb+2`, `f+4`. Plus on block: `d+1,2*` (+9), `b+2,1*` (+8), `SS.1` (+8).'
+  de: 'Launcher `df+2` (i15~16, -8 — nur -8, nicht launchen). Lows: `db+4`, `d+4`, `d+4,2`, `d+4,2,1+2`. Heat-Engager: `qcf+2`, `qcb+2`, `f+4`. Plus auf Block: `d+1,2*` (+9), `b+2,1*` (+8), `SS.1` (+8).'
+duck:
+  en: 'Duckable high strings — block the rest, duck the high: `1,2`, `1,2,3`, `2,3`, `ws3,2`. Homing (don''t step): `qcb+4`, `f+3`, `f+4`.'
+  de: 'Duckbare High-Strings — Rest blocken, das High ducken: `1,2`, `1,2,3`, `2,3`, `ws3,2`. Homing (nicht steppen): `qcb+4`, `f+3`, `f+4`.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `d+1,4` (-31c), `1,2,3` (-25), `f,F+2,2` (-19c), `d+1+2` (-18), `d+1,2` (-17). His `df+2` (-8) is safe. Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `d+1,4` (-31c), `1,2,3` (-25), `f,F+2,2` (-19c), `d+1+2` (-18), `d+1,2` (-17). Sein `df+2` (-8) ist safe. −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Block Deathfist `qcf+2` (minus on block) and punish; respect his damage. Whiff-punish his committal swings with [[df2]], block his lows, and don''t trade with his CH.'
+  de: 'Deathfist `qcf+2` (minus auf Block) blocken und bestrafen; seinen Schaden respektieren. Committale Swings mit [[df2]] whiff-punishen, seine Lows blocken und nicht mit seinem CH traden.'

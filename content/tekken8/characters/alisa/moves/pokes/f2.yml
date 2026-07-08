@@ -1,0 +1,39 @@
+id: 'f2'
+character: 'alisa'
+input:
+  notation: 'f+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 1
+range: 'm'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i17~18'
+  block: '-4'
+  hit: '+7'
+  ch: null
+properties:
+  - 'Whiff setup'
+  - 'DES cancel'
+guide:
+  en: 'Close-range mid. Only -4 on block — that is a whiff setup: sidestep their answer, or cancel to chainsaws with 1+2.'
+  de: 'Close-Range-Mid. Nur -4 auf Block — ein Whiff-Setup: ihre Antwort sidesteppen oder mit 1+2 in die Kettensägen canceln.'
+note:
+  en:
+    - 'Enter DES with 1+2'
+  de:
+    - 'In DES mit 1+2'
+damage: '12'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

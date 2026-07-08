@@ -1,0 +1,39 @@
+id: 's12d2h'
+character: 'alisa'
+input:
+  notation: '1,2,d+2*'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'low'
+difficulty: 3
+range: 's'
+levels: 'High,High,Low'
+frames:
+  startup: 'i10, i36~37'
+  block: '-10'
+  hit: '+34a'
+  ch: null
+properties:
+  - 'Low'
+  - 'Launch'
+guide: null
+note:
+  en:
+    - 'Held/delayed version, launches on hit'
+    - 'Input can be delayed 8f'
+    - 'Move can be delayed 7f'
+  de:
+    - 'Gehaltene/verzögerte Version, launcht auf Hit'
+    - 'Eingabe bis 8f verzögerbar'
+    - 'Move bis 7f verzögerbar'
+damage: '5, 10, 22'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

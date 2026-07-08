@@ -1,0 +1,47 @@
+id: 'dbt1'
+character: 'alisa'
+input:
+  notation: 'DBT.1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'High ×6'
+frames:
+  startup: 'i24~28'
+  block: '+9'
+  hit: '+11g'
+  ch: null
+properties:
+  - 'Weapon'
+  - 'Jails'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Chainsaw jab string'
+    - 'Weapon'
+    - 'Jail from 1st attack'
+    - '3 chip damage on block (12 in Heat)'
+    - 'Low crush 17~34'
+    - 'Floating state 35~37'
+  de:
+    - 'Kettensägen-Jab-String'
+    - 'Weapon'
+    - 'Jailt aus dem 1. Angriff'
+    - '3 Chip auf Block (12 in Heat)'
+    - 'Low Crush 17~34'
+    - 'Floating State 35~37'
+damage: '30'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

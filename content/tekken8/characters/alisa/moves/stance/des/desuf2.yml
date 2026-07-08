@@ -1,0 +1,39 @@
+id: 'desuf2'
+character: 'alisa'
+input:
+  notation: 'DES.uf+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels:
+  en: 'High ×5 (airborne only)'
+  de: 'High ×5 (nur gegen Luft)'
+frames:
+  startup: 'i10~14'
+  block: '—'
+  hit: '+35a (+28)'
+  ch: null
+properties:
+  - 'Weapon'
+guide: null
+note:
+  en:
+    - 'Weapon'
+    - 'Only hits airborne opponents'
+  de:
+    - 'Weapon'
+    - 'Trifft nur Gegner in der Luft'
+damage: '5,5,5,5,5'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

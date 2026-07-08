@@ -1,0 +1,49 @@
+id: 'uf1'
+character: 'alisa'
+input:
+  notation: 'uf+1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid,Mid,Mid'
+  de: 'Mid,Mid,Mid'
+frames:
+  startup: 'i19~20, i25, i17'
+  block: '-13'
+  hit: '+68a'
+  ch: null
+properties:
+  - 'Tornado'
+  - 'Combo tool'
+guide:
+  en: 'Your Tornado move inside juggles — the bridge from the launch to the ender. -13 on block, so it''s a combo piece, not a neutral poke.'
+  de: 'Dein Tornado-Move im Juggle — die Brücke vom Launch zum Ender. -13 auf Block, also ein Combo-Teil, kein Neutral-Poke.'
+note:
+  en:
+    - 'Tornado'
+    - 'Transition to SBT on hit with 3_4'
+    - 'Transition to DBT on hit with f+3_f+4'
+    - '2nd and 3rd hit only as a combo from the 1st'
+    - 'Low crush 20~40'
+    - 'Floating state 41~43'
+  de:
+    - 'Tornado'
+    - 'Auf Hit in SBT mit 3_4'
+    - 'Auf Hit in DBT mit f+3_f+4'
+    - '2. und 3. Hit nur als Combo aus dem 1.'
+    - 'Low Crush 20~40'
+    - 'Floating State 41~43'
+damage: '19, 19, 20'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,48 @@
+id: 'k4'
+character: 'alisa'
+input:
+  notation: '4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'homing'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'High'
+  de: 'High'
+frames:
+  startup: 'i13~14'
+  block: '-5'
+  hit: '+14g'
+  ch: '+38a'
+properties:
+  - 'Homing'
+  - 'CH launch'
+  - 'DES cancel'
+guide:
+  en: 'Homing high that launches on counterhit. Enters chainsaws with 1+2. Catches steppers who duck your mids.'
+  de: 'Homing-High, das bei Counterhit launcht. Per 1+2 in die Kettensägen. Fängt Steppers, die deine Mids ducken.'
+note:
+  en:
+    - 'Homing'
+    - 'Balcony Break'
+    - 'Enter DES with 1+2'
+    - 'Hit vs back-turned +21a (+12)'
+  de:
+    - 'Homing'
+    - 'Balcony Break'
+    - 'In DES mit 1+2'
+    - 'Gegen Backturned +21a (+12)'
+damage: '24'
+key: 1
+keytip:
+  en: 'i13 homing kick, +21 vs back-turned.'
+  de: 'i13-Homing-Kick, +21 gegen Backturned.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

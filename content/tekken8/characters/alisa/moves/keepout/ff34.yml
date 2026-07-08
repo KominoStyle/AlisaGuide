@@ -1,0 +1,48 @@
+id: 'ff34'
+character: 'alisa'
+input:
+  notation: 'f,F+3,4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'keepout'
+difficulty: 2
+range: 'l'
+levels:
+  en: 'Mid,High'
+  de: 'Mid,High'
+frames:
+  startup: 'i18~19, i19~20'
+  block: '-10'
+  hit: '+20a'
+  ch: null
+properties:
+  - 'Running'
+  - 'Jails'
+  - '→ DES'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Combo from 1st hit'
+    - 'Jail from 1st block'
+    - 'Enter DES with 1+2'
+    - 'Low crush 15~48'
+    - 'Floating state 49~51'
+  de:
+    - 'Balcony Break'
+    - 'Combo aus 1. Hit'
+    - 'Jailt aus 1. Block'
+    - 'In DES mit 1+2'
+    - 'Low Crush 15~48'
+    - 'Floating State 49~51'
+damage: '12, 15'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

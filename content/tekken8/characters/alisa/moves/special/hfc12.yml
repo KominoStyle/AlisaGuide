@@ -1,0 +1,42 @@
+id: 'hfc12'
+character: 'alisa'
+input:
+  notation: 'hFC.1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 3
+range: 'm'
+levels: 'Low,Low'
+frames:
+  startup: 'i21~23, i6~8'
+  block: '-11c'
+  hit: '+5c'
+  ch: null
+properties:
+  - '→ DES'
+  - 'High crush'
+guide: null
+note:
+  en:
+    - 'Heat crouching low'
+    - 'Enter DES with n,1+2'
+    - 'Can be done from Crouch Level 1'
+    - 'High crush 1~55'
+  de:
+    - 'Heat-Duck-Low'
+    - 'In DES mit n,1+2'
+    - 'Aus Crouch Level 1 möglich'
+    - 'High Crush 1~55'
+damage: '10, 16'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

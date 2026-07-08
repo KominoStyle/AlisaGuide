@@ -1,0 +1,50 @@
+id: 'b23'
+character: 'alisa'
+input:
+  notation: 'b+2,3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid,Mid'
+  de: 'Mid,Mid'
+frames:
+  startup: 'i18, i23~24'
+  block: '-15'
+  hit: '+9a'
+  ch: null
+properties:
+  - 'Tornado'
+  - 'Balcony break'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Tornado'
+    - 'Balcony Break'
+    - 'Combo from 1st hit with 9f delay'
+    - 'Move can be delayed 12f'
+    - 'Low crush 21~60'
+    - 'Floating state 61~63'
+  de:
+    - 'Tornado'
+    - 'Balcony Break'
+    - 'Combo aus 1. Hit mit 9f Delay'
+    - 'Move bis 12f verzögerbar'
+    - 'Low Crush 21~60'
+    - 'Floating State 61~63'
+damage: '12, 22'
+key: 1
+keytip:
+  en: 'Tornado launcher from b+2.'
+  de: 'Tornado-Launcher aus b+2.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

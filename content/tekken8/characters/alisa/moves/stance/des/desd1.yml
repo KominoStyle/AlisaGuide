@@ -1,0 +1,45 @@
+id: 'desd1'
+character: 'alisa'
+input:
+  notation: 'DES.d+1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Low ×5'
+frames:
+  startup: 'i20~24'
+  block: '-13'
+  hit: '+4'
+  ch: null
+properties:
+  - 'Weapon'
+  - 'Low'
+  - 'High crush'
+guide: null
+note:
+  en:
+    - 'Chainsaw low'
+    - 'Weapon'
+    - 'Combo from any hit'
+    - '1 chip damage on block (6 in Heat)'
+    - 'High crush 4~48'
+  de:
+    - 'Kettensägen-Low'
+    - 'Weapon'
+    - 'Combo aus jedem Hit'
+    - '1 Chip auf Block (6 in Heat)'
+    - 'High Crush 4~48'
+damage: '17'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

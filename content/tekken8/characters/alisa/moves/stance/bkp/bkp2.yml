@@ -1,0 +1,41 @@
+id: 'bkp2'
+character: 'alisa'
+input:
+  notation: 'BKP.2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels:
+  en: 'High'
+  de: 'High'
+frames:
+  startup: 'i11~33'
+  block: '-9~+13'
+  hit: '+21'
+  ch: null
+properties:
+  - 'Tornado'
+guide:
+  en: 'Backup''s chargeable tornado high — big damage and a combo tool, but the block/hit frames swing a lot with the charge. A hard read, not a safe poke.'
+  de: 'Backups aufladbares Tornado-High — viel Schaden und Combo-Tool, aber Block/Hit-Frames schwanken stark mit der Ladung. Ein harter Read, kein safer Poke.'
+note:
+  en:
+    - 'Tornado'
+    - '6 chip damage on block'
+  de:
+    - 'Tornado'
+    - '6 Chip auf Block'
+damage: '34'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

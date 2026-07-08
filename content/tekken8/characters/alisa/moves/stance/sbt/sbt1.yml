@@ -1,0 +1,37 @@
+id: 'sbt1'
+character: 'alisa'
+input:
+  notation: 'SBT.1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Mid'
+frames:
+  startup: 'i13~14'
+  block: '-15'
+  hit: '+0'
+  ch: null
+properties:
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Low crush 26~46'
+    - 'Floating state 47~49'
+  de:
+    - 'Low Crush 26~46'
+    - 'Floating State 47~49'
+damage: '12'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

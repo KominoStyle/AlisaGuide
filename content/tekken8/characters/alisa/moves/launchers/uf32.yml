@@ -1,0 +1,51 @@
+id: 'uf32'
+character: 'alisa'
+input:
+  notation: 'uf+3,2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid,Mid'
+  de: 'Mid,Mid'
+frames:
+  startup: 'i17~18, i17~22'
+  block: '-14'
+  hit: '+6c'
+  ch: null
+properties:
+  - 'Spike'
+  - 'Balcony break'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Spike'
+    - 'Combo from 1st hit'
+    - 'Available only as a combo from the 1st hit'
+    - 'Forces tech backroll on hit'
+    - 'Low crush 9~58'
+    - 'Floating state 59~75'
+    - 'High crush 76~85'
+  de:
+    - 'Balcony Break'
+    - 'Spike'
+    - 'Combo aus 1. Hit'
+    - 'Nur als Combo aus dem 1. Hit'
+    - 'Erzwingt Tech-Backroll auf Hit'
+    - 'Low Crush 9~58'
+    - 'Floating State 59~75'
+    - 'High Crush 76~85'
+damage: '15, 30'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

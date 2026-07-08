@@ -1,0 +1,17 @@
+character: 'Lidia'
+deep: false
+tag:
+  en: 'Karate — stances, strong mids & lows'
+  de: 'Karate — Stances, starke Mids & Lows'
+hurt:
+  en: 'Launcher `df+2` (i15, +0 — only +0, don''t try to launch it). Lows: `d+4`, `d+3`, `d+3,1`, `d+3,1,2`. Heat engagers: `f+1+2,3,1+2`, `b+1`, `FC.df+2`. Plus on block: `df+4~3` (+8), `qcf+1+2,2*` (+8), `HRS.4` (+8).'
+  de: 'Launcher `df+2` (i15, +0 — nur +0, nicht launchen). Lows: `d+4`, `d+3`, `d+3,1`, `d+3,1,2`. Heat-Engager: `f+1+2,3,1+2`, `b+1`, `FC.df+2`. Plus auf Block: `df+4~3` (+8), `qcf+1+2,2*` (+8), `HRS.4` (+8).'
+duck:
+  en: 'Duckable high strings — block the rest, duck the high: `1,2`, `1,2,2`, `1,2,3`, `1,2,4`. Homing (don''t step): `db+3`, `b+4`, `qcf+4`.'
+  de: 'Duckbare High-Strings — Rest blocken, das High ducken: `1,2`, `1,2,2`, `1,2,3`, `1,2,4`. Homing (nicht steppen): `db+3`, `b+4`, `qcf+4`.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `f,F+4,3` (-27), `qcf+2,2,1+2` (-17), `f+1+2,3,1+2` (-15), `b+3,4,1+2` (-15). His `df+2` (+0) is safe. Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `f,F+4,3` (-27), `qcf+2,2,1+2` (-17), `f+1+2,3,1+2` (-15), `b+3,4,1+2` (-15). Sein `df+2` (+0) ist safe. −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Block her stance mixups and punish the unsafe enders with [[uf44]]/[[df2]]. Interrupt her pressure with [[df1]] and block the lows on read.'
+  de: 'Ihre Stance-Mixups blocken und die unsicheren Ender mit [[uf44]]/[[df2]] bestrafen. Ihren Druck mit [[df1]] unterbrechen und die Lows auf Read blocken.'

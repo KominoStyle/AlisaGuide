@@ -1,0 +1,36 @@
+id: 'mid3'
+character: 'alisa'
+input:
+  notation: '3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 2
+range: 's'
+levels: 'Mid'
+frames:
+  startup: 'i13~14'
+  block: '-12'
+  hit: '-1'
+  ch: null
+properties:
+  - 'Mid'
+guide: null
+note:
+  en:
+    - 'i13 mid, slightly minus'
+    - 'Starts the 3,2 Heat Engager'
+  de:
+    - 'i13-Mid, leicht minus'
+    - 'Startet den 3,2-Heat-Engager'
+damage: '10'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

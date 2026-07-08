@@ -1,0 +1,41 @@
+id: 'uf4'
+character: 'alisa'
+input:
+  notation: 'uf+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i15~16'
+  block: '-15'
+  hit: '-4'
+  ch: null
+properties:
+  - 'Hopkick'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Low crush 9~37'
+    - 'Floating state 38~40'
+  de:
+    - 'Low Crush 9~37'
+    - 'Floating State 38~40'
+damage: '8'
+key: 1
+keytip:
+  en: 'Hopkick — i15 launcher, low-crushes.'
+  de: 'Hopkick — i15-Launcher, low-crusht.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

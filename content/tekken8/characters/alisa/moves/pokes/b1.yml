@@ -1,0 +1,40 @@
+id: 'b1'
+character: 'alisa'
+input:
+  notation: 'b+1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i15~16'
+  block: '-5'
+  hit: '+8'
+  ch: null
+properties:
+  - 'High crush 12~'
+guide:
+  en: 'High-crushing mid: ducks under highs from frame 12 while hitting mid. Great vs jab pressure and Mishima electrics.'
+  de: 'High-crushendes Mid: duckt ab Frame 12 unter Highs und trifft trotzdem mid. Top gegen Jab-Druck und Mishima-Electrics.'
+note:
+  en:
+    - 'High crush 12~'
+  de:
+    - 'High Crush 12~'
+damage: '15'
+key: 1
+keytip:
+  en: 'Long-range mid poke / keepout.'
+  de: 'Mid-Poke mit Reichweite / Keepout.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

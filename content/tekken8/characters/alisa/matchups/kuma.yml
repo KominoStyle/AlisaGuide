@@ -1,0 +1,17 @@
+character: 'Kuma'
+deep: false
+tag:
+  en: 'Bear — hunting stance, grabs, odd hitboxes'
+  de: 'Bär — Hunting Stance, Grabs, seltsame Hitboxen'
+hurt:
+  en: 'Launcher `df+2` (i15~16, -9 — only -9, don''t try to launch it). Lows: `d+4`, `db+2`, `db+3`, `d+3`. Heat engagers: `1+2`, `qcf+2,1`, `b+1+2`. Plus on block: `FUFT.d+1+2` (+18~+20), `HBS.f,f` (+14~+19), `FC.df+2,1,1+2,3,1+2,3+4,1+2,2,3,1` (+11).'
+  de: 'Launcher `df+2` (i15~16, -9 — nur -9, nicht launchen). Lows: `d+4`, `db+2`, `db+3`, `d+3`. Heat-Engager: `1+2`, `qcf+2,1`, `b+1+2`. Plus auf Block: `FUFT.d+1+2` (+18~+20), `HBS.f,f` (+14~+19), `FC.df+2,1,1+2,3,1+2,3+4,1+2,2,3,1` (+11).'
+duck:
+  en: 'Duckable high strings — block the rest, duck the high: `1,2`, `f+2,1`, `b+2,1`, `b+2,1,1+2`. Homing (don''t step): `b+1+2`, `ws3`, `uf+2`.'
+  de: 'Duckbare High-Strings — Rest blocken, das High ducken: `1,2`, `f+2,1`, `b+2,1`, `b+2,1,1+2`. Homing (nicht steppen): `b+1+2`, `ws3`, `uf+2`.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `b+3+4` (-28), `b+1+4,f,f` (-20~+55), `f,F+2` (-19), `qcf+2,2` (-18), `1,1,1` (-16). His `df+2` (-9) is safe. Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `b+3+4` (-28), `b+1+4,f,f` (-20~+55), `f,F+2` (-19), `qcf+2,2` (-18), `1,1,1` (-16). Sein `df+2` (-9) ist safe. −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Block and punish — most of his stance stuff is unsafe. Break his command grabs, whiff-punish his lunges with [[df2]], and don''t respect Hunting Stance blindly.'
+  de: 'Blocken und bestrafen — das meiste Stance-Zeug ist unsicher. Seine Command-Grabs breaken, Lunges mit [[df2]] whiff-punishen und Hunting Stance nicht blind respektieren.'

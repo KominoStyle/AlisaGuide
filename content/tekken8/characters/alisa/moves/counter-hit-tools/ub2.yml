@@ -1,0 +1,45 @@
+id: 'ub2'
+character: 'alisa'
+input:
+  notation: 'ub+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'counterHitTool'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'High'
+  de: 'High'
+frames:
+  startup: 'i16~20'
+  block: '-9'
+  hit: '+12c'
+  ch: null
+properties:
+  - 'Power crush'
+  - 'Balcony break'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - '9 chip damage on block (+0 on block when absorbing a hit)'
+    - 'Forces tech backroll on hit'
+    - 'Power crush 7~15'
+    - 'Floating state 20~30'
+  de:
+    - 'Balcony Break'
+    - '9 Chip auf Block (+0 auf Block beim Absorbieren)'
+    - 'Erzwingt Tech-Backroll auf Hit'
+    - 'Power Crush 7~15'
+    - 'Floating State 20~30'
+damage: '23'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

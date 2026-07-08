@@ -1,0 +1,49 @@
+id: 'pc'
+character: 'alisa'
+input:
+  notation: 'b+1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'counterHitTool'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i19~20'
+  block: '-13'
+  hit: '+8'
+  ch: null
+properties:
+  - 'Power crush'
+  - 'Absorbs mid/high'
+guide:
+  en: 'Power crush: it absorbs one mid or high and hits back. Use it to barge through predictable pressure — but it loses to lows and throws, and it''s -13 on block.'
+  de: 'Power Crush: absorbiert ein Mid oder High und schlägt zurück. Damit durch berechenbaren Druck brechen — verliert aber gegen Lows und Würfe, und ist -13 auf Block.'
+note:
+  en:
+    - 'Balcony Break'
+    - 'Weapon'
+    - '7 chip damage on block (12 in Heat)'
+    - '10 chip and -9 on block when absorbing a hit (12 in Heat)'
+    - 'Power crush 7~18'
+  de:
+    - 'Balcony Break'
+    - 'Weapon'
+    - '7 Chip auf Block (12 in Heat)'
+    - '10 Chip und -9 auf Block beim Absorbieren (12 in Heat)'
+    - 'Power Crush 7~18'
+damage: '25'
+key: 1
+keytip:
+  en: 'Power crush to blow through pressure.'
+  de: 'Power Crush, um durch Druck zu brechen.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,38 @@
+id: 'dbtf2'
+character: 'alisa'
+input:
+  notation: 'DBT.f+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Low'
+frames:
+  startup: 'i19~20'
+  block: '-12'
+  hit: '+6c'
+  ch: null
+properties:
+  - 'Weapon'
+  - 'Low'
+guide: null
+note:
+  en:
+    - 'Weapon'
+    - '3 chip damage on block (5 in Heat)'
+  de:
+    - 'Weapon'
+    - '3 Chip auf Block (5 in Heat)'
+damage: '13'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

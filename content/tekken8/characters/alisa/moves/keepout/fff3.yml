@@ -1,0 +1,41 @@
+id: 'fff3'
+character: 'alisa'
+input:
+  notation: 'f,f,F+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'keepout'
+difficulty: 2
+range: 'l'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i18~19'
+  block: '-4'
+  hit: '+6'
+  ch: null
+properties:
+  - 'Running'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Balcony Break (airborne)'
+    - 'Low crush 3~30'
+    - 'Floating state 31~33'
+  de:
+    - 'Balcony Break (airborne)'
+    - 'Low Crush 3~30'
+    - 'Floating State 31~33'
+damage: '15'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

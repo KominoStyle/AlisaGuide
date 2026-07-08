@@ -1,0 +1,17 @@
+character: 'Panda'
+deep: false
+tag:
+  en: 'Bear — hunting stance & grabs (Kuma''s moves)'
+  de: 'Bär — Hunting Stance & Grabs (Kumas Moves)'
+hurt:
+  en: 'Launcher `df+2` (i15~16, -9 — only -9, don''t try to launch it). Lows: `d+4`, `db+2`, `db+3`, `d+3`. Heat engagers: `1+2`, `d,df,f+2,1`, `b+1+2`. Plus on block: `FUFT.d+1+2` (+17), `u+3+4` (+14cg), `f,F+1+2` (+8 HBS / +5 ROL).'
+  de: 'Launcher `df+2` (i15~16, -9 — nur -9, nicht launchen). Lows: `d+4`, `db+2`, `db+3`, `d+3`. Heat-Engager: `1+2`, `d,df,f+2,1`, `b+1+2`. Plus auf Block: `FUFT.d+1+2` (+17), `u+3+4` (+14cg), `f,F+1+2` (+8 HBS / +5 ROL).'
+duck:
+  en: 'Duckable high strings — block the rest, duck the high: `1,2`, `f+2,1`, `b+2,1`, `b+2,1,1+2`. Homing (don''t step): `b+1+2`, `ws3`, `uf+2`.'
+  de: 'Duckbare High-Strings — Rest blocken, das High ducken: `1,2`, `f+2,1`, `b+2,1`, `b+2,1,1+2`. Homing (nicht steppen): `b+1+2`, `ws3`, `uf+2`.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `b+3+4` (-28), `b+1+4,f,f` (-20~+55), `f,F+2` (-19), `d,df,f+2,2` (-18), `1,1,1` (-16). His `df+2` (-9) is safe. Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `b+3+4` (-28), `b+1+4,f,f` (-20~+55), `f,F+2` (-19), `d,df,f+2,2` (-18), `1,1,1` (-16). Sein `df+2` (-9) ist safe. −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Same as Kuma: block, break grabs, punish unsafe stance moves with [[df2]]. Whiff-punish the lunges and don''t respect Hunting Stance blindly.'
+  de: 'Wie Kuma: blocken, Grabs breaken, unsichere Stance-Moves mit [[df2]] bestrafen. Die Lunges whiff-punishen und Hunting Stance nicht blind respektieren.'

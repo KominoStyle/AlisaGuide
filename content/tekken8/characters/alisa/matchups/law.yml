@@ -1,0 +1,17 @@
+character: 'Law'
+deep: false
+tag:
+  en: 'Fast rushdown, DSS stance & safe launcher'
+  de: 'Schneller Rushdown, DSS-Stance & safe Launcher'
+hurt:
+  en: 'His launcher `df+2` is only −7 (safe) — you can''t launch it. `ws3` is +16 on block (huge plus from crouch). Fast `df+4` (i13). DSS (Dragon Sign) mixups; slow junkyard low `db+4`. Heat via `1,1,1` / `b+1,2,2`.'
+  de: 'Sein Launcher `df+2` ist nur −7 (safe) — nicht launchbar. `ws3` ist +16 auf Block (riesig aus dem Crouch). Schneller `df+4` (i13). DSS-Mixups (Dragon Sign); langsamer Junkyard-Low `db+4`. Heat über `1,1,1` / `b+1,2,2`.'
+duck:
+  en: 'Duck `1,2` (high,high). Block his lows — `d+3+4` (i12, −15), `d+4` (−11). His `db+4` low is slow → block on read and launch. After `ws3` (+16) it''s his turn — don''t mash.'
+  de: '`1,2` ducken (High,High). Seine Lows blocken — `d+3+4` (i12, −15), `d+4` (−11). Sein `db+4`-Low ist langsam → auf Read blocken und launchen. Nach `ws3` (+16) ist sein Zug — nicht mashen.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `ws2` (−18!), `df+3` (−13), `b+1,2,2` (−14), `uf+4` (−13). His `df+2` at −7 is safe. Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `ws2` (−18!), `df+3` (−13), `b+1,2,2` (−14), `uf+4` (−13). Sein `df+2` mit −7 ist safe. −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Law is all-in rushdown with flashy but unsafe strings — block calmly and launch the −13 to −18 enders with [[df2]]. Don''t mash into his DSS mixups; interrupt gaps with [[df1]]. Use your range so he has to commit.'
+  de: 'Law ist All-In-Rushdown mit auffälligen, aber unsicheren Strings — ruhig blocken und die −13- bis −18-Ender mit [[df2]] launchen. Nicht in seine DSS-Mixups mashen; Lücken mit [[df1]] unterbrechen. Deine Reichweite nutzen, damit er committen muss.'

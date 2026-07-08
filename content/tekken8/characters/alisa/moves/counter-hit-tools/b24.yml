@@ -1,0 +1,43 @@
+id: 'b24'
+character: 'alisa'
+input:
+  notation: 'b+2,4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'counterHitTool'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid,High'
+  de: 'Mid,High'
+frames:
+  startup: 'i18, i16~17'
+  block: '-7'
+  hit: '+12g'
+  ch: '+36a'
+properties:
+  - 'CH launch'
+  - '→ DES'
+guide:
+  en: 'Mid into high that launches on counterhit and cancels to chainsaws with 1+2. The 2nd hit is high — duckable if they read it.'
+  de: 'Mid in High, launcht bei Counterhit und cancelt mit 1+2 in die Kettensägen. Der 2. Hit ist High — duckbar, wenn er ihn liest.'
+note:
+  en:
+    - 'Balcony Break'
+    - 'Enter DES with 1+2'
+    - 'Combo from 1st hit with 12f delay'
+  de:
+    - 'Balcony Break'
+    - 'In DES mit 1+2'
+    - 'Combo aus 1. Hit mit 12f Delay'
+damage: '12, 20'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,42 @@
+id: 'df3'
+character: 'alisa'
+input:
+  notation: 'df+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i16'
+  block: '-9'
+  hit: '+1'
+  ch: null
+properties:
+  - 'Mid'
+guide:
+  en: 'A longer-range mid poke. -9 on block (safe), +1 on hit. Mix it with df+1 to vary the range and timing of your mids.'
+  de: 'Ein Mid-Poke mit mehr Reichweite. -9 auf Block (safe), +1 auf Hit. Misch ihn mit df+1, um Reichweite und Timing deiner Mids zu variieren.'
+note:
+  en:
+    - 'i16 mid poke, −9 on block'
+    - 'Leads into df+3,3 for a low mix'
+  de:
+    - 'i16-Mid-Poke, −9 auf Block'
+    - 'Leitet in df+3,3 für einen Low-Mix'
+damage: '14'
+key: 1
+keytip:
+  en: 'Mid that leads into the df+3,3 low mix.'
+  de: 'Mid, der in den df+3,3-Low-Mix führt.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

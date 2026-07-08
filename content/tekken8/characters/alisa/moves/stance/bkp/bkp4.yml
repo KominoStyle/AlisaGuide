@@ -1,0 +1,46 @@
+id: 'bkp4'
+character: 'alisa'
+input:
+  notation: 'BKP.4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i18~23'
+  block: '-9~-4'
+  hit: '+31a'
+  ch: null
+properties:
+  - 'Tornado'
+  - 'Knee'
+guide:
+  en: 'Backup''s knee: a tornado launcher (i18) that low-crushes. Another strong payoff from the d+3 → BKP mixup.'
+  de: 'Backups Knie: ein Tornado-Launcher (i18) mit Low Crush. Ein weiterer starker Payoff aus dem d+3 → BKP-Mixup.'
+note:
+  en:
+    - 'Tornado'
+    - 'Knee'
+    - 'Low crush 17~52'
+    - 'Floating state 53~55'
+  de:
+    - 'Tornado'
+    - 'Knie'
+    - 'Low Crush 17~52'
+    - 'Floating State 53~55'
+damage: '30'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

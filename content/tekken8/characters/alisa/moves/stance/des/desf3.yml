@@ -1,0 +1,43 @@
+id: 'desf3'
+character: 'alisa'
+input:
+  notation: 'DES.f+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels:
+  en: 'Movement'
+  de: 'Movement'
+frames:
+  startup: '—'
+  block: '—'
+  hit: '—'
+  ch: null
+properties:
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Cancel to r33 standing block with DBT.B'
+    - 'Transition to Evasive Action / SS with DBT.u_d'
+    - 'Low crush 18~40'
+    - 'Floating state 41~43'
+  de:
+    - 'Cancel zu r33 Stand-Block mit DBT.B'
+    - 'In Evasive Action / SS mit DBT.u_d'
+    - 'Low Crush 18~40'
+    - 'Floating State 41~43'
+damage: '—'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

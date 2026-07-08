@@ -1,0 +1,39 @@
+id: 'ws12s'
+character: 'alisa'
+input:
+  notation: 'ws1,2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Mid,High'
+  de: 'Mid,High'
+frames:
+  startup: 'i13~14, i24~25'
+  block: '-5'
+  hit: '+6'
+  ch: null
+properties:
+  - 'While standing'
+  - '→ DES'
+guide: null
+note:
+  en:
+    - 'Combo from 1st hit'
+    - 'Enter DES with 1+2'
+  de:
+    - 'Combo aus 1. Hit'
+    - 'In DES mit 1+2'
+damage: '12, 12'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

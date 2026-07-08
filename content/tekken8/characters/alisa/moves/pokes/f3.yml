@@ -1,0 +1,36 @@
+id: 'f3'
+character: 'alisa'
+input:
+  notation: 'f+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 2
+range: 'm'
+levels: 'High'
+frames:
+  startup: 'i14~15'
+  block: '-14'
+  hit: '-3'
+  ch: null
+properties:
+  - 'High'
+guide: null
+note:
+  en:
+    - 'i14 high, −14 on block'
+    - 'Starts f+3,2 and f+3,1+2'
+  de:
+    - 'i14-High, −14 auf Block'
+    - 'Startet f+3,2 und f+3,1+2'
+damage: '10'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,41 @@
+id: 'b34'
+character: 'alisa'
+input:
+  notation: 'b+3+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i18~19'
+  block: '-17'
+  hit: '+32a'
+  ch: null
+properties:
+  - 'Tornado'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Tornado'
+    - 'Low crush 5~34'
+    - 'Floating state 35~52'
+  de:
+    - 'Tornado'
+    - 'Low Crush 5~34'
+    - 'Floating State 35~52'
+damage: '22'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

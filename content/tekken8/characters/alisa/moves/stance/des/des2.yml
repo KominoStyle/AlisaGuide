@@ -1,0 +1,40 @@
+id: 'des2'
+character: 'alisa'
+input:
+  notation: 'DES.2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Mid,Mid,Mid'
+frames:
+  startup: 'i20~21'
+  block: '-8'
+  hit: '+37a (+27)'
+  ch: null
+properties:
+  - 'Weapon'
+  - 'Launch'
+guide: null
+note:
+  en:
+    - 'Weapon'
+    - 'Jab evasion'
+    - '2 chip damage on block (8 in Heat)'
+  de:
+    - 'Weapon'
+    - 'Jab-Evasion'
+    - '2 Chip auf Block (8 in Heat)'
+damage: '5,5,5'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

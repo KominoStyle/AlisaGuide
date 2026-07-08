@@ -1,0 +1,17 @@
+character: 'Devil Jin'
+deep: false
+tag:
+  en: 'Mishima mixups, laser keepout & MCR pressure'
+  de: 'Mishima-Mixups, Laser-Keepout & MCR-Druck'
+hurt:
+  en: 'Hellsweep `f,n,d,DF+4` mixes with Wind God Fist — classic Mishima 50/50. Launcher `ws2` (i14, Tornado). The laser controls space. `uf+4` is a heat engager. MCR stance (`uf+1` +11) gives strong plus pressure.'
+  de: 'Hellsweep `f,n,d,DF+4` mixt mit Wind God Fist — klassisches Mishima-50/50. Launcher `ws2` (i14, Tornado). Der Laser kontrolliert Raum. `uf+4` ist Heat-Engager. MCR-Stance (`uf+1` +11) gibt starken Plus-Druck.'
+duck:
+  en: 'Duck `1,2` (high,high). His homing `4` / `uf+2` beat steps. Block the hellsweep low on read → launch; block WGF (mid) standing. Don''t challenge MCR pressure (`uf+1` +11) — block and take your turn back after.'
+  de: '`1,2` ducken (High,High). Homing `4` / `uf+2` schlagen Steps. Hellsweep-Low auf Read blocken → Launch; WGF (Mid) stehend blocken. MCR-Druck (`uf+1` +11) nicht challengen — blocken und danach den Zug zurückholen.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: hellsweep `f,n,d,DF+4` (−23), `b+3` (−18~−15), `db+3` (−17), `b+2,3` (−14). His `ws2` is −12 → [[c32]]. Punish −10 with jabs.'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: Hellsweep `f,n,d,DF+4` (−23), `b+3` (−18~−15), `db+3` (−17), `b+2,3` (−14). Sein `ws2` ist −12 → [[c32]]. −10 mit Jabs.'
+plan:
+  en: 'Beat the Mishima game with fundamentals: block hellsweep on read and launch, block WGF standing, punish everything unsafe with [[df2]]. Stay at range so his mixups cost him a dash; use ws2 fishing and [[pc]] against MCR pressure.'
+  de: 'Das Mishima-Spiel mit Fundamentals schlagen: Hellsweep auf Read blocken und launchen, WGF stehend blocken, alles Unsichere mit [[df2]] bestrafen. Auf Distanz bleiben, damit seine Mixups einen Dash kosten; ws2-Fishing und [[pc]] gegen MCR-Druck.'

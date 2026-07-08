@@ -1,0 +1,43 @@
+id: 'df2'
+character: 'alisa'
+input:
+  notation: 'df+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 1
+range: 's'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i16~17'
+  block: '-9'
+  hit: '+32a'
+  ch: null
+properties:
+  - 'Launcher'
+  - 'Whiff punish'
+guide:
+  en: 'Whiff-punish launcher: full combo on a standing hit, only -9 on block. Does not launch crouchers except on counterhit.'
+  de: 'Whiff-Punish-Launcher: voller Combo bei stehendem Hit, nur -9 auf Block. Launcht Crouchende nur bei Counterhit.'
+note:
+  en:
+    - '+7 on hit against a crouching opponent'
+    - 'Does not launch a crouching opponent except on CH'
+  de:
+    - '+7 auf Hit gegen geduckten Gegner'
+    - 'Launcht geduckten Gegner nur bei CH'
+damage: '16'
+key: 1
+keytip:
+  en: 'Standard i16 launcher & whiff punisher.'
+  de: 'Standard-i16-Launcher & Whiff-Punisher.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

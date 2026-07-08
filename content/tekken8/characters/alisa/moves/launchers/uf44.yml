@@ -1,0 +1,44 @@
+id: 'uf44'
+character: 'alisa'
+input:
+  notation: 'uf+4,4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 1
+range: 'm'
+levels:
+  en: 'Mid,Mid'
+  de: 'Mid,Mid'
+frames:
+  startup: 'i15~16, i24~26'
+  block: '-13'
+  hit: '+45a'
+  ch: null
+properties:
+  - 'Launch punisher'
+guide:
+  en: 'Your i15 launch punisher — works standing and from crouch. This is the move you use to punish anything -15 on block.'
+  de: 'Dein i15-Launch-Punisher — stehend und aus der Hocke. Damit bestrafst du alles, was auf Block -15 ist.'
+note:
+  en:
+    - 'Spike'
+    - 'Combo from 1st hit with 2f delay'
+    - 'Low crush 9~41'
+    - 'Floating state 42~44'
+  de:
+    - 'Spike'
+    - 'Combo aus 1. Hit mit 2f Delay'
+    - 'Low Crush 9~41'
+    - 'Floating State 42~44'
+damage: '8, 8'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,39 @@
+id: 'ub3412'
+character: 'alisa'
+input:
+  notation: 'ub+3+4,1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 3
+range: 'm'
+levels: 'Mid,Mid'
+frames:
+  startup: 'i37~39, i26~27'
+  block: '-14'
+  hit: '+32a (+22)'
+  ch: null
+properties:
+  - 'Head'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Head'
+    - 'Low crush 48~67'
+    - 'Floating state 68~70'
+  de:
+    - 'Head'
+    - 'Low Crush 48~67'
+    - 'Floating State 68~70'
+damage: '25, 20'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

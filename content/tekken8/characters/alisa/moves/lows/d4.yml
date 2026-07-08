@@ -1,0 +1,40 @@
+id: 'd4'
+character: 'alisa'
+input:
+  notation: 'd+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'low'
+difficulty: 1
+range: 's'
+levels:
+  en: 'Low'
+  de: 'Low'
+frames:
+  startup: 'i17~18'
+  block: '-12'
+  hit: '-1'
+  ch: '+8g'
+properties:
+  - 'Poke'
+guide:
+  en: 'Quick low poke. -1 on hit keeps you close for the whiff game; -12 on block. A chip low to mix with f+2.'
+  de: 'Schneller Low-Poke. -1 auf Hit hält dich nah fürs Whiff-Game; -12 auf Block. Ein Chip-Low zum Mischen mit f+2.'
+note:
+  en:
+    - 'Quick i17 low poke'
+    - 'Safe-ish at −12 — good for chip and stealing turns'
+  de:
+    - 'Schneller i17-Low-Poke'
+    - 'Bei −12 grenzwertig — gut für Chip und Turn-Stealing'
+damage: '12'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

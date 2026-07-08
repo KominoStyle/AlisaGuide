@@ -1,0 +1,17 @@
+character: 'Leo'
+deep: false
+tag:
+  en: 'Bajiquan — KNK stance, fast mids & pokes'
+  de: 'Bajiquan — KNK-Stance, schnelle Mids & Pokes'
+hurt:
+  en: 'Launcher `df+2` (i15~16, -13~-12). Lows: `d+3+4`, `d+3`, `d+4`, `d+4,2`. Heat engagers: `ws4,1+2`, `b+2,1+2`, `db+2,4`. Plus on block: `3,2,4` (+9~+10), `f+4` (+9~+10), `b+1,4` (+9).'
+  de: 'Launcher `df+2` (i15~16, -13~-12). Lows: `d+3+4`, `d+3`, `d+4`, `d+4,2`. Heat-Engager: `ws4,1+2`, `b+2,1+2`, `db+2,4`. Plus auf Block: `3,2,4` (+9~+10), `f+4` (+9~+10), `b+1,4` (+9).'
+duck:
+  en: 'Duckable high strings — block the rest, duck the high: `1,2`, `1,2,1`, `1,2,1,1`, `1,2,1,4`. Homing (don''t step): `df+3`, `qcf+3+4`, `BOK.3`.'
+  de: 'Duckbare High-Strings — Rest blocken, das High ducken: `1,2`, `1,2,1`, `1,2,1,1`, `1,2,1,4`. Homing (nicht steppen): `df+3`, `qcf+3+4`, `BOK.3`.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `b+1+2` (-24~-23), `BT.1+2` (-20), `ub+1,P.4` (-16~-15). Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `b+1+2` (-24~-23), `BT.1+2` (-20), `ub+1,P.4` (-16~-15). −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Trade pokes and win with range; punish KNK''s unsafe options with [[df2]]. Interrupt with [[df1]], block the lows, and whiff-punish committal mids.'
+  de: 'Pokes traden und mit Reichweite gewinnen; KNKs unsichere Optionen mit [[df2]] bestrafen. Mit [[df1]] unterbrechen, die Lows blocken und committale Mids whiff-punishen.'

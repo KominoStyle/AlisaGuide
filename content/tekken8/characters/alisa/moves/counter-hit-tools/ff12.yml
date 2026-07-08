@@ -1,0 +1,34 @@
+id: 'ff12'
+character: 'alisa'
+input:
+  notation: 'f,F+1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'counterHitTool'
+difficulty: 2
+range: 'l'
+levels: 'Mid,Mid'
+frames:
+  startup: 'i17~18, i12~13'
+  block: '-9'
+  hit: '+4'
+  ch: '+13'
+properties:
+  - 'Pressure'
+guide: null
+note:
+  en:
+    - '13 extra damage on counter-hit (28 total)'
+  de:
+    - '13 extra Schaden auf Counter-Hit (28 gesamt)'
+damage: '5, 10'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,45 @@
+id: 'f32'
+character: 'alisa'
+input:
+  notation: 'f+3,2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'High,High'
+  de: 'High,High'
+frames:
+  startup: 'i14~15, i24~26'
+  block: '-4'
+  hit: '+39d'
+  ch: null
+properties:
+  - 'Balcony break'
+  - '-14 punish'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Combo from 1st hit'
+    - '6 chip damage on block'
+    - '10 chip damage on block in Heat'
+  de:
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Combo aus 1. Hit'
+    - '6 Chip auf Block'
+    - '10 Chip auf Block in Heat'
+damage: '10, 20'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

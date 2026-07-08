@@ -1,0 +1,43 @@
+id: 'b21'
+character: 'alisa'
+input:
+  notation: 'b+2,1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'counterHitTool'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid,Mid'
+  de: 'Mid,Mid'
+frames:
+  startup: 'i18, i25~26'
+  block: '-13'
+  hit: '+3c'
+  ch: '+17a'
+properties:
+  - 'Spike'
+  - 'CH combo'
+guide:
+  en: 'Two mids that spike; on counterhit the 1st hit combos into a launch. -13 on block though, so it''s a read tool, not a blockstring you throw for free.'
+  de: 'Zwei Mids, die spiken; bei Counterhit combot der 1. Hit in einen Launch. Aber -13 auf Block, also ein Read-Tool, kein Blockstring, den du gratis wirfst.'
+note:
+  en:
+    - 'Spike'
+    - 'Combo from 1st hit with 7f delay'
+    - 'Move can be delayed 12f'
+  de:
+    - 'Spike'
+    - 'Combo aus 1. Hit mit 7f Delay'
+    - 'Move bis 12f verzögerbar'
+damage: '12, 17'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

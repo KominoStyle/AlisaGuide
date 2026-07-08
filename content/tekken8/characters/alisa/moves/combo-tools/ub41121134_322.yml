@@ -1,0 +1,43 @@
+id: 'ub41121134_322'
+character: 'alisa'
+input:
+  notation: 'ub+4,1,1,2,1,1,3+4,3,2,2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'comboTool'
+difficulty: 3
+range: 'm'
+levels: '...,Mid,Mid,High,High'
+frames:
+  startup: 'i18, i13~16'
+  block: '-23'
+  hit: '+3a (-15)'
+  ch: null
+properties:
+  - 'Weapon'
+guide: null
+note:
+  en:
+    - 'Weapon'
+    - 'Combo from 9th hit'
+    - 'Last chainsaw hit rarely connects (high hitbox), -17 if blocked'
+    - '1 chip damage on block (3 in Heat)'
+    - 'Low crush 16~'
+  de:
+    - 'Weapon'
+    - 'Combo aus 9. Hit'
+    - 'Letzter Kettensägen-Hit trifft selten (hohe Hitbox), -17 bei Block'
+    - '1 Chip auf Block (3 in Heat)'
+    - 'Low Crush 16~'
+damage: '...,2,2,2,20'
+key: null
+keytip: null
+chain: 'ub4'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

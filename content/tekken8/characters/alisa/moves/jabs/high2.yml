@@ -1,0 +1,37 @@
+id: 'high2'
+character: 'alisa'
+input:
+  notation: '2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'jab'
+difficulty: 2
+range: 's'
+levels: 'High'
+frames:
+  startup: 'i12'
+  block: '-6'
+  hit: '+5'
+  ch: null
+properties:
+  - 'High'
+guide: null
+note:
+  en:
+    - 'Standard i12 high'
+    - 'Starts the 2,3 and 2,2 strings'
+  de:
+    - 'Standard-i12-High'
+    - 'Startet die 2,3- und 2,2-Strings'
+damage: '10'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

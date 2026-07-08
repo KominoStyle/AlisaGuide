@@ -1,0 +1,36 @@
+id: 'db2'
+character: 'alisa'
+input:
+  notation: 'db+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 2
+range: 's'
+levels: 'Mid'
+frames:
+  startup: 'i18~19'
+  block: '-18'
+  hit: '-5'
+  ch: null
+properties:
+  - 'Mid'
+guide: null
+note:
+  en:
+    - 'i18 mid, unsafe at −18'
+    - 'Mainly a starter for db+2,2'
+  de:
+    - 'i18-Mid, unsafe bei −18'
+    - 'Vor allem Starter für db+2,2'
+damage: '10'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

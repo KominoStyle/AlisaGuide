@@ -1,0 +1,17 @@
+character: 'Asuka'
+deep: false
+tag:
+  en: 'Defensive counter-puncher — reversal & sabaki'
+  de: 'Defensiver Counter-Puncher — Reversal & Sabaki'
+hurt:
+  en: 'She punishes aggression: a reversal (reverses your mid punches/kicks) and sabaki. Launcher `df+2` (i15, −6, hard to punish). Her low `d+3+4` launches on hit (+30a). `df+3` is a Balcony Break mid. Heat via `db+1,2` / `f,F+2,1`.'
+  de: 'Sie bestraft Aggression: ein Reversal (kontert deine Mid-Punches/Kicks) und Sabaki. Launcher `df+2` (i15, −6, schwer bestrafbar). Ihr Low `d+3+4` launcht auf Hit (+30a). `df+3` ist ein Balcony-Break-Mid. Heat über `db+1,2` / `f,F+2,1`.'
+duck:
+  en: 'Note: `1,2` is high,mid — you can''t fully duck it (the 2 is a mid). Duck her standing `2` and high strings instead. Because she can reverse, avoid predictable single mids; mix in lows and throws. Block `db+3` / `db+4` lows on read.'
+  de: 'Achtung: `1,2` ist High,Mid — nicht komplett duckbar (die 2 ist Mid). Lieber ihre Standing-`2` und High-Strings ducken. Da sie reversen kann, keine vorhersehbaren Einzel-Mids; Lows und Würfe mischen. `db+3` / `db+4`-Lows auf Read blocken.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `uf+4` (−13), `SS.2` (−13), `d+1+2` (−18), `f+2` (−18). Her `df+2` (−6) is safe. Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `uf+4` (−13), `SS.2` (−13), `d+1+2` (−18), `f+2` (−18). Ihr `df+2` (−6) ist safe. −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Don''t be predictable — she thrives on reversing telegraphed offense. Stagger your pressure, mix lows and throws, and whiff-punish her defensive pokes with [[df2]]. Use [[pc]] sparingly (it''s reversible). Control the pace; she wants you impatient.'
+  de: 'Sei nicht vorhersehbar — sie lebt vom Reversen telegrafierter Offense. Deinen Druck staffeln, Lows und Würfe mischen, ihre defensiven Pokes mit [[df2]] whiff-punishen. [[pc]] sparsam (reversbar). Tempo kontrollieren; sie will dich ungeduldig.'

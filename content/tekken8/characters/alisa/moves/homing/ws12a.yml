@@ -1,0 +1,36 @@
+id: 'ws12a'
+character: 'alisa'
+input:
+  notation: 'ws1+2*'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'homing'
+difficulty: 2
+range: 's'
+levels: 'Mid'
+frames:
+  startup: 'i28~29'
+  block: '-4'
+  hit: '+21'
+  ch: null
+properties:
+  - 'Homing'
+guide: null
+note:
+  en:
+    - 'Homing'
+    - 'Charged version — hold the input to power up'
+  de:
+    - 'Homing'
+    - 'Geladene Version — Eingabe halten zum Aufladen'
+damage: '24'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

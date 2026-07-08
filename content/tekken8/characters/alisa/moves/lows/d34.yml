@@ -1,0 +1,52 @@
+id: 'd34'
+character: 'alisa'
+input:
+  notation: 'd+3+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'low'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Low'
+  de: 'Low'
+frames:
+  startup: 'i27~28'
+  block: '-37'
+  hit: '+67a'
+  ch: null
+properties:
+  - 'Homing'
+  - 'Instant Tornado'
+  - '→ DES'
+guide:
+  en: 'Homing low that Tornados instantly on hit — a surprise combo starter. But it''s -37 on block (full launch), so it''s a hard read only.'
+  de: 'Homing-Low, das bei Treffer sofort tornadot — überraschender Combo-Start. Aber -37 auf Block (voller Launch), also nur harter Read.'
+note:
+  en:
+    - 'Homing'
+    - 'Instant Tornado'
+    - 'Stagger on block'
+    - 'Enter DES with 1+2'
+    - 'High crush 20~40'
+    - 'Floating state 5~55'
+  de:
+    - 'Homing'
+    - 'Instant Tornado'
+    - 'Stagger auf Block'
+    - 'In DES mit 1+2'
+    - 'High Crush 20~40'
+    - 'Floating State 5~55'
+damage: '20'
+key: 1
+keytip:
+  en: 'Homing instant-Tornado low.'
+  de: 'Homing-Instant-Tornado-Low.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

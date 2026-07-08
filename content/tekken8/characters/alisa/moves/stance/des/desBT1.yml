@@ -1,0 +1,41 @@
+id: 'desBT1'
+character: 'alisa'
+input:
+  notation: 'DES.BT.1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels: 'Mid ×6'
+frames:
+  startup: 'i19~22'
+  block: '-9'
+  hit: '+25a'
+  ch: null
+properties:
+  - 'Weapon'
+guide: null
+note:
+  en:
+    - 'Back-turned chainsaw'
+    - 'Weapon'
+    - 'Combo from any hit'
+    - '1 chip damage on block (11 in Heat)'
+  de:
+    - 'Backturned-Kettensäge'
+    - 'Weapon'
+    - 'Combo aus jedem Hit'
+    - '1 Chip auf Block (11 in Heat)'
+damage: '4,4,4,4,4,4'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,43 @@
+id: 'ff23'
+character: 'alisa'
+input:
+  notation: 'f,F+2,3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'whiffPunish'
+difficulty: 2
+range: 'l'
+levels:
+  en: 'Mid,Mid'
+  de: 'Mid,Mid'
+frames:
+  startup: 'i16~17, i22~24'
+  block: '-13'
+  hit: '+28a'
+  ch: null
+properties:
+  - 'Running'
+  - 'Balcony break'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Combo from 1st hit with ~7~8f delay (character-dependent)'
+    - 'Input can be delayed 14f'
+    - 'Move can be delayed 8f'
+  de:
+    - 'Balcony Break'
+    - 'Combo aus 1. Hit mit ~7~8f Delay (charakterabhängig)'
+    - 'Eingabe bis 14f verzögerbar'
+    - 'Move bis 8f verzögerbar'
+damage: '18, 25'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

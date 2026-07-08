@@ -1,0 +1,17 @@
+character: 'Jin'
+deep: false
+tag:
+  en: 'Electrics, strong mids & Zen stance — SSR/SWR is his weak side.'
+  de: 'Electrics, starke Mids & Zen-Stance — SSR/SWR ist seine schwache Seite.'
+hurt:
+  en: 'Electric (fast CH launcher), his mid pressure, Zen stance mixups, and Heat with Omen. Strong at every range.'
+  de: 'Electric (schneller CH-Launcher), Mid-Druck, Zen-Stance-Mixups und Heat mit Omen. Auf jeder Range stark.'
+duck:
+  en: '**Step SSR/SWR** (`df1` both ways, SSL easier). Duck `1,2,4`, `2,4`, `3,1`, `df1,4`, `b,f+2,1`, `b1,2`. Respect electric — don''t press into it.'
+  de: '**Step SSR/SWR** (`df1` beidseitig, SSL leichter). Duck `1,2,4`, `2,4`, `3,1`, `df1,4`, `b,f+2,1`, `b1,2`. Respektier Electric — nicht reinpressen.'
+punish:
+  en: 'Launch: `1,2,1` (−16), `f3` (−16), `d3+4` (−19), `f,n,d,DF+4,2` (−16) → [[df2]]; WS: `2,1,4~4` (−31), `FC.df+4` (−26) → [[ws2]]. Standing: `1+2` (−14) → [[f21]]; `uf4` (−13), `d1` (−13) → [[c32]].'
+  de: 'Launch: `1,2,1` (−16), `f3` (−16), `d3+4` (−19), `f,n,d,DF+4,2` (−16) → [[df2]]; WS: `2,1,4~4` (−31), `FC.df+4` (−26) → [[ws2]]. Stehend: `1+2` (−14) → [[f21]]; `uf4` (−13), `d1` (−13) → [[c32]].'
+plan:
+  en: 'Play mid-range and whiff-punish his committal mids with [[df2]]. Homing ([[uf2]], [[b3]]) beats his steps. In Heat, respect Omen stance and electric — block and take your turn.'
+  de: 'Spiel Mid-Range und whiff-punish seine committalen Mids mit [[df2]]. Homing ([[uf2]], [[b3]]) schlägt seine Steps. In Heat Omen-Stance und Electric respektieren — blocken und Zug nehmen.'

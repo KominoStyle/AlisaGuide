@@ -1,0 +1,39 @@
+id: 'ws12b'
+character: 'alisa'
+input:
+  notation: 'ws1+2**'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'homing'
+difficulty: 3
+range: 's'
+levels: 'Mid'
+frames:
+  startup: 'i39~40'
+  block: '+0'
+  hit: '+33a'
+  ch: null
+properties:
+  - 'Homing'
+  - 'Launch'
+guide: null
+note:
+  en:
+    - 'Homing'
+    - 'Full charge — launches on hit'
+    - '11 chip damage on block'
+  de:
+    - 'Homing'
+    - 'Voll geladen — launcht auf Hit'
+    - '11 Chip auf Block'
+damage: '28'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,42 @@
+id: 'ub411211'
+character: 'alisa'
+input:
+  notation: 'ub+4,1,1,2,1,1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'comboTool'
+difficulty: 3
+range: 'm'
+levels: '...,Mid'
+frames:
+  startup: 'i18, i32~33'
+  block: '-14'
+  hit: '-3'
+  ch: null
+properties:
+  - 'Spike'
+  - 'Weapon'
+guide: null
+note:
+  en:
+    - 'Spike'
+    - 'Weapon'
+    - 'Combo from 5th hit'
+    - '1 chip damage on block (3 in Heat)'
+  de:
+    - 'Spike'
+    - 'Weapon'
+    - 'Combo aus 5. Hit'
+    - '1 Chip auf Block (3 in Heat)'
+damage: '...,3,3,3'
+key: null
+keytip: null
+chain: 'ub4'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

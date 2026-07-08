@@ -1,0 +1,44 @@
+id: 'desd3'
+character: 'alisa'
+input:
+  notation: 'DES.d+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels:
+  en: 'Movement'
+  de: 'Movement'
+frames:
+  startup: '—'
+  block: '—'
+  hit: '—'
+  ch: null
+properties:
+  - '→ DBT'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'DES.d+3_4 goes foreground, DES.u+3_4 goes background'
+    - 'Transition to r20 DBT with 3_4'
+    - 'Low crush 5~22'
+    - 'Floating state 23~25'
+  de:
+    - 'DES.d+3_4 nach vorne, DES.u+3_4 nach hinten'
+    - 'In r20 DBT mit 3_4'
+    - 'Low Crush 5~22'
+    - 'Floating State 23~25'
+damage: '—'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

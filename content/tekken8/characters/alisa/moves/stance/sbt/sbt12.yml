@@ -1,0 +1,44 @@
+id: 'sbt12'
+character: 'alisa'
+input:
+  notation: 'SBT.1,2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Mid,Mid'
+frames:
+  startup: 'i13~14, i18~19'
+  block: '-9'
+  hit: '+2'
+  ch: '+7c'
+properties:
+  - 'Spike'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Spike'
+    - 'Combo from 1st hit with 1f delay'
+    - 'Rest of the string is natural on CH'
+    - 'Low crush 26~64'
+    - 'Floating state 65~67'
+  de:
+    - 'Spike'
+    - 'Combo aus 1. Hit mit 1f Delay'
+    - 'Rest des Strings natural auf CH'
+    - 'Low Crush 26~64'
+    - 'Floating State 65~67'
+damage: '12, 13'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

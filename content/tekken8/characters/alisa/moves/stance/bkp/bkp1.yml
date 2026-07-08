@@ -1,0 +1,49 @@
+id: 'bkp1'
+character: 'alisa'
+input:
+  notation: 'BKP.1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels:
+  en: 'High'
+  de: 'High'
+frames:
+  startup: 'i11~13'
+  block: '+4~+6'
+  hit: '+27a'
+  ch: null
+properties:
+  - 'Tailspin'
+  - 'Balcony break'
+  - '→ SBT/DBT'
+guide:
+  en: 'Backup''s main tool: fast (i11) high, plus on block, with a strong aerial tailspin. Wall-splats. Branch to SBT with 3/4 or DBT with f+3/f+4 to keep pressure or fly out.'
+  de: 'Backups Haupt-Tool: schnelles (i11) High, plus auf Block, mit starkem Aerial-Tailspin. Splattet an die Wand. Weiter in SBT mit 3/4 oder DBT mit f+3/f+4 für Druck oder zum Wegfliegen.'
+note:
+  en:
+    - 'Strong Aerial Tailspin'
+    - 'Balcony Break'
+    - '9 chip damage on block'
+    - 'Transition to SBT at +6/+29 (+3) with 3 or 4'
+    - 'Transition to DBT at +6/+29 (+3) with f+3 or f+4'
+  de:
+    - 'Starker Aerial-Tailspin'
+    - 'Balcony Break'
+    - '9 Chip auf Block'
+    - 'In SBT bei +6/+29 (+3) mit 3 oder 4'
+    - 'In DBT bei +6/+29 (+3) mit f+3 oder f+4'
+damage: '21'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,45 @@
+id: 'fff34'
+character: 'alisa'
+input:
+  notation: 'f,f,F+3,4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'whiffPunish'
+difficulty: 2
+range: 'l'
+levels:
+  en: 'Mid,Mid'
+  de: 'Mid,Mid'
+frames:
+  startup: 'i18~19, i20~22'
+  block: '-7'
+  hit: '+31a'
+  ch: null
+properties:
+  - 'Running'
+  - 'Jails'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Combo from 1st hit'
+    - 'Jail from 1st block'
+    - 'Low crush 3~50'
+    - 'Floating state 51~53'
+  de:
+    - 'Balcony Break'
+    - 'Combo aus 1. Hit'
+    - 'Jailt aus 1. Block'
+    - 'Low Crush 3~50'
+    - 'Floating State 51~53'
+damage: '15, 20'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

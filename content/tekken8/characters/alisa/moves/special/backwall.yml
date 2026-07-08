@@ -1,0 +1,41 @@
+id: 'backwall'
+character: 'alisa'
+input:
+  notation: '(Back to wall).b,b,UB'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 3
+range: 'l'
+levels:
+  en: 'Wall option'
+  de: 'Wand-Option'
+frames:
+  startup: 'i8~13'
+  block: '—'
+  hit: '—'
+  ch: null
+properties:
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Wall-jump escape / setup'
+    - 'Low crush 14~57'
+    - 'Floating state 58~60'
+  de:
+    - 'Wand-Absprung / Setup'
+    - 'Low Crush 14~57'
+    - 'Floating State 58~60'
+damage: '—'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,40 @@
+id: 'rightthrow'
+character: 'alisa'
+input:
+  notation: 'Right throw'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'throw'
+difficulty: 2
+range: 's'
+levels: 'Throw'
+frames:
+  startup: '—'
+  block: '-3'
+  hit: '+0d'
+  ch: null
+properties:
+  - 'Floor break'
+  - 'Throw'
+guide: null
+note:
+  en:
+    - 'Floor Break'
+    - 'Throw break: 2'
+    - 'Opponent recovery: face-up feet-away, perpendicular to Alisa'
+  de:
+    - 'Floor Break'
+    - 'Wurf-Break: 2'
+    - 'Gegner-Recovery: Face-up, Füße weg, quer zu Alisa'
+damage: '40'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

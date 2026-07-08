@@ -1,0 +1,40 @@
+id: 'df1'
+character: 'alisa'
+input:
+  notation: 'df+1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 0
+range: 's'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i13'
+  block: '-6'
+  hit: '+5'
+  ch: '+8'
+properties:
+  - 'Mid check'
+guide:
+  en: 'Your reliable mid check. -6 on block, +5 on hit. The button you press when you just need a safe, fast poke.'
+  de: 'Dein zuverlässiger Mid-Check. -6 auf Block, +5 auf Hit. Der Button, wenn du einfach einen sicheren, schnellen Poke brauchst.'
+note:
+  en:
+    - '+5c on hit against a crouching opponent'
+  de:
+    - '+5c auf Hit gegen geduckten Gegner'
+damage: '10'
+key: 1
+keytip:
+  en: 'Your best mid poke — fast, +5 on hit, safe.'
+  de: 'Dein bester Mid-Poke — schnell, +5 auf Hit, safe.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

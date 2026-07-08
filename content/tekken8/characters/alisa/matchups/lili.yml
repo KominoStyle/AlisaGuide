@@ -1,0 +1,17 @@
+character: 'Lili'
+deep: true
+tag:
+  en: 'Movement war — she is fairly linear, so disciplined defense beats her.'
+  de: 'Movement-Krieg — sie ist recht linear, disziplinierte Defense schlägt sie.'
+hurt:
+  en: 'Her `ws3` (whiff-punish / CH launcher, Tornado), the `db4` snake edge (i30 low), and her Dew Glide (qcf) low-vs-mid mix — most dangerous in Heat with powered-up Feisty Rabbit. Her backturned (BT) game and Dew Glide chip apply constant pressure.'
+  de: 'Ihr `ws3` (Whiff-Punish / CH-Launcher, Tornado), der `db4`-Snake-Edge (i30-Low) und ihr Dew-Glide-(qcf)-Low-vs-Mid-Mix — am gefährlichsten in Heat mit aufgeladenem Feisty Rabbit. Ihr Backturned-(BT)-Game und Dew-Glide-Chip machen konstanten Druck.'
+duck:
+  en: '**Sidestep LEFT (SSL) by default** — it steps `df1`, `3`, `uf3` and most of her mids. **SSR only for `df4`, `1+2`, `d1`.** **Duck her high enders:** `ws1,2` (duck the 2), `2,4`, `3,2,3`. Her snake edge and Dew Glide low are slow / reactable — block on read, don''t pre-duck.'
+  de: '**Standardmäßig Sidestep LINKS (SSL)** — steppt `df1`, `3`, `uf3` und die meisten Mids. **SSR nur bei `df4`, `1+2`, `d1`.** **Duck ihre High-Ender:** `ws1,2` (die 2 ducken), `2,4`, `3,2,3`. Snake Edge und Dew-Glide-Low sind langsam / reaktionsbar — auf Read blocken, nicht vorducken.'
+punish:
+  en: '[[df2]] launches everything **−15 or worse**: `ws3` (−21), `db4` snake edge (−24), `f3+4,3,4` (−20), `d3+4` (−21), `uf3+4,3+4` (−21), `1,1,3` (−15), `f2,3` (−15). Block the snake edge → [[df2]] or [[ws2]]. Standing: `DEW.1,2` (−14) → [[f21]]; her −13 Heat engagers (`3,1`, `DEW.2,1`) → [[df1]] / [[c32]].'
+  de: '[[df2]] launcht alles **−15 oder schlechter**: `ws3` (−21), `db4`-Snake-Edge (−24), `f3+4,3,4` (−20), `d3+4` (−21), `uf3+4,3+4` (−21), `1,1,3` (−15), `f2,3` (−15). Snake Edge blocken → [[df2]] oder [[ws2]]. Stehend: `DEW.1,2` (−14) → [[f21]]; ihre −13-Heat-Engager (`3,1`, `DEW.2,1`) → [[df1]] / [[c32]].'
+plan:
+  en: 'Kill her movement with homing: [[c32]], [[k4]], [[uf2]], [[b3]]. Whiff-punish her stance whiffs with [[df2]] / [[wr2]] / [[ws2]]. Season 3 nerfed her Feisty Rabbit and Heat pressure (timer cost up, Heat recovery removed, Dew Glide −2 on block, Heat Smash now steppable) — she has **no true unseeable 50/50** outside Heat, so respect nothing you can react to and step her linear pressure.'
+  de: 'Töte ihr Movement mit Homing: [[c32]], [[k4]], [[uf2]], [[b3]]. Whiff-punish ihre Stance-Whiffs mit [[df2]] / [[wr2]] / [[ws2]]. Season 3 hat Feisty Rabbit und Heat-Druck generft (Timer-Kosten hoch, Heat-Recovery weg, Dew Glide −2 auf Block, Heat Smash jetzt steppbar) — sie hat **kein echtes unlesbares 50/50** außerhalb von Heat, also respektier nichts Reaktionsbares und step ihren linearen Druck.'

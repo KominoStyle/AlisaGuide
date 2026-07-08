@@ -1,0 +1,46 @@
+id: 'ws2'
+character: 'alisa'
+input:
+  notation: 'ws2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i17~18'
+  block: '-13'
+  hit: '+33a'
+  ch: null
+properties:
+  - 'While standing'
+  - 'Tornado'
+  - 'Launch'
+guide:
+  en: 'While-standing launcher (Tornado). Your reward for ducking a high or blocking a -17 move from crouch.'
+  de: 'While-Standing-Launcher (Tornado). Deine Belohnung fürs Ducken eines Highs oder Blocken eines -17-Moves aus der Hocke.'
+note:
+  en:
+    - 'Tornado'
+    - 'Transition to SBT with 3_4'
+    - 'Transition to DBT with f+3_f+4'
+  de:
+    - 'Tornado'
+    - 'In SBT mit 3_4'
+    - 'In DBT mit f+3_f+4'
+damage: '24'
+key: 1
+keytip:
+  en: 'Your main while-standing launcher.'
+  de: 'Dein Haupt-While-Standing-Launcher.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

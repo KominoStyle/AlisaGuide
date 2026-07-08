@@ -1,0 +1,17 @@
+character: 'Alisa'
+deep: false
+tag:
+  en: 'Mirror — chainsaw pressure, boots & DES mixups'
+  de: 'Mirror — Chainsaw-Druck, Boots & DES-Mixups'
+hurt:
+  en: 'Everything you do yourself: launcher `df+2` (i16, −9, safe), `ws2` (Tornado), hopkick `uf+4` (i15). `f,f,F+2` is +5 to +7 on block (her turn). Destructive Form (DES/chainsaw) and Dual Boot (DBT) drive her pressure and heat (`DES.f+2,1,2`). Homing `4` catches steps.'
+  de: 'Alles, was du selbst machst: Launcher `df+2` (i16, −9, safe), `ws2` (Tornado), Hopkick `uf+4` (i15). `f,f,F+2` ist +5 bis +7 auf Block (ihr Zug). Destructive Form (DES/Chainsaw) und Dual Boot (DBT) treiben Druck und Heat (`DES.f+2,1,2`). Homing `4` fängt Steps.'
+duck:
+  en: 'Read her strings: `1,2,d+2` is high,high,LOW — duck the highs, or block the low, and you can hopkick [[uf44]] the gap. `3,2` and `f+2,3` — only the 2nd hit is high, so hard-duck it on read (don''t duck the first mid). `2,3,4` ends in a low. `f+3` / `f+3,2` are high — duckable. Homing `4` beats blind steps.'
+  de: 'Ihre Strings lesen: `1,2,d+2` ist High,High,LOW — die Highs ducken oder den Low blocken, und die Lücke mit [[uf44]] hopkicken. Bei `3,2` und `f+2,3` ist nur der 2. Hit High — den auf Read hard-ducken (nicht den ersten Mid). `2,3,4` endet Low. `f+3` / `f+3,2` sind High — duckbar. Homing `4` schlägt blinde Steps.'
+punish:
+  en: 'Standing → [[uf44]]/[[df2]]: `uf+4` (−15), `ws2` (−13 → [[c32]]), her unsafe DES/boot enders. Her lows are while-standing launch bait: `db+3` (−13), `d+4` (−12), `db+4` (−14) — block low, then launch with ws2. `df+2` (−9) is safe.'
+  de: 'Stehend → [[uf44]]/[[df2]]: `uf+4` (−15), `ws2` (−13 → [[c32]]), ihre unsicheren DES/Boot-Ender. Ihre Lows sind While-Standing-Launch-Bait: `db+3` (−13), `d+4` (−12), `db+4` (−14) — Low blocken, dann mit ws2 launchen. `df+2` (−9) ist safe.'
+plan:
+  en: 'It''s a neutral and whiff-punish race — whoever controls space with [[df1]] and lands the clean [[df2]] launch wins. Don''t respect `f,f,F+2` or DES pressure blindly; find the gaps with [[df1]] / [[pc]] and duck the string highs above. Play your own gameplan better than she does.'
+  de: 'Es ist ein Neutral- und Whiff-Punish-Rennen — wer mit [[df1]] den Raum kontrolliert und den sauberen [[df2]]-Launch landet, gewinnt. `f,f,F+2` und DES-Druck nicht blind respektieren; die Lücken mit [[df1]] / [[pc]] finden und die String-Highs oben ducken. Deinen eigenen Gameplan besser spielen als sie.'

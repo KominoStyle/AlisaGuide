@@ -1,0 +1,17 @@
+character: 'Lars'
+deep: false
+tag:
+  en: 'Aggressive rushdown, stance transitions & plus frames'
+  de: 'Aggressiver Rushdown, Stance-Transitions & Plus-Frames'
+hurt:
+  en: 'Fast, safe mids `df+2` (i14, −3, CH launch) and `df+1` (i13). Strong plus pressure — `f,f,F+3` (+6) and dash-ins. Launcher `uf+4` (i25, slow). Stance mix from Dynamic Entry (DEN) and Silent Entry (SEN); heat via `3+4` / `1,1,1`.'
+  de: 'Schnelle, safe Mids `df+2` (i14, −3, CH-Launch) und `df+1` (i13). Starker Plus-Druck — `f,f,F+3` (+6) und Dash-Ins. Launcher `uf+4` (i25, langsam). Stance-Mix aus Dynamic Entry (DEN) und Silent Entry (SEN); Heat über `3+4` / `1,1,1`.'
+duck:
+  en: 'Duck `1,2` (high,high). His homing `b+1` / `b+1+2` beat steps. Block his lows — `d+3` (i15, −14), `db+1` (−12); his `f,F+3+4` low is −16 → launch. Respect his plus frames — don''t mash after his dash pressure.'
+  de: '`1,2` ducken (High,High). Homing `b+1` / `b+1+2` schlagen Steps. Seine Lows blocken — `d+3` (i15, −14), `db+1` (−12); sein `f,F+3+4`-Low ist −16 → Launch. Plus-Frames respektieren — nach Dash-Druck nicht mashen.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `f,F+3+4` (−16), `1,1,1` (−12). His `df+2` is only −3 → don''t try. Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `f,F+3+4` (−16), `1,1,1` (−12). Sein `df+2` ist nur −3 → lass es. −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Lars overwhelms with dash-in plus pressure — hold guard and only challenge real gaps with [[df1]] or [[pc]]. Launch his whiffed `uf+4` and slow lows with [[df2]]. Keep him at range with ws2 fishing so his stance entries whiff.'
+  de: 'Lars überrennt mit Dash-In-Plus-Druck — Guard halten und nur echte Lücken mit [[df1]] oder [[pc]] challengen. Sein gewhifftes `uf+4` und langsame Lows mit [[df2]] launchen. Mit ws2-Fishing auf Distanz halten, damit seine Stance-Einstiege whiffen.'

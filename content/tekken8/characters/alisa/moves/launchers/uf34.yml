@@ -1,0 +1,37 @@
+id: 'uf34'
+character: 'alisa'
+input:
+  notation: 'uf+3+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 2
+range: 'm'
+levels: 'Mid'
+frames:
+  startup: 'i38~40'
+  block: '+0~+3'
+  hit: '+9'
+  ch: null
+properties:
+  - 'Spike'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Spike'
+    - 'Low crush 9~41'
+  de:
+    - 'Spike'
+    - 'Low Crush 9~41'
+damage: '20'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

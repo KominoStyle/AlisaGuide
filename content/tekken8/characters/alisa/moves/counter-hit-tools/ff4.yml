@@ -1,0 +1,46 @@
+id: 'ff4'
+character: 'alisa'
+input:
+  notation: 'f,F+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'counterHitTool'
+difficulty: 2
+range: 'l'
+levels:
+  en: 'Mid,Mid'
+  de: 'Mid,Mid'
+frames:
+  startup: 'i22~29, i34~39'
+  block: '-9~-2'
+  hit: '+9a'
+  ch: null
+properties:
+  - 'Running'
+  - 'Knee'
+  - 'Attack throw'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Knee'
+    - 'Transition to attack throw on front hit only'
+    - '+8a (-1) on back-turned hit'
+    - 'Just frame: input 1 during frames 16~19 for +5 damage'
+  de:
+    - 'Balcony Break'
+    - 'Knie'
+    - 'In Attack-Throw nur bei Front-Hit'
+    - '+8a (-1) bei Backturned-Hit'
+    - 'Just-Frame: Eingabe 1 in Frames 16~19 für +5 Schaden'
+damage: '14, 22'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

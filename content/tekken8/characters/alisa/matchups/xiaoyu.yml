@@ -1,0 +1,17 @@
+character: 'Xiaoyu'
+deep: false
+tag:
+  en: 'Extreme evasion — AOP, BT & snake edge'
+  de: 'Extreme Evasion — AOP, BT & Snake Edge'
+hurt:
+  en: 'The evasion nightmare: Art of Phoenix (AOP) ducks under highs, plus Backturned (BT) and Hypnotist (HYP) mixups and rolls. Snake edge `df+3` (i29, low, Tornado) launches. Plus low `db+3` (+2 on block!) and `d+3,4`. CH launcher `ws2`. Heat via `b+4,1` / `AOP.2,1`.'
+  de: 'Der Evasion-Albtraum: Art of Phoenix (AOP) duckt unter Highs, dazu Backturned (BT) und Hypnotist (HYP) Mixups und Rolls. Snake Edge `df+3` (i29, Low, Tornado) launcht. Plus-Low `db+3` (+2 auf Block!) und `d+3,4`. CH-Launcher `ws2`. Heat über `b+4,1` / `AOP.2,1`.'
+duck:
+  en: 'Use MIDS, not highs — AOP ducks your highs and punishes. Block the snake edge `df+3` on reaction → launch. Her `db+3` low is +2 on block (her turn) — don''t mash after. Stepping is unreliable vs her evasion; stay grounded and centered.'
+  de: 'MIDS nutzen, keine Highs — AOP duckt deine Highs und bestraft. Snake Edge `df+3` auf Reaktion blocken → Launch. Ihr `db+3`-Low ist +2 auf Block (ihr Zug) — danach nicht mashen. Steppen ist gegen ihre Evasion unzuverlässig; geerdet und zentriert bleiben.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `df+3` snake edge (−23!), `b+4,1` (−14), `AOP.2,1` (−12), `HYP.3` (−13). Her `df+2` (−6) is safe. Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `df+3` Snake Edge (−23!), `b+4,1` (−14), `AOP.2,1` (−12), `HYP.3` (−13). Ihr `df+2` (−6) ist safe. −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Patience and mids beat Xiaoyu — don''t whiff (she punishes hard from evasion), use attacks that hit grounded/ducking opponents. Block the snake edge, punish her many unsafe stance moves with [[df2]], and stay calm when she vanishes into AOP/BT — hold guard and hit a mid.'
+  de: 'Geduld und Mids schlagen Xiaoyu — nicht whiffen (sie bestraft hart aus der Evasion), Angriffe nutzen die geduckte Gegner treffen. Snake Edge blocken, ihre vielen unsicheren Stance-Moves mit [[df2]] bestrafen und ruhig bleiben, wenn sie in AOP/BT verschwindet — Guard halten und einen Mid setzen.'

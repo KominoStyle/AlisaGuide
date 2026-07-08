@@ -1,0 +1,17 @@
+character: 'Kazuya'
+deep: false
+tag:
+  en: 'Hellsweep & electric mix — SSL/SWL is his weak side.'
+  de: 'Hellsweep- & Electric-Mix — SSL/SWL ist seine schwache Seite.'
+hurt:
+  en: 'Hellsweep (crouch-dash low) into the mid / electric 50/50, electric CH launcher, and the `ub1+2` laser. Devil form in Heat.'
+  de: 'Hellsweep (Crouch-Dash-Low) in den Mid/Electric-50/50, Electric-CH-Launcher und der `ub1+2`-Laser. Devil-Form in Heat.'
+duck:
+  en: '**Step SSL/SWL.** Block the hellsweep **low on reaction** and launch. Duck `df1,2`, `df1,4` (mix), `b2,4`, `3,1`. **His `ub1+2` laser is unblockable in Devil / Heat — just duck it.**'
+  de: '**Step SSL/SWL.** Block den Hellsweep **Low on Reaction** und launch. Duck `df1,2`, `df1,4` (Mix), `b2,4`, `3,1`. **Sein `ub1+2`-Laser ist in Devil / Heat unblockbar — einfach ducken.**'
+punish:
+  en: 'Launch the unsafe crouch-dash strings: `f,n,d,df+1` (−16), `f,n,d,DF+4,1` (−16), `1,2,2` (−17), `df3+4,1,2` (−19), `db1,2` (−19) → [[df2]]; WS: `uf4,4` (−23), `f,n,d,DF+4` (−23) → [[ws2]]. Standing: `1+2` (−13), `f3` (−13) → [[c32]].'
+  de: 'Launch die unsafen Crouch-Dash-Strings: `f,n,d,df+1` (−16), `f,n,d,DF+4,1` (−16), `1,2,2` (−17), `df3+4,1,2` (−19), `db1,2` (−19) → [[df2]]; WS: `uf4,4` (−23), `f,n,d,DF+4` (−23) → [[ws2]]. Stehend: `1+2` (−13), `f3` (−13) → [[c32]].'
+plan:
+  en: '[[b1]] high-crushes under his electric and highs while still hitting mid — a key tool here. Block hellsweep on reaction → launch. Respect his plus frames after blocked strings, don''t mash.'
+  de: '[[b1]] high-crusht unter Electric und Highs und trifft trotzdem mid — ein Schlüssel-Tool hier. Hellsweep on Reaction blocken → launchen. Respektier seine Plus-Frames nach geblockten Strings, nicht mashen.'

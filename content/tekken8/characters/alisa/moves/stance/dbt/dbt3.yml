@@ -1,0 +1,45 @@
+id: 'dbt3'
+character: 'alisa'
+input:
+  notation: 'DBT.3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Low'
+frames:
+  startup: 'i16~20'
+  block: '-14'
+  hit: '+4c~+8c'
+  ch: '+28a'
+properties:
+  - 'Low'
+  - 'Low crush'
+  - 'High crush'
+guide: null
+note:
+  en:
+    - 'Frame advantage +8c~+12c on shallow hit, +32 on CH'
+    - 'Listed states are on hit only'
+    - 'Low crush 26~34'
+    - 'High crush 35~'
+    - 'Floating state 34~38'
+  de:
+    - 'Frame-Vorteil +8c~+12c bei flachem Hit, +32 bei CH'
+    - 'Angegebene States nur auf Hit'
+    - 'Low Crush 26~34'
+    - 'High Crush 35~'
+    - 'Floating State 34~38'
+damage: '17'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

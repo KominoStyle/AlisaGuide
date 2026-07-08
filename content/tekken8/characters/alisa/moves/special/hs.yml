@@ -1,0 +1,48 @@
+id: 'hs'
+character: 'alisa'
+input:
+  notation: 'H.2+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i20~21'
+  block: '+8'
+  hit: 'throw'
+  ch: null
+properties:
+  - 'Heat smash'
+  - '+8 on block'
+guide:
+  en: 'Heat Smash. +8 on block (!) — huge pressure that burns your Heat. It''s also a great damage ender for combos and can transition to your stances.'
+  de: 'Heat Smash. +8 auf Block (!) — riesiger Druck, der deine Heat verbraucht. Auch ein top Schaden-Ender für Combos und kann in deine Stances übergehen.'
+note:
+  en:
+    - 'Heat Smash'
+    - 'Transition to DES with 1+2 (+8)'
+    - 'Transition to SBT with 3_4 (+10)'
+    - 'Transition to DBT with f+3_f+4 (+10)'
+    - '8 chip damage on block'
+  de:
+    - 'Heat Smash'
+    - 'In DES mit 1+2 (+8)'
+    - 'In SBT mit 3_4 (+10)'
+    - 'In DBT mit f+3_f+4 (+10)'
+    - '8 Chip auf Block'
+damage: '50 (28)'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,17 @@
+character: 'Feng'
+deep: false
+tag:
+  en: 'Strong mids, power crushes & stance — step direction varies.'
+  de: 'Starke Mids, Power Crushes & Stance — Step-Richtung variiert.'
+hurt:
+  en: 'His `f,F+1+2` (very hard to step on reaction, especially in Heat), strong mids, Kenpo stance, and a fast (i7) BT power crush.'
+  de: 'Sein `f,F+1+2` (on Reaction sehr schwer steppbar, besonders in Heat), starke Mids, Kenpo-Stance und ein schneller (i7) BT-Power-Crush.'
+duck:
+  en: 'Step varies: **SSL** for `d2`/`uf3`/`df3`, **SSR** for `uf4`/`df4`/`db1`/`f1+2`. Duck `1,2,2`, `1,3`, `f3,2`, `ws1,3`, `df4,3`. **Power-crush his `f,F+1+2`** instead of trying to step it.'
+  de: 'Step variiert: **SSL** bei `d2`/`uf3`/`df3`, **SSR** bei `uf4`/`df4`/`db1`/`f1+2`. Duck `1,2,2`, `1,3`, `f3,2`, `ws1,3`, `df4,3`. **Power-crush sein `f,F+1+2`** statt zu steppen.'
+punish:
+  en: 'Launch: `b1+2` (−19), `f2,1,2` (−19), `df4,2,1+2` (−19), `f3,4` (−16), `f,F+4` (−15) → [[df2]]; WS: `f4,4` (−31), `SS.4` (−31), `db4` (−26) → [[ws2]]. Standing: `1,2,2` (−14), `f+4,2` (−14) → [[f21]].'
+  de: 'Launch: `b1+2` (−19), `f2,1,2` (−19), `df4,2,1+2` (−19), `f3,4` (−16), `f,F+4` (−15) → [[df2]]; WS: `f4,4` (−31), `SS.4` (−31), `db4` (−26) → [[ws2]]. Stehend: `1,2,2` (−14), `f+4,2` (−14) → [[f21]].'
+plan:
+  en: 'Use [[pc]] to blow through his `f,F+1+2` and pressure; whiff-punish his stance whiffs with [[df2]]. Homing ([[uf2]], [[b3]]) checks his steps. Watch his i7 BT power crush before you commit.'
+  de: 'Nutz [[pc]] gegen sein `f,F+1+2` und seinen Druck; whiff-punish Stance-Whiffs mit [[df2]]. Homing ([[uf2]], [[b3]]) checkt seine Steps. Achte auf seinen i7-BT-Power-Crush, bevor du committest.'

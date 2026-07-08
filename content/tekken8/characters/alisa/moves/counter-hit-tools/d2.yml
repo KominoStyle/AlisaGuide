@@ -1,0 +1,36 @@
+id: 'd2'
+character: 'alisa'
+input:
+  notation: 'd+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'counterHitTool'
+difficulty: 2
+range: 's'
+levels: 'Mid'
+frames:
+  startup: 'i24~26'
+  block: '-14'
+  hit: '+2c'
+  ch: null
+properties:
+  - 'Floor break'
+guide: null
+note:
+  en:
+    - 'Floor Break'
+  de:
+    - 'Floor Break'
+damage: '8'
+key: 1
+keytip:
+  en: 'Floor-break mid, huge on counter-hit.'
+  de: 'Floor-Break-Mid, riesig auf Counter-Hit.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,39 @@
+id: 's23'
+character: 'alisa'
+input:
+  notation: '2,3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 2
+range: 's'
+levels:
+  en: 'High,Mid'
+  de: 'High,Mid'
+frames:
+  startup: 'i12, i22~23'
+  block: '-10'
+  hit: '+1'
+  ch: null
+properties:
+  - 'Knee'
+  - 'CH combo'
+guide: null
+note:
+  en:
+    - 'Knee'
+    - 'Combo from 1st CH with 2f delay'
+  de:
+    - 'Knie'
+    - 'Combo aus 1. CH mit 2f Delay'
+damage: '10, 8'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

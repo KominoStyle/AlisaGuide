@@ -1,0 +1,45 @@
+id: 'bkp3'
+character: 'alisa'
+input:
+  notation: 'BKP.3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i24~27'
+  block: '-9'
+  hit: '+72a'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'Low crush'
+  - 'Combo tool'
+guide:
+  en: 'Backup''s launcher: a low-crushing mid that launches for a full combo (+72 on hit). This is the payoff of the d+3 → BKP mixup — they duck expecting a low, you launch.'
+  de: 'Backups Launcher: ein Low-crushendes Mid, das für eine volle Combo launcht (+72 auf Hit). Das ist die Belohnung des d+3 → BKP-Mixups — sie ducken fürs Low, du launchst.'
+note:
+  en:
+    - 'Balcony Break'
+    - 'Low crush 15~40'
+    - 'Floating state 41~43'
+  de:
+    - 'Balcony Break'
+    - 'Low Crush 15~40'
+    - 'Floating State 41~43'
+damage: '30'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,17 @@
+character: 'Lee'
+deep: false
+tag:
+  en: 'Fast stylish pokes, Hitman stance & Acid Rain'
+  de: 'Schnelle stylishe Pokes, Hitman-Stance & Acid Rain'
+hurt:
+  en: 'Fast pokes and mist steps. Launchers `df+2` (i15, −7 safe) and `uf+4` (i15, −13). Acid Rain — the repeating `D+4` low series chips and mixes. Hitman (HMS) stance strings; heat via `df+3,2,3` / `df+4,4`.'
+  de: 'Schnelle Pokes und Mist-Steps. Launcher `df+2` (i15, −7 safe) und `uf+4` (i15, −13). Acid Rain — die wiederholende `D+4`-Low-Serie knabbert und mixt. Hitman-Stance-Strings (HMS); Heat über `df+3,2,3` / `df+4,4`.'
+duck:
+  en: 'Duck `1,2` (high,high). Block the Acid Rain low `D+4` (i12) and its follow-ups — they''re minus, so block and take your turn. His `db+4` (−15) is launch-punishable. Homing `1+2` beats steps.'
+  de: '`1,2` ducken (High,High). Den Acid-Rain-Low `D+4` (i12) und seine Follow-ups blocken — sie sind minus, also blocken und Zug nehmen. Sein `db+4` (−15) ist launchbar. Homing `1+2` schlägt Steps.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `db+4` (−15), `uf+4` (−13), `df+3,2,3` (−14). Punish `f,F+3` (−9) with [[c32]]. His `df+2` at −7 is safe. Cover −10 with jabs.'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `db+4` (−15), `uf+4` (−13), `df+3,2,3` (−14). `f,F+3` (−9) mit [[c32]] bestrafen. Sein `df+2` mit −7 ist safe. −10 mit Jabs.'
+plan:
+  en: 'Don''t get lost in his stagger pressure — block the Acid Rain low, hold guard, and punish the unsafe stance enders with [[df2]]. Interrupt with [[df1]] and whiff-punish precisely (his pokes recover fast). Keep him at your range.'
+  de: 'Verlier dich nicht in seinem Stagger-Druck — den Acid-Rain-Low blocken, Guard halten und die unsicheren Stance-Ender mit [[df2]] bestrafen. Mit [[df1]] unterbrechen und präzise whiff-punishen (seine Pokes recovern schnell). Auf Distanz halten.'

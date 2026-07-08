@@ -1,0 +1,34 @@
+id: 'fcd2'
+character: 'alisa'
+input:
+  notation: 'FC.d+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'low'
+difficulty: 2
+range: 's'
+levels: 'Special low'
+frames:
+  startup: 'i11'
+  block: '-4'
+  hit: '+7'
+  ch: null
+properties:
+  - 'High crush'
+guide: null
+note:
+  en:
+    - 'High crush 1~'
+  de:
+    - 'High Crush 1~'
+damage: '8'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

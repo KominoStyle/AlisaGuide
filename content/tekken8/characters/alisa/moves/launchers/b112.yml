@@ -1,0 +1,43 @@
+id: 'b112'
+character: 'alisa'
+input:
+  notation: 'b+1,1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid,Mid'
+  de: 'Mid,Mid'
+frames:
+  startup: 'i15~16, i25~40, i26~28'
+  block: '-16'
+  hit: '+71a'
+  ch: null
+properties:
+  - 'Tornado'
+  - 'Head'
+guide: null
+note:
+  en:
+    - 'Tornado'
+    - 'Head'
+    - 'Input can be delayed 13f'
+    - '2nd hit combos into the 3rd on CH only'
+  de:
+    - 'Tornado'
+    - 'Head'
+    - 'Eingabe bis 13f verzögerbar'
+    - '2. Hit combot nur bei CH in den 3.'
+damage: '15, 1, 30'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

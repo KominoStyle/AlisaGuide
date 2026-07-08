@@ -1,0 +1,37 @@
+id: 'fcd3'
+character: 'alisa'
+input:
+  notation: 'FC.d+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'low'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Low'
+  de: 'Low'
+frames:
+  startup: 'i16'
+  block: '-17'
+  hit: '-6'
+  ch: null
+properties:
+  - 'Full crouch'
+  - 'High crush'
+guide: null
+note:
+  en:
+    - 'High crush 1~'
+  de:
+    - 'High Crush 1~'
+damage: '10'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

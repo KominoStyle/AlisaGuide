@@ -1,0 +1,41 @@
+id: 'desb3'
+character: 'alisa'
+input:
+  notation: 'DES.b+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels:
+  en: 'Movement'
+  de: 'Movement'
+frames:
+  startup: '—'
+  block: '—'
+  hit: '—'
+  ch: null
+properties:
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Evasive movement'
+    - 'Low crush 7~33'
+    - 'Floating state 34~36'
+  de:
+    - 'Ausweich-Movement'
+    - 'Low Crush 7~33'
+    - 'Floating State 34~36'
+damage: '—'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

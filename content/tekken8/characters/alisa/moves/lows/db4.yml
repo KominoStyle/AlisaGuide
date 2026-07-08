@@ -1,0 +1,40 @@
+id: 'db4'
+character: 'alisa'
+input:
+  notation: 'db+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'low'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Low'
+  de: 'Low'
+frames:
+  startup: 'i20~21'
+  block: '-14'
+  hit: '+2c'
+  ch: '+12g'
+properties:
+  - 'High crush'
+guide:
+  en: 'Damaging high-crushing low. +2 on hit. -14 on block (launch-punishable), so make it count as a hard read.'
+  de: 'Schadhaftes high-crushendes Low. +2 auf Hit. -14 auf Block (launchbar), also nur als harter Read.'
+note:
+  en:
+    - 'High crush 6~'
+  de:
+    - 'High Crush 6~'
+damage: '17'
+key: 1
+keytip:
+  en: 'Range low that high-crushes.'
+  de: 'Reichweiten-Low, der high-crusht.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

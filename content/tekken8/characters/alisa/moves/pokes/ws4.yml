@@ -1,0 +1,43 @@
+id: 'ws4'
+character: 'alisa'
+input:
+  notation: 'ws4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i11~12'
+  block: '-5'
+  hit: '+6'
+  ch: null
+properties:
+  - 'While standing'
+  - 'Fast mid'
+guide:
+  en: 'Your fastest while-standing mid (i11). -5 on block, +6 on hit. The quick, safe button the instant you stand up out of a block or crouch.'
+  de: 'Dein schnellstes While-Standing-Mid (i11). -5 auf Block, +6 auf Hit. Der schnelle, sichere Button direkt beim Aufstehen aus Block oder Hocke.'
+note:
+  en:
+    - 'Your fastest while-standing move (i11)'
+    - 'Solid mid check after blocking a low'
+  de:
+    - 'Dein schnellster While-Standing-Move (i11)'
+    - 'Solider Mid-Check nach geblocktem Low'
+damage: '15'
+key: 1
+keytip:
+  en: 'Fastest while-standing check (i11).'
+  de: 'Schnellster While-Standing-Check (i11).'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

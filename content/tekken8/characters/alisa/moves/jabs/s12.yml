@@ -1,0 +1,43 @@
+id: 's12'
+character: 'alisa'
+input:
+  notation: '1,2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'jab'
+difficulty: 1
+range: 's'
+levels:
+  en: 'High,High'
+  de: 'High,High'
+frames:
+  startup: 'i10, i12'
+  block: '-3'
+  hit: '+8'
+  ch: null
+properties:
+  - 'Jails'
+guide:
+  en: 'i10 high string, +8 on hit. It jails on block (they can''t duck the 2nd after blocking the 1st) — but both hits are high, so on a read they can duck the whole thing.'
+  de: 'i10-High-String, +8 auf Hit. Jailt auf Block (2. Hit nach geblocktem 1. nicht duckbar) — aber beide Hits sind High, auf Read also komplett duckbar.'
+note:
+  en:
+    - 'Both hits are HIGH — duckable'
+    - 'Jails from the 1st hit with a 4f delay'
+    - 'Use 1,2,d+2 instead to catch duckers with a low'
+  de:
+    - 'Beide Hits sind HIGH — duckbar'
+    - 'Jailt aus dem 1. Hit mit 4f Delay'
+    - 'Nutze stattdessen 1,2,d+2, um Ducker mit einem Low zu fangen'
+damage: '5, 10'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

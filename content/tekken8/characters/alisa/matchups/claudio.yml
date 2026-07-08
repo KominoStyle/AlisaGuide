@@ -1,0 +1,17 @@
+character: 'Claudio'
+deep: false
+tag:
+  en: 'Starburst power, strong mids & homing'
+  de: 'Starburst-Power, starke Mids & Homing'
+hurt:
+  en: 'Launcher `df+2` (i14, -13). Lows: `d+4`, `db+4`, `db+4,3`, `d+3`. Heat engagers: `2,1,2`, `f,f,F+2`, `3,2`. Plus on block: `STB.f,F+3,2*` (+12), `STB.f,f,F+1+2` (+8g~+11g), `STB.d+1,2` (+6).'
+  de: 'Launcher `df+2` (i14, -13). Lows: `d+4`, `db+4`, `db+4,3`, `d+3`. Heat-Engager: `2,1,2`, `f,f,F+2`, `3,2`. Plus auf Block: `STB.f,F+3,2*` (+12), `STB.f,f,F+1+2` (+8g~+11g), `STB.d+1,2` (+6).'
+duck:
+  en: 'Duckable high strings — block the rest, duck the high: `1,2`, `4,3`, `ws1,1`, `3,2`. Homing (don''t step): `4,3`, `b+4,3`, `f+3`.'
+  de: 'Duckbare High-Strings — Rest blocken, das High ducken: `1,2`, `4,3`, `ws1,1`, `3,2`. Homing (nicht steppen): `4,3`, `b+4,3`, `f+3`.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `f+2,2` (-26), `f+2,1,1+2` (-18), `f+1+2` (-18), `d+1+2` (-18), `f,F+2` (-18). Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `f+2,2` (-26), `f+2,1,1+2` (-18), `f+1+2` (-18), `d+1+2` (-18), `f,F+2` (-18). −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Solid mids and pokes beat him; punish his unsafe launchers with [[uf44]]/[[df2]]. Respect the Starburst-buffed hopkick and whiff-punish his committal moves.'
+  de: 'Solide Mids und Pokes schlagen ihn; seine unsicheren Launcher mit [[uf44]]/[[df2]] bestrafen. Den Starburst-Hopkick respektieren und seine committalen Moves whiff-punishen.'

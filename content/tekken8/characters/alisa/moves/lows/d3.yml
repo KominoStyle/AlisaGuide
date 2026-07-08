@@ -1,0 +1,46 @@
+id: 'd3'
+character: 'alisa'
+input:
+  notation: 'd+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'low'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Low'
+  de: 'Low'
+frames:
+  startup: 'i23~32'
+  block: '-10'
+  hit: '+8c'
+  ch: '+32a'
+properties:
+  - 'Long low'
+  - 'CH launch'
+  - '→ BKP'
+guide:
+  en: 'Your long-range low, plus on hit and a full launch on counterhit (+32a). Key detail: d+3 recovers into Backup (BKP) stance first, then drops to Full Crouch — so straight after it you can go into BKP options (BKP.3 launches, BKP.1 for plus pressure) before the crouch / while-standing mixup. Slow and reactable at high level, so don''t spam it.'
+  de: 'Dein Long-Range-Low, plus auf Hit und voller Launch bei Counterhit (+32a). Wichtig: d+3 recovered zuerst in die Backup-Stance (BKP), dann in Full Crouch — direkt danach kannst du also in BKP-Optionen (BKP.3 launcht, BKP.1 für Plus-Druck) gehen, vor dem Hocke-/While-Standing-Mixup. Langsam und auf hohem Level reagierbar, also nicht spammen.'
+note:
+  en:
+    - 'FC recovery transition is -19~-10 / -1c~+8c'
+    - 'Low crush 9~23'
+    - 'Floating state 24~26'
+  de:
+    - 'FC-Recovery-Transition ist -19~-10 / -1c~+8c'
+    - 'Low Crush 9~23'
+    - 'Floating State 24~26'
+damage: '17'
+key: 1
+keytip:
+  en: 'Key low that recovers into Backup.'
+  de: 'Wichtiger Low, der in Backup läuft.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

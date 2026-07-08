@@ -1,0 +1,48 @@
+id: 'desd2'
+character: 'alisa'
+input:
+  notation: 'DES.d+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Low,Low,Low'
+frames:
+  startup: 'i22~23'
+  block: '-14'
+  hit: '+0c'
+  ch: null
+properties:
+  - 'Homing'
+  - 'Weapon'
+  - '→ DBT'
+  - 'High crush'
+guide: null
+note:
+  en:
+    - 'Homing'
+    - 'Weapon'
+    - 'Combo from any hit'
+    - 'Transition to DBT (-22/+4) with 3_4'
+    - '5 chip damage on block (7 in Heat)'
+    - 'High crush 22~91'
+  de:
+    - 'Homing'
+    - 'Weapon'
+    - 'Combo aus jedem Hit'
+    - 'In DBT (-22/+4) mit 3_4'
+    - '5 Chip auf Block (7 in Heat)'
+    - 'High Crush 22~91'
+damage: '3,3,17'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

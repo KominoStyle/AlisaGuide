@@ -1,0 +1,47 @@
+id: 'desuf12'
+character: 'alisa'
+input:
+  notation: 'DES.uf+1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels: 'Mid,Mid,Mid'
+frames:
+  startup: 'i29~31'
+  block: '-9c'
+  hit: '+23a'
+  ch: null
+properties:
+  - 'Spike'
+  - 'Weapon'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Spike'
+    - 'Weapon'
+    - '2 chip damage on block (6 in Heat)'
+    - 'Cancel to standing with DES.1+2'
+    - 'Low crush 5~25'
+    - 'Floating state 26~28'
+  de:
+    - 'Spike'
+    - 'Weapon'
+    - '2 Chip auf Block (6 in Heat)'
+    - 'Cancel in den Stand mit DES.1+2'
+    - 'Low Crush 5~25'
+    - 'Floating State 26~28'
+damage: '27'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

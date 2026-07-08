@@ -1,0 +1,48 @@
+id: 't13'
+character: 'alisa'
+input:
+  notation: '1+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'throw'
+difficulty: 1
+range: 's'
+levels:
+  en: 'Throw'
+  de: 'Wurf'
+frames:
+  startup: 'i12'
+  block: '—'
+  hit: 'throw'
+  ch: null
+properties:
+  - 'Generic'
+  - 'Break: 1 or 2'
+guide:
+  en: 'A generic throw — every character has 1+3 and 2+4. Since Tekken 7 the generic grabs break with **1 OR 2** (either works), so on defense you just press 1 or 2 when you see a single arm reach out.'
+  de: 'Ein generischer Wurf — jeder Charakter hat 1+3 und 2+4. Seit Tekken 7 brechen die generischen Grabs mit **1 ODER 2** (egal welcher), in der Defense also einfach 1 oder 2 drücken, wenn ein einzelner Arm rausgeht.'
+note:
+  en:
+    - 'Generic throw — same animation on either side'
+    - 'Break with 1 or 2'
+    - 'Homing — catches sidesteps'
+    - 'Opponent lands face-down, feet toward you'
+    - 'Sides switch on break'
+  de:
+    - 'Generischer Wurf — gleiche Animation auf beiden Seiten'
+    - 'Brechbar mit 1 oder 2'
+    - 'Homing — fängt Sidesteps'
+    - 'Gegner landet mit dem Gesicht nach unten, Füße zu dir'
+    - 'Seitenwechsel beim Break'
+damage: '35'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

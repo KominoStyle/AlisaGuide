@@ -1,0 +1,46 @@
+id: 'univ1234'
+character: 'alisa'
+input:
+  notation: '1+2+3+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 3
+range: 'm'
+levels:
+  en: 'Self-buff'
+  de: 'Self-Buff'
+frames:
+  startup: '—'
+  block: '—'
+  hit: '—'
+  ch: null
+properties:
+  - '→ DES'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Cannot block for 5 seconds'
+    - 'Counter-hit state for 5 seconds'
+    - 'Transition to DES with 1+2'
+    - 'Low crush 11~49'
+    - 'Floating state 50~52'
+  de:
+    - 'Kann 5 Sekunden nicht blocken'
+    - 'Counter-Hit-State für 5 Sekunden'
+    - 'In DES mit 1+2'
+    - 'Low Crush 11~49'
+    - 'Floating State 50~52'
+damage: '—'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

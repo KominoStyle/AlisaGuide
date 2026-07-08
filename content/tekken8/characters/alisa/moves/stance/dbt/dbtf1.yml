@@ -1,0 +1,47 @@
+id: 'dbtf1'
+character: 'alisa'
+input:
+  notation: 'DBT.f+1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels: 'Mid + throw'
+frames:
+  startup: 'i19~21'
+  block: '-9'
+  hit: '+0d'
+  ch: null
+properties:
+  - 'Weapon'
+  - 'Attack throw'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Weapon'
+    - 'Attack throw on front standing or airborne hit'
+    - '14 damage +3c vs back-turned opponent'
+    - '4 chip damage on block (7 in Heat)'
+    - 'Low crush 17~32'
+    - 'Floating state 33~35'
+  de:
+    - 'Weapon'
+    - 'Attack-Throw bei Front-Stand- oder Airborne-Hit'
+    - '14 Schaden +3c gegen Backturned'
+    - '4 Chip auf Block (7 in Heat)'
+    - 'Low Crush 17~32'
+    - 'Floating State 33~35'
+damage: '49'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

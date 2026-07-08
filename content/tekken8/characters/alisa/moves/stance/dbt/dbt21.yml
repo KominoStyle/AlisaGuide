@@ -1,0 +1,46 @@
+id: 'dbt21'
+character: 'alisa'
+input:
+  notation: 'DBT.2,1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels: '...,High'
+frames:
+  startup: 'i16~18, i26~28'
+  block: '-11c'
+  hit: '+14a'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'Spike'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Spike'
+    - '-28 on whiff'
+    - '13 chip damage on block (18 in Heat)'
+    - 'Low crush 17~100'
+    - 'Floating state 101~103'
+  de:
+    - 'Balcony Break'
+    - 'Spike'
+    - '-28 bei Whiff'
+    - '13 Chip auf Block (18 in Heat)'
+    - 'Low Crush 17~100'
+    - 'Floating State 101~103'
+damage: '25, 45'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

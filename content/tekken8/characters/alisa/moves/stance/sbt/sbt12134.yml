@@ -1,0 +1,46 @@
+id: 'sbt12134'
+character: 'alisa'
+input:
+  notation: 'SBT.1,2,1,3+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels: 'Mid,Mid,Mid,Mid'
+frames:
+  startup: 'i13~14, i18'
+  block: '-18'
+  hit: '+4a (-13)'
+  ch: null
+properties:
+  - 'Balcony break'
+  - '→ DES'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Combo from 3rd hit'
+    - 'Combo from 2nd CH'
+    - 'Transition to DES with SBT.1,2,1,3+4,1+2'
+    - 'Low crush 26~150'
+    - 'Floating state 151~153'
+  de:
+    - 'Balcony Break'
+    - 'Combo aus 3. Hit'
+    - 'Combo aus 2. CH'
+    - 'In DES mit SBT.1,2,1,3+4,1+2'
+    - 'Low Crush 26~150'
+    - 'Floating State 151~153'
+damage: '12, 13, 7, 33'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

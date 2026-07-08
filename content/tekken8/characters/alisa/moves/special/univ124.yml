@@ -1,0 +1,37 @@
+id: 'univ124'
+character: 'alisa'
+input:
+  notation: '1+2+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 3
+range: 'm'
+levels:
+  en: 'Taunt'
+  de: 'Taunt'
+frames:
+  startup: '—'
+  block: '—'
+  hit: '—'
+  ch: null
+properties:
+  - 'Taunt'
+guide: null
+note:
+  en:
+    - 'Taunt / stance input'
+  de:
+    - 'Taunt / Stance-Eingabe'
+damage: '—'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

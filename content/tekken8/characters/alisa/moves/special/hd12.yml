@@ -1,0 +1,49 @@
+id: 'hd12'
+character: 'alisa'
+input:
+  notation: 'H.d+1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 3
+range: 'm'
+levels:
+  en: 'Heat stance'
+  de: 'Heat-Stance'
+frames:
+  startup: '—'
+  block: '—'
+  hit: '—'
+  ch: null
+properties:
+  - 'Power crush'
+guide: null
+note:
+  en:
+    - 'Heat-only absorbing stance'
+    - 'Cancel to r30 with db'
+    - 'Consumes 60F of remaining Heat time'
+    - '75% damage reduction when absorbing attacks'
+    - 'Absorbed damage is recoverable'
+    - 'Automatic standing guard frames 1~5'
+    - 'Power crush 6~30'
+  de:
+    - 'Nur in Heat — absorbierende Stance'
+    - 'Cancel zu r30 mit db'
+    - 'Verbraucht 60F verbleibende Heat-Zeit'
+    - '75% Schadensreduktion beim Absorbieren'
+    - 'Absorbierter Schaden ist erholbar'
+    - 'Automatischer Stand-Guard Frames 1~5'
+    - 'Power Crush 6~30'
+damage: '—'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,37 @@
+id: 'ub4112'
+character: 'alisa'
+input:
+  notation: 'ub+4,1,1,2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'comboTool'
+difficulty: 3
+range: 'm'
+levels: 'Mid,Mid,Mid,High'
+frames:
+  startup: 'i18, i24~25'
+  block: '-10'
+  hit: '+1'
+  ch: null
+properties:
+  - 'Pressure'
+guide: null
+note:
+  en:
+    - 'Combo from 3rd hit'
+    - 'Combo from 1st CH'
+  de:
+    - 'Combo aus 3. Hit'
+    - 'Combo aus 1. CH'
+damage: '10, 12, 9, 5'
+key: null
+keytip: null
+chain: 'ub4'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

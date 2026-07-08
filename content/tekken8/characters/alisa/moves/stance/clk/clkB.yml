@@ -1,0 +1,35 @@
+id: 'clkB'
+character: 'alisa'
+input:
+  notation: 'CLK.B'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Mid'
+frames:
+  startup: 'i19~20'
+  block: '-12'
+  hit: '-1'
+  ch: null
+properties:
+  - 'Mid'
+guide: null
+note:
+  en:
+    - 'Cancel with B'
+  de:
+    - 'Cancel mit B'
+damage: '18'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

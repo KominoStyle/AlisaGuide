@@ -1,0 +1,41 @@
+id: 'clkd3'
+character: 'alisa'
+input:
+  notation: 'CLK.d+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Low'
+frames:
+  startup: 'i30~31'
+  block: '-12'
+  hit: '+73a (+57)'
+  ch: null
+properties:
+  - 'Low'
+  - 'High crush'
+  - 'Launch'
+guide: null
+note:
+  en:
+    - 'Spinning low, launches on hit'
+    - '8 chip damage on block'
+    - 'High crush 9~'
+  de:
+    - 'Dreh-Low, launcht auf Hit'
+    - '8 Chip auf Block'
+    - 'High Crush 9~'
+damage: '20'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

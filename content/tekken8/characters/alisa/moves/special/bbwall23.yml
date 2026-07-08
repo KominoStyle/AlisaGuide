@@ -1,0 +1,40 @@
+id: 'bbwall23'
+character: 'alisa'
+input:
+  notation: 'b,B+2+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 3
+range: 'l'
+levels: 'Mid (unblockable)'
+frames:
+  startup: 'i75~76'
+  block: '—'
+  hit: '+44'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'Head'
+guide: null
+note:
+  en:
+    - 'Unblockable'
+    - 'Balcony Break'
+    - 'Head'
+  de:
+    - 'Unblockbar'
+    - 'Balcony Break'
+    - 'Head'
+damage: '50'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

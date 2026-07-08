@@ -1,0 +1,39 @@
+id: 'ub411'
+character: 'alisa'
+input:
+  notation: 'ub+4,1,1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'comboTool'
+difficulty: 3
+range: 'm'
+levels: 'Mid,Mid,Mid'
+frames:
+  startup: 'i18, i21'
+  block: '-20'
+  hit: '-9'
+  ch: null
+properties:
+  - 'Elbow'
+guide: null
+note:
+  en:
+    - 'Elbow'
+    - 'Combo from 2nd hit'
+    - 'Combo from 1st CH'
+  de:
+    - 'Ellbogen'
+    - 'Combo aus 2. Hit'
+    - 'Combo aus 1. CH'
+damage: '10, 12, 9'
+key: null
+keytip: null
+chain: 'ub4'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

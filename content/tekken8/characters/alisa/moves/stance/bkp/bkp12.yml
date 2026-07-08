@@ -1,0 +1,39 @@
+id: 'bkp12'
+character: 'alisa'
+input:
+  notation: 'BKP.1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels:
+  en: 'High'
+  de: 'High'
+frames:
+  startup: 'i34~71'
+  block: '—'
+  hit: '+58'
+  ch: null
+properties:
+  - 'Weapon'
+guide:
+  en: 'Backup''s chargeable weapon hit — very slow (i34+) with a huge reward on hit, but purely a hard-read / setup tool. Chip damage on block.'
+  de: 'Backups aufladbarer Waffen-Treffer — sehr langsam (i34+) mit riesiger Belohnung auf Hit, aber reines Hard-Read-/Setup-Tool. Chip-Schaden auf Block.'
+note:
+  en:
+    - 'Weapon'
+  de:
+    - 'Weapon'
+damage: '20, 3'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

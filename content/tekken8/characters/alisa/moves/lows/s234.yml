@@ -1,0 +1,39 @@
+id: 's234'
+character: 'alisa'
+input:
+  notation: '2,3,4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'low'
+difficulty: 2
+range: 's'
+levels:
+  en: 'High,Mid,Low'
+  de: 'High,Mid,Low'
+frames:
+  startup: 'i12, i22~23, i42~45'
+  block: '-13'
+  hit: '+13d'
+  ch: null
+properties:
+  - 'Low ender'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Low crush 24~39'
+    - 'Floating state 40~42'
+  de:
+    - 'Low Crush 24~39'
+    - 'Floating State 40~42'
+damage: '10, 8, 20'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

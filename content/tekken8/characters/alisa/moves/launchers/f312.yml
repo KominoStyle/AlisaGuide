@@ -1,0 +1,43 @@
+id: 'f312'
+character: 'alisa'
+input:
+  notation: 'f+3,1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 2
+range: 'm'
+levels: 'High,Mid'
+frames:
+  startup: 'i14~15, i24~25'
+  block: '-13'
+  hit: '+8'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'Weapon'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Combo from 1st hit'
+    - '7 chip damage on block (12 in Heat)'
+    - 'Hit vs back-turned +15a (+6)'
+  de:
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Combo aus 1. Hit'
+    - '7 Chip auf Block (12 in Heat)'
+    - 'Gegen Backturned +15a (+6)'
+damage: '10, 25'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

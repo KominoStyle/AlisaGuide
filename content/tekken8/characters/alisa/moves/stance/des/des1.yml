@@ -1,0 +1,41 @@
+id: 'des1'
+character: 'alisa'
+input:
+  notation: 'DES.1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Mid,Mid,High,High,High,Mid'
+frames:
+  startup: 'i13~18'
+  block: '-9'
+  hit: '+17a'
+  ch: null
+properties:
+  - 'Weapon'
+guide: null
+note:
+  en:
+    - 'Chainsaw rush'
+    - 'Weapon'
+    - '3 chip damage on block (7 in Heat)'
+    - 'Final hit available only on hit'
+  de:
+    - 'Kettensägen-Rush'
+    - 'Weapon'
+    - '3 Chip auf Block (7 in Heat)'
+    - 'Letzter Hit nur auf Hit'
+damage: '35'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

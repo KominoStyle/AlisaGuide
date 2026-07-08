@@ -1,0 +1,36 @@
+id: 'f233'
+character: 'alisa'
+input:
+  notation: 'f+2,3,3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 2
+range: 'm'
+levels: 'Mid,High,Mid'
+frames:
+  startup: 'i17~18, i35~36'
+  block: '-10'
+  hit: '+12a (-3)'
+  ch: null
+properties:
+  - 'Balcony break'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Combo from 2nd hit'
+  de:
+    - 'Balcony Break'
+    - 'Combo aus 2. Hit'
+damage: '12, 8, 22'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

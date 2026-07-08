@@ -1,0 +1,43 @@
+id: 'hf14'
+character: 'alisa'
+input:
+  notation: 'H.f+1+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 3
+range: 'm'
+levels:
+  en: 'Heat move'
+  de: 'Heat-Move'
+frames:
+  startup: '—'
+  block: '—'
+  hit: '—'
+  ch: null
+properties:
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Heat move'
+    - 'Consumes 150F of remaining Heat time'
+    - 'Low crush 18~40'
+    - 'Floating state 41~43'
+  de:
+    - 'Heat-Move'
+    - 'Verbraucht 150F verbleibende Heat-Zeit'
+    - 'Low Crush 18~40'
+    - 'Floating State 41~43'
+damage: '—'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

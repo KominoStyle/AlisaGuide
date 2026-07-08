@@ -1,0 +1,17 @@
+character: 'Raven'
+deep: false
+tag:
+  en: 'Ninja — teleports, backturned, tricky'
+  de: 'Ninja — Teleports, Backturned, tricky'
+hurt:
+  en: 'Launcher `df+2` (i16~18, -13~-11). Lows: `d+3`, `d+4`, `qcf+2`, `db+4`. Heat engagers: `1+2`, `f,F+2`, `ws3+4`. Plus on block: `b+1` (+7c~+8c), `b+3` (+4~+6), `f,f,F+3` (+4~+6).'
+  de: 'Launcher `df+2` (i16~18, -13~-11). Lows: `d+3`, `d+4`, `qcf+2`, `db+4`. Heat-Engager: `1+2`, `f,F+2`, `ws3+4`. Plus auf Block: `b+1` (+7c~+8c), `b+3` (+4~+6), `f,f,F+3` (+4~+6).'
+duck:
+  en: 'Duckable high strings — block the rest, duck the high: `1,2`, `1,2,4`, `2,4`, `4,1`. Homing (don''t step): `ws3+4`, `f+3`, `SZN.1+2`.'
+  de: 'Duckbare High-Strings — Rest blocken, das High ducken: `1,2`, `1,2,4`, `2,4`, `4,1`. Homing (nicht steppen): `ws3+4`, `f+3`, `SZN.1+2`.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `3~4,F` (-39~-36), `b+2,2,1+2` (-30~-29), `b+4,B+4~3,3+4` (-25~-21), `uf+3+4,3+4` (-25~-21), `b+2,2,3` (-19~-18). Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `3~4,F` (-39~-36), `b+2,2,1+2` (-30~-29), `b+4,B+4~3,3+4` (-25~-21), `uf+3+4,3+4` (-25~-21), `b+2,2,3` (-19~-18). −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Stay patient against the teleport/BT gimmicks — many are punishable. Block, punish unsafe moves with [[uf44]]/[[df2]], and don''t whiff into his mixups.'
+  de: 'Gegen die Teleport-/BT-Gimmicks geduldig bleiben — viele sind bestrafbar. Blocken, unsichere Moves mit [[uf44]]/[[df2]] bestrafen und nicht in seine Mixups whiffen.'

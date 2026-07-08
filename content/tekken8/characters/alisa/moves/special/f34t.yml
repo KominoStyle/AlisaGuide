@@ -1,0 +1,41 @@
+id: 'f34t'
+character: 'alisa'
+input:
+  notation: 'f+3+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 3
+range: 'm'
+levels:
+  en: 'Transition'
+  de: 'Transition'
+frames:
+  startup: '—'
+  block: '—'
+  hit: '—'
+  ch: null
+properties:
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Movement / stance transition'
+    - 'Low crush 26~54'
+    - 'Floating state 55~57'
+  de:
+    - 'Movement / Stance-Übergang'
+    - 'Low Crush 26~54'
+    - 'Floating State 55~57'
+damage: '—'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

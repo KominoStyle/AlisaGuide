@@ -1,0 +1,17 @@
+character: 'King'
+deep: false
+tag:
+  en: 'Throw mixups & big damage — SSR generally.'
+  de: 'Wurf-Mixups & viel Schaden — generell SSR.'
+hurt:
+  en: 'His throw game (chain / command throws, the JAG unbreakable), `f,F+4`, and big-damage strings. Most dangerous at the wall.'
+  de: 'Sein Wurf-Game (Chain- / Command-Throws, der JAG-Unbreakable), `f,F+4` und Strings mit viel Schaden. Am gefährlichsten an der Wand.'
+duck:
+  en: '**Step SSR** (SSL for `db3`, `df3`). On `1,2,1`: **SSR** (the 10-string whiffs too). React to BT `1+2` and the JAG unbreakable throw. **Break his throws:** e.g. Giant Swing breaks with **1** (not 1+2) — learn the break per grab.'
+  de: '**Step SSR** (SSL bei `db3`, `df3`). Bei `1,2,1`: **SSR** (der 10-String whifft auch). Reagier auf BT `1+2` und den JAG-Unbreakable. **Brich seine Würfe:** z.B. Giant Swing bricht mit **1** (nicht 1+2) — Break pro Grab lernen.'
+punish:
+  en: 'Launch: **`d1+2` (−24!)**, `f,F+4` (−15), `df4,3,4` (−15) → [[df2]]. Standing: `b1,2` (−13), `uf4` (−13) → [[c32]]; `f2` (−11), `d1,2` (−11) → [[df1]].'
+  de: 'Launch: **`d1+2` (−24!)**, `f,F+4` (−15), `df4,3,4` (−15) → [[df2]]. Stehend: `b1,2` (−13), `uf4` (−13) → [[c32]]; `f2` (−11), `d1,2` (−11) → [[df1]].'
+plan:
+  en: 'Keep him at mid with [[uf2]] / [[f21]] and don''t get pushed to the wall. Break throws (know the break for each), duck obvious command-grab reads and launch with [[ws2]]. In Heat his Jaguar sprint gains armor.'
+  de: 'Halt ihn mit [[uf2]] / [[f21]] auf Mid und lass dich nicht an die Wand drängen. Brich Würfe (Break pro Wurf kennen), duck offensichtliche Command-Grab-Reads und launch mit [[ws2]]. In Heat bekommt sein Jaguar-Sprint Armor.'

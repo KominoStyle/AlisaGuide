@@ -1,0 +1,56 @@
+id: 'ra'
+character: 'alisa'
+input:
+  notation: 'Rage Art'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 1
+range: 'm'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i20'
+  block: '-18'
+  hit: 'throw'
+  ch: null
+properties:
+  - 'Power crush'
+  - 'Reversal'
+guide:
+  en: 'Your comeback button: it armors through mids and highs from frame 8 and gives a guaranteed big hit. -18 on block, so a whiff or a block is a full punish.'
+  de: 'Dein Comeback-Button: armort ab Frame 8 durch Mids und Highs und gibt einen garantierten Großtreffer. -18 auf Block, also sind Whiff oder Block ein voller Punish.'
+note:
+  en:
+    - 'Rage Art'
+    - 'Removes recoverable health'
+    - 'Reversal Break'
+    - 'Damage increases with lower health (max 82)'
+    - 'Freezes the match timer on activation and on hit'
+    - 'Restores recoverable health on hit'
+    - 'Transition to attack throw on hit'
+    - 'Consumes Rage'
+    - 'Power crush 8~'
+  de:
+    - 'Rage Art'
+    - 'Entfernt erholbares Leben'
+    - 'Reversal Break'
+    - 'Schaden steigt mit sinkendem Leben (max 82)'
+    - 'Friert den Timer bei Aktivierung und Hit ein'
+    - 'Stellt erholbares Leben auf Hit wieder her'
+    - 'In Attack-Throw auf Hit'
+    - 'Verbraucht Rage'
+    - 'Power Crush 8~'
+damage: '55+'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

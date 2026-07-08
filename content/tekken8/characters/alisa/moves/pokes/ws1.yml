@@ -1,0 +1,37 @@
+id: 'ws1'
+character: 'alisa'
+input:
+  notation: 'ws1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i13~14'
+  block: '-12'
+  hit: '-1'
+  ch: null
+properties:
+  - 'Elbow'
+  - 'While standing'
+guide: null
+note:
+  en:
+    - 'Elbow'
+  de:
+    - 'Ellbogen'
+damage: '12'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

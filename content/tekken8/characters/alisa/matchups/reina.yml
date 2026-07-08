@@ -1,0 +1,17 @@
+character: 'Reina'
+deep: false
+tag:
+  en: 'Mishima mixups, stances & Heaven''s Wrath'
+  de: 'Mishima-Mixups, Stances & Heaven''s Wrath'
+hurt:
+  en: 'Launchers `df+2` (i15, −12) and `uf+4` (i17, Tornado). Electric-style pressure and stance mix from Sentai (`SEN.3` heat engager) and Wind God Step. Fast low `d+4` (i12) chips your life; `db+4` opens rounds.'
+  de: 'Launcher `df+2` (i15, −12) und `uf+4` (i17, Tornado). Electric-Druck und Stance-Mix aus Sentai (`SEN.3` Heat-Engager) und Wind God Step. Schneller Low `d+4` (i12) knabbert Leben; `db+4` öffnet Runden.'
+duck:
+  en: '`1,2` is high,high — duck it. Her homing `3`, `b+2`, `f,f,F+4` beat sidesteps, so don''t step blindly; step and whiff-punish her linear WGS mids instead. Block the Wind God Step low `WGS.DF+4` on reaction.'
+  de: '`1,2` ist High,High — ducken. Ihre Homing `3`, `b+2`, `f,f,F+4` schlagen Sidesteps, also nicht blind steppen; lieber steppen und ihre linearen WGS-Mids whiff-punishen. Den Wind-God-Step-Low `WGS.DF+4` auf Reaktion blocken.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `WGS.DF+4` (−23), `df+1,2` (−14), her stance enders. Her `uf+4` is −13 → launch on block. Punish `df+2` (−12) with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `WGS.DF+4` (−23), `df+1,2` (−14), ihre Stance-Ender. Ihr `uf+4` ist −13 → auf Block launchen. `df+2` (−12) mit [[c32]] bestrafen.'
+plan:
+  en: 'Respect her turn after `f+3+4` (+10) and `f,f,F+3` (+6) — don''t mash. Poke with [[df1]], use [[pc]] to blow through her Sentai pressure, launch whiffed WGF/hellsweep attempts with [[df2]]. Keep her out with ws2 fishing and boot pressure.'
+  de: 'Nach `f+3+4` (+10) und `f,f,F+3` (+6) ist ihr Zug — nicht mashen. Mit [[df1]] poken, mit [[pc]] durch ihren Sentai-Druck brechen, gewhiffte WGF-/Hellsweep-Versuche mit [[df2]] launchen. Mit ws2-Fishing und Boot-Druck auf Distanz halten.'

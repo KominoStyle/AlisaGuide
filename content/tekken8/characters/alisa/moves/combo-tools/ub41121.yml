@@ -1,0 +1,35 @@
+id: 'ub41121'
+character: 'alisa'
+input:
+  notation: 'ub+4,1,1,2,1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'comboTool'
+difficulty: 3
+range: 'm'
+levels: '...,High'
+frames:
+  startup: 'i18, i35~36'
+  block: '-9'
+  hit: '+7'
+  ch: null
+properties:
+  - 'Balcony break'
+guide: null
+note:
+  en:
+    - 'Balcony Break (airborne)'
+  de:
+    - 'Balcony Break (airborne)'
+damage: '...,5'
+key: null
+keytip: null
+chain: 'ub4'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

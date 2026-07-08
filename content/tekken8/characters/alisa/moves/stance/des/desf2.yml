@@ -1,0 +1,39 @@
+id: 'desf2'
+character: 'alisa'
+input:
+  notation: 'DES.f+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Mid,Mid'
+frames:
+  startup: 'i15'
+  block: '-9'
+  hit: '+0c'
+  ch: null
+properties:
+  - 'Weapon'
+guide: null
+note:
+  en:
+    - 'Weapon'
+    - 'Timestop on hit'
+    - '2 chip damage on block (3 in Heat)'
+  de:
+    - 'Weapon'
+    - 'Timestop auf Hit'
+    - '2 Chip auf Block (3 in Heat)'
+damage: '9'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

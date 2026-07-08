@@ -1,0 +1,17 @@
+character: 'Nina'
+deep: false
+tag:
+  en: 'Fast safe pokes, CH pressure & tricky lows'
+  de: 'Schnelle safe Pokes, CH-Druck & fiese Lows'
+hurt:
+  en: 'Her launcher `df+2` is only −7 and gives a full combo — you can''t launch-punish it. Fast mids `df+1` (i13, −1) and `df+4` (i12) keep her plus. The `d+3` low string and `db+4` mix with her mids; `d+3,4,3` ends +22 on hit. Heat via `qcf+2` / `db+1+2`.'
+  de: 'Ihr Launcher `df+2` ist nur −7 und gibt vollen Combo — nicht launchbar. Schnelle Mids `df+1` (i13, −1) und `df+4` (i12) halten sie plus. Low-String `d+3` und `db+4` mixen mit Mids; `d+3,4,3` endet +22 auf Hit. Heat über `qcf+2` / `db+1+2`.'
+duck:
+  en: 'Duck `1,2` (high,high). Her homing `1+2` / `db+2` beat steps. Block her lows — `d+3` (−17) is launch-punishable while standing; her plus-low `d+4,1` keeps her turn.'
+  de: '`1,2` ducken (High,High). Ihre Homing `1+2` / `db+2` schlagen Steps. Ihre Lows blocken — `d+3` (−17) ist stehend launchbar; ihr Plus-Low `d+4,1` hält ihren Zug.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `ws2` (−13), `qcf+3` (−20), `uf+4,3` (−19), `df+3,2,3` (−17). Her `df+2` at −7 is safe — don''t try. Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `ws2` (−13), `qcf+3` (−20), `uf+4,3` (−19), `df+3,2,3` (−17). Ihr `df+2` mit −7 ist safe — lass es. −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'She wants to poke and stagger you into her CH launchers — don''t duck-mash. Interrupt string gaps with [[df1]], respect `f,F+1+2` (+8), launch her whiffs. Use your range: keep her at [[df1]] / ws2 distance and force her to approach into your [[df2]].'
+  de: 'Sie will poken und dich in ihre CH-Launcher staggern — nicht Duck-Mashen. String-Lücken mit [[df1]] unterbrechen, `f,F+1+2` (+8) respektieren, ihre Whiffs launchen. Deine Reichweite nutzen: sie auf [[df1]]/ws2-Distanz halten und zum Reingehen in dein [[df2]] zwingen.'

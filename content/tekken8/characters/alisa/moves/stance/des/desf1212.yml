@@ -1,0 +1,37 @@
+id: 'desf1212'
+character: 'alisa'
+input:
+  notation: 'DES.f+1+2,1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels: '...,Mid'
+frames:
+  startup: 'i23~27, i20~26'
+  block: '-53'
+  hit: '+41a'
+  ch: null
+properties:
+  - 'Weapon'
+guide: null
+note:
+  en:
+    - 'Weapon'
+    - '6 chip damage on block (10 in Heat)'
+  de:
+    - 'Weapon'
+    - '6 Chip auf Block (10 in Heat)'
+damage: '29, 20'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,37 @@
+id: 'desb2'
+character: 'alisa'
+input:
+  notation: 'DES.b+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Mid'
+frames:
+  startup: 'i18~20'
+  block: '-12'
+  hit: '+0'
+  ch: '+18a'
+properties:
+  - 'Weapon'
+guide: null
+note:
+  en:
+    - 'Weapon'
+    - '5 chip damage on block (6 in Heat)'
+  de:
+    - 'Weapon'
+    - '5 Chip auf Block (6 in Heat)'
+damage: '17'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

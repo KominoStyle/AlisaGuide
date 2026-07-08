@@ -1,0 +1,17 @@
+character: 'Jun'
+deep: false
+tag:
+  en: 'Nature style — parries, evasive, strong CH'
+  de: 'Nature-Style — Parries, evasiv, starker CH'
+hurt:
+  en: 'Launcher `df+2` (i16~17, -12 — only -12, don''t try to launch it). Lows: `d+3+4`, `d+4`, `d+4,4`, `db+3`. Heat engagers: `1+2`, `f+2,1+2`, `IZU.3`. Plus on block: `f,F+1+2` (+6), `SS.4` (+6), `1,2,2` (+4).'
+  de: 'Launcher `df+2` (i16~17, -12 — nur -12, nicht launchen). Lows: `d+3+4`, `d+4`, `d+4,4`, `db+3`. Heat-Engager: `1+2`, `f+2,1+2`, `IZU.3`. Plus auf Block: `f,F+1+2` (+6), `SS.4` (+6), `1,2,2` (+4).'
+duck:
+  en: 'Duckable high strings — block the rest, duck the high: `1,2`, `1,2,2`, `1,2,4`, `2,1,4,3`. Homing (don''t step): `1,2,2`, `f+3,2`, `df+3`.'
+  de: 'Duckbare High-Strings — Rest blocken, das High ducken: `1,2`, `1,2,2`, `1,2,4`, `2,1,4,3`. Homing (nicht steppen): `1,2,2`, `f+3,2`, `df+3`.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `1+4,2,d+4` (-23~-22), `ws3+4` (-21), `uf+4` (-20), `ws1,4,1+2` (-20), `b+3` (-19~-18). His `df+2` (-12) is safe. Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `1+4,2,d+4` (-23~-22), `ws3+4` (-21), `uf+4` (-20), `ws1,4,1+2` (-20), `b+3` (-19~-18). Sein `df+2` (-12) ist safe. −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Don''t be predictable — she can parry. Stagger pressure, mix lows and throws, and whiff-punish her defensive pokes with [[df2]]. Control the pace and punish her unsafe strings.'
+  de: 'Sei nicht vorhersehbar — sie kann parieren. Druck staffeln, Lows und Würfe mischen, ihre defensiven Pokes mit [[df2]] whiff-punishen. Tempo kontrollieren und ihre unsicheren Strings bestrafen.'

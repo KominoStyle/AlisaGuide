@@ -1,0 +1,38 @@
+id: 'jab'
+character: 'alisa'
+input:
+  notation: '1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'jab'
+difficulty: 0
+range: 's'
+levels:
+  en: 'High'
+  de: 'High'
+frames:
+  startup: 'i10'
+  block: '+1'
+  hit: '+8'
+  ch: null
+properties:
+  - 'i10'
+guide:
+  en: 'Your fastest move. +1 on block keeps you safe, +8 on hit gives you the turn. The base of your pressure and your i10 punisher.'
+  de: 'Dein schnellster Move. +1 auf Block hält dich sicher, +8 auf Hit gibt dir den Zug. Basis deines Drucks und dein i10-Punisher.'
+note:
+  en:
+    - 'Recovers 2f faster on hit or block'
+  de:
+    - 'Erholt sich 2f schneller auf Hit oder Block'
+damage: '5'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

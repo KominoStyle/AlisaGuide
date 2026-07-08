@@ -1,0 +1,17 @@
+character: 'Steve'
+deep: false
+tag:
+  en: 'Boxer — weaves, CH launchers, few lows'
+  de: 'Boxer — Weaves, CH-Launcher, kaum Lows'
+hurt:
+  en: 'A boxer: mostly highs/mids from weave stances (Flicker, Ducking, Peekaboo, Lion Heart). Strong CH and plus pressure — `LNH.1+2` (+12), `f,f,F+2` (+6). Few lows, so you can stand and block. `df+2` (i16) is his CH launcher.'
+  de: 'Boxer: meist Highs/Mids aus Weave-Stances (Flicker, Ducking, Peekaboo, Lion Heart). Starker CH- und Plus-Druck — `LNH.1+2` (+12), `f,f,F+2` (+6). Kaum Lows, du kannst stehen und blocken. `df+2` (i16) ist sein CH-Launcher.'
+duck:
+  en: 'Duck `1,2` (high,high) and his high weave enders. Since he has almost no lows, stay standing and block — don''t duck-mash into his mids and CH. His homing weaves (`b+1,2`, `PAB.2`) beat steps.'
+  de: '`1,2` (High,High) und seine High-Weave-Ender ducken. Da er kaum Lows hat, stehen bleiben und blocken — nicht in seine Mids und CH duck-mashen. Seine Homing-Weaves (`b+1,2`, `PAB.2`) schlagen Steps.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `df+2` (−11), `1+2` (−12), `qcf+1` (−10). Most weave pressure is safe/plus — wait for the unsafe ender. Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `df+2` (−11), `1+2` (−12), `qcf+1` (−10). Der meiste Weave-Druck ist safe/plus — auf den unsicheren Ender warten. −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Standing block is your friend — Steve can''t open you low much, so hold guard and punish his gaps. Interrupt weave transitions with [[df1]], launch his −11+ enders with [[df2]]. Don''t get baited into CH; keep your turns short.'
+  de: 'Stehend blocken ist dein Freund — Steve kann dich kaum tief öffnen, also Guard halten und seine Lücken bestrafen. Weave-Transitions mit [[df1]] unterbrechen, seine −11+-Ender mit [[df2]] launchen. Nicht in CH gebaitet werden; deine Turns kurz halten.'

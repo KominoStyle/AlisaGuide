@@ -1,0 +1,44 @@
+id: 'd412'
+character: 'alisa'
+input:
+  notation: 'd+4,1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'low'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Low,High'
+  de: 'Low,High'
+frames:
+  startup: 'i17~18, i20~21'
+  block: '+0'
+  hit: '+11a'
+  ch: null
+properties:
+  - 'Jails'
+  - 'Balcony break'
+  - 'Head'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Head'
+    - 'Jail from 1st attack'
+    - 'Combo from 1st CH'
+  de:
+    - 'Balcony Break'
+    - 'Head'
+    - 'Jailt aus dem 1. Angriff'
+    - 'Combo aus 1. CH'
+damage: '12, 20'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

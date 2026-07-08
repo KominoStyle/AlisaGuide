@@ -1,0 +1,17 @@
+character: 'Armor King'
+deep: false
+tag:
+  en: 'Grappler — command throws & strong CH'
+  de: 'Grappler — Command-Throws & starker CH'
+hurt:
+  en: 'Launcher `df+2` (i15~16, -12 — only -12, don''t try to launch it). Lows: `d+4`, `d+3`, `d+3+4`, `d+3+4,1`. Heat engagers: `ws3,1`, `f,F+4`, `f+2,1`. Plus on block: `f,f,F+3+4` (+17g), `f,f,F+3` (+6), `ub+1` (+5).'
+  de: 'Launcher `df+2` (i15~16, -12 — nur -12, nicht launchen). Lows: `d+4`, `d+3`, `d+3+4`, `d+3+4,1`. Heat-Engager: `ws3,1`, `f,F+4`, `f+2,1`. Plus auf Block: `f,f,F+3+4` (+17g), `f,f,F+3` (+6), `ub+1` (+5).'
+duck:
+  en: 'Duckable high strings — block the rest, duck the high: `1,2`, `1,2,1`, `4,3`, `df+1,2`. Homing (don''t step): `f,F+3`, `b+3+4`, `db+3`.'
+  de: 'Duckbare High-Strings — Rest blocken, das High ducken: `1,2`, `1,2,1`, `4,3`, `df+1,2`. Homing (nicht steppen): `f,F+3`, `b+3+4`, `db+3`.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `FUFT.b+3+4` (-25), `f+1+4` (-19), `3+4,2` (-18d), `FC.4` (-15). His `df+2` (-12) is safe. Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `FUFT.b+3+4` (-25), `f+1+4` (-19), `3+4,2` (-18d), `FC.4` (-15). Sein `df+2` (-12) ist safe. −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Break throws on reaction and stay calm on knockdown. Keep him out with [[df1]]/ws2, whiff-punish his lunges with [[df2]], and don''t mash into his counter-hits.'
+  de: 'Throws auf Reaktion breaken und bei Knockdown ruhig bleiben. Mit [[df1]]/ws2 draußen halten, seine Lunges mit [[df2]] whiff-punishen und nicht in seine Counter-Hits mashen.'

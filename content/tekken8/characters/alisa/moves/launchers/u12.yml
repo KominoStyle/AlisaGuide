@@ -1,0 +1,41 @@
+id: 'u12'
+character: 'alisa'
+input:
+  notation: 'u+1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i33~34'
+  block: '-5'
+  hit: '+56a'
+  ch: null
+properties:
+  - 'Spike'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Spike'
+    - 'Low crush 7~33'
+    - 'Floating state 34~36'
+  de:
+    - 'Spike'
+    - 'Low Crush 7~33'
+    - 'Floating State 34~36'
+damage: '21'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

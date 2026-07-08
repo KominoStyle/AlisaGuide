@@ -1,0 +1,45 @@
+id: 'b43'
+character: 'alisa'
+input:
+  notation: 'b+4,3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'counterHitTool'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid,Mid'
+  de: 'Mid,Mid'
+frames:
+  startup: 'i15~16, i29~30'
+  block: '-11'
+  hit: '+6c'
+  ch: '+10a'
+properties:
+  - 'Spike'
+  - '→ DES'
+guide: null
+note:
+  en:
+    - 'Spike'
+    - 'Combo from 1st hit'
+    - 'Enter DES with 1+2'
+    - 'Low crush 17~24'
+    - 'Floating state 25~27'
+  de:
+    - 'Spike'
+    - 'Combo aus 1. Hit'
+    - 'In DES mit 1+2'
+    - 'Low Crush 17~24'
+    - 'Floating State 25~27'
+damage: '17, 20'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

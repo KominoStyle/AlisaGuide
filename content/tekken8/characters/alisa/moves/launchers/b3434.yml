@@ -1,0 +1,42 @@
+id: 'b3434'
+character: 'alisa'
+input:
+  notation: 'b+3+4,3+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 3
+range: 'm'
+levels: 'Mid,Mid'
+frames:
+  startup: 'i18~19, i56~61'
+  block: '+5c~+10c'
+  hit: '+59a'
+  ch: null
+properties:
+  - 'Spike'
+  - 'Launch'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Spike'
+    - 'Aerial combo from 1st hit'
+    - 'Low crush 1~58'
+    - 'Floating state 59~61'
+  de:
+    - 'Spike'
+    - 'Aerial-Combo aus 1. Hit'
+    - 'Low Crush 1~58'
+    - 'Floating State 59~61'
+damage: '22, 37 (25)'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

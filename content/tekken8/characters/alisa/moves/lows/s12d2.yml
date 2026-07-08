@@ -1,0 +1,38 @@
+id: 's12d2'
+character: 'alisa'
+input:
+  notation: '1,2,d+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'low'
+difficulty: 2
+range: 's'
+levels: 'High,High,Low'
+frames:
+  startup: 'i10, i27~28'
+  block: '-11'
+  hit: '+2'
+  ch: '+33a'
+properties:
+  - 'Low'
+guide: null
+note:
+  en:
+    - 'Combo from 2nd CH'
+    - 'Input can be delayed 8f'
+    - 'Move can be delayed 7f'
+  de:
+    - 'Combo aus 2. CH'
+    - 'Eingabe bis 8f verzögerbar'
+    - 'Move bis 7f verzögerbar'
+damage: '5, 10, 17'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

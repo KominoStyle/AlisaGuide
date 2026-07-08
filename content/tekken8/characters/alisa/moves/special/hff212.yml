@@ -1,0 +1,49 @@
+id: 'hff212'
+character: 'alisa'
+input:
+  notation: 'H.f,F+2,1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 3
+range: 'm'
+levels: 'Mid,Mid'
+frames:
+  startup: 'i16~17, i22~23'
+  block: '+3'
+  hit: '+25a (-1)'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'Weapon'
+  - 'Heat'
+guide: null
+note:
+  en:
+    - 'Heat dash string'
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Combo from 1st hit'
+    - '7 chip damage on block'
+    - 'Consumes 210F of remaining Heat time'
+    - 'Low crush 15~'
+  de:
+    - 'Heat-Dash-String'
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Combo aus 1. Hit'
+    - '7 Chip auf Block'
+    - 'Verbraucht 210F verbleibende Heat-Zeit'
+    - 'Low Crush 15~'
+damage: '18, 28'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

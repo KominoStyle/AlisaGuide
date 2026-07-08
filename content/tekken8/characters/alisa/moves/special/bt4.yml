@@ -1,0 +1,40 @@
+id: 'bt4'
+character: 'alisa'
+input:
+  notation: 'BT.4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 2
+range: 'm'
+levels: 'Mid'
+frames:
+  startup: 'i16~17'
+  block: '-3'
+  hit: '+19a (+2)'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'High crush'
+guide: null
+note:
+  en:
+    - 'Back-turned kick'
+    - 'Balcony Break'
+    - 'High crush 5~12'
+  de:
+    - 'Backturned-Kick'
+    - 'Balcony Break'
+    - 'High Crush 5~12'
+damage: '20'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

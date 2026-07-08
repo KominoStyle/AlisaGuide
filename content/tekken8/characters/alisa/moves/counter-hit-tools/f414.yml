@@ -1,0 +1,36 @@
+id: 'f414'
+character: 'alisa'
+input:
+  notation: 'f+4,1,4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'counterHitTool'
+difficulty: 3
+range: 'm'
+levels: 'Mid,High,Mid'
+frames:
+  startup: 'i16, i27~65'
+  block: '-12~+26g'
+  hit: '+1a'
+  ch: null
+properties:
+  - 'Launch'
+guide: null
+note:
+  en:
+    - 'Aerial combo from 2nd hit'
+    - 'Explosion move with travel/bounce timing'
+  de:
+    - 'Aerial-Combo aus 2. Hit'
+    - 'Explosions-Move mit Travel-/Bounce-Timing'
+damage: '14, 14, 24 (19)'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

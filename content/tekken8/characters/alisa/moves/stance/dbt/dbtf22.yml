@@ -1,0 +1,46 @@
+id: 'dbtf22'
+character: 'alisa'
+input:
+  notation: 'DBT.f+2,2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels: 'Low,Mid'
+frames:
+  startup: 'i19~20, i35~37'
+  block: '-33'
+  hit: '-6a (-13)'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'Weapon'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Combo from 1st hit'
+    - '7 chip damage on block (10 in Heat)'
+    - 'Low crush 35~67'
+    - 'Floating state 68~70'
+  de:
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Combo aus 1. Hit'
+    - '7 Chip auf Block (10 in Heat)'
+    - 'Low Crush 35~67'
+    - 'Floating State 68~70'
+damage: '13, 25 (17)'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

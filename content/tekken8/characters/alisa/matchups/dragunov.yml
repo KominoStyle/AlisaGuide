@@ -1,0 +1,17 @@
+character: 'Dragunov'
+deep: false
+tag:
+  en: 'Oppressive pressure & plus frames — SSR is his weak side.'
+  de: 'Erdrückender Druck & Plus-Frames — SSR ist seine schwache Seite.'
+hurt:
+  en: 'His `WR2` and `b1+2` (+6) plus-frame threats, the tackle mix, and strong lows. He never wants to give up the turn.'
+  de: 'Seine `WR2`- und `b1+2`-(+6)-Plus-Frame-Bedrohungen, der Tackle-Mix und starke Lows. Er will den Zug nie abgeben.'
+duck:
+  en: '**Step SSR** (his weak side). Duck `1,1`, `3,1`, `d3,2`, `b2,1`, `ws1,2` (mix). Bait `WR2` by stepping and whiff-punish it. Break his tackle / mix-grab with the correct throw break.'
+  de: '**Step SSR** (schwache Seite). Duck `1,1`, `3,1`, `d3,2`, `b2,1`, `ws1,2` (Mix). Baite `WR2` per Step und whiff-punish. Brich seinen Tackle- / Mix-Grab mit dem richtigen Break.'
+punish:
+  en: 'Launch **−15+**: `QCB2` (−15~14), `d4,1,3` (−16) → [[df2]]. Standing: `1,2,1` (−14), `1+2` (−14), `ws1+2` (−14) → [[f21]]; `df2` (−12), `f,F+2` (−12) → [[df1]].'
+  de: 'Launch **−15+**: `QCB2` (−15~14), `d4,1,3` (−16) → [[df2]]. Stehend: `1,2,1` (−14), `1+2` (−14), `ws1+2` (−14) → [[f21]]; `df2` (−12), `f,F+2` (−12) → [[df1]].'
+plan:
+  en: 'Don''t get pinned — use [[b3]] / [[uf2]] homing to interrupt his sidestep and your backdash to bait `WR2`. Respect his plus frames (`b1+2` +6): block, don''t mash.'
+  de: 'Lass dich nicht festnageln — nutz [[b3]] / [[uf2]]-Homing gegen seinen Sidestep und deinen Backdash, um `WR2` zu baiten. Respektier seine Plus-Frames (`b1+2` +6): blocken, nicht mashen.'

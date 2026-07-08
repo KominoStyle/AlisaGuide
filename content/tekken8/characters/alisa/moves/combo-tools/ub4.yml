@@ -1,0 +1,37 @@
+id: 'ub4'
+character: 'alisa'
+input:
+  notation: 'ub+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'comboTool'
+difficulty: 2
+range: 'm'
+levels: 'Mid'
+frames:
+  startup: 'i18'
+  block: '-9'
+  hit: '+7'
+  ch: null
+properties:
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Low crush 9~31'
+    - 'Floating state 32~34'
+  de:
+    - 'Low Crush 9~31'
+    - 'Floating State 32~34'
+damage: '10'
+key: null
+keytip: null
+chain: 'ub4'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

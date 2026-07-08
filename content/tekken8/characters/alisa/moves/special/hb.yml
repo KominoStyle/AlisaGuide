@@ -1,0 +1,50 @@
+id: 'hb'
+character: 'alisa'
+input:
+  notation: '2+3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i16'
+  block: '+1'
+  hit: '+2c'
+  ch: null
+properties:
+  - 'Heat Burst'
+  - 'Power crush'
+guide: null
+note:
+  en:
+    - 'Heat Burst'
+    - 'Cancel to r45 with b,b on frame 42'
+    - '2 chip damage on block'
+    - '12 chip damage on hit'
+    - 'Only deals recoverable damage'
+    - 'Cannot cause a K.O.'
+    - 'Power crush 7~16'
+  de:
+    - 'Heat Burst'
+    - 'Cancel zu r45 mit b,b auf Frame 42'
+    - '2 Chip auf Block'
+    - '12 Chip auf Hit'
+    - 'Nur erholbarer Schaden'
+    - 'Kann keinen K.O. verursachen'
+    - 'Power Crush 7~16'
+damage: '12, 12'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

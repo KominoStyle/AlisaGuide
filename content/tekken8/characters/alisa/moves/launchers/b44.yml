@@ -1,0 +1,51 @@
+id: 'b44'
+character: 'alisa'
+input:
+  notation: 'b+4,4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 2
+range: 'm'
+levels:
+  en: 'Mid,Mid'
+  de: 'Mid,Mid'
+frames:
+  startup: 'i15~16, i25~27'
+  block: '-37'
+  hit: '+9a'
+  ch: null
+properties:
+  - 'Tornado'
+  - 'Whiff punish'
+guide:
+  en: 'Long-range whiff-punisher into a Tornado mini-combo. -37 on block — only use on a whiff or inside a combo, never raw.'
+  de: 'Long-Range-Whiff-Punisher in einen Tornado-Mini-Combo. -37 auf Block — nur auf Whiff oder im Combo, nie raw.'
+note:
+  en:
+    - 'Tornado'
+    - 'Combo from 1st hit'
+    - 'Transition to SBT (-19 / +27a) with 3_4'
+    - 'Transition to DBT (-19 / +27a) with f+3_f+4'
+    - 'Low crush 25~62'
+    - 'Floating state 63~65'
+  de:
+    - 'Tornado'
+    - 'Combo aus 1. Hit'
+    - 'In SBT (-19 / +27a) mit 3_4'
+    - 'In DBT (-19 / +27a) mit f+3_f+4'
+    - 'Low Crush 25~62'
+    - 'Floating State 63~65'
+damage: '17, 17'
+key: 1
+keytip:
+  en: 'Tornado launcher into the boots.'
+  de: 'Tornado-Launcher in die Boots.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

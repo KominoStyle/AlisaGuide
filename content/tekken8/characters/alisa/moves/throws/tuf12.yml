@@ -1,0 +1,46 @@
+id: 'tuf12'
+character: 'alisa'
+input:
+  notation: 'uf+1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'throw'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Throw'
+  de: 'Wurf'
+frames:
+  startup: 'i12'
+  block: '-4'
+  hit: 'throw'
+  ch: null
+properties:
+  - 'Command throw'
+  - 'Break: 1+2'
+guide:
+  en: 'Alisa''s one special (command) throw — both arms reach out, so it breaks with **1+2**. This is the grab that beats opponents who mash 1 or 2 to escape your generics. Mix it with 1+3/2+4 and the break becomes a real guess.'
+  de: 'Alisas einziger Spezial-(Kommando-)Wurf — beide Arme gehen raus, bricht also mit **1+2**. Der Grab schlägt Gegner, die zum Entkommen deiner Generics 1 oder 2 mashen. Misch ihn mit 1+3/2+4 und der Break wird ein echtes Rate-Spiel.'
+note:
+  en:
+    - 'Command throw — unique animation'
+    - 'Break with 1+2 only'
+    - 'Opponent lands face-up, feet toward you'
+    - '+3 on hit'
+  de:
+    - 'Command-Throw — eigene Animation'
+    - 'Nur mit 1+2 brechbar'
+    - 'Gegner landet mit dem Gesicht nach oben, Füße zu dir'
+    - '+3 auf Hit'
+damage: '40'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

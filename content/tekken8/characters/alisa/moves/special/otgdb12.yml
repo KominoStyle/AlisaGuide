@@ -1,0 +1,41 @@
+id: 'otgdb12'
+character: 'alisa'
+input:
+  notation: 'OTG.db+1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 3
+range: 'm'
+levels: 'Low'
+frames:
+  startup: 'i25~27'
+  block: '-14'
+  hit: '+4a'
+  ch: null
+properties:
+  - 'Spike'
+  - 'Weapon'
+  - 'Low'
+guide: null
+note:
+  en:
+    - 'Ground hit (opponent lying down)'
+    - 'Spike'
+    - 'Weapon'
+  de:
+    - 'Bodentreffer (Gegner liegt)'
+    - 'Spike'
+    - 'Weapon'
+damage: '25'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

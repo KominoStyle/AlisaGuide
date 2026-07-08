@@ -1,0 +1,47 @@
+id: 's122'
+character: 'alisa'
+input:
+  notation: '1,2,2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'counterHitTool'
+difficulty: 2
+range: 's'
+levels:
+  en: 'High,High,High'
+  de: 'High,High,High'
+frames:
+  startup: 'i10, i12, i20~35'
+  block: '-9~+6'
+  hit: '+21a'
+  ch: null
+properties:
+  - 'Tornado'
+  - 'Balcony break'
+guide: null
+note:
+  en:
+    - 'All three hits are HIGH — fully duckable'
+    - 'Tornado — use it as a read / frame trap, not a raw blockstring'
+    - 'Balcony Break when it hits airborne'
+    - 'Weapon'
+    - 'Combo from 2nd counter-hit with 1f delay'
+    - '6 chip damage on block'
+  de:
+    - 'Alle drei Hits sind HIGH — komplett duckbar'
+    - 'Tornado — als Read / Frame-Trap nutzen, nicht als reinen Blockstring'
+    - 'Balcony Break bei Airborne-Treffer'
+    - 'Weapon'
+    - 'Combo aus 2. Counter-Hit mit 1f Delay'
+    - '6 Chip auf Block'
+damage: '5, 10, 20'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

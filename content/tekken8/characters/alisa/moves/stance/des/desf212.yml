@@ -1,0 +1,46 @@
+id: 'desf212'
+character: 'alisa'
+input:
+  notation: 'DES.f+2,1,2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels: '...,Mid,Mid'
+frames:
+  startup: 'i15, i23~24'
+  block: '-13'
+  hit: '+30a'
+  ch: null
+properties:
+  - 'Heat engager'
+  - 'Weapon'
+guide: null
+note:
+  en:
+    - 'Heat Engager'
+    - 'Heat Dash +5, +62a (+42)'
+    - 'Weapon'
+    - 'Combo from 1st or 2nd CH with ~3f delay'
+    - 'Move cannot be delayed'
+    - '6 chip damage on block (7 in Heat)'
+  de:
+    - 'Heat Engager'
+    - 'Heat Dash +5, +62a (+42)'
+    - 'Weapon'
+    - 'Combo aus 1. oder 2. CH mit ~3f Delay'
+    - 'Move nicht verzögerbar'
+    - '6 Chip auf Block (7 in Heat)'
+damage: '9, 9, 23'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,46 @@
+id: 'c11'
+character: 'alisa'
+input:
+  notation: '1,1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'jab'
+difficulty: 0
+range: 's'
+levels:
+  en: 'High,High'
+  de: 'High,High'
+frames:
+  startup: 'i10, i21'
+  block: '-3'
+  hit: '+5'
+  ch: '+14d'
+properties:
+  - 'i10 punish'
+  - 'DES cancel'
+guide:
+  en: 'i10 punisher and fast pressure. -3 on block. Cancel into chainsaws with 1+2 to keep your turn.'
+  de: 'i10-Punisher und schneller Druck. -3 auf Block. Per 1+2 in die Kettensägen canceln, um den Zug zu behalten.'
+note:
+  en:
+    - 'Both hits are HIGH — duckable'
+    - 'Combo from 1st hit with 4f delay'
+    - 'Input can be delayed 8f'
+    - 'Enter DES with 1+2'
+  de:
+    - 'Beide Hits sind HIGH — duckbar'
+    - 'Combo aus 1. Hit mit 4f Delay'
+    - 'Eingabe bis 8f verzögerbar'
+    - 'In DES mit 1+2'
+damage: '5, 18'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,52 @@
+id: 'uf2'
+character: 'alisa'
+input:
+  notation: 'uf+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'homing'
+difficulty: 1
+range: 'm'
+levels:
+  en: 'High'
+  de: 'High'
+frames:
+  startup: 'i16~17'
+  block: '-2'
+  hit: '+20a'
+  ch: null
+properties:
+  - 'Homing'
+  - 'Heat engager'
+  - 'Launch'
+guide:
+  en: 'Homing keepout high and heat engager. Only -2 on block, launches on hit, tracks steps. Beats sidewalk; loses to ducking.'
+  de: 'Homing-Keepout-High und Heat Engager. Nur -2 auf Block, launcht auf Hit, trackt Steps. Schlägt Sidewalk; verliert gegen Ducken.'
+note:
+  en:
+    - 'Heat Engager'
+    - 'Heat Dash +5, +43d (+35)'
+    - 'Homing'
+    - 'Balcony Break'
+    - 'Weapon'
+    - '6 chip damage on block'
+    - '11 chip damage on block in Heat'
+  de:
+    - 'Heat Engager'
+    - 'Heat Dash +5, +43d (+35)'
+    - 'Homing'
+    - 'Balcony Break'
+    - 'Weapon'
+    - '6 Chip auf Block'
+    - '11 Chip auf Block in Heat'
+damage: '22'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

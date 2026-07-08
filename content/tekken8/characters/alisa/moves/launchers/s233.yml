@@ -1,0 +1,52 @@
+id: 's233'
+character: 'alisa'
+input:
+  notation: '2,3,3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'launcher'
+difficulty: 2
+range: 's'
+levels:
+  en: 'High,Mid,Mid'
+  de: 'High,Mid,Mid'
+frames:
+  startup: 'i12, i22~23, i20~22'
+  block: '-11'
+  hit: '+16a'
+  ch: '+61a'
+properties:
+  - 'Tailspin'
+  - 'Balcony break'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Strong Aerial Tailspin'
+    - 'Balcony Break'
+    - 'Combo from 2nd hit with 9f delay'
+    - 'Input can be delayed 12f'
+    - 'Move can be delayed 11f'
+    - 'Low crush 13~41'
+    - 'Floating state 42~44'
+  de:
+    - 'Starker Aerial-Tailspin'
+    - 'Balcony Break'
+    - 'Combo aus 2. Hit mit 9f Delay'
+    - 'Eingabe bis 12f verzögerbar'
+    - 'Move bis 11f verzögerbar'
+    - 'Low Crush 13~41'
+    - 'Floating State 42~44'
+damage: '10, 8, 25'
+key: 1
+keytip:
+  en: 'Tailspin launcher & combo staple.'
+  de: 'Tailspin-Launcher & Combo-Baustein.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

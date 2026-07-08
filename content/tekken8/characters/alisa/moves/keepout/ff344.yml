@@ -1,0 +1,39 @@
+id: 'ff344'
+character: 'alisa'
+input:
+  notation: 'f,F+3,4,4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'keepout'
+difficulty: 3
+range: 'l'
+levels: 'Mid,High,Mid'
+frames:
+  startup: 'i18~19, i27~29'
+  block: '-10'
+  hit: '+20a'
+  ch: null
+properties:
+  - 'Balcony break'
+  - '→ DES'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Combo from 2nd hit'
+    - 'Enter DES with 1+2'
+  de:
+    - 'Balcony Break'
+    - 'Combo aus 2. Hit'
+    - 'In DES mit 1+2'
+damage: '12, 15, 25'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

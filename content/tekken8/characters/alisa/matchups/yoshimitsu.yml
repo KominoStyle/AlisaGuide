@@ -1,0 +1,17 @@
+character: 'Yoshimitsu'
+deep: false
+tag:
+  en: 'Gimmicks, stance mixups & Flash'
+  de: 'Gimmicks, Stance-Mixups & Flash'
+hurt:
+  en: 'Unpredictable: Kincho (KIN), No Sword (NSS) and Dragonfly (DGF) stances plus teleports. `3,1` is +7 on block (heat engager) — very strong. Flash (unblockable) interrupts your offense. `KIN.f+1+2` is +14. Launcher `df+2` (−7).'
+  de: 'Unberechenbar: Kincho (KIN), No Sword (NSS) und Dragonfly (DGF) Stances plus Teleports. `3,1` ist +7 auf Block (Heat-Engager) — sehr stark. Flash (unblockbar) unterbricht deine Offense. `KIN.f+1+2` ist +14. Launcher `df+2` (−7).'
+duck:
+  en: 'His `db+3` (−25) and `d+3` (−18) lows are heavily launch-punishable — block on read. Watch Flash: don''t mash into it. Homing `f+3` / `uf+4` beat steps. When he enters a stance, block and check for the gap rather than stepping.'
+  de: 'Seine Lows `db+3` (−25) und `d+3` (−18) sind stark launchbar — auf Read blocken. Flash beachten: nicht reinmashen. Homing `f+3` / `uf+4` schlagen Steps. Wenn er in eine Stance geht, blocken und die Lücke checken statt zu steppen.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `db+3` (−25!), `f+1+2` (−12), his whiffed sword spins. His `3,1` is +7 — do NOT try to punish it. Punish −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `db+3` (−25!), `f+1+2` (−12), seine gewhiffften Sword-Spins. Sein `3,1` ist +7 — NICHT bestrafen. −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Don''t over-respect the gimmicks — many are steppable or launch-punishable on block. Interrupt his slow stance entries with [[df1]], punish his unsafe lows hard with [[df2]], and stay calm against Flash (block, don''t mash). Keep it simple: solid pokes beat his chaos.'
+  de: 'Die Gimmicks nicht zu sehr respektieren — viele sind steppbar oder auf Block launchbar. Seine langsamen Stance-Einstiege mit [[df1]] unterbrechen, seine unsicheren Lows hart mit [[df2]] bestrafen, gegen Flash ruhig bleiben (blocken, nicht mashen). Simpel halten: solide Pokes schlagen sein Chaos.'

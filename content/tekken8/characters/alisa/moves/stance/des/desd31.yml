@@ -1,0 +1,40 @@
+id: 'desd31'
+character: 'alisa'
+input:
+  notation: 'DES.d+3,1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels: 'Mid'
+frames:
+  startup: 'i20~21'
+  block: '-13'
+  hit: '+14c'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'Weapon'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Weapon'
+    - '7 chip damage on block (12 in Heat)'
+  de:
+    - 'Balcony Break'
+    - 'Weapon'
+    - '7 Chip auf Block (12 in Heat)'
+damage: '25'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

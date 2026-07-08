@@ -1,0 +1,43 @@
+id: 'dbtf12'
+character: 'alisa'
+input:
+  notation: 'DBT.f+1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Mid ×5'
+frames:
+  startup: 'i17~18'
+  block: '+4'
+  hit: '+25a (-1)'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'Weapon'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Weapon'
+    - '8 chip damage on block'
+    - 'Low crush 1~'
+  de:
+    - 'Balcony Break'
+    - 'Weapon'
+    - '8 Chip auf Block'
+    - 'Low Crush 1~'
+damage: '28'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

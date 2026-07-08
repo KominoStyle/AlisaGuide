@@ -1,0 +1,41 @@
+id: 'ws3'
+character: 'alisa'
+input:
+  notation: 'ws3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Mid'
+  de: 'Mid'
+frames:
+  startup: 'i19~20'
+  block: '+4'
+  hit: '+15'
+  ch: null
+properties:
+  - 'While standing'
+  - 'Plus'
+guide:
+  en: 'While-standing mid that is +4 on block — a rare plus button for Alisa. Use it to keep your turn right after blocking a low.'
+  de: 'While-Standing-Mid, +4 auf Block — ein seltener Plus-Button für Alisa. Damit den Zug behalten, direkt nach geblocktem Low.'
+note:
+  en:
+    - 'Cancel with B'
+    - 'Actionable after 15 frames'
+  de:
+    - 'Cancel mit B'
+    - 'Handlungsfähig nach 15 Frames'
+damage: '18'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

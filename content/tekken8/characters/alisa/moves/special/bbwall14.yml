@@ -1,0 +1,45 @@
+id: 'bbwall14'
+character: 'alisa'
+input:
+  notation: 'b,B+1+4'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 3
+range: 'l'
+levels: 'High (unblockable)'
+frames:
+  startup: 'i63~84'
+  block: '—'
+  hit: '+37a (-18)'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'Weapon'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Unblockable'
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Low crush 12~79'
+    - 'Floating state 80~82'
+  de:
+    - 'Unblockbar'
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Low Crush 12~79'
+    - 'Floating State 80~82'
+damage: '50'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

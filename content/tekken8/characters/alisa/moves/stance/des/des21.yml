@@ -1,0 +1,40 @@
+id: 'des21'
+character: 'alisa'
+input:
+  notation: 'DES.2,1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels: '...,High (unblockable)'
+frames:
+  startup: 'i20~21, i28~56'
+  block: '—'
+  hit: '+85a (+69)'
+  ch: null
+properties:
+  - 'Tornado'
+  - 'Weapon'
+guide: null
+note:
+  en:
+    - 'Tornado'
+    - 'Weapon'
+    - 'Available only as a combo from 1st hit'
+  de:
+    - 'Tornado'
+    - 'Weapon'
+    - 'Nur als Combo aus dem 1. Hit'
+damage: '5,5,5, 20'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

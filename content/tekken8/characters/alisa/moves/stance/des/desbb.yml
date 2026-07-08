@@ -1,0 +1,37 @@
+id: 'desbb'
+character: 'alisa'
+input:
+  notation: 'DES.b,b'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels:
+  en: 'Movement'
+  de: 'Movement'
+frames:
+  startup: '—'
+  block: '—'
+  hit: '—'
+  ch: null
+properties:
+  - 'Movement'
+guide: null
+note:
+  en:
+    - 'Backdash out of Destructive Form'
+  de:
+    - 'Backdash aus der Destructive Form'
+damage: '—'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

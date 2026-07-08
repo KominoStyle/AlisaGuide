@@ -1,0 +1,36 @@
+id: 'b2'
+character: 'alisa'
+input:
+  notation: 'b+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'poke'
+difficulty: 2
+range: 'm'
+levels: 'Mid'
+frames:
+  startup: 'i18'
+  block: '-9'
+  hit: '+1'
+  ch: null
+properties:
+  - 'Mid'
+guide: null
+note:
+  en:
+    - 'i18 mid, −9 on block'
+    - 'Starts b+2,1 / b+2,3 / b+2,4'
+  de:
+    - 'i18-Mid, −9 auf Block'
+    - 'Startet b+2,1 / b+2,3 / b+2,4'
+damage: '12'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

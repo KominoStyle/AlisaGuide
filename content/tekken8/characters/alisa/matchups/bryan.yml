@@ -1,0 +1,17 @@
+character: 'Bryan'
+deep: false
+tag:
+  en: 'Keepout, counter-hit launchers & snake edge'
+  de: 'Keepout, Counter-Hit-Launcher & Snake Edge'
+hurt:
+  en: 'Fast mid `df+2` (i13). A CH machine — respect his frames. Snake edge `df+3` (i29, low) launches on hit but is slow and reactable. Hatchet `uf+4` (Spike) and homing `df+4` close space. Taunt sets up big damage.'
+  de: 'Schneller Mid `df+2` (i13). CH-Maschine — seine Frames respektieren. Snake Edge `df+3` (i29, Low) launcht auf Hit, ist aber langsam und reaktionsbar. Hatchet `uf+4` (Spike) und Homing `df+4` schließen Distanz. Taunt richtet großen Schaden an.'
+duck:
+  en: 'Duck `1,2` (high,high). Block the snake edge `df+3` on reaction → free launch. Bryan is linear — sidestep his mids and whiff-punish; but his `f,F+3` (+8) leaves him plus, so don''t step into that one.'
+  de: '`1,2` ducken (High,High). Snake Edge `df+3` auf Reaktion blocken → freier Launch. Bryan ist linear — seine Mids sidesteppen und whiff-punishen; aber sein `f,F+3` (+8) lässt ihn plus, also da nicht reinsteppen.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `df+3` snake edge (−26!), `qcb+3` (−13), his whiffed hatchet. Punish −10 with jabs, −13 with [[c32]]. His `ws2` is a mid-throw — ducking cancels it.'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `df+3` Snake Edge (−26!), `qcb+3` (−13), sein gewhiffter Hatchet. −10 mit Jabs, −13 mit [[c32]]. Sein `ws2` ist ein Mid-Throw — Ducken bricht ihn.'
+plan:
+  en: 'Bryan wins the CH war up close — don''t trade, poke and disengage. Use [[df1]] and ws2 to stay out, [[pc]] through his slow keepout, and launch whiffed df+4/uf+4 with [[df2]]. Block low on his snake-edge reads.'
+  de: 'Bryan gewinnt den CH-Krieg im Nahkampf — nicht traden, poken und rausgehen. [[df1]] und ws2 zum Draußenbleiben, [[pc]] durch sein langsames Keepout, gewhiffte df+4/uf+4 mit [[df2]] launchen. Auf Snake-Edge-Reads tief blocken.'

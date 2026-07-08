@@ -1,0 +1,43 @@
+id: 'fuft123'
+character: 'alisa'
+input:
+  notation: 'FUFT.1+2,3'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 3
+range: 'm'
+levels: 'Mid'
+frames:
+  startup: 'i22~23'
+  block: '-10'
+  hit: '+60a'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'Launch'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Floating state 1~5'
+    - 'Low crush 6~54'
+    - 'Floating state 55~57'
+  de:
+    - 'Balcony Break'
+    - 'Floating State 1~5'
+    - 'Low Crush 6~54'
+    - 'Floating State 55~57'
+damage: '35'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

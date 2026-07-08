@@ -1,0 +1,39 @@
+id: 'leftthrow'
+character: 'alisa'
+input:
+  notation: 'Left throw'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'throw'
+difficulty: 2
+range: 's'
+levels: 'Throw'
+frames:
+  startup: '—'
+  block: '-3'
+  hit: '-5d'
+  ch: null
+properties:
+  - 'Throw'
+guide: null
+note:
+  en:
+    - 'Throw break: 1'
+    - 'Opponent recovery: face-down feet-away'
+    - 'Can side switch on hit'
+  de:
+    - 'Wurf-Break: 1'
+    - 'Gegner-Recovery: Face-down, Füße weg'
+    - 'Kann bei Hit die Seite wechseln'
+damage: '40'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

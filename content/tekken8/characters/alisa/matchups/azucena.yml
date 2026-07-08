@@ -1,0 +1,17 @@
+character: 'Azucena'
+deep: false
+tag:
+  en: 'Libertador stance, evasive rushdown'
+  de: 'Libertador-Stance, evasiver Rushdown'
+hurt:
+  en: 'Launcher `df+2` (i15~16, -13). Lows: `d+3`, `d+3,3`, `d+3,3,4`, `d+4`. Heat engagers: `3,3`, `f+4,4`, `b+3`. Plus on block: `d+1` (+4), `uf+3+4` (+4~+6), `ws3` (+4).'
+  de: 'Launcher `df+2` (i15~16, -13). Lows: `d+3`, `d+3,3`, `d+3,3,4`, `d+4`. Heat-Engager: `3,3`, `f+4,4`, `b+3`. Plus auf Block: `d+1` (+4), `uf+3+4` (+4~+6), `ws3` (+4).'
+duck:
+  en: 'Duckable high strings — block the rest, duck the high: `1,2`, `2,1,2`, `ws4,1`, `ws4,1,3`. Homing (don''t step): `f+4`, `b+2`, `LIB.3+4`.'
+  de: 'Duckbare High-Strings — Rest blocken, das High ducken: `1,2`, `2,1,2`, `ws4,1`, `ws4,1,3`. Homing (nicht steppen): `f+4`, `b+2`, `LIB.3+4`.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `db+1+2` (-21), `3,2~F` (-18), `db+3+4` (-16~-12), `uf+3` (-16a). Cover −10 with jabs, −13 with [[c32]].'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `db+1+2` (-21), `3,2~F` (-18), `db+3+4` (-16~-12), `uf+3` (-16a). −10 mit Jabs, −13 mit [[c32]].'
+plan:
+  en: 'Respect the LIB mixup but punish its unsafe options; block, hold guard, and launch her whiffs with [[df2]]. Interrupt her flow with [[df1]] so she can''t snowball.'
+  de: 'Den LIB-Mixup respektieren, aber seine unsicheren Optionen bestrafen; blocken, Guard halten und ihre Whiffs mit [[df2]] launchen. Ihren Flow mit [[df1]] unterbrechen, damit sie nicht snowballt.'

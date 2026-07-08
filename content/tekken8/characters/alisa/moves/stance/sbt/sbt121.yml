@@ -1,0 +1,41 @@
+id: 'sbt121'
+character: 'alisa'
+input:
+  notation: 'SBT.1,2,1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 3
+range: 's'
+levels: 'Mid,Mid,Mid'
+frames:
+  startup: 'i13~14, i20~21'
+  block: '-12'
+  hit: '-20'
+  ch: '-12'
+properties:
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Combo from 2nd CH'
+    - 'Less safe on hit than on block without CH'
+    - 'Low crush 26~102'
+    - 'Floating state 103~105'
+  de:
+    - 'Combo aus 2. CH'
+    - 'Auf Hit weniger safe als auf Block ohne CH'
+    - 'Low Crush 26~102'
+    - 'Floating State 103~105'
+damage: '12, 13, 7'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

@@ -1,0 +1,58 @@
+id: 'c32'
+character: 'alisa'
+input:
+  notation: '3,2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'homing'
+difficulty: 1
+range: 'm'
+levels:
+  en: 'Mid,High'
+  de: 'Mid,High'
+frames:
+  startup: 'i13~14, i26~27'
+  block: '-2'
+  hit: '+20a'
+  ch: null
+properties:
+  - 'Whiff punish'
+  - 'Homing'
+  - 'Heat engager'
+guide:
+  en: 'Your main whiff-punisher: i13, long, homing, heat engager. -2 on block. Heat-dash to launch into a full combo.'
+  de: 'Dein Haupt-Whiff-Punisher: i13, lang, homing, Heat Engager. -2 auf Block. Per Heat-Dash in einen vollen Combo launchen.'
+note:
+  en:
+    - 'Heat Engager'
+    - 'Heat Dash +5, +43d (+35)'
+    - 'Homing'
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Combo from 1st hit'
+    - '6 chip damage on block'
+    - '10 chip damage on block in Heat'
+    - 'Does not transition to DES when using Heat Dash'
+  de:
+    - 'Heat Engager'
+    - 'Heat Dash +5, +43d (+35)'
+    - 'Homing'
+    - 'Balcony Break'
+    - 'Weapon'
+    - 'Combo aus 1. Hit'
+    - '6 Chip auf Block'
+    - '10 Chip auf Block in Heat'
+    - 'Kein DES beim Heat-Dash'
+damage: '10, 20'
+key: 1
+keytip:
+  en: 'Homing Heat Engager off the 3 poke.'
+  de: 'Homing-Heat-Engager aus dem 3-Poke.'
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

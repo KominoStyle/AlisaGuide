@@ -1,0 +1,42 @@
+id: 'fff12'
+character: 'alisa'
+input:
+  notation: 'f,f,F+1+2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'special'
+difficulty: 3
+range: 'l'
+levels: 'Mid'
+frames:
+  startup: 'i18~36'
+  block: '-3'
+  hit: '-17a (-26)'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Punishable with toekick on hit'
+    - 'Low crush 5~36'
+    - 'Floating state 37~67'
+  de:
+    - 'Balcony Break'
+    - 'Auf Hit mit Toekick bestrafbar'
+    - 'Low Crush 5~36'
+    - 'Floating State 37~67'
+damage: '24'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

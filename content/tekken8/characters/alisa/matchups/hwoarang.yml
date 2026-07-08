@@ -1,0 +1,17 @@
+character: 'Hwoarang'
+deep: false
+tag:
+  en: 'Relentless stance pressure (LFS/RFF/RFS)'
+  de: 'Dauerhafter Stance-Druck (LFS/RFF/RFS)'
+hurt:
+  en: 'Nonstop stance pressure from flamingo (LFS), Right Flamingo (RFF) and switches. Tons of plus frames: `RFF.f+3` (+12), `3,3,4` (+8), plus-low `d+3,4` (+8). Launcher `df+2` (−7, safe). Fast homing mid `df+4`.'
+  de: 'Dauerhafter Stance-Druck aus Flamingo (LFS), Right Flamingo (RFF) und Wechseln. Viele Plus-Frames: `RFF.f+3` (+12), `3,3,4` (+8), Plus-Low `d+3,4` (+8). Launcher `df+2` (−7, safe). Schneller Homing-Mid `df+4`.'
+duck:
+  en: 'Duck `1,2` (high,high). Stepping is risky — his stances track and `df+4` / `d+3+4` are homing; block and find the gaps instead. Block his lows (`db+4`, `LFS.d+3`) — but low enders like `db+4,4` are plus, so don''t mash after.'
+  de: '`1,2` ducken (High,High). Steppen ist riskant — seine Stances tracken und `df+4` / `d+3+4` sind Homing; lieber blocken und Lücken finden. Seine Lows blocken (`db+4`, `LFS.d+3`) — aber Low-Ender wie `db+4,4` sind plus, also danach nicht mashen.'
+punish:
+  en: 'Launch-punishable → [[uf44]]/[[df2]]: `df+3` (−14), `df+3+4` (−14). Most stance strings are safe or plus — don''t force punishes, wait for the unsafe ender. His `uf+4` is a high (−2) — duck-punish it. Cover −10 with jabs.'
+  de: 'Auf Block launchbar → [[uf44]]/[[df2]]: `df+3` (−14), `df+3+4` (−14). Die meisten Stance-Strings sind safe oder plus — keine Punishes erzwingen, auf den unsicheren Ender warten. Sein `uf+4` ist ein High (−2) — wegducken und bestrafen. −10 mit Jabs.'
+plan:
+  en: 'Patience beats Hwoarang: block, hold guard through the plus frames, and take your turn only in real gaps with fast jabs or [[pc]]. Don''t panic-step. When he whiffs a stance transition, launch with [[df2]]. Keep him at range to deny stance entry.'
+  de: 'Geduld schlägt Hwoarang: blocken, den Guard durch die Plus-Frames halten und nur in echten Lücken mit schnellen Jabs oder [[pc]] den Zug nehmen. Nicht panisch steppen. Wenn er einen Stance-Transition whifft, mit [[df2]] launchen. Auf Distanz halten, um Stance-Einstieg zu verhindern.'

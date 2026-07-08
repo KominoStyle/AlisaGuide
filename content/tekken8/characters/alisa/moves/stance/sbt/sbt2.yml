@@ -1,0 +1,48 @@
+id: 'sbt2'
+character: 'alisa'
+input:
+  notation: 'SBT.2'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels: 'Mid'
+frames:
+  startup: 'i16~27'
+  block: '-8'
+  hit: '+6a (-4)'
+  ch: null
+properties:
+  - 'Balcony break'
+  - 'Elbow'
+  - '→ DES'
+  - 'Low crush'
+guide: null
+note:
+  en:
+    - 'Balcony Break'
+    - 'Elbow'
+    - 'Transition to DES with SBT.1+2'
+    - 'Hitstop 20f on hit'
+    - 'Low crush 26~63'
+    - 'Floating state 64~66'
+  de:
+    - 'Balcony Break'
+    - 'Ellbogen'
+    - 'In DES mit SBT.1+2'
+    - 'Hitstop 20f auf Hit'
+    - 'Low Crush 26~63'
+    - 'Floating State 64~66'
+damage: '25'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

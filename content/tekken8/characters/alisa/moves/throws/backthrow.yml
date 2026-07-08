@@ -1,0 +1,42 @@
+id: 'backthrow'
+character: 'alisa'
+input:
+  notation: 'Back throw'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'throw'
+difficulty: 2
+range: 's'
+levels: 'Throw'
+frames:
+  startup: '—'
+  block: '—'
+  hit: '+0d'
+  ch: null
+properties:
+  - 'Floor break'
+  - 'Throw'
+guide: null
+note:
+  en:
+    - 'Floor Break'
+    - 'Throw break: none (unbreakable)'
+    - 'Opponent recovery: face-down feet-away'
+    - 'Side switch'
+  de:
+    - 'Floor Break'
+    - 'Wurf-Break: keiner (unbrechbar)'
+    - 'Gegner-Recovery: Face-down, Füße weg'
+    - 'Seitenwechsel'
+damage: '55'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

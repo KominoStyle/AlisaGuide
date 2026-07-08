@@ -1,0 +1,44 @@
+id: 'db1'
+character: 'alisa'
+input:
+  notation: 'db+1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'stanceMove'
+difficulty: 2
+range: 's'
+levels:
+  en: 'Stance entry'
+  de: 'Stance-Einstieg'
+frames:
+  startup: '—'
+  block: '—'
+  hit: '—'
+  ch: null
+properties:
+  - '→ BKP'
+  - 'High crush'
+guide: null
+note:
+  en:
+    - 'Enters Backup / crouch'
+    - 'Transition to FC with D (or after d+3 BKP transition)'
+    - 'Can perform WS moves after 24 frames'
+    - 'High crush 4~15'
+  de:
+    - 'Geht in Backup / Duck'
+    - 'In FC mit D (oder nach d+3-BKP-Übergang)'
+    - 'WS-Moves ab Frame 24 möglich'
+    - 'High Crush 4~15'
+damage: '—'
+key: null
+keytip: null
+chain: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'

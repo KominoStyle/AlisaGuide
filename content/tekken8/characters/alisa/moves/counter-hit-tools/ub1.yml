@@ -1,0 +1,39 @@
+id: 'ub1'
+character: 'alisa'
+input:
+  notation: 'ub+1'
+  tokens: []
+  aliases: []
+  keyboard: null
+  controller: null
+name: null
+category: 'counterHitTool'
+difficulty: 2
+range: 'm'
+levels: 'Mid,Mid'
+frames:
+  startup: 'i19'
+  block: '-7'
+  hit: '+8c'
+  ch: '+33d'
+properties:
+  - 'Floor break'
+  - 'Weapon'
+guide: null
+note:
+  en:
+    - 'Floor Break'
+    - 'Weapon'
+    - '2 chip damage on block'
+  de:
+    - 'Floor Break'
+    - 'Weapon'
+    - '2 Chip auf Block'
+damage: '9, 9'
+key: null
+keytip: null
+followups: []
+meta:
+  status: 'needs_testing'
+  patch: '3.01.01'
+  source: 'legacy'
