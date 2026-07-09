@@ -1,5 +1,5 @@
 character: 'Bryan'
-deep: false
+deep: true
 tag:
   en: 'Keepout, counter-hit launchers & snake edge'
   de: 'Keepout, Counter-Hit-Launcher & Snake Edge'
@@ -15,3 +15,59 @@ punish:
 plan:
   en: 'Bryan wins the CH war up close — don''t trade, poke and disengage. Use [[df1]] and ws2 to stay out, [[pc]] through his slow keepout, and launch whiffed df+4/uf+4 with [[df2]]. Block low on his snake-edge reads.'
   de: 'Bryan gewinnt den CH-Krieg im Nahkampf — nicht traden, poken und rausgehen. [[df1]] und ws2 zum Draußenbleiben, [[pc]] durch sein langsames Keepout, gewhiffte df+4/uf+4 mit [[df2]] launchen. Auf Snake-Edge-Reads tief blocken.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'A counter-hit machine with strong keepout: he wants you to trade up close and eat a CH launcher. The snake edge `df+3` opens rounds from range, hatchet `uf+4` and homing `df+4` close space, and his taunt sets up big damage.'
+  de: 'Eine Counter-Hit-Maschine mit starkem Keepout: Er will, dass du im Nahkampf tradest und einen CH-Launcher frisst. Die Snake Edge `df+3` öffnet Runden aus der Distanz, Hatchet `uf+4` und Homing `df+4` schließen Distanz, und sein Taunt richtet großen Schaden an.'
+keyThreats:
+  - en: 'He is a counter-hit machine up close — respect his frames, do not trade.'
+    de: 'Er ist eine Counter-Hit-Maschine im Nahkampf — seine Frames respektieren, nicht traden.'
+  - en: 'Snake edge `df+3` (i29 low) launches on hit but is slow and reactable.'
+    de: 'Snake Edge `df+3` (i29 Low) launcht auf Hit, ist aber langsam und reaktionsbar.'
+  - en: 'Hatchet `uf+4` (Spike) and homing `df+4` close space; his taunt sets up big damage.'
+    de: 'Hatchet `uf+4` (Spike) und Homing `df+4` schließen Distanz; sein Taunt richtet großen Schaden an.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'High, high — duck on a read, then while-standing launch.'
+      de: 'High, High — auf Read ducken, dann while-standing launchen.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'df+3'
+    onBlock: '−26'
+    with: 'uf+4,4'
+    note:
+      en: 'Block the snake edge on reaction → huge launch punish.'
+      de: 'Die Snake Edge auf Reaktion blocken → riesiger Launch-Punish.'
+    reviewStatus: verified
+  - notation: 'qcb+3'
+    onBlock: '−13'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+stepDirection:
+  direction: 'Sidestep his linear mids'
+  note:
+    en: 'Bryan is linear — step his mids and whiff-punish, but his `f,F+3` (+8) leaves him plus, so do not step into that one.'
+    de: 'Bryan ist linear — seine Mids steppen und whiff-punishen, aber sein `f,F+3` (+8) lässt ihn plus, also da nicht reinsteppen.'
+  reviewStatus: verified
+alisaAnswers:
+  - en: 'Do not trade up close — poke with [[df1]] and ws2, then disengage.'
+    de: 'Im Nahkampf nicht traden — mit [[df1]] und ws2 poken, dann rausgehen.'
+  - en: 'Use [[pc]] to blow through his slow keepout.'
+    de: 'Mit [[pc]] durch sein langsames Keepout brechen.'
+  - en: 'Launch whiffed `df+4` / `uf+4` with [[df2]]; block low on his snake-edge reads.'
+    de: 'Gewhiffte `df+4` / `uf+4` mit [[df2]] launchen; auf Snake-Edge-Reads tief blocken.'
+knowledgeChecks:
+  - en: 'Block the snake edge `df+3` on reaction — it is slow → free launch.'
+    de: 'Die Snake Edge `df+3` auf Reaktion blocken — sie ist langsam → freier Launch.'
+  - en: 'His `ws2` is a mid-throw — ducking cancels it.'
+    de: 'Sein `ws2` ist ein Mid-Throw — Ducken bricht ihn.'
+drills:
+  - en: 'Record the snake edge `df+3` and practise blocking it on reaction into a launch.'
+    de: 'Die Snake Edge `df+3` aufnehmen und üben, sie on Reaction in einen Launch zu blocken.'
+  - en: 'Record `f,F+3` (+8) and practise NOT stepping or mashing after it.'
+    de: '`f,F+3` (+8) aufnehmen und üben, danach NICHT zu steppen oder zu mashen.'

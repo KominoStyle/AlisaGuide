@@ -1,5 +1,5 @@
 character: 'Leo'
-deep: false
+deep: true
 tag:
   en: 'Bajiquan — KNK stance, fast mids & pokes'
   de: 'Bajiquan — KNK-Stance, schnelle Mids & Pokes'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Trade pokes and win with range; punish KNK''s unsafe options with [[df2]]. Interrupt with [[df1]], block the lows, and whiff-punish committal mids.'
   de: 'Pokes traden und mit Reichweite gewinnen; KNKs unsichere Optionen mit [[df2]] bestrafen. Mit [[df1]] unterbrechen, die Lows blocken und committale Mids whiff-punishen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Bajiquan with KNK stance, fast mids and pokes and strong plus frames — the goal is to out-poke you and snowball off plus frames. Launcher `df+2` (−13~−12); lows `d+3+4` / `d+3` / `d+4` / `d+4,2`; heat engagers `ws4,1+2` / `b+2,1+2` / `db+2,4`; plus frames `3,2,4` (+9~+10), `f+4` (+9~+10).'
+  de: 'Bajiquan mit KNK-Stance, schnellen Mids und Pokes und starken Plus-Frames — das Ziel ist, dich auszupoken und über Plus-Frames zu snowballen. Launcher `df+2` (−13~−12); Lows `d+3+4` / `d+3` / `d+4` / `d+4,2`; Heat-Engager `ws4,1+2` / `b+2,1+2` / `db+2,4`; Plus-Frames `3,2,4` (+9~+10), `f+4` (+9~+10).'
+keyThreats:
+  - en: 'KNK stance with fast mids and pokes — punish its unsafe options.'
+    de: 'KNK-Stance mit schnellen Mids und Pokes — die unsicheren Optionen bestrafen.'
+  - en: 'Strong plus frames `3,2,4` (+9~+10) / `f+4` (+9~+10) / `b+1,4` (+9) — their turn, do not mash.'
+    de: 'Starke Plus-Frames `3,2,4` (+9~+10) / `f+4` (+9~+10) / `b+1,4` (+9) — ihr Zug, nicht mashen.'
+  - en: 'Heat engagers `ws4,1+2` / `b+2,1+2` / `db+2,4`.'
+    de: 'Heat-Engager `ws4,1+2` / `b+2,1+2` / `db+2,4`.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,1'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,1,1'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'b+1+2'
+    onBlock: '−24~−23'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'BT.1+2'
+    onBlock: '−20'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'ub+1,P.4'
+    onBlock: '−16~−15'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Trade pokes and win with range; punish KNK''s unsafe options with [[df2]].'
+    de: 'Pokes traden und mit Reichweite gewinnen; KNKs unsichere Optionen mit [[df2]] bestrafen.'
+  - en: 'Interrupt with [[df1]] and block the lows.'
+    de: 'Mit [[df1]] unterbrechen und die Lows blocken.'
+  - en: 'Whiff-punish committal mids with [[df2]].'
+    de: 'Committale Mids mit [[df2]] whiff-punishen.'
+knowledgeChecks:
+  - en: 'The `df+2` launcher is −13~−12 on block — punish it with [[c32]], do not try to launch it.'
+    de: 'Der `df+2`-Launcher ist geblockt −13~−12 — mit [[c32]] bestrafen, nicht launchen.'
+  - en: 'Do not step the homing `df+3` / `qcf+3+4` / `BOK.3` — block and whiff-punish instead.'
+    de: 'Das Homing `df+3` / `qcf+3+4` / `BOK.3` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record the duckable jab strings (`1,2` / `1,2,1` / `1,2,1,1`) → duck the high and launch with [[ws2]].'
+    de: 'Die duckbaren Jab-Strings (`1,2` / `1,2,1` / `1,2,1,1`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record `b+1+2` (−24) → block and launch with [[uf44]].'
+    de: '`b+1+2` (−24) aufnehmen → blocken und mit [[uf44]] launchen.'

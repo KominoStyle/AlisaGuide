@@ -1,5 +1,5 @@
 character: 'Heihachi'
-deep: false
+deep: true
 tag:
   en: 'Mishima — hellsweep, WGF & electrics'
   de: 'Mishima — Hellsweep, WGF & Electrics'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Fundamentals beat the Mishima: block hellsweep on read and launch, block WGF standing, punish everything unsafe with [[df2]]. Stay at range so his mixups cost him a dash.'
   de: 'Fundamentals schlagen den Mishima: Hellsweep auf Read blocken und launchen, WGF stehend blocken, alles Unsichere mit [[df2]] bestrafen. Auf Distanz bleiben, damit seine Mixups einen Dash kosten.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Classic Mishima: the hellsweep `f,n,d,DF+4` (and its `,4` / `,4,4` extensions) mixes with Wind God Fist, backed by electrics and heavy plus frames on block. Heat engagers `f,F+1+2` / `qcf+2` / `uf+2,1` swing rounds.'
+  de: 'Klassischer Mishima: Der Hellsweep `f,n,d,DF+4` (und seine `,4`- / `,4,4`-Extensions) mixt mit Wind God Fist, gestützt von Electrics und starken Plus-Frames auf Block. Heat-Engager `f,F+1+2` / `qcf+2` / `uf+2,1` drehen Runden.'
+keyThreats:
+  - en: 'The hellsweep `f,n,d,DF+4` versus Wind God Fist — the classic Mishima 50/50.'
+    de: 'Der Hellsweep `f,n,d,DF+4` gegen Wind God Fist — das klassische Mishima-50/50.'
+  - en: 'Heavy plus frames on block: `f,n,d,df+3` (+11g), `RAI.2` (+10) — his turn, do not mash.'
+    de: 'Starke Plus-Frames auf Block: `f,n,d,df+3` (+11g), `RAI.2` (+10) — sein Zug, nicht mashen.'
+  - en: 'Heat engagers `f,F+1+2` / `qcf+2` / `uf+2,1` can start Heat off a stray hit.'
+    de: 'Heat-Engager `f,F+1+2` / `qcf+2` / `uf+2,1` können aus einem gefressenen Hit Heat starten.'
+duckTargets:
+  - string: '1,1'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+  - string: '1,2,2'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+punishThese:
+  - notation: '1,1,2'
+    onBlock: '−17'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'qcf+2'
+    onBlock: '−17'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'f,F+2'
+    onBlock: '−16'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Block the hellsweep on read → launch; block Wind God Fist (mid) standing.'
+    de: 'Den Hellsweep auf Read blocken → launchen; Wind God Fist (Mid) stehend blocken.'
+  - en: 'Punish everything unsafe with [[df2]]; cover −13 with [[c32]].'
+    de: 'Alles Unsichere mit [[df2]] bestrafen; −13 mit [[c32]] abdecken.'
+  - en: 'Stay at range so his mixups cost him a dash.'
+    de: 'Auf Distanz bleiben, damit seine Mixups einen Dash kosten.'
+knowledgeChecks:
+  - en: 'His `df+2` launcher is only −7 on block — it is safe, do not try to launch it.'
+    de: 'Sein `df+2`-Launcher ist geblockt nur −7 — safe, nicht launchen.'
+  - en: 'Do not step his homing `b+3` / `uf+4` / `RAI.2` — block and whiff-punish instead.'
+    de: 'Sein Homing `b+3` / `uf+4` / `RAI.2` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record the hellsweep / WGF 50/50 → block the low on read and launch, block the mid standing.'
+    de: 'Das Hellsweep- / WGF-50/50 aufnehmen → den Low auf Read blocken und launchen, den Mid stehend blocken.'
+  - en: 'Record `df+2` and confirm it is only −7 — practise taking your turn instead of launch-punishing it.'
+    de: '`df+2` aufnehmen und bestätigen, dass es nur −7 ist — üben, den Zug zu nehmen statt zu launchen.'

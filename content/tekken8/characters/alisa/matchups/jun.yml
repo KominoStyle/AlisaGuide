@@ -1,5 +1,5 @@
 character: 'Jun'
-deep: false
+deep: true
 tag:
   en: 'Nature style — parries, evasive, strong CH'
   de: 'Nature-Style — Parries, evasiv, starker CH'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Don''t be predictable — she can parry. Stagger pressure, mix lows and throws, and whiff-punish her defensive pokes with [[df2]]. Control the pace and punish her unsafe strings.'
   de: 'Sei nicht vorhersehbar — sie kann parieren. Druck staffeln, Lows und Würfe mischen, ihre defensiven Pokes mit [[df2]] whiff-punishen. Tempo kontrollieren und ihre unsicheren Strings bestrafen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'An evasive, parry-heavy Nature-style character with strong counter-hits. She has plus frames on block (`f,F+1+2` +6, `SS.4` +6, `1,2,2` +4) and heat engagers `1+2` / `f+2,1+2` / `IZU.3`; her `df+2` launcher is only −12.'
+  de: 'Ein evasiver, parry-lastiger Nature-Style-Charakter mit starken Counter-Hits. Sie hat Plus-Frames auf Block (`f,F+1+2` +6, `SS.4` +6, `1,2,2` +4) und Heat-Engager `1+2` / `f+2,1+2` / `IZU.3`; ihr `df+2`-Launcher ist nur −12.'
+keyThreats:
+  - en: 'She can parry — do not be predictable; stagger your pressure and mix lows and throws.'
+    de: 'Sie kann parieren — sei nicht vorhersehbar; Druck staffeln und Lows und Würfe mischen.'
+  - en: 'Strong counter-hits and plus frames (`f,F+1+2` +6, `SS.4` +6, `1,2,2` +4) — her turn after them.'
+    de: 'Starke Counter-Hits und Plus-Frames (`f,F+1+2` +6, `SS.4` +6, `1,2,2` +4) — danach ihr Zug.'
+  - en: 'Heat engagers `1+2` / `f+2,1+2` / `IZU.3` can start Heat off a stray hit.'
+    de: 'Heat-Engager `1+2` / `f+2,1+2` / `IZU.3` können aus einem gefressenen Hit Heat starten.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,2'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,4'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'ws3+4'
+    onBlock: '−21'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'uf+4'
+    onBlock: '−20'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'b+3'
+    onBlock: '−19'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Do not be predictable — she can parry; stagger pressure and mix lows and throws.'
+    de: 'Sei nicht vorhersehbar — sie kann parieren; Druck staffeln und Lows und Würfe mischen.'
+  - en: 'Whiff-punish her defensive pokes with [[df2]].'
+    de: 'Ihre defensiven Pokes mit [[df2]] whiff-punishen.'
+  - en: 'Control the pace and punish her unsafe strings.'
+    de: 'Das Tempo kontrollieren und ihre unsicheren Strings bestrafen.'
+knowledgeChecks:
+  - en: 'Her `df+2` launcher is only −12 on block — do not try to launch it; take a jab punish.'
+    de: 'Ihr `df+2`-Launcher ist geblockt nur −12 — nicht launchen; einen Jab-Punish nehmen.'
+  - en: 'Do not step her homing `1,2,2` / `f+3,2` / `df+3` — block and whiff-punish instead.'
+    de: 'Ihr Homing `1,2,2` / `f+3,2` / `df+3` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record her duckable jab strings (`1,2` / `1,2,2` / `1,2,4`) → duck the high and launch with [[ws2]].'
+    de: 'Ihre duckbaren Jab-Strings (`1,2` / `1,2,2` / `1,2,4`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record `f,F+1+2` (+6) and practise blocking without mashing after it.'
+    de: '`f,F+1+2` (+6) aufnehmen und üben, danach zu blocken statt zu mashen.'

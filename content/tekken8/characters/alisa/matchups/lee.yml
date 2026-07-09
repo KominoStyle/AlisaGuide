@@ -1,5 +1,5 @@
 character: 'Lee'
-deep: false
+deep: true
 tag:
   en: 'Fast stylish pokes, Hitman stance & Acid Rain'
   de: 'Schnelle stylishe Pokes, Hitman-Stance & Acid Rain'
@@ -15,3 +15,60 @@ punish:
 plan:
   en: 'Don''t get lost in his stagger pressure — block the Acid Rain low, hold guard, and punish the unsafe stance enders with [[df2]]. Interrupt with [[df1]] and whiff-punish precisely (his pokes recover fast). Keep him at your range.'
   de: 'Verlier dich nicht in seinem Stagger-Druck — den Acid-Rain-Low blocken, Guard halten und die unsicheren Stance-Ender mit [[df2]] bestrafen. Mit [[df1]] unterbrechen und präzise whiff-punishen (seine Pokes recovern schnell). Auf Distanz halten.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Fast stylish pokes with mist steps, Hitman (HMS) stance and Acid Rain — he wants to bury you in stagger pressure and chip with the repeating `D+4` low. Launchers `df+2` (−7 safe) and `uf+4` (−13); Acid Rain `D+4` (i12) low series; heat via `df+3,2,3` / `df+4,4`.'
+  de: 'Schnelle stylishe Pokes mit Mist-Steps, Hitman-Stance (HMS) und Acid Rain — er will dich in Stagger-Druck vergraben und mit dem wiederholenden `D+4`-Low knabbern. Launcher `df+2` (−7 safe) und `uf+4` (−13); Acid-Rain-`D+4`-(i12)-Low-Serie; Heat über `df+3,2,3` / `df+4,4`.'
+keyThreats:
+  - en: 'Acid Rain — the repeating `D+4` low series chips and mixes; block it, it is minus.'
+    de: 'Acid Rain — die wiederholende `D+4`-Low-Serie knabbert und mixt; blocken, sie ist minus.'
+  - en: 'Fast pokes and mist steps with stagger pressure — his pokes recover fast.'
+    de: 'Schnelle Pokes und Mist-Steps mit Stagger-Druck — seine Pokes recovern schnell.'
+  - en: 'Hitman (HMS) stance strings and heat via `df+3,2,3` / `df+4,4`.'
+    de: 'Hitman-Stance-Strings (HMS) und Heat über `df+3,2,3` / `df+4,4`.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'High, high — duck it on a read and while-standing launch.'
+      de: 'High, High — auf Read ducken und while-standing launchen.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'db+4'
+    onBlock: '−15'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'df+3,2,3'
+    onBlock: '−14'
+    with: 'f+2,1'
+    note:
+      en: 'Standing punish.'
+      de: 'Stehender Punish.'
+    reviewStatus: verified
+  - notation: 'uf+4'
+    onBlock: '−13'
+    with: '3,2'
+    note:
+      en: 'Standing punish.'
+      de: 'Stehender Punish.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Do not get lost in his stagger pressure — block the Acid Rain low, hold guard, and punish unsafe stance enders with [[df2]].'
+    de: 'Verlier dich nicht in seinem Stagger-Druck — den Acid-Rain-Low blocken, Guard halten und unsichere Stance-Ender mit [[df2]] bestrafen.'
+  - en: 'Interrupt with [[df1]] and whiff-punish precisely (his pokes recover fast).'
+    de: 'Mit [[df1]] unterbrechen und präzise whiff-punishen (seine Pokes recovern schnell).'
+  - en: 'Keep him at your range.'
+    de: 'Ihn auf Distanz halten.'
+knowledgeChecks:
+  - en: 'His `df+2` launcher is only −7 on block — it is safe, do not try to launch it.'
+    de: 'Sein `df+2`-Launcher ist geblockt nur −7 — er ist safe, nicht launchen.'
+  - en: 'Block the Acid Rain low `D+4` (i12) and its follow-ups — they are minus, so block and take your turn.'
+    de: 'Den Acid-Rain-Low `D+4` (i12) und seine Follow-ups blocken — sie sind minus, also blocken und den Zug nehmen.'
+drills:
+  - en: 'Record the Acid Rain `D+4` low → block it and take your turn instead of mashing.'
+    de: 'Den Acid-Rain-`D+4`-Low aufnehmen → blocken und den Zug nehmen statt zu mashen.'
+  - en: 'Record `db+4` (−15) → block and launch with [[uf44]].'
+    de: '`db+4` (−15) aufnehmen → blocken und mit [[uf44]] launchen.'

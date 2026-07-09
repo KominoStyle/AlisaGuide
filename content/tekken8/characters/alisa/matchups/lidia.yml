@@ -1,5 +1,5 @@
 character: 'Lidia'
-deep: false
+deep: true
 tag:
   en: 'Karate — stances, strong mids & lows'
   de: 'Karate — Stances, starke Mids & Lows'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Block her stance mixups and punish the unsafe enders with [[uf44]]/[[df2]]. Interrupt her pressure with [[df1]] and block the lows on read.'
   de: 'Ihre Stance-Mixups blocken und die unsicheren Ender mit [[uf44]]/[[df2]] bestrafen. Ihren Druck mit [[df1]] unterbrechen und die Lows auf Read blocken.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Karate with stances and strong mids and lows — she pressures with stance mixups and stays plus. Launcher `df+2` is +0 on block (plus — safe); lows `d+4` / `d+3` / `d+3,1`; heat engagers `f+1+2,3,1+2` / `b+1` / `FC.df+2`; plus frames `df+4~3` (+8), `qcf+1+2,2*` (+8), `HRS.4` (+8).'
+  de: 'Karate mit Stances und starken Mids und Lows — sie macht Druck mit Stance-Mixups und bleibt plus. Launcher `df+2` ist +0 auf Block (plus — safe); Lows `d+4` / `d+3` / `d+3,1`; Heat-Engager `f+1+2,3,1+2` / `b+1` / `FC.df+2`; Plus-Frames `df+4~3` (+8), `qcf+1+2,2*` (+8), `HRS.4` (+8).'
+keyThreats:
+  - en: 'Karate stance mixups with strong mids and lows — block and punish the unsafe enders.'
+    de: 'Karate-Stance-Mixups mit starken Mids und Lows — blocken und die unsicheren Ender bestrafen.'
+  - en: 'Launcher `df+2` is +0 on block — she is plus after it, do not press.'
+    de: 'Launcher `df+2` ist +0 auf Block — sie ist danach plus, nicht drücken.'
+  - en: 'Strong plus frames `df+4~3` (+8) / `qcf+1+2,2*` (+8) / `HRS.4` (+8) — her turn.'
+    de: 'Starke Plus-Frames `df+4~3` (+8) / `qcf+1+2,2*` (+8) / `HRS.4` (+8) — ihr Zug.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,2'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,3'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'f,F+4,3'
+    onBlock: '−27'
+    with: 'uf+4,4'
+    note:
+      en: 'Huge launch punish — always take it.'
+      de: 'Riesiger Launch-Punish — immer nehmen.'
+    reviewStatus: verified
+  - notation: 'qcf+2,2,1+2'
+    onBlock: '−17'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'f+1+2,3,1+2'
+    onBlock: '−15'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Block her stance mixups and punish the unsafe enders with [[uf44]] / [[df2]].'
+    de: 'Ihre Stance-Mixups blocken und die unsicheren Ender mit [[uf44]] / [[df2]] bestrafen.'
+  - en: 'Interrupt her pressure with [[df1]].'
+    de: 'Ihren Druck mit [[df1]] unterbrechen.'
+  - en: 'Block the lows on a read.'
+    de: 'Die Lows auf Read blocken.'
+knowledgeChecks:
+  - en: 'Her `df+2` launcher is +0 on block — she is plus, do not try to punish it; hold your guard.'
+    de: 'Ihr `df+2`-Launcher ist +0 auf Block — sie ist plus, nicht bestrafen; Guard halten.'
+  - en: 'Do not step her homing `db+3` / `b+4` / `qcf+4` — block and whiff-punish instead.'
+    de: 'Ihr Homing `db+3` / `b+4` / `qcf+4` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record her duckable jab strings (`1,2` / `1,2,2` / `1,2,3`) → duck the high and launch with [[ws2]].'
+    de: 'Ihre duckbaren Jab-Strings (`1,2` / `1,2,2` / `1,2,3`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record `f,F+4,3` (−27) → block and launch with [[uf44]].'
+    de: '`f,F+4,3` (−27) aufnehmen → blocken und mit [[uf44]] launchen.'

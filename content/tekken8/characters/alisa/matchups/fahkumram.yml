@@ -1,5 +1,5 @@
 character: 'Fahkumram'
-deep: false
+deep: true
 tag:
   en: 'Muay Thai — long range & big damage'
   de: 'Muay Thai — große Reichweite & Schaden'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Get inside his range where his long limbs whiff, then poke and punish. Whiff-punish his committal mids with [[df2]] and respect his power crushes. Don''t play his long-range game.'
   de: 'In seine Reichweite kommen, wo seine langen Limbs whiffen, dann poken und bestrafen. Committale Mids mit [[df2]] whiff-punishen und seine Power Crushes respektieren. Nicht sein Long-Range-Spiel spielen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Muay Thai long-range pressure with big damage — he wants to keep you at the tip of his long limbs and threaten power crushes and plus RAM frames. Launcher `df+2` is only −7 (safe); lows `d+4` / `d+3` / `d+3,4`; heat engagers `ws1,2` / `uf+3` / `df+1,4`; plus frames `...GRF.3*` (+13 RAM), `1,2,4,3~4*` (+9).'
+  de: 'Muay-Thai-Long-Range-Druck mit großem Schaden — er will dich an der Spitze seiner langen Limbs halten und mit Power Crushes und Plus-RAM-Frames drohen. Launcher `df+2` ist nur −7 (safe); Lows `d+4` / `d+3` / `d+3,4`; Heat-Engager `ws1,2` / `uf+3` / `df+1,4`; Plus-Frames `...GRF.3*` (+13 RAM), `1,2,4,3~4*` (+9).'
+keyThreats:
+  - en: 'Long-range Muay Thai limbs and big damage — do not play his long-range game.'
+    de: 'Long-Range-Muay-Thai-Limbs und großer Schaden — nicht sein Long-Range-Spiel spielen.'
+  - en: 'Power crushes — respect them, do not trade.'
+    de: 'Power Crushes — respektieren, nicht traden.'
+  - en: 'Strong plus frames `...GRF.3*` / `...GRF.4*` (+13 RAM) — his turn, do not mash.'
+    de: 'Starke Plus-Frames `...GRF.3*` / `...GRF.4*` (+13 RAM) — sein Zug, nicht mashen.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,1'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,4'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'uf+4'
+    onBlock: '−16'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: '4,4'
+    onBlock: '−15'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'b+2'
+    onBlock: '−15'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Get inside his range where his long limbs whiff, then poke and punish.'
+    de: 'In seine Reichweite kommen, wo seine langen Limbs whiffen, dann poken und bestrafen.'
+  - en: 'Whiff-punish his committal mids with [[df2]].'
+    de: 'Seine committalen Mids mit [[df2]] whiff-punishen.'
+  - en: 'Respect his power crushes — do not play his long-range game.'
+    de: 'Seine Power Crushes respektieren — nicht sein Long-Range-Spiel spielen.'
+knowledgeChecks:
+  - en: 'His `df+2` launcher is only −7 on block — it is safe, do not try to launch it.'
+    de: 'Sein `df+2`-Launcher ist geblockt nur −7 — er ist safe, nicht launchen.'
+  - en: 'Do not step his homing enders (`1,2,4,3~4*~B` / `4,3~4*~B` / `3,4~3*~B`) — block and whiff-punish instead.'
+    de: 'Seine Homing-Ender (`1,2,4,3~4*~B` / `4,3~4*~B` / `3,4~3*~B`) nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record his duckable jab strings (`1,2` / `1,2,1` / `1,2,4`) → duck the high and launch with [[ws2]].'
+    de: 'Seine duckbaren Jab-Strings (`1,2` / `1,2,1` / `1,2,4`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record `uf+4` (−16) → block and launch with [[uf44]].'
+    de: '`uf+4` (−16) aufnehmen → blocken und mit [[uf44]] launchen.'

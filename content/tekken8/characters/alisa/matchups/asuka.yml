@@ -1,5 +1,5 @@
 character: 'Asuka'
-deep: false
+deep: true
 tag:
   en: 'Defensive counter-puncher — reversal & sabaki'
   de: 'Defensiver Counter-Puncher — Reversal & Sabaki'
@@ -15,3 +15,53 @@ punish:
 plan:
   en: 'Don''t be predictable — she thrives on reversing telegraphed offense. Stagger your pressure, mix lows and throws, and whiff-punish her defensive pokes with [[df2]]. Use [[pc]] sparingly (it''s reversible). Control the pace; she wants you impatient.'
   de: 'Sei nicht vorhersehbar — sie lebt vom Reversen telegrafierter Offense. Deinen Druck staffeln, Lows und Würfe mischen, ihre defensiven Pokes mit [[df2]] whiff-punishen. [[pc]] sparsam (reversbar). Tempo kontrollieren; sie will dich ungeduldig.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'A defensive counter-puncher who punishes aggression with a reversal (reverses your mid punches and kicks) and sabaki. Launcher `df+2` (i15, −6) is hard to punish; her low `d+3+4` launches on hit (+30a); `df+3` is a Balcony Break mid. Heat via `db+1,2` / `f,F+2,1`.'
+  de: 'Ein defensiver Counter-Puncher, der Aggression mit einem Reversal (kontert deine Mid-Punches und -Kicks) und Sabaki bestraft. Launcher `df+2` (i15, −6) ist schwer bestrafbar; ihr Low `d+3+4` launcht auf Hit (+30a); `df+3` ist ein Balcony-Break-Mid. Heat über `db+1,2` / `f,F+2,1`.'
+keyThreats:
+  - en: 'She punishes aggression with a reversal (reverses mid punches / kicks) and sabaki.'
+    de: 'Sie bestraft Aggression mit einem Reversal (kontert Mid-Punches / -Kicks) und Sabaki.'
+  - en: 'Her low `d+3+4` launches on hit (+30a); `df+3` is a Balcony Break mid.'
+    de: 'Ihr Low `d+3+4` launcht auf Hit (+30a); `df+3` ist ein Balcony-Break-Mid.'
+  - en: 'Launcher `df+2` (i15, −6 on block) is hard to punish.'
+    de: 'Launcher `df+2` (i15, −6 auf Block) ist schwer bestrafbar.'
+punishThese:
+  - notation: 'd+1+2'
+    onBlock: '−18'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'f+2'
+    onBlock: '−18'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'uf+4'
+    onBlock: '−13'
+    with: '3,2'
+    note:
+      en: 'Standing punish.'
+      de: 'Stehender Punish.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Do not be predictable — she thrives on reversing telegraphed offense; stagger pressure, mix lows and throws.'
+    de: 'Sei nicht vorhersehbar — sie lebt vom Reversen telegrafierter Offense; Druck staffeln, Lows und Würfe mischen.'
+  - en: 'Whiff-punish her defensive pokes with [[df2]]; use [[pc]] sparingly (it is reversible).'
+    de: 'Ihre defensiven Pokes mit [[df2]] whiff-punishen; [[pc]] sparsam nutzen (reversbar).'
+  - en: 'Control the pace — she wants you impatient.'
+    de: 'Das Tempo kontrollieren — sie will dich ungeduldig.'
+knowledgeChecks:
+  - en: 'She has a reversal and sabaki — avoid predictable single mid punches / kicks; mix in lows and throws.'
+    de: 'Sie hat Reversal und Sabaki — keine vorhersehbaren Einzel-Mid-Punches / -Kicks; Lows und Würfe mischen.'
+  - en: '`1,2` is high, mid — you cannot fully duck it (the 2 is a mid); duck her standing `2` and high strings instead.'
+    de: '`1,2` ist High, Mid — nicht komplett duckbar (die 2 ist Mid); lieber ihre Standing-`2` und High-Strings ducken.'
+drills:
+  - en: 'Record her reversal and practise mixing lows / throws instead of autopiloting mids.'
+    de: 'Ihr Reversal aufnehmen und üben, Lows / Würfe zu mischen statt Mids zu autopiloten.'
+  - en: 'Record `d+1+2` (−18) → block and launch-punish with [[uf44]].'
+    de: '`d+1+2` (−18) aufnehmen → blocken und mit [[uf44]] launch-punishen.'

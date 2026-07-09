@@ -1,5 +1,5 @@
 character: 'Xiaoyu'
-deep: false
+deep: true
 tag:
   en: 'Extreme evasion — AOP, BT & snake edge'
   de: 'Extreme Evasion — AOP, BT & Snake Edge'
@@ -15,3 +15,53 @@ punish:
 plan:
   en: 'Patience and mids beat Xiaoyu — don''t whiff (she punishes hard from evasion), use attacks that hit grounded/ducking opponents. Block the snake edge, punish her many unsafe stance moves with [[df2]], and stay calm when she vanishes into AOP/BT — hold guard and hit a mid.'
   de: 'Geduld und Mids schlagen Xiaoyu — nicht whiffen (sie bestraft hart aus der Evasion), Angriffe nutzen die geduckte Gegner treffen. Snake Edge blocken, ihre vielen unsicheren Stance-Moves mit [[df2]] bestrafen und ruhig bleiben, wenn sie in AOP/BT verschwindet — Guard halten und einen Mid setzen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'The evasion nightmare: Art of Phoenix (AOP) ducks under highs, plus Backturned (BT) and Hypnotist (HYP) mixups and rolls. Snake edge `df+3` (i29 low, Tornado) launches; plus-low `db+3` is +2 on block; CH launcher `ws2`. Heat via `b+4,1` / `AOP.2,1`. She punishes whiffs hard from evasion.'
+  de: 'Der Evasion-Albtraum: Art of Phoenix (AOP) duckt unter Highs, dazu Backturned (BT) und Hypnotist (HYP) Mixups und Rolls. Snake Edge `df+3` (i29 Low, Tornado) launcht; Plus-Low `db+3` ist +2 auf Block; CH-Launcher `ws2`. Heat über `b+4,1` / `AOP.2,1`. Sie bestraft Whiffs hart aus der Evasion.'
+keyThreats:
+  - en: 'AOP ducks under your highs and punishes — use mids, not highs.'
+    de: 'AOP duckt unter deine Highs und bestraft — Mids nutzen, keine Highs.'
+  - en: 'Snake edge `df+3` (i29 low, Tornado) and plus-low `db+3` (+2 on block).'
+    de: 'Snake Edge `df+3` (i29 Low, Tornado) und Plus-Low `db+3` (+2 auf Block).'
+  - en: 'She punishes whiffs hard from evasion (AOP / BT / HYP) — do not whiff.'
+    de: 'Sie bestraft Whiffs hart aus der Evasion (AOP / BT / HYP) — nicht whiffen.'
+punishThese:
+  - notation: 'df+3'
+    onBlock: '−23'
+    with: 'uf+4,4'
+    note:
+      en: 'Block the snake edge on reaction → huge launch punish.'
+      de: 'Die Snake Edge auf Reaktion blocken → riesiger Launch-Punish.'
+    reviewStatus: verified
+  - notation: 'b+4,1'
+    onBlock: '−14'
+    with: 'f+1+2'
+    note:
+      en: 'Launch punish with the i14 option.'
+      de: 'Launch-Punish mit der i14-Option.'
+    reviewStatus: verified
+  - notation: 'HYP.3'
+    onBlock: '−13'
+    with: '3,2'
+    note:
+      en: 'Standing punish.'
+      de: 'Stehender Punish.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Patience and mids — use attacks that hit grounded / ducking opponents; do not whiff.'
+    de: 'Geduld und Mids — Angriffe nutzen, die geduckte Gegner treffen; nicht whiffen.'
+  - en: 'Block the snake edge and punish her many unsafe stance moves with [[df2]].'
+    de: 'Die Snake Edge blocken und ihre vielen unsicheren Stance-Moves mit [[df2]] bestrafen.'
+  - en: 'Stay calm when she vanishes into AOP / BT — hold guard and hit a mid.'
+    de: 'Ruhig bleiben, wenn sie in AOP / BT verschwindet — Guard halten und einen Mid setzen.'
+knowledgeChecks:
+  - en: 'Use MIDS, not highs — AOP ducks your highs and punishes; her `df+2` (−6) is safe.'
+    de: 'MIDS nutzen, keine Highs — AOP duckt deine Highs und bestraft; ihr `df+2` (−6) ist safe.'
+  - en: 'Her `db+3` low is +2 on block (her turn) — do not mash after; stepping is unreliable vs her evasion, stay grounded.'
+    de: 'Ihr `db+3`-Low ist +2 auf Block (ihr Zug) — danach nicht mashen; Steppen ist gegen ihre Evasion unzuverlässig, geerdet bleiben.'
+drills:
+  - en: 'Record the `df+3` snake edge → block on reaction and launch with [[df2]].'
+    de: 'Die `df+3`-Snake-Edge aufnehmen → auf Reaktion blocken und mit [[df2]] launchen.'
+  - en: 'Record AOP and practise hitting a mid instead of a high.'
+    de: 'AOP aufnehmen und üben, einen Mid statt eines Highs zu setzen.'

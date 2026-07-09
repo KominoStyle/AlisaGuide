@@ -1,5 +1,5 @@
 character: 'Shaheen'
-deep: false
+deep: true
 tag:
   en: 'Well-rounded — Stealth Step & slide'
   de: 'Well-Rounded — Stealth Step & Slide'
@@ -15,3 +15,65 @@ punish:
 plan:
   en: 'An honest matchup — win with fundamentals. Block the slide low and punish, whiff-punish his pokes with [[df2]], and interrupt Stealth Step pressure with [[df1]].'
   de: 'Ehrliches Matchup — mit Fundamentals gewinnen. Den Slide-Low blocken und bestrafen, seine Pokes mit [[df2]] whiff-punishen und Stealth-Step-Druck mit [[df1]] unterbrechen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'A well-rounded character with Stealth Step (SNK) and a slide — an honest matchup won with fundamentals. Launcher `df+2` is only −7 (safe); lows `d+3+4` / `d+3` / `d+4` / `d+1`; heat engagers `db+2,1` / `b+1` / `uf+1`; plus frames `D*,u+2` (+6), `f,f,F+2` (+5).'
+  de: 'Ein Well-Rounded-Charakter mit Stealth Step (SNK) und einem Slide — ein ehrliches Matchup, das man mit Fundamentals gewinnt. Launcher `df+2` ist nur −7 (safe); Lows `d+3+4` / `d+3` / `d+4` / `d+1`; Heat-Engager `db+2,1` / `b+1` / `uf+1`; Plus-Frames `D*,u+2` (+6), `f,f,F+2` (+5).'
+keyThreats:
+  - en: 'Stealth Step (SNK) pressure — interrupt it with [[df1]].'
+    de: 'Stealth-Step-Druck (SNK) — mit [[df1]] unterbrechen.'
+  - en: 'His slide low — block it on a read and punish.'
+    de: 'Sein Slide-Low — auf Read blocken und bestrafen.'
+  - en: 'Plus frames `D*,u+2` (+6) / `f,f,F+2` (+5) / `SNK.1+2` (+4) — his turn.'
+    de: 'Plus-Frames `D*,u+2` (+6) / `f,f,F+2` (+5) / `SNK.1+2` (+4) — sein Zug.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,2'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,3'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'ws2'
+    onBlock: '−17'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'b+4'
+    onBlock: '−15'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'An honest matchup — win with fundamentals.'
+    de: 'Ein ehrliches Matchup — mit Fundamentals gewinnen.'
+  - en: 'Block the slide low and punish; whiff-punish his pokes with [[df2]].'
+    de: 'Den Slide-Low blocken und bestrafen; seine Pokes mit [[df2]] whiff-punishen.'
+  - en: 'Interrupt Stealth Step pressure with [[df1]].'
+    de: 'Stealth-Step-Druck mit [[df1]] unterbrechen.'
+knowledgeChecks:
+  - en: 'His `df+2` launcher is only −7 on block — it is safe, do not try to launch it.'
+    de: 'Sein `df+2`-Launcher ist geblockt nur −7 — er ist safe, nicht launchen.'
+  - en: 'Do not step his homing `f+4` / `df+3` — block and whiff-punish instead.'
+    de: 'Sein Homing `f+4` / `df+3` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record his duckable highs (`1,2` / `1,2,2` / `1,2,3`) → duck the high and launch with [[ws2]].'
+    de: 'Seine duckbaren Highs (`1,2` / `1,2,2` / `1,2,3`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record `ws2` (−17) → block and launch with [[uf44]].'
+    de: '`ws2` (−17) aufnehmen → blocken und mit [[uf44]] launchen.'

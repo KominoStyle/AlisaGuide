@@ -1,5 +1,5 @@
 character: 'Feng'
-deep: false
+deep: true
 tag:
   en: 'Strong mids, power crushes & stance — step direction varies.'
   de: 'Starke Mids, Power Crushes & Stance — Step-Richtung variiert.'
@@ -15,3 +15,73 @@ punish:
 plan:
   en: 'Use [[pc]] to blow through his `f,F+1+2` and pressure; whiff-punish his stance whiffs with [[df2]]. Homing ([[uf2]], [[b3]]) checks his steps. Watch his i7 BT power crush before you commit.'
   de: 'Nutz [[pc]] gegen sein `f,F+1+2` und seinen Druck; whiff-punish Stance-Whiffs mit [[df2]]. Homing ([[uf2]], [[b3]]) checkt seine Steps. Achte auf seinen i7-BT-Power-Crush, bevor du committest.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Strong mids, power crushes and Kenpo stance. His `f,F+1+2` is very hard to step on reaction (especially in Heat), and his i7 backturned power crush punishes anything slow you commit.'
+  de: 'Starke Mids, Power Crushes und Kenpo-Stance. Sein `f,F+1+2` ist on Reaction sehr schwer steppbar (besonders in Heat), und sein i7-Backturned-Power-Crush bestraft alles Langsame, das du committest.'
+keyThreats:
+  - en: '`f,F+1+2` — very hard to step on reaction, especially in Heat.'
+    de: '`f,F+1+2` — on Reaction sehr schwer steppbar, besonders in Heat.'
+  - en: 'His fast (i7) backturned power crush — it beats slow pokes.'
+    de: 'Sein schneller (i7) Backturned-Power-Crush — er schlägt langsame Pokes.'
+  - en: 'Strong mids plus the Kenpo stance mix.'
+    de: 'Starke Mids plus der Kenpo-Stance-Mix.'
+duckTargets:
+  - string: '1,2,2'
+    punish: 'ws2'
+    note:
+      en: 'Duckable on a read — while-standing launch.'
+      de: 'Auf Read duckbar — while-standing launchen.'
+    reviewStatus: verified
+  - string: 'f3,2'
+    punish: 'ws2'
+    note:
+      en: 'Duckable on a read.'
+      de: 'Auf Read duckbar.'
+    reviewStatus: verified
+  - string: 'df4,3'
+    punish: 'ws2'
+    note:
+      en: 'Duckable follow-up — launch while standing.'
+      de: 'Duckbarer Follow-up — while-standing launchen.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'b1+2'
+    onBlock: '−19'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'f2,1,2'
+    onBlock: '−19'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: '1,2,2'
+    onBlock: '−14'
+    with: 'f+2,1'
+    note:
+      en: 'Standing punish.'
+      de: 'Stehender Punish.'
+    reviewStatus: verified
+stepDirection:
+  direction: 'Step direction varies'
+  note:
+    en: 'SSL vs `d2` / `uf3` / `df3`; SSR vs `uf4` / `df4` / `db1` / `f1+2`.'
+    de: 'SSL bei `d2` / `uf3` / `df3`; SSR bei `uf4` / `df4` / `db1` / `f1+2`.'
+  reviewStatus: verified
+alisaAnswers:
+  - en: 'Use [[pc]] to blow through his `f,F+1+2` and his pressure.'
+    de: 'Nutz [[pc]], um durch sein `f,F+1+2` und seinen Druck zu brechen.'
+  - en: 'Whiff-punish his stance whiffs with [[df2]].'
+    de: 'Whiff-punish seine Stance-Whiffs mit [[df2]].'
+  - en: 'Homing [[uf2]] / [[b3]] checks his steps.'
+    de: 'Homing [[uf2]] / [[b3]] checkt seine Steps.'
+drills:
+  - en: 'Record `f,F+1+2` and practise power-crushing it with [[pc]].'
+    de: '`f,F+1+2` aufnehmen und üben, es mit [[pc]] zu power-crushen.'
+  - en: 'Record a stance whiff and drill the [[df2]] whiff-punish.'
+    de: 'Einen Stance-Whiff aufnehmen und den [[df2]]-Whiff-Punish drillen.'

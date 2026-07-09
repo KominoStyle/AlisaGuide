@@ -1,5 +1,5 @@
 character: 'Miary Zo'
-deep: false
+deep: true
 tag:
   en: 'Ribbon style — unusual range & mixups'
   de: 'Ribbon-Style — ungewöhnliche Reichweite & Mixups'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Learn her odd range and don''t whiff into it. Block, punish her unsafe moves with [[df2]], and keep it simple with steady mids and pokes until the matchup clicks.'
   de: 'Ihre ungewöhnliche Reichweite lernen und nicht reinwhiffen. Blocken, ihre unsicheren Moves mit [[df2]] bestrafen und simpel mit stetigen Mids/Pokes spielen, bis das Matchup sitzt.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Ribbon style with unusual range and mixups — she wants to exploit her odd range and bait whiffs. Launcher `df+2` is only −7 (safe); lows `db+4` / `d+3` / `df+3+4` / `db+3`; heat engagers `3,2` / `ws1,4` / `1+2`; plus frames `f,f,F+3` (+6~+9), `MOR.1+2` (+6).'
+  de: 'Ribbon-Style mit ungewöhnlicher Reichweite und Mixups — sie will ihre seltsame Reichweite ausnutzen und Whiffs baiten. Launcher `df+2` ist nur −7 (safe); Lows `db+4` / `d+3` / `df+3+4` / `db+3`; Heat-Engager `3,2` / `ws1,4` / `1+2`; Plus-Frames `f,f,F+3` (+6~+9), `MOR.1+2` (+6).'
+keyThreats:
+  - en: 'Unusual ribbon range and mixups — learn it and do not whiff into it.'
+    de: 'Ungewöhnliche Ribbon-Reichweite und Mixups — sie lernen und nicht reinwhiffen.'
+  - en: 'Her odd-range pokes bait whiffs — she punishes them.'
+    de: 'Ihre Odd-Range-Pokes baiten Whiffs — sie bestraft sie.'
+  - en: 'Heat engagers `3,2` / `ws1,4` / `1+2`.'
+    de: 'Heat-Engager `3,2` / `ws1,4` / `1+2`.'
+duckTargets:
+  - string: '1,1'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,1,2'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'f+1+2,1+2,3+4'
+    onBlock: '−22'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'f+3+4,2'
+    onBlock: '−20'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'df+1,1,1+2'
+    onBlock: '−17'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Learn her odd range and do not whiff into it.'
+    de: 'Ihre ungewöhnliche Reichweite lernen und nicht reinwhiffen.'
+  - en: 'Block and punish her unsafe moves with [[df2]].'
+    de: 'Blocken und ihre unsicheren Moves mit [[df2]] bestrafen.'
+  - en: 'Keep it simple with steady mids and pokes until the matchup clicks.'
+    de: 'Simpel mit stetigen Mids und Pokes spielen, bis das Matchup sitzt.'
+knowledgeChecks:
+  - en: 'Her `df+2` launcher is only −7 on block — it is safe, do not try to launch it.'
+    de: 'Ihr `df+2`-Launcher ist geblockt nur −7 — er ist safe, nicht launchen.'
+  - en: 'Do not step her homing `b+2` / `df+3` / `f,F+3` — block and whiff-punish instead.'
+    de: 'Ihr Homing `b+2` / `df+3` / `f,F+3` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record her duckable jab strings (`1,1` / `1,1,2` / `1,2`) → duck the high and launch with [[ws2]].'
+    de: 'Ihre duckbaren Jab-Strings (`1,1` / `1,1,2` / `1,2`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record `f+1+2,1+2,3+4` (−22) → block and launch with [[uf44]].'
+    de: '`f+1+2,1+2,3+4` (−22) aufnehmen → blocken und mit [[uf44]] launchen.'

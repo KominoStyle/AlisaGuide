@@ -1,5 +1,5 @@
 character: 'Clive'
-deep: false
+deep: true
 tag:
   en: 'Sword guest — big damage, committal swings'
   de: 'Sword-Gast — großer Schaden, committale Swings'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'His sword moves hit hard but are slow and committal — whiff-punish hard with [[df2]] and block the gaps. Stay patient, don''t trade, and punish his unsafe Eikon moves.'
   de: 'Seine Sword-Moves treffen hart, sind aber langsam und committal — hart mit [[df2]] whiff-punishen und die Lücken blocken. Geduldig bleiben, nicht traden, seine unsicheren Eikon-Moves bestrafen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'A sword guest with big-damage, committal swings — he wants to land slow heavy hits and Eikon moves for huge damage. Launcher `df+2` (−13); lows `d+4` / `d+3` / `d+1` / `db+4`; heat engagers `1+2` / `f+2,2,2` / `f+1+2`; plus frame `PHX.3+4` (+7).'
+  de: 'Ein Sword-Gast mit committalen Swings und großem Schaden — er will langsame schwere Treffer und Eikon-Moves für viel Schaden landen. Launcher `df+2` (−13); Lows `d+4` / `d+3` / `d+1` / `db+4`; Heat-Engager `1+2` / `f+2,2,2` / `f+1+2`; Plus-Frame `PHX.3+4` (+7).'
+keyThreats:
+  - en: 'His sword moves hit hard — big damage on every clean hit.'
+    de: 'Seine Sword-Moves treffen hart — großer Schaden bei jedem sauberen Treffer.'
+  - en: 'They are slow and committal — whiff-punish them hard.'
+    de: 'Sie sind langsam und committal — hart whiff-punishen.'
+  - en: 'His Eikon moves — punish the unsafe ones.'
+    de: 'Seine Eikon-Moves — die unsicheren bestrafen.'
+duckTargets:
+  - string: '1,1'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '2,1'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: '4,4'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'uf+2'
+    onBlock: '−17'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'df+1,2'
+    onBlock: '−16'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: '1+4'
+    onBlock: '−15'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'His sword moves are slow and committal — whiff-punish hard with [[df2]] and block the gaps.'
+    de: 'Seine Sword-Moves sind langsam und committal — hart mit [[df2]] whiff-punishen und die Lücken blocken.'
+  - en: 'Stay patient and do not trade.'
+    de: 'Geduldig bleiben und nicht traden.'
+  - en: 'Punish his unsafe Eikon moves with [[uf44]] / [[df2]].'
+    de: 'Seine unsicheren Eikon-Moves mit [[uf44]] / [[df2]] bestrafen.'
+knowledgeChecks:
+  - en: 'His `df+2` launcher is −13 on block — punish it with [[c32]], do not try to launch it.'
+    de: 'Sein `df+2`-Launcher ist geblockt −13 — mit [[c32]] bestrafen, nicht launchen.'
+  - en: 'Do not step his homing `db+1` / `db+1,1` / `b+1` — block and whiff-punish instead.'
+    de: 'Sein Homing `db+1` / `db+1,1` / `b+1` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record his duckable highs (`1,1` / `2,1` / `4,4`) → duck the high and launch with [[ws2]].'
+    de: 'Seine duckbaren Highs (`1,1` / `2,1` / `4,4`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record a committal sword swing → whiff-punish with [[df2]].'
+    de: 'Einen committalen Sword-Swing aufnehmen → mit [[df2]] whiff-punishen.'

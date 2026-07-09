@@ -1,5 +1,5 @@
 character: 'Raven'
-deep: false
+deep: true
 tag:
   en: 'Ninja — teleports, backturned, tricky'
   de: 'Ninja — Teleports, Backturned, tricky'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Stay patient against the teleport/BT gimmicks — many are punishable. Block, punish unsafe moves with [[uf44]]/[[df2]], and don''t whiff into his mixups.'
   de: 'Gegen die Teleport-/BT-Gimmicks geduldig bleiben — viele sind bestrafbar. Blocken, unsichere Moves mit [[uf44]]/[[df2]] bestrafen und nicht in seine Mixups whiffen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'A ninja with teleports and backturned (BT) tricks — tricky and evasive, but many of his gimmicks are punishable. Launcher `df+2` (−13~−11); lows `d+3` / `d+4` / `qcf+2` / `db+4`; heat engagers `1+2` / `f,F+2` / `ws3+4`; plus frames `b+1` (+7~+8), `b+3` (+4~+6).'
+  de: 'Ein Ninja mit Teleports und Backturned-Tricks (BT) — tricky und evasiv, aber viele seiner Gimmicks sind bestrafbar. Launcher `df+2` (−13~−11); Lows `d+3` / `d+4` / `qcf+2` / `db+4`; Heat-Engager `1+2` / `f,F+2` / `ws3+4`; Plus-Frames `b+1` (+7~+8), `b+3` (+4~+6).'
+keyThreats:
+  - en: 'Teleport / backturned (BT) gimmicks and mixups — many are punishable, do not panic.'
+    de: 'Teleport- / Backturned-Gimmicks (BT) und Mixups — viele sind bestrafbar, keine Panik.'
+  - en: 'Evasive approach — do not whiff into his mixups.'
+    de: 'Evasiver Approach — nicht in seine Mixups whiffen.'
+  - en: 'Plus frames `b+1` (+7~+8) / `b+3` (+4~+6) — his turn.'
+    de: 'Plus-Frames `b+1` (+7~+8) / `b+3` (+4~+6) — sein Zug.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,4'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: '2,4'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'b+2,2,1+2'
+    onBlock: '−30~−29'
+    with: 'uf+4,4'
+    note:
+      en: 'Huge launch punish — always take it.'
+      de: 'Riesiger Launch-Punish — immer nehmen.'
+    reviewStatus: verified
+  - notation: 'uf+3+4,3+4'
+    onBlock: '−25~−21'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'b+2,2,3'
+    onBlock: '−19~−18'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Stay patient against the teleport / BT gimmicks — many are punishable.'
+    de: 'Gegen die Teleport- / BT-Gimmicks geduldig bleiben — viele sind bestrafbar.'
+  - en: 'Block and punish unsafe moves with [[uf44]] / [[df2]].'
+    de: 'Blocken und unsichere Moves mit [[uf44]] / [[df2]] bestrafen.'
+  - en: 'Do not whiff into his mixups.'
+    de: 'Nicht in seine Mixups whiffen.'
+knowledgeChecks:
+  - en: 'His `df+2` launcher is only −13~−11 on block — punish it with [[c32]], do not try to launch it.'
+    de: 'Sein `df+2`-Launcher ist geblockt nur −13~−11 — mit [[c32]] bestrafen, nicht launchen.'
+  - en: 'Do not step his homing `ws3+4` / `f+3` / `SZN.1+2` — block and whiff-punish instead.'
+    de: 'Sein Homing `ws3+4` / `f+3` / `SZN.1+2` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record his duckable highs (`1,2` / `1,2,4` / `2,4`) → duck the high and launch with [[ws2]].'
+    de: 'Seine duckbaren Highs (`1,2` / `1,2,4` / `2,4`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record `b+2,2,1+2` (−30) → block and launch with [[uf44]].'
+    de: '`b+2,2,1+2` (−30) aufnehmen → blocken und mit [[uf44]] launchen.'

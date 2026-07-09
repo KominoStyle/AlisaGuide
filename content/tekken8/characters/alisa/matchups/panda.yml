@@ -1,5 +1,5 @@
 character: 'Panda'
-deep: false
+deep: true
 tag:
   en: 'Bear — hunting stance & grabs (Kuma''s moves)'
   de: 'Bär — Hunting Stance & Grabs (Kumas Moves)'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Same as Kuma: block, break grabs, punish unsafe stance moves with [[df2]]. Whiff-punish the lunges and don''t respect Hunting Stance blindly.'
   de: 'Wie Kuma: blocken, Grabs breaken, unsichere Stance-Moves mit [[df2]] bestrafen. Die Lunges whiff-punishen und Hunting Stance nicht blind respektieren.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'A bear using Kuma''s moveset — Hunting Stance, command grabs and odd hitboxes; most of the stance stuff is unsafe. The goal is to grab you or catch you respecting the stance. Launcher `df+2` is only −9 (safe); lows `d+4` / `db+2` / `db+3`; heat engagers `1+2` / `d,df,f+2,1` / `b+1+2`; plus `FUFT.d+1+2` (+17), `f,F+1+2` (+8 HBS).'
+  de: 'Ein Bär mit Kumas Moveset — Hunting Stance, Command-Grabs und seltsame Hitboxen; das meiste Stance-Zeug ist unsicher. Das Ziel ist, dich zu grabben oder zu erwischen, wenn du die Stance respektierst. Launcher `df+2` ist nur −9 (safe); Lows `d+4` / `db+2` / `db+3`; Heat-Engager `1+2` / `d,df,f+2,1` / `b+1+2`; Plus `FUFT.d+1+2` (+17), `f,F+1+2` (+8 HBS).'
+keyThreats:
+  - en: 'Hunting Stance and command grabs (Kuma''s moves) — break the grabs, do not respect the stance blindly.'
+    de: 'Hunting Stance und Command-Grabs (Kumas Moves) — die Grabs breaken, die Stance nicht blind respektieren.'
+  - en: 'Odd hitboxes and plus frames `FUFT.d+1+2` (+17) / `u+3+4` (+14) — its turn.'
+    de: 'Seltsame Hitboxen und Plus-Frames `FUFT.d+1+2` (+17) / `u+3+4` (+14) — ihr Zug.'
+  - en: 'Heat engagers `1+2` / `d,df,f+2,1` / `b+1+2`.'
+    de: 'Heat-Engager `1+2` / `d,df,f+2,1` / `b+1+2`.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: 'f+2,1'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: 'b+2,1'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'b+3+4'
+    onBlock: '−28'
+    with: 'uf+4,4'
+    note:
+      en: 'Huge launch punish — always take it.'
+      de: 'Riesiger Launch-Punish — immer nehmen.'
+    reviewStatus: verified
+  - notation: 'f,F+2'
+    onBlock: '−19'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'd,df,f+2,2'
+    onBlock: '−18'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Same as Kuma: block, break grabs, punish unsafe stance moves with [[df2]].'
+    de: 'Wie Kuma: blocken, Grabs breaken, unsichere Stance-Moves mit [[df2]] bestrafen.'
+  - en: 'Whiff-punish the lunges with [[df2]].'
+    de: 'Die Lunges mit [[df2]] whiff-punishen.'
+  - en: 'Do not respect Hunting Stance blindly.'
+    de: 'Hunting Stance nicht blind respektieren.'
+knowledgeChecks:
+  - en: 'The `df+2` launcher is only −9 on block — it is safe, do not try to launch it.'
+    de: 'Der `df+2`-Launcher ist geblockt nur −9 — er ist safe, nicht launchen.'
+  - en: 'Do not step the homing `b+1+2` / `ws3` / `uf+2` — block and whiff-punish instead.'
+    de: 'Das Homing `b+1+2` / `ws3` / `uf+2` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record the duckable highs (`1,2` / `f+2,1` / `b+2,1`) → duck the high and launch with [[ws2]].'
+    de: 'Die duckbaren Highs (`1,2` / `f+2,1` / `b+2,1`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record `b+3+4` (−28) → block and launch with [[uf44]].'
+    de: '`b+3+4` (−28) aufnehmen → blocken und mit [[uf44]] launchen.'

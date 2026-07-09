@@ -242,7 +242,7 @@ var T = {
   sheet_foot:{en:"Move clip: okizeme.gg",de:"Move-Clip: okizeme.gg"},
   fav_save:{en:"Save setup",de:"Setup speichern"}, fav_saved:{en:"Saved",de:"Gespeichert"},
   tbl_dis:{en:"They are",de:"Gegner ist"}, tbl_use:{en:"You use",de:"Du nutzt"}, tbl_why:{en:"Why",de:"Warum"},
-  mu_hurt:{en:"What hurts",de:"Was tut weh"}, mu_duck:{en:"Duck between strings",de:"Zwischen Strings ducken"}, mu_step:{en:"Sidestep",de:"Steppen"}, mu_launch:{en:"Launch-punishable",de:"Launch-Punishable"}, mu_punish:{en:"Punish",de:"Bestrafen"}, mu_plan:{en:"Alisa's plan",de:"Alisas Plan"}, mu_deep:{en:"deep dive",de:"Deep Dive"},
+  mu_hurt:{en:"What hurts",de:"Was tut weh"}, mu_duck:{en:"Duck between strings",de:"Zwischen Strings ducken"}, mu_step:{en:"Sidestep",de:"Steppen"}, mu_launch:{en:"Launch-punishable",de:"Launch-Punishable"}, mu_punish:{en:"Punish",de:"Bestrafen"}, mu_plan:{en:"Alisa's plan",de:"Alisas Plan"},
   tr_dir:{en:"Movement",de:"Bewegung"}, tr_btn:{en:"Buttons",de:"Buttons"},
   tr_now:{en:"press keys to see your input",de:"Tasten drücken für deinen Input"},
   tr_arm:{en:"Activate",de:"Aktivieren"}, tr_disarm:{en:"Stop",de:"Stopp"}, tr_clear:{en:"Clear",de:"Verlauf löschen"}, tr_reset:{en:"Reset keys",de:"Tasten zurücksetzen"},
@@ -798,6 +798,10 @@ function renderKChecks(){
   return html;
 }
 function muSlug(c){ return String(c).toLowerCase().replace(/\s+/g,"-"); }
+// Local character portraits (data/Image/Characters/<Character>.png), bundled + hashed by Vite.
+// Keyed by the exact `character` field (spaces preserved), matching each matchup row.
+var CHAR_IMG = import.meta.glob("../data/Image/Characters-web/*.png", { eager: true, query: "?url", import: "default" });
+var MU_IMG = {}; for (var _ik in CHAR_IMG){ MU_IMG[_ik.substring(_ik.lastIndexOf("/")+1).replace(/\.png$/i,"")] = CHAR_IMG[_ik]; }
 function muDerive(c){
   var fd=FD[c]||{};
   function num(s){var m=String(s||"").match(/-?\d+/);return m?parseInt(m[0]):null;}
@@ -874,14 +878,13 @@ function renderMuCard(m){
     rows.push(["plan", L({en:"Sources",de:"Quellen"}), sourceLinkHtml(m.sourceLinks)]);
   }
   var html=rows.map(function(r){ return r[2]?'<div class="mu-line mu-'+r[0]+'"><span class="mu-lbl">'+esc(r[1])+'</span><span class="mu-txt">'+r[2]+'</span></div>':''; }).join("");
-  var badge=m.deep?' <span class="tag plus">'+esc(tk("mu_deep"))+'</span>':'';
-  if(m.lastReviewed) badge+=' '+reviewedBadge(m.lastReviewed);
+  var badge=m.lastReviewed?' '+reviewedBadge(m.lastReviewed):'';
   return '<div class="murow"><div class="mu-head"><span class="mu-c">'+esc(m.c)+'</span>'+badge+(m.tag?'<span class="mu-tag">'+fmtMU(L(m.tag),m.c)+'</span>':'')+'</div>'+html+'</div>';
 }
 var DLC_S1=["Eddy","Lidia","Heihachi","Clive"];
 var DLC_S2=["Anna","Fahkumram","Armor King","Miary Zo"];
 var DLC_S3=["Kunimitsu"];
-function muPickCard(c, cur, deep){ var sel=(c===cur)?" sel":""; var img="https://tekkendocs.com/t8/avatars/"+muSlug(c)+"-brand-512.png"; var badge=deep?' <span class="tag plus">'+esc(tk("mu_deep"))+'</span>':''; return '<button class="mu-pick'+sel+'" data-mu="'+esc(c)+'"><span class="mu-pick-img"><img src="'+img+'" alt="'+esc(c)+'" loading="lazy" onerror="this.style.display=\'none\'; this.parentElement.classList.add(\'noimg\'); this.parentElement.setAttribute(\'data-i\',\''+esc(c.charAt(0))+'\');"></span><span class="mu-pick-name">'+esc(c)+badge+'</span></button>'; }
+function muPickCard(c, cur){ var sel=(c===cur)?" sel":""; var img=MU_IMG[c]||("https://tekkendocs.com/t8/avatars/"+muSlug(c)+"-brand-512.png"); return '<button class="mu-pick'+sel+'" data-mu="'+esc(c)+'"><span class="mu-pick-img"><img src="'+img+'" alt="'+esc(c)+'" loading="lazy" onerror="this.style.display=\'none\'; this.parentElement.classList.add(\'noimg\'); this.parentElement.setAttribute(\'data-i\',\''+esc(c.charAt(0))+'\');"></span><span class="mu-pick-name">'+esc(c)+'</span></button>'; }
 function renderMatchups(){
   var leg='<div class="mu-legend"><span><i class="lg-mine"></i>'+esc(L({en:"Alisa's moves \u2014 tap for frames",de:"Alisas Moves \u2014 tippen f\u00fcr Frames"}))+'</span><span><i class="lg-opp"></i>'+esc(L({en:"opponent's moves \u2014 tap for frames, clip & data",de:"Gegner-Moves \u2014 tippen f\u00fcr Frames, Clip & Daten"}))+'</span></div>';
   var have={}; MU.forEach(function(m){have[m.c]=true;});
@@ -891,8 +894,7 @@ function renderMatchups(){
   var cur = state.muChar || base[0];
   var order=DLC_S1.concat(DLC_S2,DLC_S3);
   var ordered=base.concat(order).filter(function(c){return have[c];});
-  var deepBy={}; MU.forEach(function(x){ deepBy[x.c]=!!x.deep; });
-  var picker='<div class="mu-picker">'+ordered.map(function(c){return muPickCard(c,cur,deepBy[c]);}).join("")+'</div>';
+  var picker='<div class="mu-picker">'+ordered.map(function(c){return muPickCard(c,cur);}).join("")+'</div>';
   var selM = MU.filter(function(m){return m.c===cur;})[0] || MU[0];
   return leg+picker+'<div class="mu">'+(selM?renderMuCard(selM):"")+'</div>';
 }

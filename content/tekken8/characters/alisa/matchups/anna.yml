@@ -1,5 +1,5 @@
 character: 'Anna'
-deep: false
+deep: true
 tag:
   en: 'Poke & pressure like Nina, steps & taunts'
   de: 'Poke & Druck wie Nina, Steps & Taunts'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Block her strings and whiff-punish her pokes with [[df2]]; interrupt gaps with [[df1]]. Don''t duck-mash into her mids — use your range to control the pace.'
   de: 'Ihre Strings blocken und ihre Pokes mit [[df2]] whiff-punishen; Lücken mit [[df1]] unterbrechen. Nicht in ihre Mids duck-mashen — mit deiner Reichweite das Tempo kontrollieren.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Poke and pressure like Nina, with steps and taunts — she wants you to duck-mash so she can punish with mids. Launcher `df+2` is only −12; lows `d+4` / `d+4,1` / `df+4`; heat engagers `3+4` / `f,F+3,2` / `CJM.2,1`; plus frames `ROLL.4` (+7), `HAM.1` (+6).'
+  de: 'Poke und Druck wie Nina, mit Steps und Taunts — sie will, dass du duck-mashst, damit sie mit Mids bestrafen kann. Launcher `df+2` ist nur −12; Lows `d+4` / `d+4,1` / `df+4`; Heat-Engager `3+4` / `f,F+3,2` / `CJM.2,1`; Plus-Frames `ROLL.4` (+7), `HAM.1` (+6).'
+keyThreats:
+  - en: 'Poke and pressure like Nina — she wants you to duck-mash, then punishes with mids.'
+    de: 'Poke und Druck wie Nina — sie will, dass du duck-mashst, dann bestraft sie mit Mids.'
+  - en: 'Strong plus frames `ROLL.4` (+7) / `HAM.1` (+6) / `f,F+4` (+5) — her turn, do not mash.'
+    de: 'Starke Plus-Frames `ROLL.4` (+7) / `HAM.1` (+6) / `f,F+4` (+5) — ihr Zug, nicht mashen.'
+  - en: 'Heat engagers `3+4` / `f,F+3,2` / `CJM.2,1`.'
+    de: 'Heat-Engager `3+4` / `f,F+3,2` / `CJM.2,1`.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,1'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,1,2'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'uf+4'
+    onBlock: '−18'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: '3+4'
+    onBlock: '−16'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'qcf+2,1'
+    onBlock: '−16'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Block her strings and whiff-punish her pokes with [[df2]].'
+    de: 'Ihre Strings blocken und ihre Pokes mit [[df2]] whiff-punishen.'
+  - en: 'Interrupt the gaps with [[df1]].'
+    de: 'Die Lücken mit [[df1]] unterbrechen.'
+  - en: 'Do not duck-mash into her mids — use your range to control the pace.'
+    de: 'Nicht in ihre Mids duck-mashen — mit deiner Reichweite das Tempo kontrollieren.'
+knowledgeChecks:
+  - en: 'Her `df+2` launcher is only −12 on block — do not try to launch it; take a jab.'
+    de: 'Ihr `df+2`-Launcher ist geblockt nur −12 — nicht launchen; einen Jab nehmen.'
+  - en: 'Do not step her homing `b+2` / `1+2` / `f,F+2` — block and whiff-punish instead.'
+    de: 'Ihr Homing `b+2` / `1+2` / `f,F+2` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record her duckable jab strings (`1,2` / `1,2,1` / `1,2,1,2`) → duck the high and launch with [[ws2]].'
+    de: 'Ihre duckbaren Jab-Strings (`1,2` / `1,2,1` / `1,2,1,2`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record `ROLL.4` (+7) and practise blocking without mashing after it.'
+    de: '`ROLL.4` (+7) aufnehmen und üben, danach zu blocken statt zu mashen.'

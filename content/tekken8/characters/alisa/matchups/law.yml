@@ -1,5 +1,5 @@
 character: 'Law'
-deep: false
+deep: true
 tag:
   en: 'Fast rushdown, DSS stance & safe launcher'
   de: 'Schneller Rushdown, DSS-Stance & safe Launcher'
@@ -15,3 +15,60 @@ punish:
 plan:
   en: 'Law is all-in rushdown with flashy but unsafe strings — block calmly and launch the −13 to −18 enders with [[df2]]. Don''t mash into his DSS mixups; interrupt gaps with [[df1]]. Use your range so he has to commit.'
   de: 'Law ist All-In-Rushdown mit auffälligen, aber unsicheren Strings — ruhig blocken und die −13- bis −18-Ender mit [[df2]] launchen. Nicht in seine DSS-Mixups mashen; Lücken mit [[df1]] unterbrechen. Deine Reichweite nutzen, damit er committen muss.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Fast all-in rushdown with DSS (Dragon Sign) mixups and a safe launcher — flashy but mostly unsafe strings; he wants to pressure you into mashing. Launcher `df+2` is only −7 (safe); `ws3` is +16 on block (huge plus from crouch); fast `df+4` (i13); slow junkyard low `db+4`; heat via `1,1,1` / `b+1,2,2`.'
+  de: 'Schneller All-In-Rushdown mit DSS-Mixups (Dragon Sign) und safe Launcher — auffällige, aber meist unsichere Strings; er will dich zum Mashen drängen. Launcher `df+2` ist nur −7 (safe); `ws3` ist +16 auf Block (riesig aus dem Crouch); schneller `df+4` (i13); langsamer Junkyard-Low `db+4`; Heat über `1,1,1` / `b+1,2,2`.'
+keyThreats:
+  - en: 'Fast rushdown and DSS mixups — flashy but mostly unsafe; do not mash into them.'
+    de: 'Schneller Rushdown und DSS-Mixups — auffällig, aber meist unsicher; nicht reinmashen.'
+  - en: '`ws3` is +16 on block — huge plus from crouch; it is his turn, do not press.'
+    de: '`ws3` ist +16 auf Block — riesig aus dem Crouch; sein Zug, nicht drücken.'
+  - en: 'Fast `df+4` (i13) and heat via `1,1,1` / `b+1,2,2`.'
+    de: 'Schneller `df+4` (i13) und Heat über `1,1,1` / `b+1,2,2`.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'High, high — duck it on a read and while-standing launch.'
+      de: 'High, High — auf Read ducken und while-standing launchen.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'ws2'
+    onBlock: '−18'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'b+1,2,2'
+    onBlock: '−14'
+    with: 'f+2,1'
+    note:
+      en: 'Standing punish.'
+      de: 'Stehender Punish.'
+    reviewStatus: verified
+  - notation: 'df+3'
+    onBlock: '−13'
+    with: '3,2'
+    note:
+      en: 'Standing punish.'
+      de: 'Stehender Punish.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Block calmly and launch the −13 to −18 enders with [[df2]].'
+    de: 'Ruhig blocken und die −13- bis −18-Ender mit [[df2]] launchen.'
+  - en: 'Do not mash into his DSS mixups; interrupt the gaps with [[df1]].'
+    de: 'Nicht in seine DSS-Mixups mashen; die Lücken mit [[df1]] unterbrechen.'
+  - en: 'Use your range so he has to commit.'
+    de: 'Deine Reichweite nutzen, damit er committen muss.'
+knowledgeChecks:
+  - en: 'His `df+2` launcher is only −7 on block — it is safe, do not try to launch it.'
+    de: 'Sein `df+2`-Launcher ist geblockt nur −7 — er ist safe, nicht launchen.'
+  - en: 'After `ws3` (+16) it is his turn — do not mash; block his slow `db+4` low on a read and launch.'
+    de: 'Nach `ws3` (+16) ist sein Zug — nicht mashen; seinen langsamen `db+4`-Low auf Read blocken und launchen.'
+drills:
+  - en: 'Record `ws2` (−18) → block and launch with [[uf44]].'
+    de: '`ws2` (−18) aufnehmen → blocken und mit [[uf44]] launchen.'
+  - en: 'Record his `db+4` low → block on a read and launch with [[ws2]].'
+    de: 'Seinen `db+4`-Low aufnehmen → auf Read blocken und mit [[ws2]] launchen.'

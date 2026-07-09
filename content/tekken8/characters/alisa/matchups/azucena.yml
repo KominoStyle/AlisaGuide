@@ -1,5 +1,5 @@
 character: 'Azucena'
-deep: false
+deep: true
 tag:
   en: 'Libertador stance, evasive rushdown'
   de: 'Libertador-Stance, evasiver Rushdown'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Respect the LIB mixup but punish its unsafe options; block, hold guard, and launch her whiffs with [[df2]]. Interrupt her flow with [[df1]] so she can''t snowball.'
   de: 'Den LIB-Mixup respektieren, aber seine unsicheren Optionen bestrafen; blocken, Guard halten und ihre Whiffs mit [[df2]] launchen. Ihren Flow mit [[df1]] unterbrechen, damit sie nicht snowballt.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Libertador (LIB) stance evasive rushdown: she wants to snowball her flow with plus frames — `d+1` (+4), `uf+3+4` (+4~+6), `ws3` (+4). Launcher `df+2` (i15~16, −13); lows `d+3` / `d+3,3` / `d+3,3,4` / `d+4`; heat engagers `3,3` / `f+4,4` / `b+3`.'
+  de: 'Libertador-(LIB)-Stance-evasiver-Rushdown: Sie will ihren Flow mit Plus-Frames snowballen — `d+1` (+4), `uf+3+4` (+4~+6), `ws3` (+4). Launcher `df+2` (i15~16, −13); Lows `d+3` / `d+3,3` / `d+3,3,4` / `d+4`; Heat-Engager `3,3` / `f+4,4` / `b+3`.'
+keyThreats:
+  - en: 'LIB stance evasive rushdown — respect the mixup but punish its unsafe options.'
+    de: 'LIB-Stance-evasiver-Rushdown — den Mixup respektieren, aber seine unsicheren Optionen bestrafen.'
+  - en: 'Plus frames `d+1` (+4) / `uf+3+4` (+4~+6) / `ws3` (+4) keep her flow going.'
+    de: 'Plus-Frames `d+1` (+4) / `uf+3+4` (+4~+6) / `ws3` (+4) halten ihren Flow.'
+  - en: 'Heat engagers `3,3` / `f+4,4` / `b+3`.'
+    de: 'Heat-Engager `3,3` / `f+4,4` / `b+3`.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '2,1,2'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: 'ws4,1'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'db+1+2'
+    onBlock: '−21'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: '3,2~F'
+    onBlock: '−18'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'uf+3'
+    onBlock: '−16'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Respect the LIB mixup but punish its unsafe options.'
+    de: 'Den LIB-Mixup respektieren, aber seine unsicheren Optionen bestrafen.'
+  - en: 'Block, hold guard, and launch her whiffs with [[df2]].'
+    de: 'Blocken, Guard halten und ihre Whiffs mit [[df2]] launchen.'
+  - en: 'Interrupt her flow with [[df1]] so she cannot snowball.'
+    de: 'Ihren Flow mit [[df1]] unterbrechen, damit sie nicht snowballt.'
+knowledgeChecks:
+  - en: 'Her `df+2` launcher is −13 on block — punish it with [[c32]].'
+    de: 'Ihr `df+2`-Launcher ist geblockt −13 — mit [[c32]] bestrafen.'
+  - en: 'Do not step her homing `f+4` / `b+2` / `LIB.3+4` — block and whiff-punish instead.'
+    de: 'Ihr Homing `f+4` / `b+2` / `LIB.3+4` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record her duckable jab strings (`1,2` / `2,1,2` / `ws4,1`) → duck the high and launch with [[ws2]].'
+    de: 'Ihre duckbaren Jab-Strings (`1,2` / `2,1,2` / `ws4,1`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record `db+1+2` (−21) → block and launch with [[uf44]].'
+    de: '`db+1+2` (−21) aufnehmen → blocken und mit [[uf44]] launchen.'

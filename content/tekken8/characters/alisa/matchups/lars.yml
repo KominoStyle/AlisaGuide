@@ -1,5 +1,5 @@
 character: 'Lars'
-deep: false
+deep: true
 tag:
   en: 'Aggressive rushdown, stance transitions & plus frames'
   de: 'Aggressiver Rushdown, Stance-Transitions & Plus-Frames'
@@ -15,3 +15,60 @@ punish:
 plan:
   en: 'Lars overwhelms with dash-in plus pressure — hold guard and only challenge real gaps with [[df1]] or [[pc]]. Launch his whiffed `uf+4` and slow lows with [[df2]]. Keep him at range with ws2 fishing so his stance entries whiff.'
   de: 'Lars überrennt mit Dash-In-Plus-Druck — Guard halten und nur echte Lücken mit [[df1]] oder [[pc]] challengen. Sein gewhifftes `uf+4` und langsame Lows mit [[df2]] launchen. Mit ws2-Fishing auf Distanz halten, damit seine Stance-Einstiege whiffen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Aggressive dash-in rushdown: fast safe mids `df+2` (i14, −3, CH launch) and `df+1` (i13), strong plus pressure (`f,f,F+3` +6 and dash-ins), and a stance mix from Dynamic Entry (DEN) / Silent Entry (SEN). His launcher `uf+4` (i25) is slow; heat via `3+4` / `1,1,1`.'
+  de: 'Aggressiver Dash-In-Rushdown: schnelle safe Mids `df+2` (i14, −3, CH-Launch) und `df+1` (i13), starker Plus-Druck (`f,f,F+3` +6 und Dash-Ins) und ein Stance-Mix aus Dynamic Entry (DEN) / Silent Entry (SEN). Sein Launcher `uf+4` (i25) ist langsam; Heat über `3+4` / `1,1,1`.'
+keyThreats:
+  - en: 'Dash-in plus pressure — `f,f,F+3` (+6) and dash-ins keep him plus and in your face.'
+    de: 'Dash-In-Plus-Druck — `f,f,F+3` (+6) und Dash-Ins halten ihn plus und in deinem Gesicht.'
+  - en: 'Fast, safe mids `df+2` (i14, −3, CH launch) and `df+1` (i13).'
+    de: 'Schnelle, safe Mids `df+2` (i14, −3, CH-Launch) und `df+1` (i13).'
+  - en: 'Stance mix (DEN / SEN) and heat via `3+4` / `1,1,1`.'
+    de: 'Stance-Mix (DEN / SEN) und Heat über `3+4` / `1,1,1`.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'High, high — duck on a read, then while-standing launch.'
+      de: 'High, High — auf Read ducken, dann while-standing launchen.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'f,F+3+4'
+    onBlock: '−16'
+    with: 'uf+4,4'
+    note:
+      en: 'Block the low → launch punish.'
+      de: 'Den Low blocken → Launch-Punish.'
+    reviewStatus: verified
+  - notation: 'd+3'
+    onBlock: '−14'
+    with: 'df+2'
+    note:
+      en: 'Block the low (i15) → launch.'
+      de: 'Den Low (i15) blocken → launchen.'
+    reviewStatus: verified
+  - notation: '1,1,1'
+    onBlock: '−12'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Hold guard against his dash-in pressure; only challenge real gaps with [[df1]] or [[pc]].'
+    de: 'Gegen seinen Dash-In-Druck Guard halten; nur echte Lücken mit [[df1]] oder [[pc]] challengen.'
+  - en: 'Launch his whiffed `uf+4` and slow lows with [[df2]].'
+    de: 'Sein gewhifftes `uf+4` und langsame Lows mit [[df2]] launchen.'
+  - en: 'Keep him at range with ws2 fishing so his stance entries whiff.'
+    de: 'Mit ws2-Fishing auf Distanz halten, damit seine Stance-Einstiege whiffen.'
+knowledgeChecks:
+  - en: 'His `df+2` is only −3 on block and CH-launches — do not try to punish it and do not press into it.'
+    de: 'Sein `df+2` ist geblockt nur −3 und CH-launcht — nicht punishen und nicht reinpressen.'
+  - en: 'Do not step his homing `b+1` / `b+1+2`; respect his plus frames — do not mash after dash pressure.'
+    de: 'Sein Homing `b+1` / `b+1+2` nicht steppen; Plus-Frames respektieren — nach Dash-Druck nicht mashen.'
+drills:
+  - en: 'Record his dash-in `f,f,F+3` (+6) and practise blocking without mashing.'
+    de: 'Seinen Dash-In `f,f,F+3` (+6) aufnehmen und üben, zu blocken statt zu mashen.'
+  - en: 'Record the `f,F+3+4` low (−16) → block and launch with [[uf44]].'
+    de: 'Den `f,F+3+4`-Low (−16) aufnehmen → blocken und mit [[uf44]] launchen.'

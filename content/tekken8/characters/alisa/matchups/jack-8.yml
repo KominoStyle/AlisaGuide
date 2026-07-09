@@ -1,5 +1,5 @@
 character: 'Jack 8'
-deep: false
+deep: true
 tag:
   en: 'Big body — armor, long range, gigaton'
   de: 'Großer Körper — Armor, Reichweite, Gigaton'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Stay mobile and whiff-punish his slow limbs with [[df2]]; don''t get caught in armor moves — sidestep or block and punish. Keep pressure so he can''t wind up his big hits.'
   de: 'Mobil bleiben und seine langsamen Limbs mit [[df2]] whiff-punishen; nicht in Armor-Moves laufen — sidesteppen oder blocken und bestrafen. Druck halten, damit er seine großen Hits nicht auflädt.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'A big body with armor, long range and gigaton power — he wants to armor through your pressure and wind up huge hits behind massive plus frames. Launcher `df+2` (i15, −14); lows `db+1` / `db+1,1` / `db+1,1,1`; heat engagers `b+1+2` / `b+2`; huge plus `1+4,1` (+21 guard), `HCF,1` (+21 guard).'
+  de: 'Ein großer Körper mit Armor, Reichweite und Gigaton-Power — er will durch deinen Druck armorn und hinter riesigen Plus-Frames große Hits aufladen. Launcher `df+2` (i15, −14); Lows `db+1` / `db+1,1` / `db+1,1,1`; Heat-Engager `b+1+2` / `b+2`; riesiges Plus `1+4,1` (+21 Guard), `HCF,1` (+21 Guard).'
+keyThreats:
+  - en: 'Armor moves — do not get caught pressing; sidestep or block and punish.'
+    de: 'Armor-Moves — nicht beim Drücken erwischt werden; sidesteppen oder blocken und bestrafen.'
+  - en: 'Huge plus frames `1+4,1` (+21 guard) / `HCF,1` (+21 guard) / `FUFT.d+1+2` (+18 guard) — his turn, do not mash.'
+    de: 'Riesige Plus-Frames `1+4,1` (+21 Guard) / `HCF,1` (+21 Guard) / `FUFT.d+1+2` (+18 Guard) — sein Zug, nicht mashen.'
+  - en: 'Long range and gigaton big damage — stay mobile so he cannot wind up.'
+    de: 'Reichweite und Gigaton-Schaden — mobil bleiben, damit er nicht aufladen kann.'
+duckTargets:
+  - string: '2,1,1+2'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: 'f+1,2'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'df+2,1'
+    onBlock: '−32'
+    with: 'uf+4,4'
+    note:
+      en: 'Huge launch punish — always take it.'
+      de: 'Riesiger Launch-Punish — immer nehmen.'
+    reviewStatus: verified
+  - notation: 'df+3+4'
+    onBlock: '−23'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'ws1+2,1+2,1+2'
+    onBlock: '−23'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Stay mobile and whiff-punish his slow limbs with [[df2]].'
+    de: 'Mobil bleiben und seine langsamen Limbs mit [[df2]] whiff-punishen.'
+  - en: 'Do not get caught in armor moves — sidestep or block and punish.'
+    de: 'Nicht in Armor-Moves laufen — sidesteppen oder blocken und bestrafen.'
+  - en: 'Keep pressure so he cannot wind up his big hits.'
+    de: 'Druck halten, damit er seine großen Hits nicht auflädt.'
+knowledgeChecks:
+  - en: 'His big plus frames `1+4,1` / `HCF,1` are +21 on block — do not press after them; block and wait.'
+    de: 'Seine großen Plus-Frames `1+4,1` / `HCF,1` sind +21 auf Block — danach nicht drücken; blocken und warten.'
+  - en: 'Do not step his homing `1+2` / `f,F+1+2` / `ub+1+2` — block and whiff-punish instead.'
+    de: 'Sein Homing `1+2` / `f,F+1+2` / `ub+1+2` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record his duckable highs (`2,1,1+2` / `1,2` / `f+1,2`) → duck the high and launch with [[ws2]].'
+    de: 'Seine duckbaren Highs (`2,1,1+2` / `1,2` / `f+1,2`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record `df+2,1` (−32) → block and launch with [[uf44]].'
+    de: '`df+2,1` (−32) aufnehmen → blocken und mit [[uf44]] launchen.'

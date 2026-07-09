@@ -1,5 +1,5 @@
 character: 'Victor'
-deep: false
+deep: true
 tag:
   en: 'Sword/gun — teleports & stylish mixups'
   de: 'Sword/Gun — Teleports & stylishe Mixups'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Block his Perception/teleport mixups and punish the unsafe ones with [[df2]]. Stay grounded, don''t whiff, and interrupt his pressure with [[df1]].'
   de: 'Seine Perception-/Teleport-Mixups blocken und die unsicheren mit [[df2]] bestrafen. Geerdet bleiben, nicht whiffen und seinen Druck mit [[df1]] unterbrechen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'A weapon character built on Perception / teleport mixups. Launcher `df+2` (i15~16, −14); lows `d+1` / `d+1,1` / `d+4` / `d+3`; heat engagers `f+4,1` / `d+2` / `f+1+2`. Plus frames `PRF.1+2` (+6), `IAI.d+2` (+4), `f+1+2` (+3) keep his turn.'
+  de: 'Ein Weapon-Charakter auf Basis von Perception- / Teleport-Mixups. Launcher `df+2` (i15~16, −14); Lows `d+1` / `d+1,1` / `d+4` / `d+3`; Heat-Engager `f+4,1` / `d+2` / `f+1+2`. Plus-Frames `PRF.1+2` (+6), `IAI.d+2` (+4), `f+1+2` (+3) halten seinen Zug.'
+keyThreats:
+  - en: 'Perception / teleport mixups — block them and punish the unsafe ones.'
+    de: 'Perception- / Teleport-Mixups — blocken und die unsicheren bestrafen.'
+  - en: 'Launcher `df+2` (i15~16, −14) and heat engagers `f+4,1` / `d+2` / `f+1+2`.'
+    de: 'Launcher `df+2` (i15~16, −14) und Heat-Engager `f+4,1` / `d+2` / `f+1+2`.'
+  - en: 'Plus frames `PRF.1+2` (+6) / `IAI.d+2` (+4) keep his turn.'
+    de: 'Plus-Frames `PRF.1+2` (+6) / `IAI.d+2` (+4) halten seinen Zug.'
+duckTargets:
+  - string: '1,1'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,1,2'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'b+1+4'
+    onBlock: '−21'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'u+1+2'
+    onBlock: '−20'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'uf+4'
+    onBlock: '−19'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Block his Perception / teleport mixups and punish the unsafe ones with [[df2]].'
+    de: 'Seine Perception- / Teleport-Mixups blocken und die unsicheren mit [[df2]] bestrafen.'
+  - en: 'Stay grounded and do not whiff — he thrives on whiff-punishing.'
+    de: 'Geerdet bleiben und nicht whiffen — er lebt vom Whiff-Punishen.'
+  - en: 'Interrupt his pressure with [[df1]].'
+    de: 'Seinen Druck mit [[df1]] unterbrechen.'
+knowledgeChecks:
+  - en: 'Respect his plus frames (`PRF.1+2` +6, `IAI.d+2` +4) — block, do not mash after them.'
+    de: 'Seine Plus-Frames (`PRF.1+2` +6, `IAI.d+2` +4) respektieren — blocken, danach nicht mashen.'
+  - en: 'Do not step his homing `b+4` / `uf+2` / `IAI.1,1+2` — block and whiff-punish instead.'
+    de: 'Sein Homing `b+4` / `uf+2` / `IAI.1,1+2` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record his duckable jab strings (`1,1` / `1,1,2` / `1,2`) → duck the high and launch with [[ws2]].'
+    de: 'Seine duckbaren Jab-Strings (`1,1` / `1,1,2` / `1,2`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record `PRF.1+2` (+6) and practise blocking without mashing after it.'
+    de: '`PRF.1+2` (+6) aufnehmen und üben, danach zu blocken statt zu mashen.'

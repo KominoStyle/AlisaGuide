@@ -1,5 +1,5 @@
 character: 'Devil Jin'
-deep: false
+deep: true
 tag:
   en: 'Mishima mixups, laser keepout & MCR pressure'
   de: 'Mishima-Mixups, Laser-Keepout & MCR-Druck'
@@ -15,3 +15,60 @@ punish:
 plan:
   en: 'Beat the Mishima game with fundamentals: block hellsweep on read and launch, block WGF standing, punish everything unsafe with [[df2]]. Stay at range so his mixups cost him a dash; use ws2 fishing and [[pc]] against MCR pressure.'
   de: 'Das Mishima-Spiel mit Fundamentals schlagen: Hellsweep auf Read blocken und launchen, WGF stehend blocken, alles Unsichere mit [[df2]] bestrafen. Auf Distanz bleiben, damit seine Mixups einen Dash kosten; ws2-Fishing und [[pc]] gegen MCR-Druck.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'A Mishima mixup character: the hellsweep `f,n,d,DF+4` mixes with Wind God Fist for the classic 50/50, the laser controls space for keepout, and MCR stance (`uf+1` +11) piles on plus pressure. `ws2` (i14) launches; `uf+4` is a heat engager.'
+  de: 'Ein Mishima-Mixup-Charakter: Der Hellsweep `f,n,d,DF+4` mixt mit Wind God Fist zum klassischen 50/50, der Laser kontrolliert Raum für Keepout, und die MCR-Stance (`uf+1` +11) stapelt Plus-Druck. `ws2` (i14) launcht; `uf+4` ist Heat-Engager.'
+keyThreats:
+  - en: 'Hellsweep `f,n,d,DF+4` vs Wind God Fist — the classic Mishima 50/50.'
+    de: 'Hellsweep `f,n,d,DF+4` vs Wind God Fist — das klassische Mishima-50/50.'
+  - en: 'The laser controls space and keeps you out.'
+    de: 'Der Laser kontrolliert Raum und hält dich draußen.'
+  - en: 'MCR stance (`uf+1` +11) gives strong plus pressure.'
+    de: 'MCR-Stance (`uf+1` +11) gibt starken Plus-Druck.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'High, high — duck on a read, then while-standing launch.'
+      de: 'High, High — auf Read ducken, dann while-standing launchen.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'f,n,d,DF+4'
+    onBlock: '−23'
+    with: 'uf+4,4'
+    note:
+      en: 'Block the hellsweep on read → big launch punish.'
+      de: 'Den Hellsweep auf Read blocken → großer Launch-Punish.'
+    reviewStatus: verified
+  - notation: 'db+3'
+    onBlock: '−17'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'ws2'
+    onBlock: '−12'
+    with: '3,2'
+    note:
+      en: 'Standing punish with [[c32]].'
+      de: 'Stehender Punish mit [[c32]].'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Block the hellsweep on read → launch; block Wind God Fist (mid) standing.'
+    de: 'Den Hellsweep auf Read blocken → launchen; Wind God Fist (Mid) stehend blocken.'
+  - en: 'Punish everything unsafe with [[df2]].'
+    de: 'Alles Unsichere mit [[df2]] bestrafen.'
+  - en: 'Stay at range so his mixups cost him a dash; use [[pc]] against MCR pressure.'
+    de: 'Auf Distanz bleiben, damit seine Mixups einen Dash kosten; [[pc]] gegen MCR-Druck.'
+knowledgeChecks:
+  - en: 'Do not challenge MCR pressure (`uf+1` +11) — block and take your turn back after.'
+    de: 'MCR-Druck (`uf+1` +11) nicht challengen — blocken und danach den Zug zurückholen.'
+  - en: 'His homing `4` / `uf+2` beat steps — do not blind-step; block and whiff-punish instead.'
+    de: 'Sein Homing `4` / `uf+2` schlägt Steps — nicht blind steppen; stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record the hellsweep / WGF 50/50 → block the low on read and launch, block the mid standing.'
+    de: 'Das Hellsweep- / WGF-50/50 aufnehmen → den Low auf Read blocken und launchen, den Mid stehend blocken.'
+  - en: 'Record MCR `uf+1` and practise blocking instead of mashing after it.'
+    de: 'MCR `uf+1` aufnehmen und üben, danach zu blocken statt zu mashen.'

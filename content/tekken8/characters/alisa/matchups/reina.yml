@@ -1,5 +1,5 @@
 character: 'Reina'
-deep: false
+deep: true
 tag:
   en: 'Mishima mixups, stances & Heaven''s Wrath'
   de: 'Mishima-Mixups, Stances & Heaven''s Wrath'
@@ -15,3 +15,66 @@ punish:
 plan:
   en: 'Respect her turn after `f+3+4` (+10) and `f,f,F+3` (+6) — don''t mash. Poke with [[df1]], use [[pc]] to blow through her Sentai pressure, launch whiffed WGF/hellsweep attempts with [[df2]]. Keep her out with ws2 fishing and boot pressure.'
   de: 'Nach `f+3+4` (+10) und `f,f,F+3` (+6) ist ihr Zug — nicht mashen. Mit [[df1]] poken, mit [[pc]] durch ihren Sentai-Druck brechen, gewhiffte WGF-/Hellsweep-Versuche mit [[df2]] launchen. Mit ws2-Fishing und Boot-Druck auf Distanz halten.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'A Mishima with stance mixups: Sentai (`SEN.3` heat engager) and Wind God Step feed her 50/50, backed by launchers `df+2` (i15) and `uf+4` (i17). A fast low `d+4` (i12) chips your life and `db+4` opens rounds.'
+  de: 'Ein Mishima mit Stance-Mixups: Sentai (`SEN.3` Heat-Engager) und Wind God Step füttern ihr 50/50, gestützt von Launchern `df+2` (i15) und `uf+4` (i17). Ein schneller Low `d+4` (i12) knabbert Leben und `db+4` öffnet Runden.'
+keyThreats:
+  - en: 'The Wind God Step mix — the `WGS.DF+4` low versus her mids. Block the low on reaction.'
+    de: 'Der Wind-God-Step-Mix — der `WGS.DF+4`-Low gegen ihre Mids. Den Low auf Reaktion blocken.'
+  - en: 'Sentai pressure (`SEN.3` heat engager) and her Heaven''s Wrath stance mix.'
+    de: 'Sentai-Druck (`SEN.3` Heat-Engager) und ihr Heaven''s-Wrath-Stance-Mix.'
+  - en: 'Fast low `d+4` (i12) chips your life; `db+4` opens rounds.'
+    de: 'Schneller Low `d+4` (i12) knabbert Leben; `db+4` öffnet Runden.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'High, high — duck on a read, then while-standing launch.'
+      de: 'High, High — auf Read ducken, dann while-standing launchen.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'WGS.DF+4'
+    onBlock: '−23'
+    with: 'uf+4,4'
+    note:
+      en: 'Block the Wind God Step low on read → big launch punish.'
+      de: 'Den Wind-God-Step-Low auf Read blocken → großer Launch-Punish.'
+    reviewStatus: verified
+  - notation: 'df+1,2'
+    onBlock: '−14'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'df+2'
+    onBlock: '−12'
+    with: '3,2'
+    note:
+      en: 'Standing punish.'
+      de: 'Stehender Punish.'
+    reviewStatus: verified
+stepDirection:
+  direction: 'Step her linear WGS mids'
+  note:
+    en: 'Sidestep her linear Wind God Step mids and whiff-punish — but step with purpose, not on autopilot.'
+    de: 'Ihre linearen Wind-God-Step-Mids sidesteppen und whiff-punishen — aber gezielt steppen, nicht auf Autopilot.'
+  reviewStatus: verified
+alisaAnswers:
+  - en: 'Respect her turn after `f+3+4` (+10) and `f,f,F+3` (+6) — do not mash.'
+    de: 'Nach `f+3+4` (+10) und `f,f,F+3` (+6) ist ihr Zug — nicht mashen.'
+  - en: 'Poke with [[df1]] and use [[pc]] to blow through her Sentai pressure.'
+    de: 'Mit [[df1]] poken und mit [[pc]] durch ihren Sentai-Druck brechen.'
+  - en: 'Launch whiffed WGF / hellsweep attempts with [[df2]]; keep her out with ws2 fishing.'
+    de: 'Gewhiffte WGF-/Hellsweep-Versuche mit [[df2]] launchen; mit ws2-Fishing auf Distanz halten.'
+knowledgeChecks:
+  - en: 'Block the Wind God Step low `WGS.DF+4` on reaction → launch.'
+    de: 'Den Wind-God-Step-Low `WGS.DF+4` auf Reaktion blocken → launchen.'
+  - en: 'Her homing `3` / `b+2` / `f,f,F+4` beat blind sidesteps — do not step for free.'
+    de: 'Ihre Homing `3` / `b+2` / `f,f,F+4` schlagen blinde Sidesteps — nicht gratis steppen.'
+drills:
+  - en: 'Record `WGS.DF+4` and practise blocking it on reaction into a launch.'
+    de: '`WGS.DF+4` aufnehmen und üben, es on Reaction in einen Launch zu blocken.'
+  - en: 'Record `f+3+4` (+10) and practise blocking without mashing after it.'
+    de: '`f+3+4` (+10) aufnehmen und üben, danach zu blocken statt zu mashen.'

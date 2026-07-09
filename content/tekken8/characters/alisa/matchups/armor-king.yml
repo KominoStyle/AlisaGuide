@@ -1,5 +1,5 @@
 character: 'Armor King'
-deep: false
+deep: true
 tag:
   en: 'Grappler — command throws & strong CH'
   de: 'Grappler — Command-Throws & starker CH'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Break throws on reaction and stay calm on knockdown. Keep him out with [[df1]]/ws2, whiff-punish his lunges with [[df2]], and don''t mash into his counter-hits.'
   de: 'Throws auf Reaktion breaken und bei Knockdown ruhig bleiben. Mit [[df1]]/ws2 draußen halten, seine Lunges mit [[df2]] whiff-punishen und nicht in seine Counter-Hits mashen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'A grappler built around command throws and strong counter-hits — he wants to land throws and CH launchers and pin you on knockdown. Launcher `df+2` is only −12; lows `d+4` / `d+3` / `d+3+4`; heat engagers `ws3,1` / `f,F+4` / `f+2,1`; huge plus `f,f,F+3+4` (+17 on guard).'
+  de: 'Ein Grappler rund um Command-Throws und starke Counter-Hits — er will Throws und CH-Launcher landen und dich bei Knockdown festnageln. Launcher `df+2` ist nur −12; Lows `d+4` / `d+3` / `d+3+4`; Heat-Engager `ws3,1` / `f,F+4` / `f+2,1`; riesiges Plus `f,f,F+3+4` (+17 auf Guard).'
+keyThreats:
+  - en: 'His command-throw game — break throws on reaction and stay calm on knockdown.'
+    de: 'Sein Command-Throw-Game — Throws auf Reaktion breaken und bei Knockdown ruhig bleiben.'
+  - en: 'Strong counter-hits — do not mash into them.'
+    de: 'Starke Counter-Hits — nicht reinmashen.'
+  - en: '`f,f,F+3+4` is +17 on block (guard) — do not press after it.'
+    de: '`f,f,F+3+4` ist +17 auf Block (Guard) — danach nicht drücken.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,1'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: '4,3'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'FUFT.b+3+4'
+    onBlock: '−25'
+    with: 'uf+4,4'
+    note:
+      en: 'Huge launch punish — always take it.'
+      de: 'Riesiger Launch-Punish — immer nehmen.'
+    reviewStatus: verified
+  - notation: 'f+1+4'
+    onBlock: '−19'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'FC.4'
+    onBlock: '−15'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Break his throws on reaction and stay calm on knockdown.'
+    de: 'Seine Throws auf Reaktion breaken und bei Knockdown ruhig bleiben.'
+  - en: 'Keep him out with [[df1]] / [[ws2]] and whiff-punish his lunges with [[df2]].'
+    de: 'Ihn mit [[df1]] / [[ws2]] draußen halten und seine Lunges mit [[df2]] whiff-punishen.'
+  - en: 'Do not mash into his counter-hits.'
+    de: 'Nicht in seine Counter-Hits mashen.'
+knowledgeChecks:
+  - en: 'His `df+2` launcher is only −12 on block — do not try to launch it; take a jab.'
+    de: 'Sein `df+2`-Launcher ist geblockt nur −12 — nicht launchen; einen Jab nehmen.'
+  - en: '`f,f,F+3+4` is +17 on block — do not press after it; block and take your turn back.'
+    de: '`f,f,F+3+4` ist +17 auf Block — danach nicht drücken; blocken und den Zug zurücknehmen.'
+drills:
+  - en: 'Record his most-used command grab and drill the break input on reaction.'
+    de: 'Seinen meistgenutzten Command-Grab aufnehmen und den Break auf Reaktion drillen.'
+  - en: 'Record `FUFT.b+3+4` (−25) → block and launch with [[uf44]].'
+    de: '`FUFT.b+3+4` (−25) aufnehmen → blocken und mit [[uf44]] launchen.'

@@ -1,5 +1,5 @@
 character: 'Hwoarang'
-deep: false
+deep: true
 tag:
   en: 'Relentless stance pressure (LFS/RFF/RFS)'
   de: 'Dauerhafter Stance-Druck (LFS/RFF/RFS)'
@@ -15,3 +15,53 @@ punish:
 plan:
   en: 'Patience beats Hwoarang: block, hold guard through the plus frames, and take your turn only in real gaps with fast jabs or [[pc]]. Don''t panic-step. When he whiffs a stance transition, launch with [[df2]]. Keep him at range to deny stance entry.'
   de: 'Geduld schlägt Hwoarang: blocken, den Guard durch die Plus-Frames halten und nur in echten Lücken mit schnellen Jabs oder [[pc]] den Zug nehmen. Nicht panisch steppen. Wenn er einen Stance-Transition whifft, mit [[df2]] launchen. Auf Distanz halten, um Stance-Einstieg zu verhindern.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Relentless stance pressure from Flamingo (LFS), Right Flamingo (RFF) and switches, with tons of plus frames — `RFF.f+3` (+12), `3,3,4` (+8), the plus-low `d+3,4` (+8). His `df+2` launcher is safe (−7) and his `df+4` is a fast homing mid.'
+  de: 'Dauerhafter Stance-Druck aus Flamingo (LFS), Right Flamingo (RFF) und Wechseln, mit vielen Plus-Frames — `RFF.f+3` (+12), `3,3,4` (+8), der Plus-Low `d+3,4` (+8). Sein `df+2`-Launcher ist safe (−7) und sein `df+4` ist ein schneller Homing-Mid.'
+keyThreats:
+  - en: 'Nonstop stance pressure (LFS / RFF / RFS) with heavy plus frames — `RFF.f+3` (+12), `3,3,4` (+8).'
+    de: 'Dauerhafter Stance-Druck (LFS / RFF / RFS) mit starken Plus-Frames — `RFF.f+3` (+12), `3,3,4` (+8).'
+  - en: 'Plus-low `d+3,4` (+8) and low enders like `db+4,4` (plus) keep his turn.'
+    de: 'Plus-Low `d+3,4` (+8) und Low-Ender wie `db+4,4` (plus) halten seinen Zug.'
+  - en: 'Fast homing mid `df+4` checks your steps.'
+    de: 'Schneller Homing-Mid `df+4` checkt deine Steps.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'High, high — duck on a read, then while-standing launch.'
+      de: 'High, High — auf Read ducken, dann while-standing launchen.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'df+3'
+    onBlock: '−14'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'df+3+4'
+    onBlock: '−14'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Patience: block, hold guard through the plus frames, and take your turn only in real gaps with fast jabs or [[pc]].'
+    de: 'Geduld: blocken, den Guard durch die Plus-Frames halten und nur in echten Lücken mit schnellen Jabs oder [[pc]] den Zug nehmen.'
+  - en: 'Do not panic-step; when he whiffs a stance transition, launch with [[df2]].'
+    de: 'Nicht panisch steppen; wenn er einen Stance-Transition whifft, mit [[df2]] launchen.'
+  - en: 'Keep him at range to deny stance entry.'
+    de: 'Auf Distanz halten, um Stance-Einstieg zu verhindern.'
+knowledgeChecks:
+  - en: 'Most stance strings are safe or plus — do not force punishes; wait for the unsafe ender.'
+    de: 'Die meisten Stance-Strings sind safe oder plus — keine Punishes erzwingen; auf den unsicheren Ender warten.'
+  - en: 'His `uf+4` is a high (−2) — duck-punish it; and do not step (his stances track, `df+4` / `d+3+4` are homing).'
+    de: 'Sein `uf+4` ist ein High (−2) — wegducken und bestrafen; und nicht steppen (seine Stances tracken, `df+4` / `d+3+4` sind Homing).'
+drills:
+  - en: 'Record his RFF / LFS plus pressure and practise holding guard, punishing only the unsafe ender with [[df2]].'
+    de: 'Seinen RFF- / LFS-Plus-Druck aufnehmen und üben, den Guard zu halten und nur den unsicheren Ender mit [[df2]] zu bestrafen.'
+  - en: 'Record `uf+4` (high) and practise ducking and punishing it.'
+    de: '`uf+4` (High) aufnehmen und üben, es wegzuducken und zu bestrafen.'

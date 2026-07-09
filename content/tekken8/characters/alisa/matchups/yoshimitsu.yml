@@ -1,5 +1,5 @@
 character: 'Yoshimitsu'
-deep: false
+deep: true
 tag:
   en: 'Gimmicks, stance mixups & Flash'
   de: 'Gimmicks, Stance-Mixups & Flash'
@@ -15,3 +15,46 @@ punish:
 plan:
   en: 'Don''t over-respect the gimmicks — many are steppable or launch-punishable on block. Interrupt his slow stance entries with [[df1]], punish his unsafe lows hard with [[df2]], and stay calm against Flash (block, don''t mash). Keep it simple: solid pokes beat his chaos.'
   de: 'Die Gimmicks nicht zu sehr respektieren — viele sind steppbar oder auf Block launchbar. Seine langsamen Stance-Einstiege mit [[df1]] unterbrechen, seine unsicheren Lows hart mit [[df2]] bestrafen, gegen Flash ruhig bleiben (blocken, nicht mashen). Simpel halten: solide Pokes schlagen sein Chaos.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'An unpredictable gimmick character with Kincho (KIN), No Sword (NSS) and Dragonfly (DGF) stances plus teleports — but many gimmicks are steppable or launch-punishable on block. Flash (unblockable) interrupts your offense; `3,1` is +7 on block (heat engager); `KIN.f+1+2` is +14; launcher `df+2` (−7).'
+  de: 'Ein unberechenbarer Gimmick-Charakter mit Kincho (KIN), No Sword (NSS) und Dragonfly (DGF) Stances plus Teleports — aber viele Gimmicks sind steppbar oder auf Block launchbar. Flash (unblockbar) unterbricht deine Offense; `3,1` ist +7 auf Block (Heat-Engager); `KIN.f+1+2` ist +14; Launcher `df+2` (−7).'
+keyThreats:
+  - en: 'Stance mixups (KIN / NSS / DGF) plus teleports — many are steppable or launch-punishable on block.'
+    de: 'Stance-Mixups (KIN / NSS / DGF) plus Teleports — viele sind steppbar oder auf Block launchbar.'
+  - en: 'Flash (unblockable) interrupts your offense — do not mash into it.'
+    de: 'Flash (unblockbar) unterbricht deine Offense — nicht reinmashen.'
+  - en: '`3,1` is +7 on block (heat engager) — very strong; do NOT try to punish it.'
+    de: '`3,1` ist +7 auf Block (Heat-Engager) — sehr stark; NICHT bestrafen.'
+punishThese:
+  - notation: 'db+3'
+    onBlock: '−25'
+    with: 'uf+4,4'
+    note:
+      en: 'Seeable launching low — block on reaction → huge launch punish.'
+      de: 'Sichtbarer Launch-Low — auf Reaktion blocken → riesiger Launch-Punish.'
+    reviewStatus: verified
+  - notation: 'd+3'
+    onBlock: '−18'
+    with: 'df+2'
+    note:
+      en: 'Block the low on a read → launch.'
+      de: 'Den Low auf Read blocken → launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Do not over-respect the gimmicks — many are steppable or launch-punishable on block.'
+    de: 'Die Gimmicks nicht zu sehr respektieren — viele sind steppbar oder auf Block launchbar.'
+  - en: 'Interrupt his slow stance entries with [[df1]]; punish his unsafe lows hard with [[df2]].'
+    de: 'Seine langsamen Stance-Einstiege mit [[df1]] unterbrechen; seine unsicheren Lows hart mit [[df2]] bestrafen.'
+  - en: 'Stay calm against Flash (block, do not mash) — solid pokes beat his chaos.'
+    de: 'Gegen Flash ruhig bleiben (blocken, nicht mashen) — solide Pokes schlagen sein Chaos.'
+knowledgeChecks:
+  - en: 'His `3,1` is +7 on block (heat engager) — do NOT try to punish it; it is his turn.'
+    de: 'Sein `3,1` ist +7 auf Block (Heat-Engager) — NICHT bestrafen; es ist sein Zug.'
+  - en: 'Watch Flash (unblockable) — do not mash into it; when he enters a stance, block and check for the gap rather than stepping.'
+    de: 'Flash beachten (unblockbar) — nicht reinmashen; wenn er in eine Stance geht, blocken und die Lücke checken statt zu steppen.'
+drills:
+  - en: 'Record his `db+3` / `d+3` lows → block on reaction and launch with [[uf44]] / [[df2]].'
+    de: 'Seine `db+3` / `d+3`-Lows aufnehmen → auf Reaktion blocken und mit [[uf44]] / [[df2]] launchen.'
+  - en: 'Record a stance entry → block and check for the gap instead of stepping.'
+    de: 'Einen Stance-Einstieg aufnehmen → blocken und die Lücke checken statt zu steppen.'

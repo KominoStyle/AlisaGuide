@@ -1,5 +1,5 @@
 character: 'Eddy'
-deep: false
+deep: true
 tag:
   en: 'Capoeira flow — handstand, tricky lows/highs'
   de: 'Capoeira-Flow — Handstand, fiese Lows/Highs'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Hold guard through his flow — most of it is steppable or minus. Block his lows, punish stance whiffs with [[df2]], interrupt with [[df1]]. Don''t panic-mash into his rhythm.'
   de: 'Den Guard durch seinen Flow halten — das meiste ist steppbar oder minus. Seine Lows blocken, Stance-Whiffs mit [[df2]] bestrafen, mit [[df1]] unterbrechen. Nicht panisch in seinen Rhythmus mashen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'A Capoeira flow character with handstand and tricky low/high mixups — he wants to trap you in his rhythm and bait a panic-mash. Launcher `df+2` is only −5 (safe); lows `d+4` / `d+4,3` / `df+4` / `db+2`; heat engagers `4,4` / `uf+1,4` / `f+3+4`; plus frames `1,2,4~4` (+8~+10), `u+4~4` (+8).'
+  de: 'Ein Capoeira-Flow-Charakter mit Handstand und fiesen Low/High-Mixups — er will dich in seinem Rhythmus fangen und einen Panik-Mash baiten. Launcher `df+2` ist nur −5 (safe); Lows `d+4` / `d+4,3` / `df+4` / `db+2`; Heat-Engager `4,4` / `uf+1,4` / `f+3+4`; Plus-Frames `1,2,4~4` (+8~+10), `u+4~4` (+8).'
+keyThreats:
+  - en: 'Capoeira flow, handstand, and tricky low/high mixups — do not panic-mash into his rhythm.'
+    de: 'Capoeira-Flow, Handstand und fiese Low/High-Mixups — nicht panisch in seinen Rhythmus mashen.'
+  - en: 'Strong plus frames `1,2,4~4` (+8~+10) / `u+4~4` (+8) / `f,f,F+3` (+8) — his turn.'
+    de: 'Starke Plus-Frames `1,2,4~4` (+8~+10) / `u+4~4` (+8) / `f,f,F+3` (+8) — sein Zug.'
+  - en: 'Heat engagers `4,4` / `uf+1,4` / `f+3+4`.'
+    de: 'Heat-Engager `4,4` / `uf+1,4` / `f+3+4`.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,3'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,4'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'uf+3,3'
+    onBlock: '−18'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'ws2'
+    onBlock: '−18'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'df+3'
+    onBlock: '−18~−16'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Hold guard through his flow — most of it is steppable or minus.'
+    de: 'Den Guard durch seinen Flow halten — das meiste ist steppbar oder minus.'
+  - en: 'Block his lows and punish his stance whiffs with [[df2]]; interrupt with [[df1]].'
+    de: 'Seine Lows blocken und seine Stance-Whiffs mit [[df2]] bestrafen; mit [[df1]] unterbrechen.'
+  - en: 'Do not panic-mash into his rhythm.'
+    de: 'Nicht panisch in seinen Rhythmus mashen.'
+knowledgeChecks:
+  - en: 'His `df+2` launcher is only −5 on block — it is safe, do not try to punish it.'
+    de: 'Sein `df+2`-Launcher ist geblockt nur −5 — er ist safe, nicht bestrafen.'
+  - en: 'Do not step his homing `f+3` / `qcb+4` / `uf+4` — block and whiff-punish instead.'
+    de: 'Sein Homing `f+3` / `qcb+4` / `uf+4` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record his duckable highs (`1,2` / `1,2,3` / `1,2,4`) → duck the high and launch with [[ws2]].'
+    de: 'Seine duckbaren Highs (`1,2` / `1,2,3` / `1,2,4`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record his flow strings and practise holding guard instead of panic-mashing.'
+    de: 'Seine Flow-Strings aufnehmen und üben, den Guard zu halten statt zu panik-mashen.'

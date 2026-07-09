@@ -15,3 +15,79 @@ punish:
 plan:
   en: 'Kill her movement with homing: [[c32]], [[k4]], [[uf2]], [[b3]]. Whiff-punish her stance whiffs with [[df2]] / [[wr2]] / [[ws2]]. Season 3 nerfed her Feisty Rabbit and Heat pressure (timer cost up, Heat recovery removed, Dew Glide −2 on block, Heat Smash now steppable) — she has **no true unseeable 50/50** outside Heat, so respect nothing you can react to and step her linear pressure.'
   de: 'Töte ihr Movement mit Homing: [[c32]], [[k4]], [[uf2]], [[b3]]. Whiff-punish ihre Stance-Whiffs mit [[df2]] / [[wr2]] / [[ws2]]. Season 3 hat Feisty Rabbit und Heat-Druck generft (Timer-Kosten hoch, Heat-Recovery weg, Dew Glide −2 auf Block, Heat Smash jetzt steppbar) — sie hat **kein echtes unlesbares 50/50** außerhalb von Heat, also respektier nichts Reaktionsbares und step ihren linearen Druck.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'A movement / whiff-punish character who is fairly linear, so disciplined defense beats her. Her `ws3` (CH launcher, Tornado), the `db+4` snake edge (i30 low) and her Dew Glide (qcf) low-vs-mid mix drive her offense, plus a backturned (BT) game — most dangerous in Heat with powered-up Feisty Rabbit.'
+  de: 'Ein Movement- / Whiff-Punish-Charakter, der recht linear ist, also schlägt disziplinierte Defense sie. Ihr `ws3` (CH-Launcher, Tornado), der `db+4`-Snake-Edge (i30-Low) und ihr Dew-Glide-(qcf)-Low-vs-Mid-Mix treiben ihre Offense, dazu ein Backturned-(BT)-Game — am gefährlichsten in Heat mit aufgeladenem Feisty Rabbit.'
+keyThreats:
+  - en: 'Her `ws3` is a whiff-punish / CH launcher (Tornado) — do not whiff.'
+    de: 'Ihr `ws3` ist ein Whiff-Punish- / CH-Launcher (Tornado) — nicht whiffen.'
+  - en: 'The `db+4` snake edge (i30 low) and Dew Glide low-vs-mid mix apply constant pressure.'
+    de: 'Der `db+4`-Snake-Edge (i30-Low) und der Dew-Glide-Low-vs-Mid-Mix machen konstanten Druck.'
+  - en: 'Most dangerous in Heat with powered-up Feisty Rabbit.'
+    de: 'Am gefährlichsten in Heat mit aufgeladenem Feisty Rabbit.'
+duckTargets:
+  - string: 'ws1,2'
+    hit: 'duck the 2'
+    punish: 'ws2'
+    note:
+      en: 'Her high ender — duck the 2 on a read, then while-standing launch.'
+      de: 'Ihr High-Ender — die 2 auf Read ducken, dann while-standing launchen.'
+    reviewStatus: verified
+  - string: '2,4'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: '3,2,3'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'db+4'
+    onBlock: '−24'
+    with: 'uf+4,4'
+    note:
+      en: 'Block the snake edge on reaction → huge launch punish.'
+      de: 'Die Snake Edge auf Reaktion blocken → riesiger Launch-Punish.'
+    reviewStatus: verified
+  - notation: 'ws3'
+    onBlock: '−21'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'f+3+4,3,4'
+    onBlock: '−20'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+stepDirection:
+  direction: 'Sidestep LEFT (SSL) by default'
+  note:
+    en: 'SSL steps `df1`, `3`, `uf3` and most of her mids; use SSR only for `df4`, `1+2`, `d1`.'
+    de: 'SSL steppt `df1`, `3`, `uf3` und die meisten Mids; SSR nur bei `df4`, `1+2`, `d1`.'
+  reviewStatus: verified
+alisaAnswers:
+  - en: 'Kill her movement with homing: [[c32]], [[k4]], [[uf2]], [[b3]].'
+    de: 'Ihr Movement mit Homing töten: [[c32]], [[k4]], [[uf2]], [[b3]].'
+  - en: 'Whiff-punish her stance whiffs with [[df2]] / [[wr2]] / [[ws2]].'
+    de: 'Ihre Stance-Whiffs mit [[df2]] / [[wr2]] / [[ws2]] whiff-punishen.'
+  - en: 'She has no true unseeable 50/50 outside Heat — respect nothing you can react to and step her linear pressure.'
+    de: 'Sie hat kein echtes unlesbares 50/50 außerhalb von Heat — nichts Reaktionsbares respektieren und ihren linearen Druck steppen.'
+knowledgeChecks:
+  - en: 'Her snake edge and Dew Glide low are slow / reactable — block on read, do not pre-duck, then launch.'
+    de: 'Snake Edge und Dew-Glide-Low sind langsam / reaktionsbar — auf Read blocken, nicht vorducken, dann launchen.'
+  - en: 'Season 3 nerfed Feisty Rabbit / Heat pressure (Dew Glide −2 on block, Heat Smash now steppable) — she is more honest now.'
+    de: 'Season 3 hat Feisty Rabbit / Heat-Druck generft (Dew Glide −2 auf Block, Heat Smash jetzt steppbar) — sie ist jetzt ehrlicher.'
+drills:
+  - en: 'Record her high enders (`ws1,2` / `2,4` / `3,2,3`) → duck the last high and launch with [[ws2]].'
+    de: 'Ihre High-Ender (`ws1,2` / `2,4` / `3,2,3`) aufnehmen → den letzten High ducken und mit [[ws2]] launchen.'
+  - en: 'Record the `db+4` snake edge → block on reaction and launch with [[df2]].'
+    de: 'Den `db+4`-Snake-Edge aufnehmen → auf Reaktion blocken und mit [[df2]] launchen.'

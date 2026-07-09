@@ -3,3 +3,7 @@ node_modules/
 dist/
 *.tsbuildinfo
 /reports/
+
+# Full-res character portrait sources (kept locally). The build uses the
+# optimized 256px copies in data/Image/Characters-web/, which ARE committed.
+/data/Image/Characters/

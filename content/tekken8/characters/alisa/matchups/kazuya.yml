@@ -1,5 +1,5 @@
 character: 'Kazuya'
-deep: false
+deep: true
 tag:
   en: 'Hellsweep & electric mix — SSL/SWL is his weak side.'
   de: 'Hellsweep- & Electric-Mix — SSL/SWL ist seine schwache Seite.'
@@ -15,3 +15,78 @@ punish:
 plan:
   en: '[[b1]] high-crushes under his electric and highs while still hitting mid — a key tool here. Block hellsweep on reaction → launch. Respect his plus frames after blocked strings, don''t mash.'
   de: '[[b1]] high-crusht unter Electric und Highs und trifft trotzdem mid — ein Schlüssel-Tool hier. Hellsweep on Reaction blocken → launchen. Respektier seine Plus-Frames nach geblockten Strings, nicht mashen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Classic Mishima: the hellsweep low mixes with a mid / electric to make a 50/50, backed by an electric counter-hit launcher and the `ub1+2` laser for space. In Heat he gains Devil form.'
+  de: 'Klassischer Mishima: Der Hellsweep-Low mixt mit einem Mid / Electric zum 50/50, gestützt von einem Electric-Counter-Hit-Launcher und dem `ub1+2`-Laser für Raum. In Heat bekommt er Devil-Form.'
+keyThreats:
+  - en: 'The hellsweep into the mid / electric 50/50 — his core Mishima mixup.'
+    de: 'Der Hellsweep in das Mid / Electric-50/50 — sein zentraler Mishima-Mixup.'
+  - en: 'The electric — a fast counter-hit launcher. Do not press into it.'
+    de: 'Der Electric — ein schneller Counter-Hit-Launcher. Nicht reinpressen.'
+  - en: 'Devil form in Heat powers up his mixups and adds range.'
+    de: 'Devil-Form in Heat lädt seine Mixups auf und gibt Reichweite.'
+duckTargets:
+  - string: 'df1,2'
+    punish: 'ws2'
+    note:
+      en: 'Step SSL / duck on a read, then while-standing launch.'
+      de: 'SSL-steppen / auf Read ducken, dann while-standing launchen.'
+    reviewStatus: verified
+  - string: 'df1,4'
+    punish: 'ws2'
+    note:
+      en: 'The other half of the df+1 mix — duck it on a read.'
+      de: 'Die andere Hälfte des df+1-Mix — auf Read ducken.'
+    reviewStatus: verified
+  - string: 'b2,4'
+    punish: 'ws2'
+    note:
+      en: 'Duckable on a read — launch while standing.'
+      de: 'Auf Read duckbar — while-standing launchen.'
+    reviewStatus: verified
+punishThese:
+  - notation: '1,2,2'
+    onBlock: '−17'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'db1,2'
+    onBlock: '−19'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: '1+2'
+    onBlock: '−13'
+    with: '3,2'
+    note:
+      en: 'Standing punish.'
+      de: 'Stehender Punish.'
+    reviewStatus: verified
+stepDirection:
+  direction: 'Sidestep / Sidewalk LEFT (SSL / SWL)'
+  note:
+    en: 'His weak side — step his linear commits, then whiff-punish.'
+    de: 'Seine schwache Seite — seine linearen Commits steppen, dann whiff-punishen.'
+  reviewStatus: verified
+alisaAnswers:
+  - en: '[[b1]] high-crushes under his electric and highs while still hitting mid — a key tool here.'
+    de: '[[b1]] high-crusht unter Electric und Highs und trifft trotzdem mid — ein Schlüssel-Tool hier.'
+  - en: 'Block the hellsweep on reaction → launch with [[df2]].'
+    de: 'Den Hellsweep on Reaction blocken → mit [[df2]] launchen.'
+  - en: 'Respect his plus frames after blocked strings — do not mash.'
+    de: 'Seine Plus-Frames nach geblockten Strings respektieren — nicht mashen.'
+knowledgeChecks:
+  - en: 'Block the hellsweep low on reaction — it is slow enough to see — then launch.'
+    de: 'Den Hellsweep-Low on Reaction blocken — er ist langsam genug zum Sehen — dann launchen.'
+  - en: 'His `ub1+2` laser is unblockable in Devil / Heat — just duck it, never try to block.'
+    de: 'Sein `ub1+2`-Laser ist in Devil / Heat unblockbar — einfach ducken, nie blocken.'
+drills:
+  - en: 'Record the hellsweep and practise blocking it on reaction into a [[df2]] launch.'
+    de: 'Den Hellsweep aufnehmen und üben, ihn on Reaction zu blocken in einen [[df2]]-Launch.'
+  - en: 'Record the electric and practise NOT pressing after block — crush it with [[b1]].'
+    de: 'Den Electric aufnehmen und üben, nach Block NICHT zu drücken — mit [[b1]] crushen.'

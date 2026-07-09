@@ -1,5 +1,5 @@
 character: 'Steve'
-deep: false
+deep: true
 tag:
   en: 'Boxer — weaves, CH launchers, few lows'
   de: 'Boxer — Weaves, CH-Launcher, kaum Lows'
@@ -15,3 +15,60 @@ punish:
 plan:
   en: 'Standing block is your friend — Steve can''t open you low much, so hold guard and punish his gaps. Interrupt weave transitions with [[df1]], launch his −11+ enders with [[df2]]. Don''t get baited into CH; keep your turns short.'
   de: 'Stehend blocken ist dein Freund — Steve kann dich kaum tief öffnen, also Guard halten und seine Lücken bestrafen. Weave-Transitions mit [[df1]] unterbrechen, seine −11+-Ender mit [[df2]] launchen. Nicht in CH gebaitet werden; deine Turns kurz halten.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'A boxer working mostly highs and mids out of weave stances (Flicker, Ducking, Peekaboo, Lion Heart) with strong counter-hits and plus pressure — `LNH.1+2` (+12), `f,f,F+2` (+6). He has very few lows, so standing block is safe; `df+2` (i16) is his counter-hit launcher.'
+  de: 'Ein Boxer, der meist Highs und Mids aus Weave-Stances (Flicker, Ducking, Peekaboo, Lion Heart) arbeitet, mit starken Counter-Hits und Plus-Druck — `LNH.1+2` (+12), `f,f,F+2` (+6). Er hat kaum Lows, also ist stehend blocken safe; `df+2` (i16) ist sein Counter-Hit-Launcher.'
+keyThreats:
+  - en: 'Strong counter-hits and plus pressure from weaves — `LNH.1+2` (+12), `f,f,F+2` (+6).'
+    de: 'Starke Counter-Hits und Plus-Druck aus Weaves — `LNH.1+2` (+12), `f,f,F+2` (+6).'
+  - en: '`df+2` (i16) is his counter-hit launcher — do not press into it.'
+    de: '`df+2` (i16) ist sein Counter-Hit-Launcher — nicht reinpressen.'
+  - en: 'His homing weaves `b+1,2` / `PAB.2` beat sidesteps.'
+    de: 'Seine Homing-Weaves `b+1,2` / `PAB.2` schlagen Sidesteps.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'High, high — duck on a read; his high weave enders duck too.'
+      de: 'High, High — auf Read ducken; seine High-Weave-Ender ebenfalls.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'df+2'
+    onBlock: '−11'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: '1+2'
+    onBlock: '−12'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'qcf+1'
+    onBlock: '−10'
+    with: '1,1'
+    note:
+      en: 'Jab punish.'
+      de: 'Jab-Punish.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Standing block is your friend — he can barely open you low, so hold guard and punish his gaps.'
+    de: 'Stehend blocken ist dein Freund — er kann dich kaum tief öffnen, also Guard halten und seine Lücken bestrafen.'
+  - en: 'Interrupt his weave transitions with [[df1]].'
+    de: 'Seine Weave-Transitions mit [[df1]] unterbrechen.'
+  - en: 'Launch his −11+ enders with [[df2]]; keep your turns short, do not get baited into CH.'
+    de: 'Seine −11+-Ender mit [[df2]] launchen; deine Turns kurz halten, nicht in CH gebaitet werden.'
+knowledgeChecks:
+  - en: 'He has almost no lows — stay standing and block; do not duck-mash into his mids and CH.'
+    de: 'Er hat kaum Lows — stehen bleiben und blocken; nicht in seine Mids und CH duck-mashen.'
+  - en: 'Most weave pressure is safe or plus — wait for the unsafe ender instead of challenging.'
+    de: 'Der meiste Weave-Druck ist safe oder plus — auf den unsicheren Ender warten statt zu challengen.'
+drills:
+  - en: 'Record his weave pressure and practise holding standing guard, punishing only the unsafe ender with [[df2]].'
+    de: 'Seinen Weave-Druck aufnehmen und üben, stehenden Guard zu halten und nur den unsicheren Ender mit [[df2]] zu bestrafen.'
+  - en: 'Record `df+2` and practise NOT pressing into his counter-hit launcher — block and take your turn.'
+    de: '`df+2` aufnehmen und üben, NICHT in seinen Counter-Hit-Launcher zu drücken — blocken und den Zug nehmen.'

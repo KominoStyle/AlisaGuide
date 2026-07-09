@@ -1,5 +1,5 @@
 character: 'Zafina'
-deep: false
+deep: true
 tag:
   en: 'Contortionist stances (SCR/MNT/TRT), tricky'
   de: 'Kontortionisten-Stances (SCR/MNT/TRT), tricky'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Block her stance lows and punish her unsafe mids with [[uf44]]/[[df2]]. Don''t respect the stances blindly — many transitions are steppable or launchable. Stay calm and hit mids.'
   de: 'Ihre Stance-Lows blocken und ihre unsicheren Mids mit [[uf44]]/[[df2]] bestrafen. Die Stances nicht blind respektieren — viele Transitions sind steppbar oder launchbar. Ruhig bleiben und Mids setzen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'A contortionist with SCR / MNT / TRT stances and many transitions — but many of them are steppable or launchable. Launcher `df+2` is only −12; lows `d+4` / `d+4,3` / `db+3` / `db+4`; heat engagers `df+4,1` / `f+1+2` / `SCR.2,1`; plus frames `MNT.df+1` (+10), `f,f,F+3` (+7).'
+  de: 'Ein Kontortionist mit SCR- / MNT- / TRT-Stances und vielen Transitions — aber viele davon sind steppbar oder launchbar. Launcher `df+2` ist nur −12; Lows `d+4` / `d+4,3` / `db+3` / `db+4`; Heat-Engager `df+4,1` / `f+1+2` / `SCR.2,1`; Plus-Frames `MNT.df+1` (+10), `f,f,F+3` (+7).'
+keyThreats:
+  - en: 'Contortionist stance mix (SCR / MNT / TRT) — many transitions, but many are steppable or launchable.'
+    de: 'Kontortionisten-Stance-Mix (SCR / MNT / TRT) — viele Transitions, aber viele steppbar oder launchbar.'
+  - en: 'Strong plus frames `MNT.df+1` (+10) / `f,f,F+3` (+7) — her turn, do not mash.'
+    de: 'Starke Plus-Frames `MNT.df+1` (+10) / `f,f,F+3` (+7) — ihr Zug, nicht mashen.'
+  - en: 'Heat engagers `df+4,1` / `f+1+2` / `SCR.2,1`.'
+    de: 'Heat-Engager `df+4,1` / `f+1+2` / `SCR.2,1`.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,3'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,3'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'd+2,4'
+    onBlock: '−22'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'f+2'
+    onBlock: '−18'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: '2,1,3'
+    onBlock: '−17'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Block her stance lows and punish her unsafe mids with [[uf44]] / [[df2]].'
+    de: 'Ihre Stance-Lows blocken und ihre unsicheren Mids mit [[uf44]] / [[df2]] bestrafen.'
+  - en: 'Do not respect the stances blindly — many transitions are steppable or launchable.'
+    de: 'Die Stances nicht blind respektieren — viele Transitions sind steppbar oder launchbar.'
+  - en: 'Stay calm and hit mids.'
+    de: 'Ruhig bleiben und Mids setzen.'
+knowledgeChecks:
+  - en: 'Her `df+2` launcher is only −12 on block — do not try to launch it; take a jab.'
+    de: 'Ihr `df+2`-Launcher ist geblockt nur −12 — nicht launchen; einen Jab nehmen.'
+  - en: 'Do not step her homing `f,F+2` / `f,F+4` / `f,f,F+1+2` — block and whiff-punish instead.'
+    de: 'Ihr Homing `f,F+2` / `f,F+4` / `f,f,F+1+2` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record her duckable jab strings (`1,2` / `1,2,3` / `1,3`) → duck the high and launch with [[ws2]].'
+    de: 'Ihre duckbaren Jab-Strings (`1,2` / `1,2,3` / `1,3`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record `MNT.df+1` (+10) and practise blocking without mashing after it.'
+    de: '`MNT.df+1` (+10) aufnehmen und üben, danach zu blocken statt zu mashen.'

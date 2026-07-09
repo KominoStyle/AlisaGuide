@@ -1,5 +1,5 @@
 character: 'Leroy'
-deep: false
+deep: true
 tag:
   en: 'Kung fu — cane, parries & keepout'
   de: 'Kung Fu — Stock, Parries & Keepout'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Don''t throw predictable strings into his parry; mix lows and throws. Whiff-punish his keepout with [[df2]] and stay patient — punish his unsafe cane pokes.'
   de: 'Keine vorhersehbaren Strings in seinen Parry; Lows und Würfe mischen. Sein Keepout mit [[df2]] whiff-punishen und geduldig bleiben — seine unsicheren Cane-Pokes bestrafen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Kung fu with cane, parries and keepout — he punishes predictable strings with his parry and controls space with cane pokes. Launcher `df+2` is only −6 (safe); lows `d+4` / `d+4,4` / `d+2` / `d+2,4`; heat engagers `1+2,1+2,1` / `f+4,4` / `d+1+2`; plus frames `b+3` (+9~+10), `SS.1+2` (+7).'
+  de: 'Kung Fu mit Stock, Parries und Keepout — er bestraft vorhersehbare Strings mit seinem Parry und kontrolliert den Raum mit Cane-Pokes. Launcher `df+2` ist nur −6 (safe); Lows `d+4` / `d+4,4` / `d+2` / `d+2,4`; Heat-Engager `1+2,1+2,1` / `f+4,4` / `d+1+2`; Plus-Frames `b+3` (+9~+10), `SS.1+2` (+7).'
+keyThreats:
+  - en: 'His parry — do not throw predictable strings into it; mix lows and throws.'
+    de: 'Sein Parry — keine vorhersehbaren Strings reinwerfen; Lows und Würfe mischen.'
+  - en: 'Cane keepout and pokes — whiff-punish them, do not autopilot.'
+    de: 'Cane-Keepout und -Pokes — whiff-punishen, nicht autopiloten.'
+  - en: 'Strong plus frames `b+3` (+9~+10) / `SS.1+2` (+7) / `f,f,F+3` (+6~+9) — his turn.'
+    de: 'Starke Plus-Frames `b+3` (+9~+10) / `SS.1+2` (+7) / `f,f,F+3` (+6~+9) — sein Zug.'
+duckTargets:
+  - string: '1,1,1+2'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,1'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'df+2,1+2'
+    onBlock: '−18'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: '1+2,1+2,1'
+    onBlock: '−17~−16'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'f+3,1+2,4'
+    onBlock: '−16~−15'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Do not throw predictable strings into his parry; mix lows and throws.'
+    de: 'Keine vorhersehbaren Strings in seinen Parry; Lows und Würfe mischen.'
+  - en: 'Whiff-punish his keepout with [[df2]] and stay patient.'
+    de: 'Sein Keepout mit [[df2]] whiff-punishen und geduldig bleiben.'
+  - en: 'Punish his unsafe cane pokes.'
+    de: 'Seine unsicheren Cane-Pokes bestrafen.'
+knowledgeChecks:
+  - en: 'His `df+2` launcher is only −6 on block — it is safe, do not try to launch it.'
+    de: 'Sein `df+2`-Launcher ist geblockt nur −6 — er ist safe, nicht launchen.'
+  - en: 'Do not autopilot mid strings into his parry — mix lows and throws.'
+    de: 'Keine Mid-Strings in seinen Parry autopiloten — Lows und Würfe mischen.'
+drills:
+  - en: 'Record his parry and practise mixing lows / throws instead of autopiloting.'
+    de: 'Sein Parry aufnehmen und üben, Lows / Würfe zu mischen statt zu autopiloten.'
+  - en: 'Record `df+2,1+2` (−18) → block and launch with [[uf44]].'
+    de: '`df+2,1+2` (−18) aufnehmen → blocken und mit [[uf44]] launchen.'

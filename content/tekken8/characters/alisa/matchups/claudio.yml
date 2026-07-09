@@ -1,5 +1,5 @@
 character: 'Claudio'
-deep: false
+deep: true
 tag:
   en: 'Starburst power, strong mids & homing'
   de: 'Starburst-Power, starke Mids & Homing'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Solid mids and pokes beat him; punish his unsafe launchers with [[uf44]]/[[df2]]. Respect the Starburst-buffed hopkick and whiff-punish his committal moves.'
   de: 'Solide Mids und Pokes schlagen ihn; seine unsicheren Launcher mit [[uf44]]/[[df2]] bestrafen. Den Starburst-Hopkick respektieren und seine committalen Moves whiff-punishen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Starburst power with strong mids and homing — once he has Starburst his hopkick is buffed and his plus frames snowball. Launcher `df+2` (i14, −13); lows `d+4` / `db+4` / `db+4,3`; heat engagers `2,1,2` / `f,f,F+2` / `3,2`; plus frames `STB.f,F+3,2*` (+12), `STB.d+1,2` (+6).'
+  de: 'Starburst-Power mit starken Mids und Homing — sobald er Starburst hat, ist sein Hopkick gebufft und seine Plus-Frames snowballen. Launcher `df+2` (i14, −13); Lows `d+4` / `db+4` / `db+4,3`; Heat-Engager `2,1,2` / `f,f,F+2` / `3,2`; Plus-Frames `STB.f,F+3,2*` (+12), `STB.d+1,2` (+6).'
+keyThreats:
+  - en: 'Once he has Starburst his hopkick is buffed — respect it.'
+    de: 'Sobald er Starburst hat, ist sein Hopkick gebufft — respektieren.'
+  - en: 'Strong plus frames `STB.f,F+3,2*` (+12) / `STB.f,f,F+1+2` (+8~+11) — his turn, do not mash.'
+    de: 'Starke Plus-Frames `STB.f,F+3,2*` (+12) / `STB.f,f,F+1+2` (+8~+11) — sein Zug, nicht mashen.'
+  - en: 'Strong mids and homing keep his pressure honest — block and whiff-punish.'
+    de: 'Starke Mids und Homing halten seinen Druck ehrlich — blocken und whiff-punishen.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '4,3'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: 'ws1,1'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'f+2,2'
+    onBlock: '−26'
+    with: 'uf+4,4'
+    note:
+      en: 'Huge launch punish — always take it.'
+      de: 'Riesiger Launch-Punish — immer nehmen.'
+    reviewStatus: verified
+  - notation: 'f+1+2'
+    onBlock: '−18'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'f,F+2'
+    onBlock: '−18'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Solid mids and pokes beat him; punish his unsafe launchers with [[uf44]] / [[df2]].'
+    de: 'Solide Mids und Pokes schlagen ihn; seine unsicheren Launcher mit [[uf44]] / [[df2]] bestrafen.'
+  - en: 'Respect the Starburst-buffed hopkick once he has Starburst.'
+    de: 'Den Starburst-Hopkick respektieren, sobald er Starburst hat.'
+  - en: 'Whiff-punish his committal moves with [[df2]].'
+    de: 'Seine committalen Moves mit [[df2]] whiff-punishen.'
+knowledgeChecks:
+  - en: 'His `df+2` launcher is i14 but only −13 on block — punish it with [[c32]], do not try to launch it.'
+    de: 'Sein `df+2`-Launcher ist i14, aber geblockt nur −13 — mit [[c32]] bestrafen, nicht launchen.'
+  - en: 'Do not step his homing `4,3` / `b+4,3` / `f+3` — block and whiff-punish instead.'
+    de: 'Sein Homing `4,3` / `b+4,3` / `f+3` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record his duckable highs (`1,2` / `4,3` / `ws1,1`) → duck the high and launch with [[ws2]].'
+    de: 'Seine duckbaren Highs (`1,2` / `4,3` / `ws1,1`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record `f+2,2` (−26) → block and launch with [[uf44]].'
+    de: '`f+2,2` (−26) aufnehmen → blocken und mit [[uf44]] launchen.'

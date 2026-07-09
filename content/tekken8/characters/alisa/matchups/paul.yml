@@ -1,5 +1,5 @@
 character: 'Paul'
-deep: false
+deep: true
 tag:
   en: 'Heavy hitter — Deathfist & huge damage'
   de: 'Heavy Hitter — Deathfist & riesiger Schaden'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Block Deathfist `qcf+2` (minus on block) and punish; respect his damage. Whiff-punish his committal swings with [[df2]], block his lows, and don''t trade with his CH.'
   de: 'Deathfist `qcf+2` (minus auf Block) blocken und bestrafen; seinen Schaden respektieren. Committale Swings mit [[df2]] whiff-punishen, seine Lows blocken und nicht mit seinem CH traden.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'A heavy hitter built around Deathfist and huge damage — he wants to land big counter-hits and Deathfist `qcf+2` for massive damage. Launcher `df+2` is only −8 (safe); lows `db+4` / `d+4` / `d+4,2`; heat engagers `qcf+2` / `qcb+2` / `f+4`; plus frames `d+1,2*` (+9), `b+2,1*` (+8), `SS.1` (+8).'
+  de: 'Ein Heavy Hitter rund um Deathfist und riesigen Schaden — er will große Counter-Hits und Deathfist `qcf+2` für massiven Schaden landen. Launcher `df+2` ist nur −8 (safe); Lows `db+4` / `d+4` / `d+4,2`; Heat-Engager `qcf+2` / `qcb+2` / `f+4`; Plus-Frames `d+1,2*` (+9), `b+2,1*` (+8), `SS.1` (+8).'
+keyThreats:
+  - en: 'Deathfist `qcf+2` and huge damage — respect his damage; block and punish it (minus on block).'
+    de: 'Deathfist `qcf+2` und riesiger Schaden — seinen Schaden respektieren; blocken und bestrafen (minus auf Block).'
+  - en: 'Big counter-hit threat — do not trade with his CH.'
+    de: 'Große Counter-Hit-Bedrohung — nicht mit seinem CH traden.'
+  - en: 'Strong plus frames `d+1,2*` (+9) / `b+2,1*` (+8) / `SS.1` (+8) — his turn.'
+    de: 'Starke Plus-Frames `d+1,2*` (+9) / `b+2,1*` (+8) / `SS.1` (+8) — sein Zug.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,3'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: '2,3'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: '1,2,3'
+    onBlock: '−25'
+    with: 'uf+4,4'
+    note:
+      en: 'Huge launch punish — always take it.'
+      de: 'Riesiger Launch-Punish — immer nehmen.'
+    reviewStatus: verified
+  - notation: 'd+1+2'
+    onBlock: '−18'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'd+1,2'
+    onBlock: '−17'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Block Deathfist `qcf+2` (minus on block) and punish; respect his damage.'
+    de: 'Deathfist `qcf+2` (minus auf Block) blocken und bestrafen; seinen Schaden respektieren.'
+  - en: 'Whiff-punish his committal swings with [[df2]] and block his lows.'
+    de: 'Committale Swings mit [[df2]] whiff-punishen und seine Lows blocken.'
+  - en: 'Do not trade with his counter-hits.'
+    de: 'Nicht mit seinen Counter-Hits traden.'
+knowledgeChecks:
+  - en: 'His `df+2` launcher is only −8 on block — it is safe, do not try to launch it.'
+    de: 'Sein `df+2`-Launcher ist geblockt nur −8 — er ist safe, nicht launchen.'
+  - en: 'Do not step his homing `qcb+4` / `f+3` / `f+4` — block and whiff-punish instead.'
+    de: 'Sein Homing `qcb+4` / `f+3` / `f+4` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record his duckable highs (`1,2` / `1,2,3` / `2,3`) → duck the high and launch with [[ws2]].'
+    de: 'Seine duckbaren Highs (`1,2` / `1,2,3` / `2,3`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record `1,2,3` (−25) → block and launch with [[uf44]].'
+    de: '`1,2,3` (−25) aufnehmen → blocken und mit [[uf44]] launchen.'

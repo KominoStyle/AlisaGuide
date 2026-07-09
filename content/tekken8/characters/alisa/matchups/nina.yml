@@ -1,5 +1,5 @@
 character: 'Nina'
-deep: false
+deep: true
 tag:
   en: 'Fast safe pokes, CH pressure & tricky lows'
   de: 'Schnelle safe Pokes, CH-Druck & fiese Lows'
@@ -15,3 +15,60 @@ punish:
 plan:
   en: 'She wants to poke and stagger you into her CH launchers — don''t duck-mash. Interrupt string gaps with [[df1]], respect `f,F+1+2` (+8), launch her whiffs. Use your range: keep her at [[df1]] / ws2 distance and force her to approach into your [[df2]].'
   de: 'Sie will poken und dich in ihre CH-Launcher staggern — nicht Duck-Mashen. String-Lücken mit [[df1]] unterbrechen, `f,F+1+2` (+8) respektieren, ihre Whiffs launchen. Deine Reichweite nutzen: sie auf [[df1]]/ws2-Distanz halten und zum Reingehen in dein [[df2]] zwingen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Fast, safe pokes and counter-hit pressure: she staggers you into her CH launchers. Her `df+2` launcher is only −7 (full combo, unpunishable), fast mids `df+1` (i13, −1) / `df+4` (i12) keep her plus, and the `d+3` low string / `db+4` mix with her mids. Heat via `qcf+2` / `db+1+2`.'
+  de: 'Schnelle, safe Pokes und Counter-Hit-Druck: Sie staggert dich in ihre CH-Launcher. Ihr `df+2`-Launcher ist nur −7 (voller Combo, unbestrafbar), schnelle Mids `df+1` (i13, −1) / `df+4` (i12) halten sie plus, und der `d+3`-Low-String / `db+4` mixen mit ihren Mids. Heat über `qcf+2` / `db+1+2`.'
+keyThreats:
+  - en: 'She staggers pokes into counter-hit launchers — do not duck-mash.'
+    de: 'Sie staggert Pokes in Counter-Hit-Launcher — nicht Duck-Mashen.'
+  - en: 'Fast plus mids `df+1` (i13, −1) and `df+4` (i12) keep her turn.'
+    de: 'Schnelle Plus-Mids `df+1` (i13, −1) und `df+4` (i12) halten ihren Zug.'
+  - en: 'The `d+3` low string and `db+4` mix with her mids; `d+3,4,3` is +22 on hit.'
+    de: 'Der `d+3`-Low-String und `db+4` mixen mit ihren Mids; `d+3,4,3` ist +22 auf Hit.'
+duckTargets:
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'High, high — duck on a read, then while-standing launch.'
+      de: 'High, High — auf Read ducken, dann while-standing launchen.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'qcf+3'
+    onBlock: '−20'
+    with: 'uf+4,4'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'uf+4,3'
+    onBlock: '−19'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'df+3,2,3'
+    onBlock: '−17'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Interrupt her string gaps with [[df1]] and respect `f,F+1+2` (+8).'
+    de: 'Ihre String-Lücken mit [[df1]] unterbrechen und `f,F+1+2` (+8) respektieren.'
+  - en: 'Use your range — keep her at [[df1]] / ws2 distance and force her to approach into your [[df2]].'
+    de: 'Deine Reichweite nutzen — sie auf [[df1]] / ws2-Distanz halten und zum Reingehen in dein [[df2]] zwingen.'
+  - en: 'Launch her whiffs with [[df2]].'
+    de: 'Ihre Whiffs mit [[df2]] launchen.'
+knowledgeChecks:
+  - en: 'Her `df+2` launcher is only −7 on block — it is safe; take a jab, do not try to launch it.'
+    de: 'Ihr `df+2`-Launcher ist geblockt nur −7 — safe; einen Jab nehmen, nicht launchen.'
+  - en: 'Block her `d+3` low (−17) → while-standing launch; her homing `1+2` / `db+2` beat blind steps.'
+    de: 'Ihren `d+3`-Low (−17) blocken → while-standing launchen; ihr Homing `1+2` / `db+2` schlägt blinde Steps.'
+drills:
+  - en: 'Record her poke-into-CH stagger and practise blocking one more hit instead of duck-mashing.'
+    de: 'Ihren Poke-in-CH-Stagger aufnehmen und üben, einen Hit mehr zu blocken statt Duck-Mashen.'
+  - en: 'Record `d+3` (−17 low) → block and while-standing launch with [[ws2]].'
+    de: '`d+3` (−17 Low) aufnehmen → blocken und while-standing mit [[ws2]] launchen.'

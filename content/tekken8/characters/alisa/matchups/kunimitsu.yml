@@ -1,5 +1,5 @@
 character: 'Kunimitsu'
-deep: false
+deep: true
 tag:
   en: 'Ninja — kunai, teleport, evasive'
   de: 'Ninja — Kunai, Teleport, evasiv'
@@ -15,3 +15,72 @@ punish:
 plan:
   en: 'Don''t whiff — she punishes from evasion. Block her lows, punish unsafe teleport/whip moves with [[uf44]]/[[df2]], and keep steady pokes with [[df1]].'
   de: 'Nicht whiffen — sie bestraft aus der Evasion. Ihre Lows blocken, unsichere Teleport-/Whip-Moves mit [[uf44]]/[[df2]] bestrafen und mit [[df1]] stetig poken.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'An evasive ninja with kunai, teleport and whip moves — she punishes whiffs from evasion and approaches with setplay. Launcher `df+2` (−14); lows `d+3` / `d+3,4` / `db+4`; heat engagers `ws2,1` / `f+1+2` / `BT.1,4`; plus frames `BT.4` (+6), `b+1,1` (+5).'
+  de: 'Ein evasiver Ninja mit Kunai, Teleport und Whip-Moves — sie bestraft Whiffs aus der Evasion und nähert sich mit Setplay. Launcher `df+2` (−14); Lows `d+3` / `d+3,4` / `db+4`; Heat-Engager `ws2,1` / `f+1+2` / `BT.1,4`; Plus-Frames `BT.4` (+6), `b+1,1` (+5).'
+keyThreats:
+  - en: 'She punishes whiffs from evasion — do not whiff.'
+    de: 'Sie bestraft Whiffs aus der Evasion — nicht whiffen.'
+  - en: 'Teleport / whip / kunai approach with setplay — control space and block her lows.'
+    de: 'Teleport- / Whip- / Kunai-Approach mit Setplay — Raum kontrollieren und ihre Lows blocken.'
+  - en: 'Plus frames `BT.4` (+6) / `b+1,1` (+5) — her turn.'
+    de: 'Plus-Frames `BT.4` (+6) / `b+1,1` (+5) — ihr Zug.'
+duckTargets:
+  - string: 'f,F+4,2'
+    punish: 'ws2'
+    note:
+      en: 'Block the rest, duck the high on a read → while-standing launch.'
+      de: 'Den Rest blocken, das High auf Read ducken → while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2'
+    punish: 'ws2'
+    note:
+      en: 'Duckable high ender — launch while standing.'
+      de: 'Duckbarer High-Ender — while-standing launchen.'
+    reviewStatus: verified
+  - string: '1,2,2'
+    punish: 'ws2'
+    note:
+      en: 'Ends in a high — duck on a read.'
+      de: 'Endet in einem High — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'uf,n,3'
+    onBlock: '−29'
+    with: 'uf+4,4'
+    note:
+      en: 'Huge launch punish — always take it.'
+      de: 'Riesiger Launch-Punish — immer nehmen.'
+    reviewStatus: verified
+  - notation: 'b+3,4'
+    onBlock: '−20'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'f,F+4'
+    onBlock: '−17~−15'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+alisaAnswers:
+  - en: 'Do not whiff — she punishes from evasion.'
+    de: 'Nicht whiffen — sie bestraft aus der Evasion.'
+  - en: 'Block her lows and punish unsafe teleport / whip moves with [[uf44]] / [[df2]].'
+    de: 'Ihre Lows blocken und unsichere Teleport- / Whip-Moves mit [[uf44]] / [[df2]] bestrafen.'
+  - en: 'Keep steady pokes with [[df1]] to control space.'
+    de: 'Mit [[df1]] stetig poken, um den Raum zu kontrollieren.'
+knowledgeChecks:
+  - en: 'Do not whiff into her evasion — she punishes whiffs hard; use safe pokes and mids.'
+    de: 'Nicht in ihre Evasion whiffen — sie bestraft Whiffs hart; safe Pokes und Mids nutzen.'
+  - en: 'Do not step her homing `3` / `BT.4` — block and whiff-punish instead.'
+    de: 'Ihr Homing `3` / `BT.4` nicht steppen — stattdessen blocken und whiff-punishen.'
+drills:
+  - en: 'Record her duckable highs (`f,F+4,2` / `1,2` / `1,2,2`) → duck the high and launch with [[ws2]].'
+    de: 'Ihre duckbaren Highs (`f,F+4,2` / `1,2` / `1,2,2`) aufnehmen → den High ducken und mit [[ws2]] launchen.'
+  - en: 'Record `uf,n,3` (−29) → block and launch with [[uf44]].'
+    de: '`uf,n,3` (−29) aufnehmen → blocken und mit [[uf44]] launchen.'
