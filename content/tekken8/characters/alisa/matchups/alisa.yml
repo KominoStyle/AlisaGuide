@@ -15,3 +15,29 @@ punish:
 plan:
   en: 'It''s a neutral and whiff-punish race — whoever controls space with [[df1]] and lands the clean [[df2]] launch wins. Don''t respect `f,f,F+2` or DES pressure blindly; find the gaps with [[df1]] / [[pc]] and duck the string highs above. Play your own gameplan better than she does.'
   de: 'Es ist ein Neutral- und Whiff-Punish-Rennen — wer mit [[df1]] den Raum kontrolliert und den sauberen [[df2]]-Launch landet, gewinnt. `f,f,F+2` und DES-Druck nicht blind respektieren; die Lücken mit [[df1]] / [[pc]] finden und die String-Highs oben ducken. Deinen eigenen Gameplan besser spielen als sie.'
+lastReviewed: '2026-07-09'
+knowledgeChecks:
+  - en: 'Her biggest knowledge checks: the delayable `2,3,3` (don''t press between the hits — blocked it''s −11) and the seeable `CLK.d+3` low (block on reaction → punish from crouch). The full checklist lives in the Defense section.'
+    de: 'Ihre größten Knowledge Checks: das verzögerbare `2,3,3` (nicht zwischen die Hits drücken — geblockt −11) und der sichtbare `CLK.d+3`-Low (auf Reaktion blocken → aus der Hocke bestrafen). Die volle Checkliste steht in der Defense-Sektion.'
+antiKnowledgeChecks:
+  - en: 'Her jab strings are duckable: `1,1`, `1,2` and `1,2,2` are all high — duck and launch on a read. She has to mix in `1,2,d+2` (ends LOW) to make ducking lose.'
+    de: 'Ihre Jab-Strings sind duckbar: `1,1`, `1,2` und `1,2,2` sind komplett High — auf Read ducken und launchen. Sie muss `1,2,d+2` (endet LOW) beimischen, damit Ducken verliert.'
+  - en: 'Duckable high enders: the 2 in `3,2`, the follow-ups of `df+1,1` / `df+1,1,2`, the 4 in `b+2,4` and the 2 in `ws1,2,3`.'
+    de: 'Duckbare High-Ender: die 2 in `3,2`, die Follow-ups von `df+1,1` / `df+1,1,2`, die 4 in `b+2,4` und die 2 in `ws1,2,3`.'
+  - en: 'Her panic buttons are honest: `b+3+4` blocked is −17 — launch it; `b+1+2` absorbs one mid/high but loses to lows and throws.'
+    de: 'Ihre Panik-Buttons sind ehrlich: `b+3+4` geblockt ist −17 — launchen; `b+1+2` absorbiert ein Mid/High, verliert aber gegen Lows und Würfe.'
+  - en: 'Raw `f+3` (−14) and `b+1,1+2` (−16) do not belong in blockstrings — punish them every time.'
+    de: 'Rohes `f+3` (−14) und `b+1,1+2` (−16) gehören in keinen Blockstring — jedes Mal bestrafen.'
+stanceInteraction:
+  - en: 'DES: `DES.1+2` is all highs — duck on a hard read; the lows `DES.d+1` / `DES.d+2` are −13/−14 blocked. Don''t mash the gaps — `DES.2` ducks jabs and launches.'
+    de: 'DES: `DES.1+2` ist komplett High — auf Hard-Read ducken; die Lows `DES.d+1` / `DES.d+2` sind geblockt −13/−14. Nicht in die Lücken mashen — `DES.2` duckt Jabs und launcht.'
+  - en: 'Boots: `DBT.1` is all highs; the launchers `DBT.2` / `DBT.4` are −14/−27 blocked. In BKP, `BKP.1` and `BKP.2` are highs — duck on read; the mid launchers start at i18+.'
+    de: 'Boots: `DBT.1` ist komplett High; die Launcher `DBT.2` / `DBT.4` sind geblockt −14/−27. In BKP sind `BKP.1` und `BKP.2` High — auf Read ducken; die Mid-Launcher starten ab i18+.'
+heatThreats:
+  - en: 'Her Heat Engagers are her normal neutral buttons — `f+2,1`, `uf+2`, `3,2`. Any stray poke can become Heat plus a heat-dash launch.'
+    de: 'Ihre Heat Engager sind ihre normalen Neutral-Buttons — `f+2,1`, `uf+2`, `3,2`. Jeder gefressene Poke kann Heat plus Heat-Dash-Launch werden.'
+  - en: 'Heat Smash `H.2+3` is +8 on block and flows into her stances — don''t press after blocking it.'
+    de: 'Heat Smash `H.2+3` ist +8 auf Block und fließt in ihre Stances — nach dem Blocken nicht drücken.'
+drills:
+  - en: 'Lab the duckable enders: record `1,1`, `3,2` and `b+2,4`, duck the last high and launch with [[uf44]].'
+    de: 'Labbe die duckbaren Ender: Nimm `1,1`, `3,2` und `b+2,4` auf, duck den letzten High und launch mit [[uf44]].'

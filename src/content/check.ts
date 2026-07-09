@@ -4,6 +4,7 @@ import { parse as parseYaml } from "yaml";
 import { parseMove, parseCombos, parseMatchup, parseTraining } from "./parse";
 import { Punish, PunishReview } from "./schema/punish";
 import { Stance } from "./schema/stance";
+import { KnowledgeChecksDoc } from "./schema/knowledgeChecks";
 import { buildAlisaMoves } from "./runtime/buildMoves.node";
 import { buildAlisaMoveMeta } from "./runtime/buildAlisaMoveMeta.node";
 import { buildAlisaPunish } from "./runtime/buildAlisaPunish.node";
@@ -12,6 +13,7 @@ import { buildAlisaMatchups } from "./runtime/buildAlisaMatchups.node";
 import { buildFrameData } from "./runtime/buildFrameData.node";
 import { buildAlisaCombos } from "./runtime/buildAlisaCombos.node";
 import { buildAlisaStances } from "./runtime/buildAlisaStances.node";
+import { buildAlisaKnowledgeChecks } from "./runtime/buildAlisaKnowledgeChecks.node";
 import { buildAlisaLegends } from "./runtime/buildAlisaLegends.node";
 import { MatchupOrder } from "./schema/matchup";
 import type { Move } from "./schema/move";
@@ -77,6 +79,9 @@ for (const file of walk(CONTENT)) {
       validated++;
     } else if (rel.includes("/stances/") && rel.endsWith(".yml")) {
       Stance.parse(parseYaml(raw));
+      validated++;
+    } else if (rel.endsWith("characters/alisa/knowledge-checks.yml")) {
+      KnowledgeChecksDoc.parse(parseYaml(raw));
       validated++;
     } else if (rel.endsWith("/matchups/_order.yml")) {
       MatchupOrder.parse(parseYaml(raw));
@@ -299,8 +304,18 @@ for (const name of EXPECTED_LEG_GROUPS) {
 // shape/order the deep/shallow selection logic + muDerive(FD) fallback rely on.
 // muDerive(FD) suggestions are NOT part of MU and are intentionally not checked.
 const MU_DIR = join(CONTENT, "tekken8", "characters", "alisa", "matchups");
-const ALLOWED_MU_KEYS = ["c", "deep", "tag", "hurt", "duck", "punish", "plan"];
+const ALLOWED_MU_KEYS = [
+  "c", "deep", "tag", "hurt", "duck", "punish", "plan",
+  // v2 optional fields (Phase 5)
+  "lastReviewed", "opponentGameplan", "keyThreats", "interruptWindows", "stanceInteraction",
+  "heatThreats", "rageThreats", "alisaAnswers", "knowledgeChecks", "antiKnowledgeChecks",
+  "drills", "punishThese", "duckTargets", "stepDirection", "sourceLinks",
+];
 const MU_TEXT_FIELDS = ["tag", "hurt", "duck", "punish", "plan"] as const;
+const MU_V2_TEXT_ARRAYS = [
+  "keyThreats", "interruptWindows", "stanceInteraction", "heatThreats", "rageThreats",
+  "alisaAnswers", "knowledgeChecks", "antiKnowledgeChecks", "drills",
+] as const;
 const genMU = buildAlisaMatchups() as unknown as Array<Record<string, unknown>>;
 let muOk = 0;
 
@@ -353,6 +368,52 @@ for (let i = 0; i < genMU.length; i++) {
       }
     }
   }
+  // 12+. Optional v2 fields (validated only when present; no file requires them).
+  const locOk = (t: unknown): boolean => {
+    const v = t as { en?: unknown; de?: unknown } | undefined;
+    return !!v && typeof v.en === "string" && v.en.trim() !== "" && typeof v.de === "string" && v.de.trim() !== "";
+  };
+  const rsOk = (v: unknown): boolean => v === undefined || v === "verified" || v === "needsLabReview";
+  for (const f of MU_V2_TEXT_ARRAYS) {
+    const arr = row[f] as Array<{ en?: string; de?: string }> | undefined;
+    if (arr === undefined) continue;
+    if (!Array.isArray(arr) || arr.length === 0) { failures.push(`matchup: "${label}".${f} must be a non-empty array`); rowOk = false; continue; }
+    arr.forEach((t, j) => {
+      if (!locOk(t)) { failures.push(`matchup: "${label}".${f}[${j}] needs non-empty en + de`); rowOk = false; return; }
+      for (const text of [t.en as string, t.de as string]) {
+        for (const m of text.matchAll(/\[\[([a-z0-9]+)\]\]/gi)) {
+          if (!moveIds.has(m[1])) { badRefs.add(`${label}.${f}:[[${m[1]}]]`); rowOk = false; }
+        }
+      }
+    });
+  }
+  if (row["opponentGameplan"] !== undefined && !locOk(row["opponentGameplan"])) { failures.push(`matchup: "${label}".opponentGameplan needs non-empty en + de`); rowOk = false; }
+  const lastReviewed = row["lastReviewed"];
+  if (lastReviewed !== undefined && (typeof lastReviewed !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(lastReviewed))) {
+    failures.push(`matchup: "${label}".lastReviewed must be YYYY-MM-DD`); rowOk = false;
+  }
+  (row["punishThese"] as Array<Record<string, unknown>> | undefined)?.forEach((p, j) => {
+    if (p["move"] !== undefined && !moveIds.has(String(p["move"]))) { failures.push(`matchup: "${label}".punishThese[${j}].move "${String(p["move"])}" not in MOVES`); rowOk = false; }
+    if (!locOk(p["note"])) { failures.push(`matchup: "${label}".punishThese[${j}].note needs en + de`); rowOk = false; }
+    if (!rsOk(p["reviewStatus"])) { failures.push(`matchup: "${label}".punishThese[${j}].reviewStatus invalid`); rowOk = false; }
+  });
+  (row["duckTargets"] as Array<Record<string, unknown>> | undefined)?.forEach((t, j) => {
+    if (typeof t["string"] !== "string" || (t["string"] as string).trim() === "") { failures.push(`matchup: "${label}".duckTargets[${j}].string must be non-empty`); rowOk = false; }
+    if (!locOk(t["note"])) { failures.push(`matchup: "${label}".duckTargets[${j}].note needs en + de`); rowOk = false; }
+    if (!rsOk(t["reviewStatus"])) { failures.push(`matchup: "${label}".duckTargets[${j}].reviewStatus invalid`); rowOk = false; }
+  });
+  const stepDir = row["stepDirection"] as Record<string, unknown> | undefined;
+  if (stepDir !== undefined) {
+    if (typeof stepDir["direction"] !== "string" || (stepDir["direction"] as string).trim() === "") { failures.push(`matchup: "${label}".stepDirection.direction must be non-empty`); rowOk = false; }
+    if (!locOk(stepDir["note"])) { failures.push(`matchup: "${label}".stepDirection.note needs en + de`); rowOk = false; }
+    if (!rsOk(stepDir["reviewStatus"])) { failures.push(`matchup: "${label}".stepDirection.reviewStatus invalid`); rowOk = false; }
+  }
+  (row["sourceLinks"] as Array<Record<string, unknown>> | undefined)?.forEach((s, j) => {
+    if (typeof s["label"] !== "string" || (s["label"] as string).trim() === "") { failures.push(`matchup: "${label}".sourceLinks[${j}].label must be non-empty`); rowOk = false; }
+    if (typeof s["url"] !== "string" || (s["url"] as string).trim() === "") { failures.push(`matchup: "${label}".sourceLinks[${j}].url must be non-empty`); rowOk = false; }
+    const srs = s["reviewStatus"];
+    if (srs !== undefined && srs !== "manual-review" && srs !== "verified") { failures.push(`matchup: "${label}".sourceLinks[${j}].reviewStatus invalid`); rowOk = false; }
+  });
   if (rowOk) muOk++;
 }
 const dupChars = [...muCharsSeen].filter(([, n]) => n > 1).map(([c]) => c);
@@ -444,6 +505,13 @@ const checkPunishRow = (r: (typeof punish)[number], where: string): void => {
   if (r.reviewStatus !== undefined && r.reviewStatus !== "verified" && r.reviewStatus !== "needsLabReview") {
     failures.push(`${where}: invalid reviewStatus "${String(r.reviewStatus)}"`);
   }
+  const rSrc = (r as { sourceLinks?: Array<Record<string, unknown>> }).sourceLinks;
+  rSrc?.forEach((s, j) => {
+    if (typeof s["label"] !== "string" || (s["label"] as string).trim() === "") failures.push(`${where}: sourceLinks[${j}].label must be non-empty`);
+    if (typeof s["url"] !== "string" || (s["url"] as string).trim() === "") failures.push(`${where}: sourceLinks[${j}].url must be non-empty`);
+    const srs = s["reviewStatus"];
+    if (srs !== undefined && srs !== "manual-review" && srs !== "verified") failures.push(`${where}: sourceLinks[${j}].reviewStatus invalid`);
+  });
   if (!r.why || typeof r.why.en !== "string" || r.why.en === "" || typeof r.why.de !== "string" || r.why.de === "") {
     failures.push(`${where}: missing why.en/why.de`);
   }
@@ -524,6 +592,68 @@ for (const s of genSTANCES) {
   });
 }
 
+// Knowledge-check SELF-CONSISTENCY (Phase 6). Built via the SAME
+// buildAlisaKnowledgeChecks() path the virtual module ships (which already
+// resolves every moves[]/sequence[].move id against MOVES — a build failure
+// lands in `failures`).
+let genKCHECKS: ReturnType<typeof buildAlisaKnowledgeChecks> = { checks: [], traps: [] };
+try {
+  genKCHECKS = buildAlisaKnowledgeChecks();
+} catch (e) {
+  failures.push(`kcheck build failed: ${e instanceof Error ? e.message : String(e)}`);
+}
+// 1. Knowledge checks non-empty (frame traps may be empty only if the file omits them).
+if (genKCHECKS.checks.length === 0) failures.push("kcheck: knowledgeChecks is empty");
+{
+  const kcRefCount = { n: 0 };
+  for (const [listName, list] of [["knowledgeChecks", genKCHECKS.checks], ["frameTraps", genKCHECKS.traps]] as const) {
+    // 2. Unique ids within each list.
+    const seen = new Set<string>();
+    for (const item of list) {
+      if (seen.has(item.id)) failures.push(`kcheck: duplicate ${listName} id "${item.id}"`);
+      seen.add(item.id);
+      // 3. Every localized field non-empty in both languages.
+      const locFields: Array<[string, { en?: unknown; de?: unknown } | undefined]> = [
+        ["title", item.title], ["answer", item.answer], ["risk", item.risk],
+        ["explanation", item.explanation], ["drill", item.drill], ["sourceNote", item.sourceNote],
+      ];
+      for (const [fname, val] of locFields) {
+        if (val !== undefined && !stanceLocOk(val)) failures.push(`kcheck ${item.id}: ${fname} needs non-empty en + de`);
+      }
+      // 4. reviewStatus valid.
+      if (item.reviewStatus !== "verified" && item.reviewStatus !== "needsLabReview") {
+        failures.push(`kcheck ${item.id}: reviewStatus "${String(item.reviewStatus)}" invalid`);
+      }
+      // 5. `verified` items must not lean on TekkenDocs-only / un-labbed sourcing.
+      if (item.reviewStatus === "verified" && item.sourceNote !== undefined
+        && /tekkendocs|lab/i.test(item.sourceNote.en + " " + item.sourceNote.de)) {
+        failures.push(`kcheck ${item.id}: verified but sourceNote cites TekkenDocs/lab — mark needsLabReview`);
+      }
+      // 6. needsLabReview items must carry a sourceNote (visible labelling).
+      if (item.reviewStatus === "needsLabReview" && item.sourceNote === undefined) {
+        failures.push(`kcheck ${item.id}: needsLabReview requires a sourceNote`);
+      }
+      // 6b. Optional external provenance (Phase 9): label/url non-empty, reviewStatus valid.
+      (item as { sourceLinks?: Array<Record<string, unknown>> }).sourceLinks?.forEach((s, j) => {
+        if (typeof s["label"] !== "string" || (s["label"] as string).trim() === "") failures.push(`kcheck ${item.id}: sourceLinks[${j}].label must be non-empty`);
+        if (typeof s["url"] !== "string" || (s["url"] as string).trim() === "") failures.push(`kcheck ${item.id}: sourceLinks[${j}].url must be non-empty`);
+        const srs = s["reviewStatus"];
+        if (srs !== undefined && srs !== "manual-review" && srs !== "verified") failures.push(`kcheck ${item.id}: sourceLinks[${j}].reviewStatus invalid`);
+      });
+      // 7. Every move ref resolves in MOVES (builder throws too — double-checked here).
+      const ids = "moves" in item ? item.moves : item.sequence.map((s) => s.move);
+      for (const id of ids) {
+        kcRefCount.n++;
+        if (!(id in genMOVES)) failures.push(`kcheck ${item.id}: move ref "${id}" not in MOVES`);
+      }
+    }
+  }
+  // 8. Every trap is a real sequence (schema enforces >= 2 — keep the gate explicit).
+  for (const t of genKCHECKS.traps) {
+    if (t.sequence.length < 2) failures.push(`kcheck ${t.id}: sequence must have at least 2 moves`);
+  }
+}
+
 // Opponent SELF-CONSISTENCY (content is canonical; legacy opponents.ts retired).
 // Verifies the content-built OPP is well-formed and keeps the exact pre-normalized
 // `"Char|move"` shape the runtime `oppNorm` re-key + OPP-over-FD fallback rely on.
@@ -597,10 +727,11 @@ console.log(
     `+ ${punishReview.length} lab-review candidate(s) — fields, kinds, order, and uniqueness verified.`,
 );
 console.log(`Opponent self-consistency: ${oppOk}/${oppKeys.length} row(s) — shape, fields, and oppNorm re-key (no collisions) verified.`);
-console.log(`Matchup self-consistency: ${muOk}/${genMU.length} row(s) — order bijection, shape, fields, and [[move]] refs verified.`);
+console.log(`Matchup self-consistency: ${muOk}/${genMU.length} row(s) — order bijection, shape, fields, [[move]] refs, and v2 fields verified.`);
 console.log(`Frame-data self-consistency: ${fdOk}/${fdTotal} row(s) valid — ${fdChars.length} characters, length dist ${JSON.stringify(fdLenDist)}, ${fdStarKeys} star/held key(s) preserved.`);
 console.log(`Combo self-consistency: ${comboOk}/${genCOMBOS.length} combo(s) — shape, fields, v2 metadata, tIdx range, order, and uniqueness verified.`);
 console.log(`Stance self-consistency: ${genSTANCES.length} stance(s) (${genSTANCES.map((s) => s.id).join(", ")}) — ${stanceRefCount} move ref(s) resolve to MOVES; key options + drills present.`);
+console.log(`Knowledge-check self-consistency: ${genKCHECKS.checks.length} check(s) + ${genKCHECKS.traps.length} trap(s) — ids unique, move refs resolve, EN/DE non-empty, review labelling verified.`);
 console.log(`Legends self-consistency: ${legendsOk}/${legendsTotal} legend entrie(s) valid — groups ${genLegNames.join(", ")}, tuple shape + unique symbols per group verified.`);
 if (meta) {
   console.log(

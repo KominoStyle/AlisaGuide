@@ -1,5 +1,5 @@
 character: 'Dragunov'
-deep: false
+deep: true
 tag:
   en: 'Oppressive pressure & plus frames — SSR is his weak side.'
   de: 'Erdrückender Druck & Plus-Frames — SSR ist seine schwache Seite.'
@@ -15,3 +15,73 @@ punish:
 plan:
   en: 'Don''t get pinned — use [[b3]] / [[uf2]] homing to interrupt his sidestep and your backdash to bait `WR2`. Respect his plus frames (`b1+2` +6): block, don''t mash.'
   de: 'Lass dich nicht festnageln — nutz [[b3]] / [[uf2]]-Homing gegen seinen Sidestep und deinen Backdash, um `WR2` zu baiten. Respektier seine Plus-Frames (`b1+2` +6): blocken, nicht mashen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'He never wants to give up the turn: plus-frame pressure (`b1+2` +6, `WR2`), a tackle / mix-grab game, and strong lows. He wins by pinning you and forcing you to guess.'
+  de: 'Er will den Zug nie abgeben: Plus-Frame-Druck (`b1+2` +6, `WR2`), ein Tackle- / Mix-Grab-Game und starke Lows. Er gewinnt, indem er dich festnagelt und zum Raten zwingt.'
+keyThreats:
+  - en: '`WR2` — his running plus-frame threat. Bait it by stepping and whiff-punish it.'
+    de: '`WR2` — seine laufende Plus-Frame-Bedrohung. Per Step baiten und whiff-punishen.'
+  - en: '`b1+2` is +6 on block — his signature plus frame. Block and wait; do not mash.'
+    de: '`b1+2` ist +6 auf Block — sein Signatur-Plus-Frame. Blocken und warten; nicht mashen.'
+  - en: 'His tackle / mix-grab — break it with the correct throw break instead of guessing.'
+    de: 'Sein Tackle- / Mix-Grab — mit dem richtigen Break brechen statt zu raten.'
+duckTargets:
+  - string: '1,1'
+    punish: 'ws2'
+    note:
+      en: 'Step SSR / duck his jab string on a read, then while-standing launch.'
+      de: 'Seinen Jab-String auf Read SSR-steppen / ducken, dann while-standing launchen.'
+    reviewStatus: verified
+  - string: '3,1'
+    punish: 'ws2'
+    note:
+      en: 'Duckable on a read — launch while standing.'
+      de: 'Auf Read duckbar — while-standing launchen.'
+    reviewStatus: verified
+  - string: 'ws1,2'
+    punish: 'ws2'
+    note:
+      en: 'Part of his while-standing mix — duck it on a read.'
+      de: 'Teil seines While-Standing-Mix — auf Read ducken.'
+    reviewStatus: verified
+punishThese:
+  - notation: 'QCB2'
+    onBlock: '−15'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'd4,1,3'
+    onBlock: '−16'
+    with: 'df+2'
+    note:
+      en: 'Full string is launch-punishable.'
+      de: 'Der volle String ist launchbar.'
+    reviewStatus: verified
+  - notation: '1,2,1'
+    onBlock: '−14'
+    with: 'f+2,1'
+    note:
+      en: 'Standing punish.'
+      de: 'Stehender Punish.'
+    reviewStatus: verified
+stepDirection:
+  direction: 'Sidestep RIGHT (SSR)'
+  note:
+    en: 'His weak side — step his linear pressure and bait `WR2` with your backdash.'
+    de: 'Seine schwache Seite — seinen linearen Druck steppen und `WR2` mit dem Backdash baiten.'
+  reviewStatus: verified
+alisaAnswers:
+  - en: 'Interrupt his sidestep with homing: [[b3]] / [[uf2]].'
+    de: 'Seinen Sidestep mit Homing unterbrechen: [[b3]] / [[uf2]].'
+  - en: 'Backdash to bait `WR2`, then whiff-punish with [[df2]].'
+    de: 'Backdash, um `WR2` zu baiten, dann mit [[df2]] whiff-punishen.'
+  - en: 'Respect `b1+2` (+6): block, do not mash.'
+    de: '`b1+2` (+6) respektieren: blocken, nicht mashen.'
+drills:
+  - en: 'Record `WR2` and practise stepping SSR into a [[df2]] whiff-punish.'
+    de: '`WR2` aufnehmen und SSR-Step in einen [[df2]]-Whiff-Punish üben.'
+  - en: 'Record `b1+2` (+6) and practise blocking without mashing afterwards.'
+    de: '`b1+2` (+6) aufnehmen und üben, danach zu blocken statt zu mashen.'

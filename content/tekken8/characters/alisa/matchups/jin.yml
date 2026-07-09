@@ -1,5 +1,5 @@
 character: 'Jin'
-deep: false
+deep: true
 tag:
   en: 'Electrics, strong mids & Zen stance — SSR/SWR is his weak side.'
   de: 'Electrics, starke Mids & Zen-Stance — SSR/SWR ist seine schwache Seite.'
@@ -15,3 +15,73 @@ punish:
 plan:
   en: 'Play mid-range and whiff-punish his committal mids with [[df2]]. Homing ([[uf2]], [[b3]]) beats his steps. In Heat, respect Omen stance and electric — block and take your turn.'
   de: 'Spiel Mid-Range und whiff-punish seine committalen Mids mit [[df2]]. Homing ([[uf2]], [[b3]]) schlägt seine Steps. In Heat Omen-Stance und Electric respektieren — blocken und Zug nehmen.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Strong at every range: the electric is a fast counter-hit launcher, his mids apply constant pressure, Zen stance adds mixups, and Omen powers up his Heat. He controls neutral and punishes impatience.'
+  de: 'Auf jeder Range stark: Der Electric ist ein schneller Counter-Hit-Launcher, seine Mids machen konstanten Druck, die Zen-Stance bringt Mixups und Omen lädt seinen Heat auf. Er kontrolliert Neutral und bestraft Ungeduld.'
+keyThreats:
+  - en: 'The electric — a fast CH launcher. Do not press into it; take your turn by blocking.'
+    de: 'Der Electric — ein schneller CH-Launcher. Nicht reinpressen; per Block den Zug nehmen.'
+  - en: 'His mid pressure and Zen stance mixups — respect the stance, do not mash out.'
+    de: 'Sein Mid-Druck und die Zen-Stance-Mixups — die Stance respektieren, nicht rausmashen.'
+  - en: 'Heat with Omen — block the stance and take your turn back after it.'
+    de: 'Heat mit Omen — die Stance blocken und danach den Zug zurücknehmen.'
+duckTargets:
+  - string: '1,2,4'
+    punish: 'ws2'
+    note:
+      en: 'Duckable on a read — while-standing launch.'
+      de: 'Auf Read duckbar — while-standing launchen.'
+    reviewStatus: verified
+  - string: 'b1,2'
+    punish: 'ws2'
+    note:
+      en: 'Duckable on a read.'
+      de: 'Auf Read duckbar.'
+    reviewStatus: verified
+  - string: 'df1,4'
+    punish: 'ws2'
+    note:
+      en: 'Duckable follow-up — launch while standing.'
+      de: 'Duckbarer Follow-up — while-standing launchen.'
+    reviewStatus: verified
+punishThese:
+  - notation: '1,2,1'
+    onBlock: '−16'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'f3'
+    onBlock: '−16'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: '1+2'
+    onBlock: '−14'
+    with: 'f+2,1'
+    note:
+      en: 'Standing punish.'
+      de: 'Stehender Punish.'
+    reviewStatus: verified
+stepDirection:
+  direction: 'Sidestep RIGHT / Sidewalk RIGHT (SSR / SWR)'
+  note:
+    en: 'His weak side — `df1` steps both ways but SSL is easier. Respect the electric before stepping.'
+    de: 'Seine schwache Seite — `df1` steppt beidseitig, aber SSL ist leichter. Vor dem Steppen den Electric respektieren.'
+  reviewStatus: verified
+alisaAnswers:
+  - en: 'Play mid-range and whiff-punish his committal mids with [[df2]].'
+    de: 'Mid-Range spielen und seine committalen Mids mit [[df2]] whiff-punishen.'
+  - en: 'Homing [[uf2]] / [[b3]] beats his steps.'
+    de: 'Homing [[uf2]] / [[b3]] schlägt seine Steps.'
+  - en: 'In Heat, block Omen and the electric — then take your turn.'
+    de: 'In Heat Omen und Electric blocken — dann den Zug nehmen.'
+drills:
+  - en: 'Record a committal mid and drill the whiff-punish with [[df2]] from mid-range.'
+    de: 'Einen committalen Mid aufnehmen und den [[df2]]-Whiff-Punish aus Mid-Range drillen.'
+  - en: 'Record the electric and practise NOT pressing after block — take your turn.'
+    de: 'Den Electric aufnehmen und üben, nach Block NICHT zu drücken — den Zug nehmen.'

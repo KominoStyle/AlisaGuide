@@ -28,3 +28,6 @@ export { LEG, LEGP, LEGF, LEGS } from "../content/runtime/alisaLegends";
 // STANCES (Phase 4): stance guide cards (DES/SBT/DBT/BKP) from the content
 // system's build-time virtual module.
 export { STANCES } from "../content/runtime/alisaStances";
+// KNOWLEDGE_CHECKS / FRAME_TRAPS (Phase 6): anti-Alisa knowledge checks and
+// frame-trap sequences from the content system's build-time virtual module.
+export { KNOWLEDGE_CHECKS, FRAME_TRAPS } from "../content/runtime/alisaKnowledgeChecks";

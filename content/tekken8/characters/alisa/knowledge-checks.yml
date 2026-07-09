@@ -1,0 +1,151 @@
+# Anti-Alisa knowledge checks + frame traps (Phase 6).
+# Every stated fact comes from our own canonical move YAML / FD (patch 3.01.01).
+# TekkenDocs-v3.00-only sequences are marked needsLabReview with a sourceNote —
+# they are never presented as verified advice.
+
+knowledgeChecks:
+  - id: 'jab-highs'
+    title:
+      en: 'Jab strings are all highs'
+      de: 'Jab-Strings sind komplett High'
+    moves: ['c11', 's12', 's122', 's12d2']
+    answer:
+      en: '1,1 / 1,2 / 1,2,2 contain no mid — duck on a read and launch. She has to mix in 1,2,d+2 (ends LOW) to make ducking lose.'
+      de: '1,1 / 1,2 / 1,2,2 enthalten kein Mid — auf Read ducken und launchen. Sie muss 1,2,d+2 (endet LOW) beimischen, damit Ducken verliert.'
+    risk:
+      en: 'The d+2 ender counterhits duckers into a full combo (+33a on CH).'
+      de: 'Der d+2-Ender counterhittet Ducker in eine volle Combo (+33a bei CH).'
+    reviewStatus: 'verified'
+  - id: 'duckable-enders'
+    title:
+      en: 'Duckable high enders'
+      de: 'Duckbare High-Ender'
+    moves: ['c32', 'df112', 'b24', 'ws123']
+    answer:
+      en: 'Block the earlier hits, then duck the marked high on a read: the 2 in 3,2, the follow-ups of df+1,1,2, the 4 in b+2,4 and the 2 in ws1,2,3 — and launch while she recovers.'
+      de: 'Die frühen Hits blocken, dann den markierten High auf Read ducken: die 2 in 3,2, die Follow-ups von df+1,1,2, die 4 in b+2,4 und die 2 in ws1,2,3 — und launchen, während sie recovert.'
+    reviewStatus: 'verified'
+  - id: 'delayable-233'
+    title:
+      en: '2,3,3 is heavily delayable'
+      de: '2,3,3 ist stark verzögerbar'
+    moves: ['s233']
+    answer:
+      en: 'Don''t press between the hits — the string can be delayed and combos on counterhit from the 2nd hit. Block it out: the full string is −11, punish with 1,1.'
+      de: 'Nicht zwischen die Hits drücken — der String ist verzögerbar und combot bei Counterhit ab dem 2. Hit. Ausblocken: der volle String ist −11, mit 1,1 bestrafen.'
+    risk:
+      en: 'The 2nd and 3rd hits are mid — ducking after the first high gets you counterhit-launched (+61a).'
+      de: 'Der 2. und 3. Hit sind Mid — nach dem ersten High zu ducken heißt Counterhit-Launch (+61a).'
+    reviewStatus: 'verified'
+  - id: 'minus-ten-enders'
+    title:
+      en: 'The −10 full strings'
+      de: 'Die −10-Full-Strings'
+    moves: ['ff344', 'ws123', 'fuft123']
+    answer:
+      en: 'f,F+3,4,4 and ws1,2,3 are −10 when blocked to the end — always take the jab punish. FUFT.1+2,3 is her wake-up surprise: it launches on hit but is also just −10 blocked.'
+      de: 'f,F+3,4,4 und ws1,2,3 sind komplett geblockt −10 — immer den Jab-Punish nehmen. FUFT.1+2,3 ist ihre Wake-up-Überraschung: launcht auf Hit, ist geblockt aber auch nur −10.'
+    reviewStatus: 'verified'
+  - id: 'panic-buttons'
+    title:
+      en: 'Her panic buttons are honest'
+      de: 'Ihre Panik-Buttons sind ehrlich'
+    moves: ['b34', 'b3434', 'pc']
+    answer:
+      en: 'Blocked b+3+4 is −17 — launch it. b+1+2 absorbs one mid or high but loses to lows and throws and is −13 on block.'
+      de: 'Geblocktes b+3+4 ist −17 — launchen. b+1+2 absorbiert ein Mid oder High, verliert aber gegen Lows und Würfe und ist −13 auf Block.'
+    risk:
+      en: 'The 3+4 extension of b+3+4 is a low-crushing mid that is plus on block and launches on hit — confirm she stays put before committing to the launch.'
+      de: 'Die 3+4-Extension von b+3+4 ist ein Low-crushendes Mid, plus auf Block und launcht auf Hit — erst bestätigen, dass sie nicht verlängert, bevor du launchst.'
+    reviewStatus: 'verified'
+  - id: 'risky-starters'
+    title:
+      en: 'Raw f+3 and b+1,1+2 are launch bait'
+      de: 'Rohes f+3 und b+1,1+2 sind Launch-Bait'
+    moves: ['f3', 'b112']
+    answer:
+      en: 'A raw f+3 is −14 and b+1,1+2 is −16 — punish them every time (f+1+2 / df+2). Neither belongs in a real blockstring.'
+      de: 'Rohes f+3 ist −14 und b+1,1+2 ist −16 — jedes Mal bestrafen (f+1+2 / df+2). Beides gehört in keinen echten Blockstring.'
+    reviewStatus: 'verified'
+  - id: 'clk-low'
+    title:
+      en: 'CLK.d+3 is a seeable launching low'
+      de: 'CLK.d+3 ist ein sichtbarer Launch-Low'
+    moves: ['clkd3']
+    answer:
+      en: 'It''s an i30 low — block it on reaction, never guess. Blocked it''s −12: punish from crouch with ws4.'
+      de: 'Es ist ein i30-Low — auf Reaktion blocken, nie raten. Geblockt ist es −12: aus der Hocke mit ws4 bestrafen.'
+    drill:
+      en: 'Record CLK.d+3 in practice mode and block it on reaction ten times in a row.'
+      de: 'Nimm CLK.d+3 im Trainingsmodus auf und blocke es zehnmal in Folge auf Reaktion.'
+    reviewStatus: 'verified'
+  - id: 'stance-highs'
+    title:
+      en: 'Stance highs are duckable'
+      de: 'Stance-Highs sind duckbar'
+    moves: ['des12', 'bkp1']
+    answer:
+      en: 'DES.1+2 is all highs — duck on a hard read; the DES lows are −13/−14 on block. BKP.1 and BKP.2 are highs too, and the BKP mid launchers start at i18 or slower.'
+      de: 'DES.1+2 ist komplett High — auf Hard-Read ducken; die DES-Lows sind geblockt −13/−14. BKP.1 und BKP.2 sind ebenfalls High, und die BKP-Mid-Launcher starten erst ab i18.'
+    risk:
+      en: 'Don''t mash at the gaps — DES.2 ducks under jabs and launches.'
+      de: 'Nicht in die Lücken mashen — DES.2 duckt unter Jabs und launcht.'
+    reviewStatus: 'verified'
+
+frameTraps:
+  - id: 'desf12-dbt12'
+    title:
+      en: 'DES.f+1+2 into DBT.1+2'
+      de: 'DES.f+1+2 in DBT.1+2'
+    sequence:
+      - move: 'desf12'
+      - move: 'dbt12'
+    explanation:
+      en: 'DES.f+1+2 is +1 on block and the shift into Dual Boot is +4 even when the mid was blocked; DBT.1+2 is an i12 all-mid string that jails from the 1st hit.'
+      de: 'DES.f+1+2 ist +1 auf Block und der Shift in Dual Boot ist +4, selbst wenn das Mid geblockt wurde; DBT.1+2 ist ein i12-All-Mid-String, der ab dem 1. Hit jailt.'
+    answer:
+      en: 'Don''t press into the shift — keep blocking. Blocked DBT.1+2 is ±0, so the turn resets afterwards.'
+      de: 'Nicht in den Shift drücken — weiterblocken. Geblocktes DBT.1+2 ist ±0, danach ist der Zug wieder neutral.'
+    reviewStatus: 'verified'
+  - id: 'wr2-des1'
+    title:
+      en: 'WR2 into DES.1'
+      de: 'WR2 in DES.1'
+    sequence:
+      - move: 'wr2'
+      - move: 'des1'
+    explanation:
+      en: 'f,f,F+2 is +5 to +7 on block and she can shift straight into chainsaws with 1+2; DES.1 is an i13 mid chainsaw rush.'
+      de: 'f,f,F+2 ist +5 bis +7 auf Block und sie kann mit 1+2 direkt in die Kettensägen shiften; DES.1 ist ein i13-Mid-Chainsaw-Rush.'
+    answer:
+      en: 'Respect the plus frames — don''t jab after blocking WR2. Hold block and deal with the DES options instead.'
+      de: 'Die Plus-Frames respektieren — nach geblocktem WR2 nicht jabben. Block halten und die DES-Optionen abarbeiten.'
+    sourceNote:
+      en: 'TekkenDocs (v3.00) sequence — the 1+2 entry timing is not lab-confirmed for Ver. 3.01.01.'
+      de: 'TekkenDocs-Sequenz (v3.00) — das Timing des 1+2-Entries ist für Ver. 3.01.01 nicht im Lab bestätigt.'
+    sourceLinks:
+      - label: 'TekkenDocs — Alisa guide (game v3.00)'
+        url: 'https://tekkendocs.com/t8/alisa/guide'
+        reviewStatus: 'manual-review'
+    reviewStatus: 'needsLabReview'
+  - id: 'desd1-des1'
+    title:
+      en: 'DES.d+1 into DES.1'
+      de: 'DES.d+1 in DES.1'
+    sequence:
+      - move: 'desd1'
+      - move: 'des1'
+    explanation:
+      en: 'The DES low is +4 on hit and DES.1 is an i13 mid rush — after eating the low, pressing risks running straight into it.'
+      de: 'Der DES-Low ist +4 auf Hit und DES.1 ist ein i13-Mid-Rush — wer nach dem Low drückt, läuft direkt hinein.'
+    answer:
+      en: 'If the low hits you, keep blocking — don''t press. Blocked DES.d+1 is −13: punish it instead.'
+      de: 'Trifft dich der Low, weiterblocken — nicht drücken. Geblockt ist DES.d+1 −13: stattdessen bestrafen.'
+    sourceNote:
+      en: 'TekkenDocs (v3.00) sequence — the on-hit trap timing is not lab-confirmed for Ver. 3.01.01.'
+      de: 'TekkenDocs-Sequenz (v3.00) — das On-Hit-Trap-Timing ist für Ver. 3.01.01 nicht im Lab bestätigt.'
+    sourceLinks:
+      - label: 'TekkenDocs — Alisa guide (game v3.00)'
+        url: 'https://tekkendocs.com/t8/alisa/guide'
+        reviewStatus: 'manual-review'
+    reviewStatus: 'needsLabReview'

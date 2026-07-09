@@ -17,6 +17,8 @@ import {
   PUNISH,
   PUNISH_REVIEW,
   STANCES,
+  KNOWLEDGE_CHECKS,
+  FRAME_TRAPS,
 } from "./data";
 "use strict";
 var OPP = RAW_OPP;
@@ -31,7 +33,9 @@ var SECTIONS = [
     {t:"call", v:"key", h:{en:"Where she is strong",de:"Wo sie stark ist"}, x:{en:"**(1) Movement & space control** — she has no just-frame inputs, so all your execution goes into dashes and steps. **(2) A safe poking game** — her core buttons risk little and keep the round in your hands. **(3) Chainsaw pressure** — Destructive Form cracks patient blockers with plus frames and chip damage. **(4) Real panic tools** — power crush, hopkick and Heat Smash cover the moments you're being run over. **(5) She rewards fundamentals** — the core loop (03) carries you from day one to the highest ranks.",
       de:"**(1) Movement & Raumkontrolle** — sie hat keine Just-Frame-Inputs, also geht deine ganze Execution in Dashes und Steps. **(2) Sicheres Poking** — ihre Kern-Buttons riskieren wenig und halten die Runde in deiner Hand. **(3) Kettensägen-Druck** — Destructive Form knackt geduldige Blocker mit Plus-Frames und Chip-Schaden. **(4) Echte Panik-Tools** — Power Crush, Hopkick und Heat Smash decken die Momente, in denen du überrannt wirst. **(5) Sie belohnt Fundamentals** — der Kern-Kreislauf (03) trägt dich von Tag eins bis in die höchsten Ränge."}},
     {t:"call", v:"warn", h:{en:"Where she is weak — plan around it",de:"Wo sie schwach ist — plane damit"}, x:{en:"**(1) Below-average damage per touch** — you must win more exchanges than your opponent, so consistency beats style. **(2) Okizeme is not her win condition** — she has wake-up coverage (Close range, 06), but you win rounds with spacing, pokes, movement and chainsaw pressure, not with knockdown loops. **(3) Comebacks are hard** — from a big life deficit she must force the pace, and a forced Alisa is a readable Alisa. The comeback is discipline, not one button. **(4) Panic moves and raw stance entries are loans** — every blocked one hands the opponent a launch or a free turn. Spend them on reads, not on fear.",
-      de:"**(1) Unterdurchschnittlicher Schaden pro Treffer** — du musst mehr Exchanges gewinnen als dein Gegner, also schlägt Konsistenz den Stil. **(2) Okizeme ist nicht ihre Win-Condition** — sie hat Optionen am Boden (Close Range, 06), aber Runden gewinnst du mit Spacing, Pokes, Movement und Kettensägen-Druck, nicht mit Knockdown-Loops. **(3) Comebacks sind schwer** — bei großem Lebensrückstand muss sie das Tempo erzwingen, und eine gezwungene Alisa ist eine lesbare Alisa. Das Comeback ist Disziplin, kein einzelner Button. **(4) Panik-Moves und rohe Stance-Entries sind Kredite** — jeder geblockte schenkt dem Gegner einen Launch oder den Zug. Setz sie auf Reads ein, nicht aus Angst."}}
+      de:"**(1) Unterdurchschnittlicher Schaden pro Treffer** — du musst mehr Exchanges gewinnen als dein Gegner, also schlägt Konsistenz den Stil. **(2) Okizeme ist nicht ihre Win-Condition** — sie hat Optionen am Boden (Close Range, 06), aber Runden gewinnst du mit Spacing, Pokes, Movement und Kettensägen-Druck, nicht mit Knockdown-Loops. **(3) Comebacks sind schwer** — bei großem Lebensrückstand muss sie das Tempo erzwingen, und eine gezwungene Alisa ist eine lesbare Alisa. Das Comeback ist Disziplin, kein einzelner Button. **(4) Panik-Moves und rohe Stance-Entries sind Kredite** — jeder geblockte schenkt dem Gegner einen Launch oder den Zug. Setz sie auf Reads ein, nicht aus Angst."}},
+    {t:"call", v:"note", h:{en:"How to read the badges",de:"So liest du die Badges"}, x:{en:"Badges matter: this guide targets **Tekken 8 Ver. 3.01.01**. Normal advice comes from our canonical local content. {{minus:⚠ needs lab check}} means the idea is useful, but not treated as confirmed for this patch yet. A grey *last reviewed* date shows when a card was last checked against our data.",
+      de:"Badges sind wichtig: Dieser Guide zielt auf **Tekken 8 Ver. 3.01.01**. Normale Tipps kommen aus unseren kanonischen lokalen Daten. {{minus:⚠ muss gelabt werden}} heißt: Die Idee ist nützlich, aber für diesen Patch noch nicht als bestätigt behandelt. Ein graues *zuletzt geprüft*-Datum zeigt, wann eine Karte zuletzt gegen unsere Daten geprüft wurde."}}
   ]},
   {id:"basics", num:"01", lv:0, title:{en:"Tekken basics",de:"Tekken-Basics"}, blocks:[
     {t:"lead", x:{en:"The foundation everything builds on. Skip it if you already read frames fluently.",
@@ -176,6 +180,10 @@ var SECTIONS = [
       de:"[[pc]] ist verlockend, weil es **ein Mid oder High absorbiert** und durch berechenbaren Druck bricht — aber es verliert gegen Lows und Würfe und ist {{minus:-13}} auf Block. Drück es auf einen Read eines Mid/High-Strings, nie gegen Low-lastige Offense. [[ub2]] ist der schnellere Power Crush und nur {{minus:-9}} auf Block — aber ein **High**: Wer duckt, launcht dich gratis. [[uf44]] ist die klassische Hopkick-Antwort: Es springt über Lows und launcht, bei {{minus:-13}} auf Block — eine Antwort auf erwartete Lows, keine Antwort auf Mids."}},
     {t:"p", x:{en:"[[b34]] is the jackpot button: it crushes lows and launches into Tornado — and at {{minus:-17}} a block means **you** get launched. Treat it as a once-a-set surprise, not a habit. [[hs]] in Heat is the premium exit: {{plus:+8 on block}} and a round-swing — but it burns your whole Heat, so it has to buy something. The rule for all of them: **one panic read per situation.** If two panic buttons get blocked in a row, you're not defending anymore — you're feeding launch points. Back to blocking one more hit.",
       de:"[[b34]] ist der Jackpot-Button: Es crusht Lows und launcht in Tornado — und bei {{minus:-17}} heißt Block, dass **du** gelauncht wirst. Behandle es als Überraschung einmal pro Set, nicht als Gewohnheit. [[hs]] in Heat ist der Premium-Ausgang: {{plus:+8 auf Block}} und ein Runden-Swing — aber er verbrennt deine ganze Heat, also muss er etwas kaufen. Die Regel für alle: **ein Panik-Read pro Situation.** Werden zwei Panik-Buttons in Folge geblockt, verteidigst du nicht mehr — du fütterst Launch-Punkte. Zurück zu: einen Hit mehr blocken."}},
+    {t:"h3", x:{en:"Knowledge checks",de:"Knowledge Checks"}},
+    {t:"p", x:{en:"These are the Alisa strings people should learn to beat — you should know them too: they are the holes in your own offence, and the checklist for the mirror.",
+      de:"Das sind die Alisa-Strings, die Gegner lernen sollten — du musst sie selbst auch kennen: Sie sind die Löcher in deiner eigenen Offense und die Checkliste fürs Mirror-Match."}},
+    {t:"kchecks"},
     {t:"call", v:"warn", h:{en:"Tilt & the panic spiral",de:"Tilt & die Panik-Spirale"}, x:{en:"Lost two rounds in a row to panic-lows? Play **one round as pure block, no offence**. It breaks the spiral. Breathe between rounds. And stop after a tilt session — tired + tilted means you're training *bad* habits. Rest is part of practice.",
       de:"Zwei Runden in Folge durch Panik-Lows verloren? Spiel **eine Runde nur Block, keine Offense**. Das bricht die Spirale. Atme zwischen Runden. Und hör nach einer Tilt-Session auf — müde + tilted heißt, du trainierst *schlechte* Gewohnheiten. Pause ist Teil des Trainings."}}
   ]},
@@ -221,10 +229,10 @@ var T = {
   hero_note:{en:"Every move below has exact frames you can click into. Set your <b>level</b> and <b>language</b> above \u2014 the guide adapts to you.",
     de:"Jeder Move unten hat exakte Frames, die du anklicken kannst. Stell oben dein <b>Level</b> und deine <b>Sprache</b> ein \u2014 der Guide passt sich an."},
   foot_h:{en:"Sources & notes",de:"Quellen & Hinweise"},
-  foot_1:{en:"Frame data sourced from TekkenDocs (tekkendocs.com) and Wavu Wiki on the current live patch, Season 3 (Ver. 3.01.01). Gameplan structure inspired by gajimaru.guide, expanded with basics, opponent-reading, defense, matchups, a punisher reference, a combo framework, and a live input trainer.",
-    de:"Frame-Daten von TekkenDocs (tekkendocs.com) und Wavu Wiki (aktueller Live-Patch, Season 3, Ver. 3.01.01). Gameplan-Struktur inspiriert von gajimaru.guide, erweitert um Basics, Gegner-Lesen, Defense, Matchups, eine Punisher-Referenz, ein Combo-Gerüst und einen Live-Input-Trainer."},
-  foot_2:{en:"Tekken changes every patch \u2014 verify frames and especially combos in the lab; the in-game frame display is the live source of truth. For move animations, search the notation on Wavu Wiki or TekkenDocs.",
-    de:"Tekken ändert sich mit jedem Patch \u2014 verifiziere Frames und besonders Combos im Lab; das In-Game-Frame-Display ist die aktuelle Wahrheit. Für Move-Animationen die Notation auf Wavu Wiki oder TekkenDocs suchen."},
+  foot_1:{en:"Built on our own <b>canonical local content</b>, targeting Tekken 8 Season 3 (<b>Ver. 3.01.01</b>). Frame data is cross-checked against <a href=\"https://tekkendocs.com\" target=\"_blank\" rel=\"noopener noreferrer\">TekkenDocs</a> and <a href=\"https://wavu.wiki\" target=\"_blank\" rel=\"noopener noreferrer\">Wavu Wiki</a>; the gameplan structure is inspired by <a href=\"https://gajimaru.guide\" target=\"_blank\" rel=\"noopener noreferrer\">gajimaru.guide</a>, expanded with basics, opponent-reading, defense, matchups, a punisher reference, a combo framework, and a live input trainer.",
+    de:"Basiert auf unseren eigenen <b>kanonischen lokalen Daten</b>, Ziel ist Tekken 8 Season 3 (<b>Ver. 3.01.01</b>). Frame-Daten werden mit <a href=\"https://tekkendocs.com\" target=\"_blank\" rel=\"noopener noreferrer\">TekkenDocs</a> und <a href=\"https://wavu.wiki\" target=\"_blank\" rel=\"noopener noreferrer\">Wavu Wiki</a> abgeglichen; die Gameplan-Struktur ist inspiriert von <a href=\"https://gajimaru.guide\" target=\"_blank\" rel=\"noopener noreferrer\">gajimaru.guide</a>, erweitert um Basics, Gegner-Lesen, Defense, Matchups, eine Punisher-Referenz, ein Combo-Gerüst und einen Live-Input-Trainer."},
+  foot_2:{en:"External references are patch-specific: anything drawn from them that we have not re-verified for 3.01.01 is marked with a <b>manual-review</b> / <b>needs lab check</b> badge and kept out of the canonical advice. Tekken changes every patch \u2014 verify frames and especially combos in the lab; the in-game frame display is the live source of truth. For move animations, search the notation on Wavu Wiki or TekkenDocs.",
+    de:"Externe Referenzen sind patch-spezifisch: Was daraus stammt und von uns nicht für 3.01.01 neu verifiziert wurde, ist mit einem <b>manuelle Prüfung</b>- / <b>muss gelabt werden</b>-Badge markiert und bleibt aus den kanonischen Tipps heraus. Tekken ändert sich mit jedem Patch \u2014 verifiziere Frames und besonders Combos im Lab; das In-Game-Frame-Display ist die aktuelle Wahrheit. Für Move-Animationen die Notation auf Wavu Wiki oder TekkenDocs suchen."},
   loop_k:{en:"Keepout",de:"Keepout"}, loop_kd:{en:"You throw long pokes \u2192 they don't dare come in \u2192 they <b>wait</b>.",de:"Du wirfst lange Pokes raus \u2192 er traut sich nicht rein \u2192 er <b>wartet</b>."},
   loop_a:{en:"Approach",de:"Approach"}, loop_ad:{en:"If they wait, <b>you</b> go in and take the round on \u2192 they want to push you back.",de:"Wartet er, gehst <b>du</b> rein und übernimmst \u2192 er will dich rausdrängen."},
   loop_w:{en:"Whiff punish",de:"Whiff Punish"}, loop_wd:{en:"If they keepout, you dash out, let it whiff and <b>punish</b> \u2192 they wait again.",de:"Drückt er Keepout, dasht du raus, lässt es whiffen und <b>bestrafst</b> \u2192 er wartet wieder."},
@@ -282,6 +290,27 @@ function fmt(s){
   s = s.replace(/\*(.+?)\*/g, '<em>$1</em>');
   s = s.replace(/`(.+?)`/g, '<span class="cmd">$1</span>');
   return s;
+}
+/* Review-badge language (Phase 7) — one wording for every lab-review /
+   last-reviewed marker across punishers, combos, stances, matchups and
+   knowledge checks. Existing tag classes only; no new gameplay claims. */
+var RV={
+  lab:{en:"needs lab check",de:"muss gelabt werden"},
+  reviewed:{en:"last reviewed",de:"zuletzt geprüft"},
+  manual:{en:"manual-review",de:"manuelle Prüfung"},
+  source:{en:"Source",de:"Quelle"}
+};
+function labBadge(){ return '<span class="tag minus">⚠ '+esc(L(RV.lab))+'</span>'; }
+function reviewedBadge(date){ return '<span class="tag prop">'+esc(L(RV.reviewed))+' '+esc(date)+'</span>'; }
+/* One rendering path for external provenance links (Phase 9). manual-review links
+   get the Phase 7 manual-review badge; never presented as canonical confirmation. */
+function sourceLinkHtml(list){
+  return (list||[]).map(function(s){
+    var a='<a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.label)+'</a>';
+    if(s.reviewStatus==="manual-review") a+=' <span class="tag minus">⚠ '+esc(L(RV.manual))+'</span>';
+    if(s.lastChecked) a+=' '+reviewedBadge(s.lastChecked);
+    return a;
+  }).join(' · ');
 }
 var LVORD = {all:9, a:2, i:1, b:0};
 function lvVisible(lv){ return state.level==="all" ? true : lv <= LVORD[state.level]; }
@@ -684,9 +713,10 @@ function renderPunish(){
   }).join('');
   if(PUNISH_REVIEW && PUNISH_REVIEW.length){
     var items=PUNISH_REVIEW.map(function(r){
-      return '<li>'+cmdChip(r.use)+' <span class="tag minus">'+esc(r.dis)+'</span>'+(r.startup?' <span class="cmd">'+esc(r.startup)+'</span>':'')+' — '+esc(L(r.why))+'</li>';
+      var src=(r.sourceLinks&&r.sourceLinks.length)?' · '+esc(L(RV.source))+': '+sourceLinkHtml(r.sourceLinks):'';
+      return '<li>'+cmdChip(r.use)+' <span class="tag minus">'+esc(r.dis)+'</span>'+(r.startup?' <span class="cmd">'+esc(r.startup)+'</span>':'')+' — '+esc(L(r.why))+src+'</li>';
     }).join('');
-    html+='<div class="call warn"><div class="ch">⚠ '+esc(L({en:"Lab-check candidates — from TekkenDocs (v3.00), not verified for Ver. 3.01.01",de:"Lab-Check-Kandidaten — aus TekkenDocs (v3.00), nicht für Ver. 3.01.01 verifiziert"}))+'</div><ul class="sh-notes-list">'+items+'</ul></div>';
+    html+='<div class="call warn"><div class="ch">'+labBadge()+' '+esc(L({en:"Candidates from TekkenDocs (v3.00) — not treated as confirmed for Ver. 3.01.01",de:"Kandidaten aus TekkenDocs (v3.00) — für Ver. 3.01.01 nicht als bestätigt behandelt"}))+'</div><ul class="sh-notes-list">'+items+'</ul></div>';
   }
   return html;
 }
@@ -700,7 +730,7 @@ function comboCard(c){
   var chips='';
   if(c.difficulty) chips+=' <span class="tag prop" title="difficulty">'+"\u2605\u2605\u2605".slice(0,c.difficulty)+'</span>';
   if(c.damage) chips+=' <span class="tag plus">~'+c.damage+' dmg</span>';
-  if(c.reviewStatus==="needsLabReview") chips+=' <span class="tag minus">\u26a0 lab</span>';
+  if(c.reviewStatus==="needsLabReview") chips+=' '+labBadge();
   return '<div class="combo-card"><div class="co-h"><span class="co-name">'+esc(L(c.name))+chips+'</span><span class="co-from">'+esc(c.from)+'</span></div><div class="co-seq">'+seq+'</div><div class="co-note">'+fmt(L(c.note))+'</div></div>';
 }
 function renderCombos(){
@@ -729,7 +759,7 @@ function stanceRefLine(list){
   }).join(', ');
 }
 function renderStances(){
-  var LBL={purpose:{en:"Purpose",de:"Zweck"},entries:{en:"Ways in",de:"Wege rein"},key:{en:"Key options",de:"Kern-Optionen"},risky:{en:"Risky",de:"Riskant"},counter:{en:"How they beat it",de:"So schlägt man es"},drill:{en:"Drill",de:"Übung"},lab:{en:"Lab-check",de:"Lab-Check"}};
+  var LBL={purpose:{en:"Purpose",de:"Zweck"},entries:{en:"Ways in",de:"Wege rein"},key:{en:"Key options",de:"Kern-Optionen"},risky:{en:"Risky",de:"Riskant"},counter:{en:"How they beat it",de:"So schlägt man es"},drill:{en:"Drill",de:"Übung"},lab:RV.lab};
   return STANCES.map(function(s){
     var rows=[];
     rows.push([LBL.purpose, esc(L(s.purpose))]);
@@ -742,6 +772,30 @@ function renderStances(){
     var html=rows.map(function(r){ return '<div class="mu-line"><span class="mu-lbl">'+esc(L(r[0]))+'</span><span class="mu-txt">'+r[1]+'</span></div>'; }).join('');
     return '<div class="murow"><div class="mu-head"><span class="mu-c">'+esc(L(s.label))+'</span><span class="mu-tag">'+esc(L(s.short))+'</span></div>'+html+'</div>';
   }).join('');
+}
+function kcheckRow(item, chips){
+  var txt=chips+' — ';
+  if(item.explanation) txt+=fmt(L(item.explanation))+' ';
+  txt+=fmt(L(item.answer));
+  if(item.risk) txt+=' · '+fmt(L(item.risk));
+  if(item.drill) txt+=' · '+fmt(L(item.drill));
+  if(item.reviewStatus==="needsLabReview"){
+    txt=labBadge()+' '+txt+(item.sourceNote?' <em>('+esc(L(item.sourceNote))+')</em>':'');
+  }
+  if(item.sourceLinks&&item.sourceLinks.length) txt+=' · '+esc(L(RV.source))+': '+sourceLinkHtml(item.sourceLinks);
+  return '<div class="mu-line"><span class="mu-lbl">'+esc(L(item.title))+'</span><span class="mu-txt">'+txt+'</span></div>';
+}
+function renderKChecks(){
+  var html='<div class="murow">'+KNOWLEDGE_CHECKS.map(function(k){
+    return kcheckRow(k, k.moves.map(moveChip).join(', '));
+  }).join('')+'</div>';
+  if(FRAME_TRAPS.length){
+    html+='<div class="catlabel">'+esc(L({en:"Frame traps",de:"Frame Traps"}))+'</div>'
+      +'<div class="murow">'+FRAME_TRAPS.map(function(t){
+        return kcheckRow(t, t.sequence.map(function(s){ return moveChip(s.move); }).join(' → '));
+      }).join('')+'</div>';
+  }
+  return html;
 }
 function muSlug(c){ return String(c).toLowerCase().replace(/\s+/g,"-"); }
 function muDerive(c){
@@ -774,16 +828,60 @@ function mkLaunch(d){
   if(!d.launch.length) return L({en:"Little is launch-punishable \u2014 punish \u221210 to \u221213 with jabs and [[c32]].",de:"Wenig Launchbares \u2014 \u221210 bis \u221213 mit Jabs und [[c32]] bestrafen."})+safe;
   return L({en:"On block \u2192 [[uf44]] at \u221215, [[df2]] from \u221216: ",de:"Auf Block \u2192 [[uf44]] bei \u221215, [[df2]] ab \u221216: "})+d.launch.map(function(x){return "`"+x.cmd+"` ("+x.b+")";}).join(", ")+"."+safe;
 }
+function muV2List(arr, char){ return arr.map(function(t){ return fmtMU(L(t), char); }).join('<br>'); }
 function renderMuCard(m){
   var d=muDerive(m.c);
-  var rows=[["hurt",fmtMU(L(m.hurt),m.c)],["duck",fmtMU(mkDuck(d),m.c)],["step",fmtMU(mkStep(d),m.c)],["launch",fmtMU(mkLaunch(d),m.c)],["plan",fmtMU(L(m.plan),m.c)]];
-  var html=rows.map(function(r){ return r[1]?'<div class="mu-line mu-'+r[0]+'"><span class="mu-lbl">'+tk("mu_"+r[0])+'</span><span class="mu-txt">'+r[1]+'</span></div>':''; }).join("");
-  return '<div class="murow"><div class="mu-head"><span class="mu-c">'+esc(m.c)+'</span>'+(m.tag?'<span class="mu-tag">'+fmtMU(L(m.tag),m.c)+'</span>':'')+'</div>'+html+'</div>';
+  var rows=[["hurt", tk("mu_hurt"), fmtMU(L(m.hurt),m.c)]];
+  // Authored dossier text (previously dormant): rendered for every matchup.
+  if(m.duck) rows.push(["duck", L({en:"What to duck",de:"Was du ducken sollst"}), fmtMU(L(m.duck),m.c)]);
+  if(m.punish) rows.push(["punish", L({en:"What to punish",de:"Was du bestrafen sollst"}), fmtMU(L(m.punish),m.c)]);
+  rows.push(["plan", tk("mu_plan"), fmtMU(L(m.plan),m.c)]);
+  // Optional v2 blocks (only when authored).
+  if(m.opponentGameplan) rows.push(["plan", L({en:"Their gameplan",de:"Sein Gameplan"}), fmtMU(L(m.opponentGameplan),m.c)]);
+  var V2=[["keyThreats",{en:"Key threats",de:"Kern-Gefahren"}],["knowledgeChecks",{en:"Knowledge checks",de:"Knowledge-Checks"}],["antiKnowledgeChecks",{en:"Anti-knowledge checks",de:"Anti-Knowledge-Checks"}],["stanceInteraction",{en:"Stance interaction",de:"Stance-Interaktion"}],["heatThreats",{en:"Heat threats",de:"Heat-Gefahren"}],["rageThreats",{en:"Rage threats",de:"Rage-Gefahren"}],["alisaAnswers",{en:"Alisa's answers",de:"Alisas Antworten"}],["interruptWindows",{en:"Interrupt windows",de:"Interrupt-Fenster"}],["drills",{en:"Drills",de:"Übungen"}]];
+  V2.forEach(function(f){ var v=m[f[0]]; if(v&&v.length) rows.push(["plan", L(f[1]), muV2List(v,m.c)]); });
+  if(m.punishThese&&m.punishThese.length){
+    rows.push(["punish", L({en:"Punish these",de:"Diese bestrafen"}), m.punishThese.map(function(p){
+      var h=p.move?moveChip(p.move):(p.notation?'<span class="cmd opp" data-opp="'+esc(m.c)+'|'+esc(oppNorm(p.notation))+'">'+esc(p.notation)+'</span>':'');
+      if(p.onBlock) h+=' <span class="tag minus">'+esc(p.onBlock)+'</span>';
+      if(p["with"]) h+=' → '+cmdChip(p["with"]);
+      h+=' — '+fmtMU(L(p.note),m.c);
+      if(p.reviewStatus==="needsLabReview") h=labBadge()+' '+h;
+      return h;
+    }).join('<br>')]);
+  }
+  if(m.duckTargets&&m.duckTargets.length){
+    rows.push(["duck", L({en:"Duck these",de:"Diese ducken"}), m.duckTargets.map(function(t){
+      var h='<span class="cmd opp" data-opp="'+esc(m.c)+'|'+esc(oppNorm(t.string))+'">'+esc(t.string)+'</span>';
+      if(t.hit) h+=' ('+esc(t.hit)+')';
+      if(t.punish) h+=' → '+cmdChip(t.punish);
+      h+=' — '+fmtMU(L(t.note),m.c);
+      if(t.reviewStatus==="needsLabReview") h=labBadge()+' '+h;
+      return h;
+    }).join('<br>')]);
+  }
+  if(m.stepDirection){
+    var sd='<b>'+esc(m.stepDirection.direction)+'</b> — '+fmtMU(L(m.stepDirection.note),m.c);
+    if(m.stepDirection.reviewStatus==="needsLabReview") sd=labBadge()+' '+sd;
+    rows.push(["step", L({en:"Step direction",de:"Step-Richtung"}), sd]);
+  }
+  // FD-derived baseline (muDerive) — kept for every matchup, clearly labelled.
+  rows.push(["plan", L({en:"Auto-derived basics",de:"Automatisch abgeleitete Basics"}), '<em>'+esc(L({en:"generated from current frame data",de:"aus aktuellen Frame-Daten generiert"}))+'</em>']);
+  rows.push(["duck", tk("mu_duck"), fmtMU(mkDuck(d),m.c)]);
+  rows.push(["step", tk("mu_step"), fmtMU(mkStep(d),m.c)]);
+  rows.push(["launch", tk("mu_launch"), fmtMU(mkLaunch(d),m.c)]);
+  if(m.sourceLinks&&m.sourceLinks.length){
+    rows.push(["plan", L({en:"Sources",de:"Quellen"}), sourceLinkHtml(m.sourceLinks)]);
+  }
+  var html=rows.map(function(r){ return r[2]?'<div class="mu-line mu-'+r[0]+'"><span class="mu-lbl">'+esc(r[1])+'</span><span class="mu-txt">'+r[2]+'</span></div>':''; }).join("");
+  var badge=m.deep?' <span class="tag plus">'+esc(tk("mu_deep"))+'</span>':'';
+  if(m.lastReviewed) badge+=' '+reviewedBadge(m.lastReviewed);
+  return '<div class="murow"><div class="mu-head"><span class="mu-c">'+esc(m.c)+'</span>'+badge+(m.tag?'<span class="mu-tag">'+fmtMU(L(m.tag),m.c)+'</span>':'')+'</div>'+html+'</div>';
 }
 var DLC_S1=["Eddy","Lidia","Heihachi","Clive"];
 var DLC_S2=["Anna","Fahkumram","Armor King","Miary Zo"];
 var DLC_S3=["Kunimitsu"];
-function muPickCard(c, cur){ var sel=(c===cur)?" sel":""; var img="https://tekkendocs.com/t8/avatars/"+muSlug(c)+"-brand-512.png"; return '<button class="mu-pick'+sel+'" data-mu="'+esc(c)+'"><span class="mu-pick-img"><img src="'+img+'" alt="'+esc(c)+'" loading="lazy" onerror="this.style.display=\'none\'; this.parentElement.classList.add(\'noimg\'); this.parentElement.setAttribute(\'data-i\',\''+esc(c.charAt(0))+'\');"></span><span class="mu-pick-name">'+esc(c)+'</span></button>'; }
+function muPickCard(c, cur, deep){ var sel=(c===cur)?" sel":""; var img="https://tekkendocs.com/t8/avatars/"+muSlug(c)+"-brand-512.png"; var badge=deep?' <span class="tag plus">'+esc(tk("mu_deep"))+'</span>':''; return '<button class="mu-pick'+sel+'" data-mu="'+esc(c)+'"><span class="mu-pick-img"><img src="'+img+'" alt="'+esc(c)+'" loading="lazy" onerror="this.style.display=\'none\'; this.parentElement.classList.add(\'noimg\'); this.parentElement.setAttribute(\'data-i\',\''+esc(c.charAt(0))+'\');"></span><span class="mu-pick-name">'+esc(c)+badge+'</span></button>'; }
 function renderMatchups(){
   var leg='<div class="mu-legend"><span><i class="lg-mine"></i>'+esc(L({en:"Alisa's moves \u2014 tap for frames",de:"Alisas Moves \u2014 tippen f\u00fcr Frames"}))+'</span><span><i class="lg-opp"></i>'+esc(L({en:"opponent's moves \u2014 tap for frames, clip & data",de:"Gegner-Moves \u2014 tippen f\u00fcr Frames, Clip & Daten"}))+'</span></div>';
   var have={}; MU.forEach(function(m){have[m.c]=true;});
@@ -793,7 +891,8 @@ function renderMatchups(){
   var cur = state.muChar || base[0];
   var order=DLC_S1.concat(DLC_S2,DLC_S3);
   var ordered=base.concat(order).filter(function(c){return have[c];});
-  var picker='<div class="mu-picker">'+ordered.map(function(c){return muPickCard(c,cur);}).join("")+'</div>';
+  var deepBy={}; MU.forEach(function(x){ deepBy[x.c]=!!x.deep; });
+  var picker='<div class="mu-picker">'+ordered.map(function(c){return muPickCard(c,cur,deepBy[c]);}).join("")+'</div>';
   var selM = MU.filter(function(m){return m.c===cur;})[0] || MU[0];
   return leg+picker+'<div class="mu">'+(selM?renderMuCard(selM):"")+'</div>';
 }
@@ -843,6 +942,7 @@ function renderBlock(b){
     case "routine": return renderRoutine();
     case "matchups": return renderMatchups();
     case "stances": return renderStances();
+    case "kchecks": return renderKChecks();
     default: return "";
   }
 }

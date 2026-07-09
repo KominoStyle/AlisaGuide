@@ -23,6 +23,19 @@ export const PunishRow = z.object({
   /** Review state. Canonical rows are verified (default, field usually omitted); */
   /** `needsLabReview` rows live only in punish-review.yml. */
   reviewStatus: z.enum(["verified", "needsLabReview"]).optional(),
+  /** Optional external provenance (Phase 9). Only for lab-review candidates that */
+  /** trace to an external reference; each link is `manual-review`, never canonical. */
+  sourceLinks: z
+    .array(
+      z.object({
+        label: z.string().min(1),
+        url: z.string().min(1),
+        lastChecked: z.string().optional(),
+        reviewStatus: z.enum(["manual-review", "verified"]).optional(),
+      }),
+    )
+    .nonempty()
+    .optional(),
   /** Localized reason (legacy `why`). */
   why: LocalizedText,
 });

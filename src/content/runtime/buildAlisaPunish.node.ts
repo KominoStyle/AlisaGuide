@@ -21,6 +21,7 @@ export interface LegacyPunishRow {
   alt?: boolean;
   followUps?: LocalizedText[];
   reviewStatus?: "verified" | "needsLabReview";
+  sourceLinks?: Array<{ label: string; url: string; lastChecked?: string; reviewStatus?: "manual-review" | "verified" }>;
   why: LocalizedText;
 }
 
@@ -40,6 +41,7 @@ function toRow(r: PunishRow): LegacyPunishRow {
     ...(r.alt !== undefined ? { alt: r.alt } : {}),
     ...(r.followUps !== undefined ? { followUps: [...r.followUps] } : {}),
     ...(r.reviewStatus !== undefined ? { reviewStatus: r.reviewStatus } : {}),
+    ...(r.sourceLinks !== undefined ? { sourceLinks: [...r.sourceLinks] } : {}),
     why: r.why,
   };
 }

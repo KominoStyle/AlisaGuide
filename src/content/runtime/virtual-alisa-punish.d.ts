@@ -10,6 +10,8 @@ declare module "virtual:alisa-punish" {
     alt?: boolean;
     followUps?: LocalizedText[];
     reviewStatus?: "verified" | "needsLabReview";
+    /** Optional external provenance (Phase 9); each link is `manual-review`. */
+    sourceLinks?: Array<{ label: string; url: string; lastChecked?: string; reviewStatus?: "manual-review" | "verified" }>;
     /** Legacy `why`. */
     why: LocalizedText;
   }

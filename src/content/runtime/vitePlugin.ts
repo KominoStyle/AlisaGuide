@@ -10,6 +10,7 @@ import { buildFrameData } from "./buildFrameData.node";
 import { buildAlisaCombos } from "./buildAlisaCombos.node";
 import { buildAlisaLegends } from "./buildAlisaLegends.node";
 import { buildAlisaStances } from "./buildAlisaStances.node";
+import { buildAlisaKnowledgeChecks, KNOWLEDGE_CHECKS_FILE } from "./buildAlisaKnowledgeChecks.node";
 
 /**
  * Vite plugin exposing build-time virtual modules assembled from YAML in Node:
@@ -22,6 +23,7 @@ import { buildAlisaStances } from "./buildAlisaStances.node";
  *  - `virtual:alisa-combos`     -> `export const COMBOS` (combo cheatsheet)
  *  - `virtual:alisa-legends`    -> `export const LEG / LEGP / LEGF / LEGS` (legends)
  *  - `virtual:alisa-stances`    -> `export const STANCES` (stance guide cards)
+ *  - `virtual:alisa-knowledge-checks` -> `export const KNOWLEDGE_CHECKS / FRAME_TRAPS`
  *
  * The browser bundle receives ONLY these plain objects — no YAML parser, no Zod,
  * no raw YAML/JSON text, and no `src/data/*` blobs.
@@ -35,6 +37,7 @@ const FD_ID = "virtual:alisa-frame-data";
 const COMBOS_ID = "virtual:alisa-combos";
 const LEGENDS_ID = "virtual:alisa-legends";
 const STANCES_ID = "virtual:alisa-stances";
+const KCHECKS_ID = "virtual:alisa-knowledge-checks";
 const RESOLVED_MOVES = "\0" + MOVES_ID;
 const RESOLVED_META = "\0" + META_ID;
 const RESOLVED_PUNISH = "\0" + PUNISH_ID;
@@ -44,6 +47,7 @@ const RESOLVED_FD = "\0" + FD_ID;
 const RESOLVED_COMBOS = "\0" + COMBOS_ID;
 const RESOLVED_LEGENDS = "\0" + LEGENDS_ID;
 const RESOLVED_STANCES = "\0" + STANCES_ID;
+const RESOLVED_KCHECKS = "\0" + KCHECKS_ID;
 
 const CHARS_DIR = join(process.cwd(), "content", "tekken8", "characters");
 const META_DIR = join(CHARS_DIR, "alisa");
@@ -71,6 +75,7 @@ export function alisaMovesPlugin(): Plugin {
       if (id === COMBOS_ID) return RESOLVED_COMBOS;
       if (id === LEGENDS_ID) return RESOLVED_LEGENDS;
       if (id === STANCES_ID) return RESOLVED_STANCES;
+      if (id === KCHECKS_ID) return RESOLVED_KCHECKS;
       return null;
     },
     load(id) {
@@ -121,6 +126,14 @@ export function alisaMovesPlugin(): Plugin {
       if (id === RESOLVED_STANCES) {
         for (const file of STANCE_FILES) this.addWatchFile(file);
         return `export const STANCES = ${JSON.stringify(buildAlisaStances())};\n`;
+      }
+      if (id === RESOLVED_KCHECKS) {
+        this.addWatchFile(KNOWLEDGE_CHECKS_FILE);
+        const { checks, traps } = buildAlisaKnowledgeChecks();
+        return (
+          `export const KNOWLEDGE_CHECKS = ${JSON.stringify(checks)};\n` +
+          `export const FRAME_TRAPS = ${JSON.stringify(traps)};\n`
+        );
       }
       if (id === RESOLVED_LEGENDS) {
         this.addWatchFile(LEGENDS_FILE);

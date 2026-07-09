@@ -1,5 +1,5 @@
 character: 'King'
-deep: false
+deep: true
 tag:
   en: 'Throw mixups & big damage — SSR generally.'
   de: 'Wurf-Mixups & viel Schaden — generell SSR.'
@@ -15,3 +15,61 @@ punish:
 plan:
   en: 'Keep him at mid with [[uf2]] / [[f21]] and don''t get pushed to the wall. Break throws (know the break for each), duck obvious command-grab reads and launch with [[ws2]]. In Heat his Jaguar sprint gains armor.'
   de: 'Halt ihn mit [[uf2]] / [[f21]] auf Mid und lass dich nicht an die Wand drängen. Brich Würfe (Break pro Wurf kennen), duck offensichtliche Command-Grab-Reads und launch mit [[ws2]]. In Heat bekommt sein Jaguar-Sprint Armor.'
+lastReviewed: '2026-07-09'
+opponentGameplan:
+  en: 'Throw mixups and big damage. He wants to push you to the wall, then mix chain / command throws with the JAG unbreakable. Most dangerous once your back is near the wall.'
+  de: 'Wurf-Mixups und viel Schaden. Er will dich an die Wand drängen und dann Chain- / Command-Throws mit dem JAG-Unbreakable mischen. Am gefährlichsten, sobald dein Rücken nah an der Wand ist.'
+keyThreats:
+  - en: 'His throw game — chain and command throws plus the JAG unbreakable. Break per grab.'
+    de: 'Sein Wurf-Game — Chain- und Command-Throws plus der JAG-Unbreakable. Break pro Grab.'
+  - en: '`f,F+4` — a big-damage approach tool. Whiff-punish it if he throws it out.'
+    de: '`f,F+4` — ein Approach-Tool mit viel Schaden. Whiff-punishen, wenn er es raushaut.'
+  - en: 'Wall carry — do not get pushed back; he is most dangerous at the wall.'
+    de: 'Wand-Carry — lass dich nicht zurückdrängen; an der Wand ist er am gefährlichsten.'
+knowledgeChecks:
+  - en: 'Break his throws per grab — e.g. Giant Swing breaks with `1` (not 1+2).'
+    de: 'Seine Würfe pro Grab brechen — z.B. Giant Swing bricht mit `1` (nicht 1+2).'
+  - en: 'React to BT `1+2` and the JAG unbreakable throw — know them on sight.'
+    de: 'Auf BT `1+2` und den JAG-Unbreakable reagieren — auf einen Blick erkennen.'
+  - en: 'In Heat his Jaguar sprint gains armor — do not trade, block it out.'
+    de: 'In Heat bekommt sein Jaguar-Sprint Armor — nicht traden, ausblocken.'
+punishThese:
+  - notation: 'd1+2'
+    onBlock: '−24'
+    with: 'df+2'
+    note:
+      en: 'Huge launch punish — always take it.'
+      de: 'Riesiger Launch-Punish — immer nehmen.'
+    reviewStatus: verified
+  - notation: 'f,F+4'
+    onBlock: '−15'
+    with: 'df+2'
+    note:
+      en: 'Launch on block.'
+      de: 'Auf Block launchen.'
+    reviewStatus: verified
+  - notation: 'b1,2'
+    onBlock: '−13'
+    with: '3,2'
+    note:
+      en: 'Standing punish.'
+      de: 'Stehender Punish.'
+    reviewStatus: verified
+stepDirection:
+  direction: 'Sidestep RIGHT (SSR)'
+  note:
+    en: 'SSR generally; SSL for `db3` / `df3`. On `1,2,1` step SSR (the 10-string whiffs too).'
+    de: 'Generell SSR; SSL bei `db3` / `df3`. Bei `1,2,1` SSR steppen (der 10-String whifft auch).'
+  reviewStatus: verified
+alisaAnswers:
+  - en: 'Keep him at mid range with [[uf2]] / [[f21]] so he cannot start his wall carry.'
+    de: 'Halt ihn mit [[uf2]] / [[f21]] auf Mid-Range, damit er den Wand-Carry nicht startet.'
+  - en: 'Duck obvious command-grab reads and launch with [[ws2]].'
+    de: 'Offensichtliche Command-Grab-Reads ducken und mit [[ws2]] launchen.'
+  - en: 'Do not get pushed to the wall — reset spacing after every exchange.'
+    de: 'Lass dich nicht an die Wand drängen — nach jedem Exchange das Spacing resetten.'
+drills:
+  - en: 'Record his most-used command grab and drill the break input on reaction.'
+    de: 'Seinen meistgenutzten Command-Grab aufnehmen und den Break auf Reaktion drillen.'
+  - en: 'Record `d1+2` and practise blocking → launch-punish with [[df2]].'
+    de: '`d1+2` aufnehmen und Blocken → Launch-Punish mit [[df2]] üben.'
