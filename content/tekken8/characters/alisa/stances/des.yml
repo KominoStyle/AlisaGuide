@@ -1,0 +1,130 @@
+# Stance guide: Destructive Form. Every move ref must be an existing MOVES id;
+# every stated frame/property fact comes from our own move YAML (Ver. 3.01.01).
+id: 'des'
+label:
+  en: 'Destructive Form (DES)'
+  de: 'Destructive Form (DES)'
+short:
+  en: 'Chainsaw pressure — the turtle-cracker'
+  de: 'Kettensägen-Druck — der Turtle-Cracker'
+purpose:
+  en: 'Cracks patient defenders. You cancel into the chainsaws from your normal buttons, hold plus frames with chip damage on top, and force a duck-or-block decision every second.'
+  de: 'Knackt geduldige Verteidiger. Du cancelst aus deinen normalen Buttons in die Kettensägen, hältst Plus-Frames mit Chip-Schaden obendrauf und erzwingst jede Sekunde eine Duck-oder-Block-Entscheidung.'
+commonEntries:
+  - move: 'c11'
+    note:
+      en: 'hold 1+2 off your i10 punish'
+      de: '1+2 halten nach deinem i10-Punish'
+  - move: 'f2'
+    note:
+      en: 'hold 1+2 off the -4 mid'
+      de: '1+2 halten nach dem -4-Mid'
+  - move: 'k4'
+    note:
+      en: 'hold 1+2 off the homing high'
+      de: '1+2 halten nach dem Homing-High'
+  - move: 'b24'
+    note:
+      en: 'hold 1+2 off the CH string'
+      de: '1+2 halten nach dem CH-String'
+  - move: 'd34'
+    note:
+      en: 'hard-read low, Tornado on hit'
+      de: 'Hard-Read-Low, Tornado auf Hit'
+  - move: 'df112'
+    note:
+      en: '+6 on block into the stance'
+      de: '+6 auf Block in die Stance'
+  - move: 'wr2'
+    note:
+      en: '+5 on block, then 1+2'
+      de: '+5 auf Block, dann 1+2'
+  - move: 'db22'
+    note:
+      en: 'delayable mid-mid, 1+2'
+      de: 'verzögerbares Mid-Mid, 1+2'
+  - move: 'ws12s'
+    note:
+      en: 'i13 from crouch, 1+2'
+      de: 'i13 aus der Hocke, 1+2'
+keyOptions:
+  - move: 'des12'
+    role:
+      en: '+4 on block, homing, jails — your main pressure'
+      de: '+4 auf Block, homing, jailt — dein Hauptdruck'
+  - move: 'desf1'
+    role:
+      en: 'i11 chainsaw jab, +3 on block'
+      de: 'i11-Kettensägen-Jab, +3 auf Block'
+  - move: 'desd1'
+    role:
+      en: 'the low — high-crushes under jabs'
+      de: 'das Low — high-crusht unter Jabs'
+  - move: 'desd2'
+    role:
+      en: 'homing low, shifts to DBT with 3/4'
+      de: 'Homing-Low, wechselt mit 3/4 zu DBT'
+  - move: 'des2'
+    role:
+      en: 'ducks jabs and launches'
+      de: 'duckt unter Jabs und launcht'
+  - move: 'desb21'
+    role:
+      en: 'delayable spike string, only -3 on block'
+      de: 'verzögerbarer Spike-String, nur -3 auf Block'
+  - move: 'desf212'
+    role:
+      en: 'Heat Engager — combos from a counterhit start'
+      de: 'Heat Engager — combot aus einem Counterhit-Start'
+  - move: 'desf12'
+    role:
+      en: '+1 on block, shifts to DBT at +4'
+      de: '+1 auf Block, wechselt bei +4 zu DBT'
+safeOptions:
+  - move: 'desf1'
+  - move: 'des12'
+  - move: 'desf12'
+riskyOptions:
+  - move: 'desd1'
+    note:
+      en: '-13 blocked'
+      de: '-13 geblockt'
+  - move: 'desd2'
+    note:
+      en: '-14 blocked'
+      de: '-14 geblockt'
+  - move: 'desf1212'
+    note:
+      en: 'huge minus if the follow-up is blocked'
+      de: 'riesiges Minus, wenn das Follow-up geblockt wird'
+lows:
+  - move: 'desd1'
+  - move: 'desd2'
+mids:
+  - move: 'des2'
+  - move: 'desf12'
+  - move: 'desb2'
+exits:
+  - en: 'Cancel back to standing with 1+2.'
+    de: 'Mit 1+2 zurück in den Stand canceln.'
+  - en: 'd+1+2 drops the saws (from there f+3 / f+4 flows into DBT).'
+    de: 'd+1+2 legt die Sägen ab (von dort geht f+3 / f+4 in DBT über).'
+  - en: 'DES.b,b backdashes out to disengage.'
+    de: 'DES.b,b backdasht raus zum Lösen.'
+transitions:
+  - to: 'DBT'
+    via: '3/4 after DES.d+2 or DES.f+1+2; f+3/f+4 after d+1+2'
+    note:
+      en: 'the DES.f+1+2 shift is +4 even when the mid was blocked'
+      de: 'der Wechsel nach DES.f+1+2 ist +4, selbst wenn das Mid geblockt wurde'
+counterplay:
+  en: 'DES.1+2 is all highs — on a hard read, duck it and launch. The lows are -13/-14 when blocked: block low on read and take the while-standing punish. And don''t mash into the gaps — DES.2 ducks under jabs and launches.'
+  de: 'DES.1+2 ist komplett High — auf einen Hard-Read ducken und launchen. Die Lows sind geblockt -13/-14: auf Read low blocken und den While-Standing-Punish nehmen. Und nicht in die Lücken mashen — DES.2 duckt unter Jabs und launcht.'
+trainingDrills:
+  - en: 'Record each entry (1,1 / f+2 / 4 / b+2,4 with held 1+2) in practice mode and run the plus-high vs low decision until the cancel is automatic.'
+    de: 'Nimm jeden Entry (1,1 / f+2 / 4 / b+2,4 mit gehaltenem 1+2) im Practice Mode auf und übe die Plus-High-vs-Low-Entscheidung, bis der Cancel automatisch kommt.'
+  - en: 'Play one session where every won exchange ends in a DES entry — learn how long +4 pressure really lasts before people start ducking.'
+    de: 'Spiel eine Session, in der jeder gewonnene Exchange in einem DES-Entry endet — lern, wie lange +4-Druck wirklich hält, bevor Gegner anfangen zu ducken.'
+manualReview:
+  - en: 'TekkenDocs (v3.00) lists b+1+2 and uf+2 as forced-DES entries — our data has no DES note on either; lab-check before using them as entries.'
+    de: 'TekkenDocs (v3.00) führt b+1+2 und uf+2 als Forced-DES-Entries — unsere Daten haben bei beiden keine DES-Notiz; vor Nutzung als Entry im Lab prüfen.'

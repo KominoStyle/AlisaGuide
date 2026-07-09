@@ -1,0 +1,20 @@
+# Manual-review punish candidates — NOT canonical guide advice.
+# Source: TekkenDocs Alisa guide (game v3.00). Each row stays here until it has
+# been lab-verified on the current patch (Ver. 3.01.01); only then may it be
+# promoted into punish.yml.
+- disadvantage: '-15'
+  use: 'b+4,4'
+  kind: 'standing'
+  startup: 'i15'
+  reviewStatus: 'needsLabReview'
+  why:
+    en: 'TekkenDocs (v3.00) suggests b+4,4 as an i15 block punish with guaranteed boot follow-ups. Our data has no such guarantees and marks the raw string as very unsafe — lab-verify on 3.01.01 first.'
+    de: 'TekkenDocs (v3.00) schlägt b+4,4 als i15-Block-Punish mit garantierten Boot-Follow-ups vor. Unsere Daten kennen keine solchen Garantien und führen den rohen String als sehr unsafe — erst im Lab auf 3.01.01 verifizieren.'
+- disadvantage: '-17'
+  use: 'uf+3,2'
+  kind: 'standing'
+  startup: 'i17'
+  reviewStatus: 'needsLabReview'
+  why:
+    en: 'TekkenDocs (v3.00) suggests uf+3,2 for specific -17 blocks. Our data lists the second hit as combo-only — lab-verify the full string as a block punish before relying on it.'
+    de: 'TekkenDocs (v3.00) schlägt uf+3,2 für bestimmte -17-Blocks vor. Unsere Daten führen den zweiten Hit als Combo-only — den vollen String erst im Lab als Block-Punish verifizieren.'

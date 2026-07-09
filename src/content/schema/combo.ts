@@ -17,6 +17,26 @@ export const Combo = z.object({
   tIdx: z.number().int(),
   /** Localized note (legacy `note`). */
   note: LocalizedText,
+  // ---- v2 optional metadata (render-time grouping/badges; array order stays canonical) ----
+  /** Display/grouping category. */
+  category: z.enum(["staple", "beginner", "ender", "wall", "small"]).optional(),
+  /** Optional launcher/starter move notations. */
+  starters: z.array(z.string()).nonempty().optional(),
+  /** 1 = easy … 3 = hard. */
+  difficulty: z.number().int().min(1).max(3).optional(),
+  /** Approximate damage — only when already stated in canonical content or lab-measured. */
+  damage: z.number().positive().optional(),
+  /** Carries far toward the wall. */
+  wallCarry: z.boolean().optional(),
+  /** Stage-break interactions of the route. */
+  breaks: z.array(z.enum(["wall", "floor", "balcony"])).nonempty().optional(),
+  /** Requires Heat / Rage. */
+  heatRequired: z.boolean().optional(),
+  rageRequired: z.boolean().optional(),
+  /** External reference for the route (never an auto-import source). */
+  sourceLink: z.string().optional(),
+  /** `needsLabReview` marks entries not yet verified on the current patch. */
+  reviewStatus: z.enum(["verified", "needsLabReview"]).optional(),
 });
 
 export type Combo = z.infer<typeof Combo>;

@@ -1,0 +1,94 @@
+# Stance guide: Single Boot. Move refs = existing MOVES ids; facts from our YAML.
+id: 'sbt'
+label:
+  en: 'Single Boot (SBT)'
+  de: 'Single Boot (SBT)'
+short:
+  en: 'One boot — the mid/low fork'
+  de: 'Ein Boot — die Mid/Low-Gabel'
+purpose:
+  en: 'One rocket boot, one decision for the opponent: the mid elbow or the sliding low. You reach SBT out of combos, punishes and BKP — then make them guess exactly once.'
+  de: 'Ein Raketen-Boot, eine Entscheidung für den Gegner: der Mid-Ellbogen oder das rutschende Low. Du erreichst SBT aus Combos, Punishes und BKP — und lässt ihn genau einmal raten.'
+commonEntries:
+  - move: 'f12'
+    note:
+      en: '3 / 4 after the wall-splat mid'
+      de: '3 / 4 nach dem Wall-Splat-Mid'
+  - move: 'b44'
+    note:
+      en: '3 / 4 — the whiff-punish route'
+      de: '3 / 4 — die Whiff-Punish-Route'
+  - move: 'hs'
+    note:
+      en: '3 / 4 after Heat Smash'
+      de: '3 / 4 nach dem Heat Smash'
+  - move: 'bkp1'
+    note:
+      en: '3 / 4 keeps the pressure going'
+      de: '3 / 4 hält den Druck am Laufen'
+keyOptions:
+  - move: 'sbt2'
+    role:
+      en: 'the mid elbow — -8, can shift back to DES'
+      de: 'der Mid-Ellbogen — -8, kann zurück zu DES wechseln'
+  - move: 'sbt3'
+    role:
+      en: 'the low — plus on hit, launches on counterhit'
+      de: 'das Low — plus auf Hit, launcht bei Counterhit'
+  - move: 'sbt4'
+    role:
+      en: 'huge launcher — a hail-mary, not a habit'
+      de: 'riesiger Launcher — ein Hail-Mary, keine Gewohnheit'
+  - move: 'sbt12b'
+    role:
+      en: 'slow unblockable high — a hard read'
+      de: 'langsames unblockbares High — ein Hard-Read'
+  - move: 'sbt12134'
+    role:
+      en: 'the 4-hit boot string, can end in DES'
+      de: 'der 4-Hit-Boot-String, kann in DES enden'
+  - move: 'sbtD'
+    role:
+      en: 'sink toward BKP — B gives the backswing'
+      de: 'Richtung BKP absinken — B gibt den Backswing'
+safeOptions:
+  - move: 'sbt2'
+  - move: 'sbt12'
+riskyOptions:
+  - move: 'sbt4'
+    note:
+      en: '-27 blocked'
+      de: '-27 geblockt'
+  - move: 'sbt12134'
+    note:
+      en: '-18 blocked'
+      de: '-18 geblockt'
+  - move: 'sbt3'
+    note:
+      en: '-14 blocked'
+      de: '-14 geblockt'
+lows:
+  - move: 'sbt3'
+mids:
+  - move: 'sbt1'
+  - move: 'sbt2'
+  - move: 'sbt4'
+exits:
+  - en: 'SBT.D sinks toward crouch / BKP (press B for the backswing).'
+    de: 'SBT.D sinkt Richtung Hocke / BKP (B drücken für den Backswing).'
+transitions:
+  - to: 'DES'
+    via: 'SBT.2 with 1+2, or the full SBT.1,2,1,3+4 string'
+  - to: 'BKP'
+    via: 'SBT.D, then B'
+counterplay:
+  en: 'The fork is honest: the low (SBT.3) is -14 when blocked and the big launcher (SBT.4) is -27 — block low on a read and punish hard. The unblockable SBT.1+2 is slow (i27): move, or hit her out of it.'
+  de: 'Die Gabel ist ehrlich: das Low (SBT.3) ist geblockt -14 und der große Launcher (SBT.4) -27 — auf Read low blocken und hart bestrafen. Das unblockbare SBT.1+2 ist langsam (i27): bewegen oder sie rausschlagen.'
+trainingDrills:
+  - en: 'Run b+4,4 → 3/4 in practice and alternate SBT.2 and SBT.3 against a random-guard dummy until both boot options come out clean.'
+    de: 'Übe b+4,4 → 3/4 im Practice Mode und wechsle SBT.2 und SBT.3 gegen einen Random-Guard-Dummy ab, bis beide Boot-Optionen sauber kommen.'
+manualReview:
+  - en: 'Raw f+3+4 is documented only as a generic stance transition in our data — lab-check which boot it actually enters.'
+    de: 'Rohes f+3+4 ist in unseren Daten nur als generische Stance-Transition dokumentiert — im Lab prüfen, in welchen Boot es wirklich geht.'
+  - en: 'TekkenDocs (v3.00) recommends preferring DBT over SBT in most situations — plausible from our frames, but treat it as opinion, not data.'
+    de: 'TekkenDocs (v3.00) empfiehlt, DBT meist SBT vorzuziehen — nach unseren Frames plausibel, aber als Meinung behandeln, nicht als Daten.'

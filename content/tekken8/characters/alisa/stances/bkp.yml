@@ -1,0 +1,78 @@
+# Stance guide: Backup. Move refs = existing MOVES ids; facts from our YAML.
+id: 'bkp'
+label:
+  en: 'Backup (BKP)'
+  de: 'Backup (BKP)'
+short:
+  en: 'The bait-and-launch backswing'
+  de: 'Der Bait-und-Launch-Backswing'
+purpose:
+  en: 'A backswing stance you reach off d+3 and db+1. The threat is simple: they duck expecting another low — and BKP.3 or BKP.4 launches them for a full combo. If they stand, BKP.1 keeps you plus.'
+  de: 'Eine Backswing-Stance, die du über d+3 und db+1 erreichst. Die Drohung ist simpel: Er duckt in Erwartung des nächsten Lows — und BKP.3 oder BKP.4 launcht ihn in einen vollen Combo. Steht er, hält dich BKP.1 im Plus.'
+commonEntries:
+  - move: 'd3'
+    note:
+      en: 'recovers into BKP before crouch — the main entry'
+      de: 'landet vor der Hocke erst in BKP — der Haupt-Entry'
+  - move: 'db1'
+    note:
+      en: 'manual entry — high-crushes early (frames 4~15)'
+      de: 'manueller Entry — high-crusht früh (Frames 4~15)'
+  - move: 'sbtD'
+    note:
+      en: 'from SBT: D, then B for the backswing'
+      de: 'aus SBT: D, dann B für den Backswing'
+keyOptions:
+  - move: 'bkp1'
+    role:
+      en: 'i11 high, +4~+6 on block, branches to SBT / DBT'
+      de: 'i11-High, +4~+6 auf Block, verzweigt zu SBT / DBT'
+  - move: 'bkp3'
+    role:
+      en: 'low-crushing mid launcher — the payoff'
+      de: 'low-crushender Mid-Launcher — der Payoff'
+  - move: 'bkp4'
+    role:
+      en: 'i18 tornado knee, low-crushes'
+      de: 'i18-Tornado-Knie, low-crusht'
+  - move: 'bkp2'
+    role:
+      en: 'chargeable tornado high — combo tool'
+      de: 'aufladbares Tornado-High — Combo-Tool'
+  - move: 'bkp12'
+    role:
+      en: 'very slow chargeable weapon high — pure hard read'
+      de: 'sehr langsames aufladbares Weapon-High — reiner Hard-Read'
+safeOptions:
+  - move: 'bkp1'
+  - move: 'bkp3'
+  - move: 'bkp4'
+riskyOptions:
+  - move: 'bkp12'
+    note:
+      en: 'i34+ — interruptible'
+      de: 'i34+ — unterbrechbar'
+  - move: 'bkp2'
+    note:
+      en: 'block frames swing with the charge'
+      de: 'Block-Frames schwanken mit der Aufladung'
+mids:
+  - move: 'bkp3'
+  - move: 'bkp4'
+exits:
+  - en: 'db+1 also feeds Full Crouch (hold D) — you can drop into the crouch / while-standing game instead.'
+    de: 'db+1 führt auch in Full Crouch (D halten) — du kannst stattdessen ins Hocke-/While-Standing-Spiel wechseln.'
+transitions:
+  - to: 'SBT'
+    via: 'BKP.1, then 3 / 4'
+  - to: 'DBT'
+    via: 'BKP.1, then f+3 / f+4'
+counterplay:
+  en: 'The two fast options (BKP.1, BKP.2) are both highs — duck on a read and launch. The mid launchers are i18/i24 — a quick button on reaction to the backswing beats the slow options. Don''t feed her by ducking twice in a row.'
+  de: 'Die zwei schnellen Optionen (BKP.1, BKP.2) sind beide High — auf Read ducken und launchen. Die Mid-Launcher sind i18/i24 — ein schneller Button auf Reaktion auf den Backswing schlägt die langsamen Optionen. Füttere sie nicht, indem du zweimal in Folge duckst.'
+trainingDrills:
+  - en: 'Drill d+3 on hit → BKP.1 (they stood) and d+3 → BKP.3 (they ducked) against a recorded dummy until the branch is a read, not a guess.'
+    de: 'Übe d+3 auf Hit → BKP.1 (er stand) und d+3 → BKP.3 (er duckte) gegen einen aufgenommenen Dummy, bis die Verzweigung ein Read ist und kein Raten.'
+manualReview:
+  - en: 'TekkenDocs (v3.00) calls BKP a high-crushing stance and BKP.1+2 an unblockable — our data shows high crush only on the db+1 entry (4~15) and SBT.D (34~), and lists BKP.1+2 as a plain high; lab-check both.'
+    de: 'TekkenDocs (v3.00) nennt BKP eine high-crushende Stance und BKP.1+2 unblockbar — unsere Daten zeigen High Crush nur am db+1-Entry (4~15) und SBT.D (34~) und führen BKP.1+2 als normales High; beides im Lab prüfen.'

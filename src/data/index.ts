@@ -17,10 +17,14 @@ export { MU } from "../content/runtime/alisaMatchups";
 // COMBOS now comes from the content system (build-time virtual module). combos.ts
 // stays only as the Node-only parity oracle used by `content:check`.
 export { COMBOS } from "../content/runtime/alisaCombos";
-// PUNISH now comes from the content system (build-time virtual module). punish.ts
-// stays only as the Node-only parity oracle used by `content:check`.
-export { PUNISH } from "../content/runtime/alisaPunish";
+// PUNISH now comes from the content system (build-time virtual module).
+// PUNISH_REVIEW carries the clearly-labelled manual-review candidates
+// (punish-review.yml) — never canonical punish advice.
+export { PUNISH, PUNISH_REVIEW } from "../content/runtime/alisaPunish";
 // Legends (LEG/LEGP/LEGF/LEGS) now come from the content system (build-time virtual
 // module). legends.ts stays only as the Node-only parity oracle used by
 // `content:check`. src/data/index.ts is now purely an adapter barrel — no data.
 export { LEG, LEGP, LEGF, LEGS } from "../content/runtime/alisaLegends";
+// STANCES (Phase 4): stance guide cards (DES/SBT/DBT/BKP) from the content
+// system's build-time virtual module.
+export { STANCES } from "../content/runtime/alisaStances";

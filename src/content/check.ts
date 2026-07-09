@@ -2,7 +2,8 @@ import { readFileSync, readdirSync } from "node:fs";
 import { join, relative, sep } from "node:path";
 import { parse as parseYaml } from "yaml";
 import { parseMove, parseCombos, parseMatchup, parseTraining } from "./parse";
-import { Punish } from "./schema/punish";
+import { Punish, PunishReview } from "./schema/punish";
+import { Stance } from "./schema/stance";
 import { buildAlisaMoves } from "./runtime/buildMoves.node";
 import { buildAlisaMoveMeta } from "./runtime/buildAlisaMoveMeta.node";
 import { buildAlisaPunish } from "./runtime/buildAlisaPunish.node";
@@ -10,6 +11,7 @@ import { buildAlisaOpponents, type LegacyOppRow } from "./runtime/buildAlisaOppo
 import { buildAlisaMatchups } from "./runtime/buildAlisaMatchups.node";
 import { buildFrameData } from "./runtime/buildFrameData.node";
 import { buildAlisaCombos } from "./runtime/buildAlisaCombos.node";
+import { buildAlisaStances } from "./runtime/buildAlisaStances.node";
 import { buildAlisaLegends } from "./runtime/buildAlisaLegends.node";
 import { MatchupOrder } from "./schema/matchup";
 import type { Move } from "./schema/move";
@@ -66,6 +68,15 @@ for (const file of walk(CONTENT)) {
       validated++;
     } else if (rel.includes("/combos/") && rel.endsWith(".yml")) {
       parseCombos(raw);
+      validated++;
+    } else if (rel.endsWith("characters/alisa/punish.yml")) {
+      Punish.parse(parseYaml(raw));
+      validated++;
+    } else if (rel.endsWith("characters/alisa/punish-review.yml")) {
+      PunishReview.parse(parseYaml(raw));
+      validated++;
+    } else if (rel.includes("/stances/") && rel.endsWith(".yml")) {
+      Stance.parse(parseYaml(raw));
       validated++;
     } else if (rel.endsWith("/matchups/_order.yml")) {
       MatchupOrder.parse(parseYaml(raw));
@@ -166,6 +177,9 @@ if (meta) {
 // validates the shipped artifact. COMBOS is an ordered array rendered in order;
 // routes/notation stay verbatim (never normalized).
 const COMBO_KEYS = ["name", "from", "seq", "tIdx", "note"];
+// v2 optional metadata — allowed but not required on any row.
+const COMBO_OPT_KEYS = ["category", "starters", "difficulty", "damage", "wallCarry", "breaks", "heatRequired", "rageRequired", "sourceLink", "reviewStatus"];
+const COMBO_CATS = ["staple", "beginner", "ender", "wall", "small"];
 const genCOMBOS = buildAlisaCombos() as unknown as Array<Record<string, unknown>>;
 let comboOk = 0;
 // 1-2. COMBOS is a non-empty array.
@@ -178,9 +192,10 @@ for (let i = 0; i < genCOMBOS.length; i++) {
   const label = String(name?.en ?? `row ${i}`);
   let rowOk = true;
   const nonEmptyStr = (v: unknown) => typeof v === "string" && v.trim() !== "";
-  // 12-13. Exact runtime row shape — only name, from, seq, tIdx, note; no extras.
+  // 12-13. Runtime row shape — the five legacy fields required; only known v2
+  // optionals allowed on top; nothing else.
   const keys = Object.keys(c);
-  const extra = keys.filter((k) => !COMBO_KEYS.includes(k));
+  const extra = keys.filter((k) => !COMBO_KEYS.includes(k) && !COMBO_OPT_KEYS.includes(k));
   const missing = COMBO_KEYS.filter((k) => !keys.includes(k));
   if (extra.length) { failures.push(`combo: "${label}" has unexpected field(s): ${extra.join(", ")}`); rowOk = false; }
   if (missing.length) { failures.push(`combo: "${label}" missing field(s): ${missing.join(", ")}`); rowOk = false; }
@@ -200,15 +215,27 @@ for (let i = 0; i < genCOMBOS.length; i++) {
   // 9. note.en / note.de non-empty strings.
   const note = c["note"] as { en?: unknown; de?: unknown } | undefined;
   if (!note || !nonEmptyStr(note.en) || !nonEmptyStr(note.de)) { failures.push(`combo: "${label}".note must have non-empty en + de`); rowOk = false; }
+  // 14-17. v2 optional metadata (when present) is valid.
+  if (c["category"] !== undefined && !COMBO_CATS.includes(c["category"] as string)) { failures.push(`combo: "${label}".category "${String(c["category"])}" invalid`); rowOk = false; }
+  const diff = c["difficulty"];
+  if (diff !== undefined && (typeof diff !== "number" || ![1, 2, 3].includes(diff))) { failures.push(`combo: "${label}".difficulty must be 1, 2 or 3`); rowOk = false; }
+  const dmg = c["damage"];
+  if (dmg !== undefined && (typeof dmg !== "number" || !(dmg > 0))) { failures.push(`combo: "${label}".damage must be a positive number`); rowOk = false; }
+  const crs = c["reviewStatus"];
+  if (crs !== undefined && crs !== "verified" && crs !== "needsLabReview") { failures.push(`combo: "${label}".reviewStatus invalid`); rowOk = false; }
   // 11. No duplicate name pairs (name.en + name.de).
   const nameKey = `${String(name?.en)} ${String(name?.de)}`;
   if (comboSeen.has(nameKey)) { failures.push(`combo: duplicate combo name "${label}"`); rowOk = false; }
   comboSeen.add(nameKey);
   if (rowOk) comboOk++;
 }
-// 10. Combo order is preserved by the builder: buildAlisaCombos() maps combos.yml
-// in source array order (no sort/reorder), so the emitted order == authored order.
-// (Order is intrinsic to the single ordered combos.yml array — nothing to permute.)
+// 10. Combo order is preserved by the builder: the emitted order must equal the
+// authored combos.yml order (UI category grouping is a render-time filter and
+// must never reorder the canonical array).
+const combosSrc = parseCombos(readFileSync(join(CONTENT, "tekken8", "characters", "alisa", "combos", "combos.yml"), "utf8"));
+if (!eq(genCOMBOS.map((c) => (c["name"] as { en?: unknown } | undefined)?.en), combosSrc.map((c) => c.name.en))) {
+  failures.push("combo: builder row order differs from combos.yml source order");
+}
 
 // Legends SELF-CONSISTENCY (content is canonical; legacy legends.ts retired). Built
 // through the SAME buildAlisaLegends() path the virtual module ships. Each of the
@@ -389,35 +416,113 @@ for (const c of fdChars) {
 // 12. Star/held variants must survive as-is (the runtime star-alias loop needs them).
 if (fdStarKeys === 0) failures.push("frame-data: no star/held (`*`) move keys found — expected them to be preserved");
 
-// Punish self-consistency (content is canonical; no legacy oracle). Verifies the
-// content-built PUNISH is well-formed and that the builder preserves source order.
-const punish = buildAlisaPunish();
-// 1. Non-empty table.
+// Punish self-consistency v2 (content is canonical; no legacy oracle). Verifies
+// both content-built tables: canonical rows (punish.yml) and manual-review
+// candidates (punish-review.yml). Candidates must never mix silently into the
+// canonical set.
+const PUNISH_KINDS = ["standing", "crouching", "whiff"] as readonly string[];
+const punishTables = buildAlisaPunish();
+const punish = punishTables.rows;
+const punishReview = punishTables.review;
+// 1. Non-empty canonical table.
 if (punish.length === 0) failures.push("punish: table is empty");
-// 2-5. Per-row field integrity (dis/use non-empty strings; why.en/why.de present).
-punish.forEach((r, i) => {
-  if (typeof r.dis !== "string" || r.dis.trim() === "") failures.push(`punish[${i}]: empty or non-string dis`);
-  if (typeof r.use !== "string" || r.use.trim() === "") failures.push(`punish[${i}]: empty or non-string use`);
-  if (!r.why || typeof r.why.en !== "string" || r.why.en === "" || typeof r.why.de !== "string" || r.why.de === "") {
-    failures.push(`punish[${i}]: missing why.en/why.de`);
+// 2-8. Per-row field integrity — shared by both tables (kind valid; dis/use
+// non-empty; startup in iN form; followUps en+de non-empty; reviewStatus valid;
+// why.en/why.de present).
+const checkPunishRow = (r: (typeof punish)[number], where: string): void => {
+  if (typeof r.dis !== "string" || r.dis.trim() === "") failures.push(`${where}: empty or non-string dis`);
+  if (typeof r.use !== "string" || r.use.trim() === "") failures.push(`${where}: empty or non-string use`);
+  if (!PUNISH_KINDS.includes(r.kind)) failures.push(`${where}: invalid kind "${String(r.kind)}"`);
+  if (r.startup !== undefined && !/^i\d+$/.test(r.startup)) failures.push(`${where}: startup "${r.startup}" not in iN form`);
+  if (r.alt !== undefined && typeof r.alt !== "boolean") failures.push(`${where}: alt must be a boolean`);
+  if (r.followUps !== undefined) {
+    if (!Array.isArray(r.followUps) || r.followUps.length === 0) failures.push(`${where}: followUps must be a non-empty array`);
+    else if (r.followUps.some((f) => !f || typeof f.en !== "string" || f.en === "" || typeof f.de !== "string" || f.de === "")) {
+      failures.push(`${where}: followUps entry missing non-empty en/de`);
+    }
   }
+  if (r.reviewStatus !== undefined && r.reviewStatus !== "verified" && r.reviewStatus !== "needsLabReview") {
+    failures.push(`${where}: invalid reviewStatus "${String(r.reviewStatus)}"`);
+  }
+  if (!r.why || typeof r.why.en !== "string" || r.why.en === "" || typeof r.why.de !== "string" || r.why.de === "") {
+    failures.push(`${where}: missing why.en/why.de`);
+  }
+};
+punish.forEach((r, i) => checkPunishRow(r, `punish[${i}]`));
+punishReview.forEach((r, i) => checkPunishRow(r, `punish-review[${i}]`));
+// 9. No silent mixing: canonical rows must not be lab-review; every review row must be.
+punish.forEach((r, i) => {
+  if (r.reviewStatus === "needsLabReview") failures.push(`punish[${i}]: needsLabReview rows must live in punish-review.yml, not the canonical table`);
 });
-// 6. Order preserved: builder output order == punish.yml source order (by dis sequence).
+punishReview.forEach((r, i) => {
+  if (r.reviewStatus !== "needsLabReview") failures.push(`punish-review[${i}]: candidate must carry reviewStatus 'needsLabReview'`);
+});
+// 10. Order preserved: builder output order == punish.yml source order.
 const punishSrc = Punish.parse(parseYaml(readFileSync(join(CONTENT, "tekken8", "characters", "alisa", "punish.yml"), "utf8")));
-if (!eq(punish.map((r) => r.dis), punishSrc.map((r) => r.disadvantage))) {
+if (!eq(punish.map((r) => `${r.dis}|${r.use}`), punishSrc.map((r) => `${r.disadvantage}|${r.use}`))) {
   failures.push("punish: builder row order differs from punish.yml source order");
 }
-// 7. No duplicate dis+use pairs.
+// 11. No duplicate kind+dis+use rows among canonical rows.
 const punishSeen = new Set<string>();
 const punishDupes: string[] = [];
 for (const r of punish) {
-  const k = `${r.dis} | ${r.use}`;
+  const k = `${r.kind} | ${r.dis} | ${r.use}`;
   if (punishSeen.has(k)) punishDupes.push(k);
   punishSeen.add(k);
 }
-if (punishDupes.length) failures.push(`punish: duplicate dis+use pair(s): ${punishDupes.join("; ")}`);
-// (8. `use` -> known MOVES notation cross-check intentionally skipped: punish `use`
+if (punishDupes.length) failures.push(`punish: duplicate kind+dis+use row(s): ${punishDupes.join("; ")}`);
+// (12. `use` -> known MOVES notation cross-check intentionally skipped: punish `use`
 //  strings use raw notation that doesn't always match a move's `n` 1:1 — too fuzzy.)
+
+// Stance SELF-CONSISTENCY (Phase 4). Built via the SAME buildAlisaStances() path
+// the virtual module ships (which already resolves every move ref against MOVES
+// and enforces file order/id match — a build failure lands in `failures`).
+let genSTANCES: ReturnType<typeof buildAlisaStances> = [];
+try {
+  genSTANCES = buildAlisaStances();
+} catch (e) {
+  failures.push(`stance build failed: ${e instanceof Error ? e.message : String(e)}`);
+}
+const STANCE_IDS = ["des", "sbt", "dbt", "bkp"];
+// 1-3. Exactly four stances, ids exactly des/sbt/dbt/bkp in order (covers duplicates).
+if (!eq(genSTANCES.map((s) => s.id), STANCE_IDS)) {
+  failures.push(`stance: ids/order must be exactly [${STANCE_IDS.join(", ")}] — got [${genSTANCES.map((s) => s.id).join(", ")}]`);
+}
+const stanceLocOk = (t: { en?: unknown; de?: unknown } | undefined): boolean =>
+  !!t && typeof t.en === "string" && t.en.trim() !== "" && typeof t.de === "string" && t.de.trim() !== "";
+let stanceRefCount = 0;
+for (const s of genSTANCES) {
+  // 4. Required localized fields non-empty in both languages.
+  const locFields: Array<[string, { en?: unknown; de?: unknown }]> = [
+    ["label", s.label], ["short", s.short], ["purpose", s.purpose], ["counterplay", s.counterplay],
+  ];
+  for (const [fname, val] of locFields) {
+    if (!stanceLocOk(val)) failures.push(`stance ${s.id}: ${fname} needs non-empty en + de`);
+  }
+  // 5-6. At least one key option and one training drill.
+  if (s.keyOptions.length === 0) failures.push(`stance ${s.id}: needs at least one key option`);
+  if (s.trainingDrills.length === 0) failures.push(`stance ${s.id}: needs at least one training drill`);
+  s.trainingDrills.forEach((d, i) => { if (!stanceLocOk(d)) failures.push(`stance ${s.id}: trainingDrills[${i}] needs en + de`); });
+  s.exits?.forEach((d, i) => { if (!stanceLocOk(d)) failures.push(`stance ${s.id}: exits[${i}] needs en + de`); });
+  // 7. manualReview items are localized (their labelled rendering is UI-side).
+  s.manualReview?.forEach((d, i) => { if (!stanceLocOk(d)) failures.push(`stance ${s.id}: manualReview[${i}] needs en + de`); });
+  // 8-9. Every move ref resolves in MOVES; per-ref note/role localized when present.
+  const refLists = [s.commonEntries, s.keyOptions, s.safeOptions, s.riskyOptions, s.lows, s.mids];
+  for (const list of refLists) {
+    for (const ref of list ?? []) {
+      stanceRefCount++;
+      const r = ref as { move: string; note?: { en?: unknown; de?: unknown }; role?: { en?: unknown; de?: unknown } };
+      if (!(r.move in genMOVES)) failures.push(`stance ${s.id}: move ref "${r.move}" not in MOVES`);
+      const txt = r.role ?? r.note;
+      if (txt !== undefined && !stanceLocOk(txt)) failures.push(`stance ${s.id}: ref "${r.move}" note/role needs en + de`);
+    }
+  }
+  // 10. Transitions point at known stances with a non-empty `via`.
+  s.transitions?.forEach((t, i) => {
+    if (!["DES", "SBT", "DBT", "BKP"].includes(t.to)) failures.push(`stance ${s.id}: transitions[${i}].to "${String(t.to)}" invalid`);
+    if (typeof t.via !== "string" || t.via.trim() === "") failures.push(`stance ${s.id}: transitions[${i}].via must be non-empty`);
+  });
+}
 
 // Opponent SELF-CONSISTENCY (content is canonical; legacy opponents.ts retired).
 // Verifies the content-built OPP is well-formed and keeps the exact pre-normalized
@@ -485,11 +590,17 @@ for (const [char, n] of charMoveCount) {
 
 // ---- 3. Report ---------------------------------------------------------
 console.log(`Validated ${validated} content file(s).`);
-console.log(`Punish self-consistency: ${punish.length} row(s) — fields, order, and uniqueness verified.`);
+const punishKindCount = (k: string) => punish.filter((r) => r.kind === k).length;
+console.log(
+  `Punish self-consistency: ${punish.length} canonical row(s) ` +
+    `(${punishKindCount("standing")} standing / ${punishKindCount("crouching")} crouching / ${punishKindCount("whiff")} whiff) ` +
+    `+ ${punishReview.length} lab-review candidate(s) — fields, kinds, order, and uniqueness verified.`,
+);
 console.log(`Opponent self-consistency: ${oppOk}/${oppKeys.length} row(s) — shape, fields, and oppNorm re-key (no collisions) verified.`);
 console.log(`Matchup self-consistency: ${muOk}/${genMU.length} row(s) — order bijection, shape, fields, and [[move]] refs verified.`);
 console.log(`Frame-data self-consistency: ${fdOk}/${fdTotal} row(s) valid — ${fdChars.length} characters, length dist ${JSON.stringify(fdLenDist)}, ${fdStarKeys} star/held key(s) preserved.`);
-console.log(`Combo self-consistency: ${comboOk}/${genCOMBOS.length} combo(s) — shape, fields, tIdx range, order, and uniqueness verified.`);
+console.log(`Combo self-consistency: ${comboOk}/${genCOMBOS.length} combo(s) — shape, fields, v2 metadata, tIdx range, order, and uniqueness verified.`);
+console.log(`Stance self-consistency: ${genSTANCES.length} stance(s) (${genSTANCES.map((s) => s.id).join(", ")}) — ${stanceRefCount} move ref(s) resolve to MOVES; key options + drills present.`);
 console.log(`Legends self-consistency: ${legendsOk}/${legendsTotal} legend entrie(s) valid — groups ${genLegNames.join(", ")}, tuple shape + unique symbols per group verified.`);
 if (meta) {
   console.log(

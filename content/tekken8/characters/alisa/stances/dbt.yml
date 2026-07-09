@@ -1,0 +1,111 @@
+# Stance guide: Dual Boot. Move refs = existing MOVES ids; facts from our YAML.
+id: 'dbt'
+label:
+  en: 'Dual Boot (DBT)'
+  de: 'Dual Boot (DBT)'
+short:
+  en: 'Both boots — her most plus stance'
+  de: 'Beide Boots — ihre plus-stärkste Stance'
+purpose:
+  en: 'Both boots ignite for real plus-frame offence: a +9 jailing high string, a +4 mid and a ±0 jailing mid, backed by lows and launchers. By our own frame data this is her strongest pressure stance.'
+  de: 'Beide Boots zünden für echte Plus-Frame-Offense: ein +9 jailender High-String, ein +4-Mid und ein ±0 jailendes Mid, dahinter Lows und Launcher. Nach unseren eigenen Frame-Daten ihre stärkste Druck-Stance.'
+commonEntries:
+  - move: 'desf12'
+    note:
+      en: '3 / 4 — still +4 if the mid was blocked'
+      de: '3 / 4 — noch +4, wenn das Mid geblockt wurde'
+  - move: 'desd2'
+    note:
+      en: '3 / 4 off the homing low'
+      de: '3 / 4 nach dem Homing-Low'
+  - move: 'd12t'
+    note:
+      en: 'from DES: d+1+2, then f+3 / f+4'
+      de: 'aus DES: d+1+2, dann f+3 / f+4'
+  - move: 'f12'
+    note:
+      en: 'f+3 / f+4 after the wall-splat mid'
+      de: 'f+3 / f+4 nach dem Wall-Splat-Mid'
+  - move: 'b44'
+    note:
+      en: 'f+3 / f+4 — the whiff-punish route'
+      de: 'f+3 / f+4 — die Whiff-Punish-Route'
+  - move: 'hs'
+    note:
+      en: 'f+3 / f+4 after Heat Smash'
+      de: 'f+3 / f+4 nach dem Heat Smash'
+  - move: 'bkp1'
+    note:
+      en: 'f+3 / f+4 keeps the pressure going'
+      de: 'f+3 / f+4 hält den Druck am Laufen'
+  - move: 'desf21'
+    note:
+      en: '3 / 4 — in Heat only'
+      de: '3 / 4 — nur in Heat'
+keyOptions:
+  - move: 'dbtf12'
+    role:
+      en: '+4 on block mid — the pressure anchor'
+      de: '+4-auf-Block-Mid — der Druck-Anker'
+  - move: 'dbt12'
+    role:
+      en: 'i12, ±0 on block, jails — the fast option'
+      de: 'i12, ±0 auf Block, jailt — die schnelle Option'
+  - move: 'dbt1'
+    role:
+      en: '+9 on block jailing high string'
+      de: '+9-auf-Block jailender High-String'
+  - move: 'dbtf2'
+    role:
+      en: 'the quick low, +6 on hit'
+      de: 'das schnelle Low, +6 auf Hit'
+  - move: 'dbtf22'
+    role:
+      en: 'the hellsweep extension — hard read, very unsafe blocked'
+      de: 'die Hellsweep-Verlängerung — Hard-Read, geblockt sehr unsafe'
+  - move: 'dbt4'
+    role:
+      en: 'the launcher — big reward, big risk'
+      de: 'der Launcher — großer Reward, großes Risiko'
+  - move: 'dbtf1'
+    role:
+      en: 'attack-throw ender — your combo closer'
+      de: 'Attack-Throw-Ender — dein Combo-Abschluss'
+safeOptions:
+  - move: 'dbtf12'
+  - move: 'dbt12'
+  - move: 'dbt1'
+riskyOptions:
+  - move: 'dbtf22'
+    note:
+      en: '-33 blocked'
+      de: '-33 geblockt'
+  - move: 'dbt4'
+    note:
+      en: '-27 blocked'
+      de: '-27 geblockt'
+  - move: 'dbt2'
+    note:
+      en: '-14 blocked'
+      de: '-14 geblockt'
+lows:
+  - move: 'dbtf2'
+  - move: 'dbtf22'
+  - move: 'dbt3'
+mids:
+  - move: 'dbtf12'
+  - move: 'dbt12'
+  - move: 'dbt2'
+  - move: 'dbt4'
+exits:
+  - en: 'There is no documented safe cancel out of DBT in our data — when you enter, you are committing to an option.'
+    de: 'Es gibt in unseren Daten keinen dokumentierten sicheren Cancel aus DBT — wer reingeht, committet sich auf eine Option.'
+counterplay:
+  en: 'The plus options are honest about their levels: DBT.1 is all highs — duck on a read. The lows are -12/-14 when blocked, and the launchers (DBT.2 / DBT.4) are -14/-27 — block and take the punish.'
+  de: 'Die Plus-Optionen sind ehrlich bei den Höhen: DBT.1 ist komplett High — auf Read ducken. Die Lows sind geblockt -12/-14, und die Launcher (DBT.2 / DBT.4) -14/-27 — blocken und den Punish nehmen.'
+trainingDrills:
+  - en: 'Run DES.f+1+2 → 3/4 in practice and alternate DBT.f+1+2 and DBT.f+2 against a random-guard dummy — feel the plus-mid vs low rhythm.'
+    de: 'Übe DES.f+1+2 → 3/4 im Practice Mode und wechsle DBT.f+1+2 und DBT.f+2 gegen einen Random-Guard-Dummy ab — spür den Plus-Mid-vs-Low-Rhythmus.'
+manualReview:
+  - en: 'TekkenDocs (v3.00) lists H.f+1+4 and "Evasive Action f3/f4" as additional DBT entries — our data documents neither as a DBT entry; lab-check.'
+    de: 'TekkenDocs (v3.00) führt H.f+1+4 und "Evasive Action f3/f4" als weitere DBT-Entries — unsere Daten dokumentieren beides nicht als DBT-Entry; im Lab prüfen.'

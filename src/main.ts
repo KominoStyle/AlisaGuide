@@ -15,6 +15,8 @@ import {
   LEGS,
   COMBOS,
   PUNISH,
+  PUNISH_REVIEW,
+  STANCES,
 } from "./data";
 "use strict";
 var OPP = RAW_OPP;
@@ -25,7 +27,11 @@ var SECTIONS = [
     {t:"call", v:"key", h:{en:"Three things that make this guide work",de:"Drei Dinge, die diesen Guide ausmachen"}, x:{en:"**(1)** Every move has *exact* frames — startup, on block, on hit — and you click it to read the details. **(2)** The **Input Trainer** lets you bind your own keys and see live what you press. **(3)** Tap the **star** on any move to pin it to your **My Setups** list at the top of the move list.",
       de:"**(1)** Jeder Move hat *exakte* Frames — Startup, on Block, on Hit — und du klickst ihn für Details. **(2)** Der **Input-Trainer** lässt dich eigene Tasten zuordnen und live sehen, was du drückst. **(3)** Tipp den **Stern** an einem Move, um ihn oben in der Movelist unter **Meine Setups** zu pinnen."}},
     {t:"call", v:"note", h:{en:"Alisa in one line",de:"Alisa in einem Satz"}, x:{en:"Low damage, elite movement. You win by making the opponent **whiff** and punishing it — not with huge combos. So defense and consistency win you rounds.",
-      de:"Wenig Schaden, elitäres Movement. Du gewinnst, indem der Gegner **whifft** und du es bestrafst — nicht mit Riesen-Combos. Also gewinnen Defense und Konsistenz die Runden."}}
+      de:"Wenig Schaden, elitäres Movement. Du gewinnst, indem der Gegner **whifft** und du es bestrafst — nicht mit Riesen-Combos. Also gewinnen Defense und Konsistenz die Runden."}},
+    {t:"call", v:"key", h:{en:"Where she is strong",de:"Wo sie stark ist"}, x:{en:"**(1) Movement & space control** — she has no just-frame inputs, so all your execution goes into dashes and steps. **(2) A safe poking game** — her core buttons risk little and keep the round in your hands. **(3) Chainsaw pressure** — Destructive Form cracks patient blockers with plus frames and chip damage. **(4) Real panic tools** — power crush, hopkick and Heat Smash cover the moments you're being run over. **(5) She rewards fundamentals** — the core loop (03) carries you from day one to the highest ranks.",
+      de:"**(1) Movement & Raumkontrolle** — sie hat keine Just-Frame-Inputs, also geht deine ganze Execution in Dashes und Steps. **(2) Sicheres Poking** — ihre Kern-Buttons riskieren wenig und halten die Runde in deiner Hand. **(3) Kettensägen-Druck** — Destructive Form knackt geduldige Blocker mit Plus-Frames und Chip-Schaden. **(4) Echte Panik-Tools** — Power Crush, Hopkick und Heat Smash decken die Momente, in denen du überrannt wirst. **(5) Sie belohnt Fundamentals** — der Kern-Kreislauf (03) trägt dich von Tag eins bis in die höchsten Ränge."}},
+    {t:"call", v:"warn", h:{en:"Where she is weak — plan around it",de:"Wo sie schwach ist — plane damit"}, x:{en:"**(1) Below-average damage per touch** — you must win more exchanges than your opponent, so consistency beats style. **(2) Okizeme is not her win condition** — she has wake-up coverage (Close range, 06), but you win rounds with spacing, pokes, movement and chainsaw pressure, not with knockdown loops. **(3) Comebacks are hard** — from a big life deficit she must force the pace, and a forced Alisa is a readable Alisa. The comeback is discipline, not one button. **(4) Panic moves and raw stance entries are loans** — every blocked one hands the opponent a launch or a free turn. Spend them on reads, not on fear.",
+      de:"**(1) Unterdurchschnittlicher Schaden pro Treffer** — du musst mehr Exchanges gewinnen als dein Gegner, also schlägt Konsistenz den Stil. **(2) Okizeme ist nicht ihre Win-Condition** — sie hat Optionen am Boden (Close Range, 06), aber Runden gewinnst du mit Spacing, Pokes, Movement und Kettensägen-Druck, nicht mit Knockdown-Loops. **(3) Comebacks sind schwer** — bei großem Lebensrückstand muss sie das Tempo erzwingen, und eine gezwungene Alisa ist eine lesbare Alisa. Das Comeback ist Disziplin, kein einzelner Button. **(4) Panik-Moves und rohe Stance-Entries sind Kredite** — jeder geblockte schenkt dem Gegner einen Launch oder den Zug. Setz sie auf Reads ein, nicht aus Angst."}}
   ]},
   {id:"basics", num:"01", lv:0, title:{en:"Tekken basics",de:"Tekken-Basics"}, blocks:[
     {t:"lead", x:{en:"The foundation everything builds on. Skip it if you already read frames fluently.",
@@ -99,7 +105,24 @@ var SECTIONS = [
     {t:"call", v:"note", h:{en:"ws2 fishing & okizeme",de:"ws2-Fishing & Okizeme"}, x:{en:"Get to **while-standing** (crouch-cancel, [[db1]], or full-crouch after [[d3]]) and threaten [[ws2]] (i17 Tornado launcher) or the quick [[ws4]] \u2014 it forces respect, then you re-enter chainsaws. On **okizeme** after a knockdown ([[d412]], [[uf32]], combo enders), cover their wake-up: homing [[c32]] / [[k4]] beat wake-up steps, [[b3]] covers backroll, and a boot low ([[sbt3]]) beats a slow getup \u2014 or just block their wake-up kick and launch with [[df2]].",
       de:"Komm ins **While-Standing** (Crouch-Cancel, [[db1]] oder Full-Crouch nach [[d3]]) und drohe [[ws2]] (i17-Tornado-Launcher) oder das schnelle [[ws4]] \u2014 das erzwingt Respekt, dann gehst du zur\u00fcck in die Kettens\u00e4gen. Beim **Okizeme** nach Knockdown ([[d412]], [[uf32]], Combo-Ender) deck seinen Aufsteher ab: Homing [[c32]] / [[k4]] schlagen Wake-up-Steps, [[b3]] deckt Backroll, ein Boot-Low ([[sbt3]]) schl\u00e4gt langsames Aufstehen \u2014 oder blocke seinen Wake-up-Kick und launch mit [[df2]]."}}
   ]},
-  {id:"chainsaw", num:"07", lv:2, title:{en:"Destructive Form",de:"Destructive Form"}, blocks:[
+  {id:"heat", num:"07", lv:1, title:{en:"Heat System",de:"Heat-System"}, blocks:[
+    {t:"lead", x:{en:"Once per round you can enter **Heat**. For Alisa it is not a damage steroid — it is a **converter**: the pokes she lands anyway suddenly pay out pressure, chip and full combos.",
+      de:"Einmal pro Runde kannst du in **Heat** gehen. Für Alisa ist das kein Schadens-Steroid — es ist ein **Konverter**: die Pokes, die sie sowieso landet, zahlen plötzlich Druck, Chip und volle Combos aus."}},
+    {t:"h3", x:{en:"The engagers",de:"Die Engager"}},
+    {t:"p", x:{en:"Her Heat Engagers are buttons you already throw in neutral: [[f21]] (the mid keepout), [[uf2]] (the homing keepout high) and [[c32]] (the whiff-punisher). Land any of them and Heat is active — you never have to go fishing for it.",
+      de:"Ihre Heat Engager sind Buttons, die du sowieso im Neutral wirfst: [[f21]] (das Mid-Keepout), [[uf2]] (das Homing-Keepout-High) und [[c32]] (der Whiff-Punisher). Trifft einer davon, ist Heat aktiv — du musst ihm nie hinterherjagen."}},
+    {t:"h3", x:{en:"Heat Dash — the conversion",de:"Heat Dash — die Konvertierung"}},
+    {t:"p", x:{en:"In Heat, a landed engager can be **heat-dashed**: tap f,f as it hits and a plain poke turns into a launch or a big knockdown — [[c32]] heat-dash goes into a full combo. Your blocked pressure also chips harder while Heat runs. That is the deal: spend the bar to convert small touches into real damage.",
+      de:"In Heat kannst du einen getroffenen Engager **heat-dashen**: tipp f,f im Treffer, und aus einem simplen Poke wird ein Launch oder ein dicker Knockdown — [[c32]] geht per Heat-Dash in einen vollen Combo. Dein geblockter Druck chippt während Heat außerdem härter. Das ist der Deal: Gib die Leiste aus, um kleine Treffer in echten Schaden zu verwandeln."}},
+    {t:"h3", x:{en:"Heat-only tools",de:"Nur-in-Heat-Tools"}},
+    {t:"p", x:{en:"Heat also unlocks options that don't exist outside it: [[hd12]] is an absorbing power-crush stance (soaked damage is recoverable), [[hf14]] is a low-crushing flight, and [[hff212]] is a heat-dash string that is even plus on block and combos from the first hit. All of them burn Heat time — treat them as accents, not as a new gameplan.",
+      de:"Heat schaltet außerdem Optionen frei, die es sonst nicht gibt: [[hd12]] ist eine absorbierende Power-Crush-Stance (gefressener Schaden ist erholbar), [[hf14]] ein Low-crushender Flug, und [[hff212]] ein Heat-Dash-String, der sogar plus auf Block ist und aus dem ersten Hit combot. Alle verbrennen Heat-Zeit — nutz sie als Akzente, nicht als neuen Gameplan."}},
+    {t:"call", v:"key", h:{en:"Heat Smash — spend it like money",de:"Heat Smash — gib ihn aus wie Geld"}, x:{en:"[[hs]] is {{plus:+8 on block}}, a big combo ender, and afterwards you can flow straight into your stances (1+2 → DES, 3 or 4 → SBT, f+3 or f+4 → DBT). That flexibility is exactly why you should **not** autopilot it the second Heat starts — decide what this round's Heat is for: chip pressure, a combo ender, or the emergency exit.",
+      de:"[[hs]] ist {{plus:+8 auf Block}}, ein dicker Combo-Ender, und danach fließt du direkt in deine Stances (1+2 → DES, 3 oder 4 → SBT, f+3 oder f+4 → DBT). Genau wegen dieser Flexibilität solltest du ihn **nicht** auf Autopilot rauswerfen, sobald Heat startet — entscheide, wofür die Heat dieser Runde da ist: Chip-Druck, Combo-Ender oder der Notausgang."}},
+    {t:"call", v:"warn", h:{en:"Heat is not a comeback button",de:"Heat ist kein Comeback-Button"}, x:{en:"Behind on life and getting read? Heat changes nothing about that — a predictable Alisa in Heat is still predictable. Fix the pattern first (see **Reading the opponent**), then let Heat convert the touches you earn.",
+      de:"Im Lebensrückstand und gelesen? Daran ändert Heat nichts — eine berechenbare Alisa in Heat bleibt berechenbar. Repariere zuerst das Muster (siehe **Den Gegner lesen**), dann lässt du Heat die verdienten Treffer konvertieren."}}
+  ]},
+  {id:"chainsaw", num:"08", lv:2, title:{en:"Stances & Chainsaws",de:"Stances & Kettensägen"}, blocks:[
     {t:"lead", x:{en:"The chainsaws (DES) are your **turtle-cracker**. Normal stance dismantles aggressive players; Destructive Form cracks a patient defender by seeking **constant plus** for a flurry of mix-ups, with chip damage on top.",
       de:"Die Kettensägen (DES) sind dein **Turtle-Cracker**. Normal-Stance zerlegt aggressive Gegner; Destructive Form knackt geduldige Verteidiger, indem sie **konstantes Plus** für eine Mixup-Flut sucht, plus Chip-Schaden."}},
     {t:"h3", x:{en:"Getting in",de:"Reingehen"}},
@@ -107,9 +130,13 @@ var SECTIONS = [
       de:"Du wählst die Kettensägen nicht aus dem Neutralen \u2014 du **cancelst hinein**, indem du am Ende bestimmter Moves **1+2** hältst. Zuverlässig: [[c11]], [[f2]], [[k4]], [[b24]] und [[d34]] gehen alle mit gehaltenem 1+2 über, und nach [[df112]] auf Block bist du schon +6, um deinen Druck zu starten."}},
     {t:"h3", x:{en:"The chainsaw mix-up",de:"Der Kettensägen-Mixup"}},
     {t:"p", x:{en:"Threaten the plus highs against duckers and the lows against blockers. [[des12]] is +4 on block and jails (your main pressure). [[desd1]] and [[desd2]] are the lows. If they mash, [[des2]] ducks under jabs and launches. To leave safely, exit with `DES.1+2` cancel or `d+1+2`.",
-      de:"Drohe die Plus-Highs gegen Ducker und die Lows gegen Blocker. [[des12]] ist +4 auf Block und jailt (dein Hauptdruck). [[desd1]] und [[desd2]] sind die Lows. Mashen sie, duckt [[des2]] unter Jabs und launcht. Sicher raus per `DES.1+2`-Cancel oder `d+1+2`."}}
+      de:"Drohe die Plus-Highs gegen Ducker und die Lows gegen Blocker. [[des12]] ist +4 auf Block und jailt (dein Hauptdruck). [[desd1]] und [[desd2]] sind die Lows. Mashen sie, duckt [[des2]] unter Jabs und launcht. Sicher raus per `DES.1+2`-Cancel oder `d+1+2`."}},
+    {t:"h3", x:{en:"The four stances",de:"Die vier Stances"}},
+    {t:"p", x:{en:"DES is only one of four. The boots (SBT / DBT) and the Backup backswing each have their own job — one reference card per stance, every move tappable for exact frames.",
+      de:"DES ist nur eine von vier. Die Boots (SBT / DBT) und der Backup-Backswing haben je einen eigenen Job — eine Referenzkarte pro Stance, jeder Move für exakte Frames antippbar."}},
+    {t:"stances"}
   ]},
-  {id:"reading", num:"08", lv:1, title:{en:"Reading the opponent",de:"Den Gegner lesen"}, blocks:[
+  {id:"reading", num:"09", lv:1, title:{en:"Reading the opponent",de:"Den Gegner lesen"}, blocks:[
     {t:"lead", x:{en:"At higher ranks wins come from **adaptation**, not new combos. The skill is noticing what someone repeats and exploiting it before they change.",
       de:"In höheren Rängen kommen Siege aus **Anpassung**, nicht aus neuen Combos. Der Skill ist zu merken, was jemand wiederholt, und es auszunutzen, bevor er wechselt."}},
     {t:"h3", x:{en:"Spot the pattern",de:"Das Muster erkennen"}},
@@ -121,7 +148,7 @@ var SECTIONS = [
     {t:"call", v:"note", h:{en:"Use the replay tool",de:"Nutz das Replay-Tool"}, x:{en:"After a loss, open the replay. **My Replay & Tips** shows the optimal punish for moves you blocked wrong, and lets you take over for 10 seconds to test alternatives. One reviewed loss teaches more than ten more ranked games.",
       de:"Nach einer Niederlage das Replay öffnen. **My Replay & Tips** zeigt den optimalen Punish für falsch geblockte Moves und lässt dich 10 Sekunden übernehmen, um Alternativen zu testen. Eine analysierte Niederlage lehrt mehr als zehn weitere Ranked-Games."}}
   ]},
-  {id:"matchups", num:"09", lv:1, title:{en:"Matchups",de:"Matchups"}, blocks:[
+  {id:"matchups", num:"10", lv:1, title:{en:"Matchups",de:"Matchups"}, blocks:[
     {t:"lead", x:{en:"Pick a character below to study that matchup. Each one is built the same way: **what hurts**, **what to duck & step**, **how to punish**, and **Alisa's plan** \u2014 with every move tappable for frames. For anyone not yet listed, apply the same four questions and read the per-character anti-strats on TekkenDocs. Frames are current-patch (Season 3). Frame data: TekkenDocs / Wavu Wiki.",
       de:"W\u00e4hl unten einen Charakter, um das Matchup zu lernen. Jedes ist gleich aufgebaut: **Was tut weh**, **Was ducken & steppen**, **Wie bestrafen** und **Alisas Plan** \u2014 jeder Move ist f\u00fcr Frames antippbar. F\u00fcr noch nicht Gelistete dieselben vier Fragen anwenden und die Anti-Strats pro Charakter auf TekkenDocs lesen. Frames sind aktueller Patch (Season 3). Frame-Daten: TekkenDocs / Wavu Wiki."}},
     {t:"h3", x:{en:"Choose a character",de:"Charakter w\u00e4hlen"}},
@@ -132,7 +159,7 @@ var SECTIONS = [
     {t:"call", v:"note", h:{en:"Lab three things per character",de:"Labbe drei Dinge pro Charakter"}, x:{en:"For each opponent you keep losing to: **(1)** their 2-3 most annoying moves and your punish, **(2)** which of their strings you can duck or step, **(3)** their main low so you can react. That's 90% of the matchup for a fraction of the work. TekkenDocs has per-character \u201canti strats\u201d pages.",
       de:"Für jeden Gegner, gegen den du verlierst: **(1)** seine 2-3 nervigsten Moves und dein Punish, **(2)** welche Strings du ducken/steppen kannst, **(3)** sein Haupt-Low, damit du reagierst. Das sind 90% des Matchups für einen Bruchteil der Arbeit. TekkenDocs hat \u201eAnti-Strats\u201c-Seiten pro Charakter."}}
   ]},
-  {id:"defense", num:"10", lv:1, title:{en:"Defense & anti-panic",de:"Defense & Anti-Panik"}, blocks:[
+  {id:"defense", num:"11", lv:1, title:{en:"Defense & anti-panic",de:"Defense & Anti-Panik"}, blocks:[
     {t:"lead", x:{en:"Panic-mashing and not blocking lows is a **habit problem**, not a skill problem. You need a **default action** to fall back on when you don't have a specific read.",
       de:"Panik-Mashen und Lows nicht blocken ist ein **Gewohnheitsproblem**, kein Skill-Problem. Du brauchst eine **Default-Aktion**, auf die du zurückfällst, wenn du nichts Genaues liest."}},
     {t:"h3", x:{en:"Blocking lows without guessing",de:"Lows blocken, ohne zu raten"}},
@@ -144,10 +171,15 @@ var SECTIONS = [
     {t:"h3", x:{en:"Your own duckable strings",de:"Deine eigenen duckbaren Strings"}},
     {t:"p", x:{en:"A God-rank opponent fuzzy-guards, so know which of *your* strings they can duck and launch: [[c11]] (1,1), [[s12]] (1,2) and [[s122]] (1,2,2) are **all high**; [[c32]] (the 2), [[df11]] / [[df112]] (the follow-ups), [[b24]] (the 4) and [[ws123]] (the 2 in ws1,2) each end in a **high**. Mix in the low / mid enders \u2014 [[s12d2]] (1,2,d+2) and [[f233]] (f+2,3,3) \u2014 so ducking loses. And keep raw [[f3]] ({{minus:-14}}) and b+1,1+2 ({{minus:-16}}) out of your blockstrings \u2014 a ducker launches them.",
       de:"Ein God-Rang-Gegner fuzzy-guardet, also wisse, welche *deiner* Strings er ducken und launchen kann: [[c11]] (1,1), [[s12]] (1,2) und [[s122]] (1,2,2) sind **komplett High**; [[c32]] (die 2), [[df11]] / [[df112]] (die Folge-Hits), [[b24]] (die 4) und [[ws123]] (die 2 in ws1,2) enden je in einem **High**. Misch die Low-/Mid-Ender rein \u2014 [[s12d2]] (1,2,d+2) und [[f233]] (f+2,3,3) \u2014 damit Ducken verliert. Und lass rohes [[f3]] ({{minus:-14}}) und b+1,1+2 ({{minus:-16}}) aus deinen Blockstrings \u2014 ein Ducker launcht sie."}},
+    {t:"h3", x:{en:"Your panic buttons — a plan, not a prayer",de:"Deine Panik-Buttons — Plan statt Gebet"}},
+    {t:"p", x:{en:"[[pc]] is tempting because it **absorbs one mid or high** and barges through predictable pressure — but it loses to lows and throws and is {{minus:-13}} on block. Press it on a read of a mid/high string, never against low-heavy offence. [[ub2]] is the quicker power crush and only {{minus:-9}} on block — but it's a **high**, so anyone who ducks launches you for free. [[uf44]] is the classic hopkick answer: it hops over lows and launches, at {{minus:-13}} on block — an answer to predicted lows, not a reply to mids.",
+      de:"[[pc]] ist verlockend, weil es **ein Mid oder High absorbiert** und durch berechenbaren Druck bricht — aber es verliert gegen Lows und Würfe und ist {{minus:-13}} auf Block. Drück es auf einen Read eines Mid/High-Strings, nie gegen Low-lastige Offense. [[ub2]] ist der schnellere Power Crush und nur {{minus:-9}} auf Block — aber ein **High**: Wer duckt, launcht dich gratis. [[uf44]] ist die klassische Hopkick-Antwort: Es springt über Lows und launcht, bei {{minus:-13}} auf Block — eine Antwort auf erwartete Lows, keine Antwort auf Mids."}},
+    {t:"p", x:{en:"[[b34]] is the jackpot button: it crushes lows and launches into Tornado — and at {{minus:-17}} a block means **you** get launched. Treat it as a once-a-set surprise, not a habit. [[hs]] in Heat is the premium exit: {{plus:+8 on block}} and a round-swing — but it burns your whole Heat, so it has to buy something. The rule for all of them: **one panic read per situation.** If two panic buttons get blocked in a row, you're not defending anymore — you're feeding launch points. Back to blocking one more hit.",
+      de:"[[b34]] ist der Jackpot-Button: Es crusht Lows und launcht in Tornado — und bei {{minus:-17}} heißt Block, dass **du** gelauncht wirst. Behandle es als Überraschung einmal pro Set, nicht als Gewohnheit. [[hs]] in Heat ist der Premium-Ausgang: {{plus:+8 auf Block}} und ein Runden-Swing — aber er verbrennt deine ganze Heat, also muss er etwas kaufen. Die Regel für alle: **ein Panik-Read pro Situation.** Werden zwei Panik-Buttons in Folge geblockt, verteidigst du nicht mehr — du fütterst Launch-Punkte. Zurück zu: einen Hit mehr blocken."}},
     {t:"call", v:"warn", h:{en:"Tilt & the panic spiral",de:"Tilt & die Panik-Spirale"}, x:{en:"Lost two rounds in a row to panic-lows? Play **one round as pure block, no offence**. It breaks the spiral. Breathe between rounds. And stop after a tilt session — tired + tilted means you're training *bad* habits. Rest is part of practice.",
       de:"Zwei Runden in Folge durch Panik-Lows verloren? Spiel **eine Runde nur Block, keine Offense**. Das bricht die Spirale. Atme zwischen Runden. Und hör nach einer Tilt-Session auf — müde + tilted heißt, du trainierst *schlechte* Gewohnheiten. Pause ist Teil des Trainings."}}
   ]},
-  {id:"punishers", num:"11", lv:1, title:{en:"Punishers",de:"Punisher"}, blocks:[
+  {id:"punishers", num:"12", lv:1, title:{en:"Punishers",de:"Punisher"}, blocks:[
     {t:"lead", x:{en:"When you block a punishable move there's **no mind-game** — take your guaranteed damage. Match your move's startup to their disadvantage. These are your go-to punishes by speed.",
       de:"Beim Blocken eines bestrafbaren Moves gibt es **keinen Mindgame** — nimm deinen garantierten Schaden. Pass deine Startup-Speed an seinen Nachteil an. Das sind deine Go-to-Punishes nach Speed."}},
     {t:"punishtable"},
@@ -156,21 +188,21 @@ var SECTIONS = [
     {t:"p", x:{en:"**The other side \u2014 how risky are YOUR minus moves?** Launchers are almost always **15f** (every character has one, usually a hopkick); **some** characters have **14f**, a **few** have **13f**, and almost none have **12f**. So a move that's **-15 or worse** gets launched by anyone; **-14** only by the 14f crowd; **-13** by rare characters; and **-12 or safer** is usually just a small poke punish. That's why a -12 poke is fine to throw out, but -15 is not.",
       de:"**Die andere Seite \u2014 wie riskant sind DEINE Minus-Moves?** Launcher sind fast immer **15f** (jeder Charakter hat einen, meist ein Hopkick); **einige** haben **14f**, **wenige** **13f**, und fast keiner **12f**. Ein Move mit **-15 oder schlechter** wird also von jedem gelauncht; **-14** nur von der 14f-Fraktion; **-13** von seltenen Charakteren; und **-12 oder safer** ist meist nur ein kleiner Poke-Punish. Deshalb ist ein -12-Poke okay zum Rauswerfen, -15 aber nicht."}}
   ]},
-  {id:"combos", num:"12", lv:1, title:{en:"Combos",de:"Combos"}, blocks:[
+  {id:"combos", num:"13", lv:1, title:{en:"Combos",de:"Combos"}, blocks:[
     {t:"lead", x:{en:"One principle covers almost all your launchers: **launcher → fillers → Tornado → ender**. Alisa's Tornado move in juggles is `uf+1`. Learn one route until it lands in matches, then branch out.",
       de:"Ein Prinzip deckt fast alle Launcher ab: **Launcher → Filler → Tornado → Ender**. Alisas Tornado-Move im Juggle ist `uf+1`. Lern eine Route, bis sie im Match sitzt, dann verzweige."}},
     {t:"combos"},
     {t:"call", v:"warn", h:{en:"Combo note",de:"Combo-Hinweis"}, x:{en:"Combos are the most patch-sensitive thing in the game and the timing differs by launch height. Treat these as a **starting framework** and confirm the exact current version in the lab or a recent Alisa combo video. Online, use the simplest route — you'll drop fewer.",
       de:"Combos sind das patch-sensibelste im Spiel, und das Timing hängt von der Launch-Höhe ab. Nimm das als **Ausgangsgerüst** und bestätige die exakte aktuelle Version im Lab oder einem aktuellen Alisa-Combo-Video. Online die einfachste Route — du dropst weniger."}}
   ]},
-  {id:"routine", num:"13", lv:0, title:{en:"Practice routine",de:"Trainings-Routine"}, blocks:[
+  {id:"routine", num:"14", lv:0, title:{en:"Practice routine",de:"Trainings-Routine"}, blocks:[
     {t:"lead", x:{en:"Practice mode is boring when it's **aimless**. Train by **isolation → integration**, one focus per session. Give every drill a clear goal and a success condition.",
       de:"Practice Mode langweilt, weil er **ziellos** ist. Trainier nach **Isolation → Integration**, ein Fokus pro Session. Gib jeder Übung ein klares Ziel und ein Erfolgskriterium."}},
     {t:"routine"},
     {t:"call", v:"key", h:{en:"Replay review beats more ranked",de:"Replay-Review schlägt mehr Ranked"}, x:{en:"Once a week, do one session of **only replay review** of your last 3 losses. One question: **which single habit did the opponent repeatedly exploit?** Worth more than ten more ranked games.",
       de:"Einmal pro Woche eine Session **nur Replay-Review** deiner letzten 3 Niederlagen. Eine Frage: **welche eine Gewohnheit hat der Gegner wiederholt ausgenutzt?** Mehr wert als zehn weitere Ranked-Games."}}
   ]},
-  {id:"mindset", num:"14", lv:0, title:{en:"Mindset & climbing",de:"Mindset & Aufstieg"}, blocks:[
+  {id:"mindset", num:"15", lv:0, title:{en:"Mindset & climbing",de:"Mindset & Aufstieg"}, blocks:[
     {t:"lead", x:{en:"The path is the same at every rank: the plateau is **normal**, and the climb is mostly adaptation, not new combos.",
       de:"Der Weg ist in jedem Rang gleich: das Plateau ist **normal**, und der Aufstieg ist meist Anpassung, nicht neue Combos."}},
     {t:"p", x:{en:"Focus on what **you** control (your defensive decision), not lag, tier lists or the opponent. **Losing = data**: each loss hands you one concrete weakness. Play opponents slightly *better* than you — that speeds adaptation more than grinding ranked. And expect rank drops after patches; it's temporary.",
@@ -633,23 +665,83 @@ function renderNotation(){
 }
 function renderPunish(){
   var H=[{en:"On block",de:"On Block"},{en:"Punish",de:"Punish"},{en:"Note",de:"Hinweis"}];
-  var rows=PUNISH.map(function(r){ return '<tr><td><span class="tag minus">'+esc(r.dis)+'</span></td><td>'+cmdChip(r.use)+'</td><td>'+esc(L(r.why))+'</td></tr>'; }).join('');
-  return '<div class="table-scroll"><table><thead><tr><th>'+L(H[0])+'</th><th>'+L(H[1])+'</th><th>'+L(H[2])+'</th></tr></thead><tbody>'+rows+'</tbody></table></div>';
+  var GROUPS=[
+    ["standing",{en:"Standing — after you block",de:"Stehend — nachdem du blockst"},H[0]],
+    ["crouching",{en:"Crouching — after a blocked low",de:"Geduckt — nach geblocktem Low"},H[0]],
+    ["whiff",{en:"Whiff punish — they missed",de:"Whiff Punish — er hat verfehlt"},{en:"Speed",de:"Speed"}]
+  ];
+  var html=GROUPS.map(function(g){
+    var rows=PUNISH.filter(function(r){ return r.kind===g[0]; });
+    if(!rows.length) return "";
+    var body=rows.map(function(r){
+      var col1=(g[0]==="whiff") ? '<span class="cmd">'+esc(r.startup||"—")+'</span>' : '<span class="tag minus">'+esc(r.dis)+'</span>';
+      var use=cmdChip(r.use)+(r.alt?' <span class="tag prop">alt</span>':'');
+      var note=esc(L(r.why));
+      if(r.followUps&&r.followUps.length){ note+=r.followUps.map(function(f){ return '<div>→ '+esc(L(f))+'</div>'; }).join(''); }
+      return '<tr><td>'+col1+'</td><td>'+use+'</td><td>'+note+'</td></tr>';
+    }).join('');
+    return '<div class="catlabel">'+esc(L(g[1]))+'</div><div class="table-scroll"><table><thead><tr><th>'+esc(L(g[2]))+'</th><th>'+L(H[1])+'</th><th>'+L(H[2])+'</th></tr></thead><tbody>'+body+'</tbody></table></div>';
+  }).join('');
+  if(PUNISH_REVIEW && PUNISH_REVIEW.length){
+    var items=PUNISH_REVIEW.map(function(r){
+      return '<li>'+cmdChip(r.use)+' <span class="tag minus">'+esc(r.dis)+'</span>'+(r.startup?' <span class="cmd">'+esc(r.startup)+'</span>':'')+' — '+esc(L(r.why))+'</li>';
+    }).join('');
+    html+='<div class="call warn"><div class="ch">⚠ '+esc(L({en:"Lab-check candidates — from TekkenDocs (v3.00), not verified for Ver. 3.01.01",de:"Lab-Check-Kandidaten — aus TekkenDocs (v3.00), nicht für Ver. 3.01.01 verifiziert"}))+'</div><ul class="sh-notes-list">'+items+'</ul></div>';
+  }
+  return html;
+}
+function comboCard(c){
+  var seq=c.seq.map(function(step,i){
+    var chip=cmdChip(step);
+    var tor=(i===c.tIdx)?' <span class="tag plus">T!</span>':'';
+    var arrow=(i<c.seq.length-1)?' <span class="co-arrow">\u2192</span> ':'';
+    return chip+tor+arrow;
+  }).join('');
+  var chips='';
+  if(c.difficulty) chips+=' <span class="tag prop" title="difficulty">'+"\u2605\u2605\u2605".slice(0,c.difficulty)+'</span>';
+  if(c.damage) chips+=' <span class="tag plus">~'+c.damage+' dmg</span>';
+  if(c.reviewStatus==="needsLabReview") chips+=' <span class="tag minus">\u26a0 lab</span>';
+  return '<div class="combo-card"><div class="co-h"><span class="co-name">'+esc(L(c.name))+chips+'</span><span class="co-from">'+esc(c.from)+'</span></div><div class="co-seq">'+seq+'</div><div class="co-note">'+fmt(L(c.note))+'</div></div>';
 }
 function renderCombos(){
-  return COMBOS.map(function(c){
-    var seq=c.seq.map(function(step,i){
-      var chip=cmdChip(step);
-      var tor=(i===c.tIdx)?' <span class="tag plus">T!</span>':'';
-      var arrow=(i<c.seq.length-1)?' <span class="co-arrow">\u2192</span> ':'';
-      return chip+tor+arrow;
-    }).join('');
-    return '<div class="combo-card"><div class="co-h"><span class="co-name">'+esc(L(c.name))+'</span><span class="co-from">'+esc(c.from)+'</span></div><div class="co-seq">'+seq+'</div><div class="co-note">'+fmt(L(c.note))+'</div></div>';
+  var ORDER=[
+    ["staple",{en:"Staples",de:"Staples"}],
+    ["beginner",{en:"Beginner",de:"Einsteiger"}],
+    ["ender",{en:"Enders",de:"Ender"}],
+    ["wall",{en:"Wall",de:"Wand"}],
+    ["small",{en:"Small & guaranteed",de:"Klein & garantiert"}],
+    [null,{en:"More",de:"Mehr"}]
+  ];
+  return ORDER.map(function(o){
+    var cs=COMBOS.filter(function(c){ return o[0]===null ? !c.category : c.category===o[0]; });
+    if(!cs.length) return "";
+    return '<div class="catlabel">'+esc(L(o[1]))+'</div>'+cs.map(comboCard).join('');
   }).join('');
 }
 function renderRoutine(){
   var rows=[["r1t","r1"],["r2t","r2"],["r3t","r3"],["r4t","r4"],["r5t","r5"]];
   return '<div class="routine">'+rows.map(function(r){return '<div class="rstep"><span class="rt">'+tk(r[0])+'</span><div class="rd">'+tk(r[1])+'</div></div>';}).join('')+'</div>';
+}
+function stanceRefLine(list){
+  return (list||[]).map(function(o){
+    var t=o.role||o.note;
+    return moveChip(o.move)+(t?' ('+esc(L(t))+')':'');
+  }).join(', ');
+}
+function renderStances(){
+  var LBL={purpose:{en:"Purpose",de:"Zweck"},entries:{en:"Ways in",de:"Wege rein"},key:{en:"Key options",de:"Kern-Optionen"},risky:{en:"Risky",de:"Riskant"},counter:{en:"How they beat it",de:"So schlägt man es"},drill:{en:"Drill",de:"Übung"},lab:{en:"Lab-check",de:"Lab-Check"}};
+  return STANCES.map(function(s){
+    var rows=[];
+    rows.push([LBL.purpose, esc(L(s.purpose))]);
+    if(s.commonEntries&&s.commonEntries.length) rows.push([LBL.entries, stanceRefLine(s.commonEntries)]);
+    rows.push([LBL.key, stanceRefLine(s.keyOptions)]);
+    if(s.riskyOptions&&s.riskyOptions.length) rows.push([LBL.risky, stanceRefLine(s.riskyOptions)]);
+    rows.push([LBL.counter, esc(L(s.counterplay))]);
+    if(s.trainingDrills&&s.trainingDrills.length) rows.push([LBL.drill, s.trainingDrills.slice(0,2).map(function(d){return esc(L(d));}).join(' · ')]);
+    if(s.manualReview&&s.manualReview.length) rows.push([LBL.lab, s.manualReview.map(function(d){return '⚠ '+esc(L(d));}).join(' ')]);
+    var html=rows.map(function(r){ return '<div class="mu-line"><span class="mu-lbl">'+esc(L(r[0]))+'</span><span class="mu-txt">'+r[1]+'</span></div>'; }).join('');
+    return '<div class="murow"><div class="mu-head"><span class="mu-c">'+esc(L(s.label))+'</span><span class="mu-tag">'+esc(L(s.short))+'</span></div>'+html+'</div>';
+  }).join('');
 }
 function muSlug(c){ return String(c).toLowerCase().replace(/\s+/g,"-"); }
 function muDerive(c){
@@ -750,6 +842,7 @@ function renderBlock(b){
     case "combos": return renderCombos();
     case "routine": return renderRoutine();
     case "matchups": return renderMatchups();
+    case "stances": return renderStances();
     default: return "";
   }
 }

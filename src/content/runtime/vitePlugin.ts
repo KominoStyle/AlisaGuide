@@ -9,17 +9,19 @@ import { buildAlisaMatchups } from "./buildAlisaMatchups.node";
 import { buildFrameData } from "./buildFrameData.node";
 import { buildAlisaCombos } from "./buildAlisaCombos.node";
 import { buildAlisaLegends } from "./buildAlisaLegends.node";
+import { buildAlisaStances } from "./buildAlisaStances.node";
 
 /**
  * Vite plugin exposing build-time virtual modules assembled from YAML in Node:
  *  - `virtual:alisa-moves`      -> `export const MOVES` (the 184-move table)
  *  - `virtual:alisa-move-meta`  -> `export const CATS / CHAINLBL / WARN`
- *  - `virtual:alisa-punish`     -> `export const PUNISH` (punish cheatsheet)
+ *  - `virtual:alisa-punish`     -> `export const PUNISH / PUNISH_REVIEW` (punish tables)
  *  - `virtual:alisa-opponents`  -> `export const OPP` (curated opponent frames)
  *  - `virtual:alisa-matchups`   -> `export const MU` (matchup dossiers)
  *  - `virtual:alisa-frame-data` -> `export const FD` (generated positional frames)
  *  - `virtual:alisa-combos`     -> `export const COMBOS` (combo cheatsheet)
  *  - `virtual:alisa-legends`    -> `export const LEG / LEGP / LEGF / LEGS` (legends)
+ *  - `virtual:alisa-stances`    -> `export const STANCES` (stance guide cards)
  *
  * The browser bundle receives ONLY these plain objects — no YAML parser, no Zod,
  * no raw YAML/JSON text, and no `src/data/*` blobs.
@@ -32,6 +34,7 @@ const MU_ID = "virtual:alisa-matchups";
 const FD_ID = "virtual:alisa-frame-data";
 const COMBOS_ID = "virtual:alisa-combos";
 const LEGENDS_ID = "virtual:alisa-legends";
+const STANCES_ID = "virtual:alisa-stances";
 const RESOLVED_MOVES = "\0" + MOVES_ID;
 const RESOLVED_META = "\0" + META_ID;
 const RESOLVED_PUNISH = "\0" + PUNISH_ID;
@@ -40,16 +43,20 @@ const RESOLVED_MU = "\0" + MU_ID;
 const RESOLVED_FD = "\0" + FD_ID;
 const RESOLVED_COMBOS = "\0" + COMBOS_ID;
 const RESOLVED_LEGENDS = "\0" + LEGENDS_ID;
+const RESOLVED_STANCES = "\0" + STANCES_ID;
 
 const CHARS_DIR = join(process.cwd(), "content", "tekken8", "characters");
 const META_DIR = join(CHARS_DIR, "alisa");
 const META_FILES = ["categories.yml", "chains.yml", "warn.yml", "move-order.yml"].map((f) => join(META_DIR, f));
 const PUNISH_FILE = join(META_DIR, "punish.yml");
+const PUNISH_REVIEW_FILE = join(META_DIR, "punish-review.yml");
 const OPP_FILES = ["lili", "dragunov"].map((c) => join(CHARS_DIR, c, "opponent-moves.yml"));
 const MATCHUPS_DIR = join(META_DIR, "matchups");
 const FRAME_DATA_FILE = join(process.cwd(), "content", "tekken8", "frame-data", "frame-data.json");
 const COMBOS_FILE = join(META_DIR, "combos", "combos.yml");
 const LEGENDS_FILE = join(META_DIR, "legends.yml");
+const STANCES_DIR = join(META_DIR, "stances");
+const STANCE_FILES = ["des", "sbt", "dbt", "bkp"].map((s) => join(STANCES_DIR, `${s}.yml`));
 
 export function alisaMovesPlugin(): Plugin {
   return {
@@ -63,6 +70,7 @@ export function alisaMovesPlugin(): Plugin {
       if (id === FD_ID) return RESOLVED_FD;
       if (id === COMBOS_ID) return RESOLVED_COMBOS;
       if (id === LEGENDS_ID) return RESOLVED_LEGENDS;
+      if (id === STANCES_ID) return RESOLVED_STANCES;
       return null;
     },
     load(id) {
@@ -84,7 +92,12 @@ export function alisaMovesPlugin(): Plugin {
       }
       if (id === RESOLVED_PUNISH) {
         this.addWatchFile(PUNISH_FILE);
-        return `export const PUNISH = ${JSON.stringify(buildAlisaPunish())};\n`;
+        this.addWatchFile(PUNISH_REVIEW_FILE);
+        const { rows, review } = buildAlisaPunish();
+        return (
+          `export const PUNISH = ${JSON.stringify(rows)};\n` +
+          `export const PUNISH_REVIEW = ${JSON.stringify(review)};\n`
+        );
       }
       if (id === RESOLVED_OPP) {
         for (const file of OPP_FILES) this.addWatchFile(file);
@@ -104,6 +117,10 @@ export function alisaMovesPlugin(): Plugin {
       if (id === RESOLVED_COMBOS) {
         this.addWatchFile(COMBOS_FILE);
         return `export const COMBOS = ${JSON.stringify(buildAlisaCombos())};\n`;
+      }
+      if (id === RESOLVED_STANCES) {
+        for (const file of STANCE_FILES) this.addWatchFile(file);
+        return `export const STANCES = ${JSON.stringify(buildAlisaStances())};\n`;
       }
       if (id === RESOLVED_LEGENDS) {
         this.addWatchFile(LEGENDS_FILE);

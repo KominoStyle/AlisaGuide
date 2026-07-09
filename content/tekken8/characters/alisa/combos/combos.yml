@@ -2,6 +2,8 @@
     en: 'Core BnB'
     de: 'Kern-BnB'
   from: 'df+2 / uf+4,4 / b+3+4 / ws2'
+  category: 'staple'
+  difficulty: 2
   seq:
     - 'df+1,1'
     - 'f+2,1'
@@ -16,6 +18,8 @@
     en: 'Simple / online'
     de: 'Einfach / Online'
   from: 'any launcher'
+  category: 'beginner'
+  difficulty: 1
   seq:
     - 'df+1'
     - 'f+2,1'
@@ -29,6 +33,8 @@
     en: 'Whiff-punish staple'
     de: 'Whiff-Punish-Staple'
   from: 'df+2 / launchers'
+  category: 'staple'
+  difficulty: 2
   seq:
     - 'df+2'
     - 'dash'
@@ -45,6 +51,9 @@
     en: 'WS punish (high damage)'
     de: 'WS-Punish (hoher Schaden)'
   from: 'ws1,2,3 (after a blocked low)'
+  category: 'staple'
+  difficulty: 2
+  damage: 92
   seq:
     - 'ws1,2,3'
     - 'uf+1'
@@ -58,6 +67,8 @@
     en: 'Instant low launch'
     de: 'Sofort-Low-Launch'
   from: 'd+3+4 (instant Tornado)'
+  category: 'staple'
+  difficulty: 2
   seq:
     - 'd+3+4'
     - 'dash'
@@ -72,6 +83,8 @@
     en: 'Wall finish'
     de: 'Wand-Finish'
   from: 'after carrying to the wall'
+  category: 'wall'
+  difficulty: 1
   seq:
     - 'wall splat (f+1+2)'
     - 'dash'
@@ -80,3 +93,15 @@
   note:
     en: 'At the wall, splat with f+1+2, dash in and add a quick filler. In Heat, the Heat Smash H.2+3 is your highest-damage wall ender. Exact routes depend on launch height and distance — confirm the current version in the lab.'
     de: 'An der Wand mit f+1+2 splatten, reindashen und einen kurzen Filler anhängen. In Heat ist der Heat Smash H.2+3 dein schadensstärkster Wand-Ender. Genaue Routen hängen von Launch-Höhe und Distanz ab — die aktuelle Version im Lab bestätigen.'
+- name:
+    en: 'Grounded pickup'
+    de: 'Boden-Pickup'
+  from: 'opponent stays grounded'
+  category: 'small'
+  difficulty: 1
+  seq:
+    - 'OTG db+1+2'
+  tIdx: -1
+  note:
+    en: 'Ground-hitting low with a Spike — your damage pickup when they stay down after a knockdown. If they stand up and block it, it is -14.'
+    de: 'Boden-treffendes Low mit Spike — dein Schaden-Pickup, wenn er nach dem Knockdown liegen bleibt. Steht er auf und blockt, ist es -14.'

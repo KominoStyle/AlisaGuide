@@ -1,45 +1,113 @@
+# Canonical punish table (v2): rows grouped by `kind` (standing / crouching /
+# whiff) at render time; array order = display order within each kind.
+# TekkenDocs-derived candidates that are NOT verified on the current patch live
+# in punish-review.yml, never here.
 - disadvantage: '-10'
   use: '1,1'
+  kind: 'standing'
+  startup: 'i10'
   why:
     en: 'Fastest punish (i10), 23 dmg, safe.'
     de: 'Schnellster Punish (i10), 23 Schaden, safe.'
 - disadvantage: '-12'
   use: '2,2'
+  kind: 'standing'
+  startup: 'i12'
   why:
     en: 'i12 and it launches (Balcony) — your fastest launch punish.'
     de: 'i12 und launcht (Balcony) — dein schnellster Launch-Punish.'
 - disadvantage: '-13'
   use: '3,2'
+  kind: 'standing'
+  startup: 'i13'
   why:
     en: 'i13 Heat Engager — in Heat, heat-dash into a full combo.'
     de: 'i13 Heat Engager — in Heat per Heat-Dash in einen vollen Combo.'
 - disadvantage: '-14'
   use: 'f+1+2'
+  kind: 'standing'
+  startup: 'i14'
   why:
     en: 'i14, 25 dmg, wall-splats and feeds your stances.'
     de: 'i14, 25 Schaden, splattet an die Wand und führt in deine Stances.'
+- disadvantage: '-14'
+  use: 'f+3,2'
+  kind: 'standing'
+  startup: 'i14'
+  alt: true
+  why:
+    en: 'The i14 alternative — both hits high, big knockdown on hit.'
+    de: 'Die i14-Alternative — beide Hits High, dicker Knockdown auf Hit.'
 - disadvantage: '-15'
   use: 'uf+4,4'
+  kind: 'standing'
+  startup: 'i15'
   why:
     en: 'i15 full launch — also works from crouch.'
     de: 'i15 voller Launch — auch aus der Hocke.'
 - disadvantage: '-16'
   use: 'df+2'
+  kind: 'standing'
+  startup: 'i16'
   why:
     en: 'i16 launcher when you have the frames to spare.'
     de: 'i16 Launcher, wenn du die Frames übrig hast.'
 - disadvantage: '-11 (low)'
   use: 'ws4'
+  kind: 'crouching'
+  startup: 'i11'
   why:
     en: 'After blocking a low: fastest while-standing mid (i11).'
     de: 'Nach geblocktem Low: schnellstes While-Standing-Mid (i11).'
+- disadvantage: '-13 (low)'
+  use: 'ws1,2'
+  kind: 'crouching'
+  startup: 'i13'
+  why:
+    en: 'i13 from crouch; hold 1+2 on the second hit to shift into DES.'
+    de: 'i13 aus der Hocke; beim zweiten Hit 1+2 halten für den DES-Übergang.'
 - disadvantage: '-15 (low)'
   use: 'uf+4,4'
+  kind: 'crouching'
+  startup: 'i15'
   why:
     en: 'Launch straight out of crouch after a blocked low.'
     de: 'Launch direkt aus der Hocke nach geblocktem Low.'
 - disadvantage: '-17 (low)'
   use: 'ws2'
+  kind: 'crouching'
+  startup: 'i17'
   why:
     en: 'While-standing launcher (Tornado) after a low.'
     de: 'While-Standing-Launcher (Tornado) nach einem Low.'
+- disadvantage: '—'
+  use: '3,2'
+  kind: 'whiff'
+  startup: 'i13'
+  why:
+    en: 'Your default whiff punish — long, homing, Heat Engager. In Heat, heat-dash into a full combo.'
+    de: 'Dein Standard-Whiff-Punish — lang, homing, Heat Engager. In Heat per Heat-Dash in den vollen Combo.'
+- disadvantage: '—'
+  use: 'b+4,4'
+  kind: 'whiff'
+  startup: 'i15'
+  followUps:
+    - en: '3 / 4 → SBT, f+3 / f+4 → DBT'
+      de: '3 / 4 → SBT, f+3 / f+4 → DBT'
+  why:
+    en: 'For far whiffs: Tornado mini-combo that can shift into the boots. Only on a clear whiff — never raw.'
+    de: 'Für weite Whiffs: Tornado-Mini-Combo mit Übergang in die Boots. Nur auf klaren Whiff — nie raw.'
+- disadvantage: '—'
+  use: 'df+2'
+  kind: 'whiff'
+  startup: 'i16'
+  why:
+    en: 'When the whiff is big enough, take the launch — full juggle instead of a poke.'
+    de: 'Wenn der Whiff groß genug ist, nimm den Launch — voller Juggle statt Poke.'
+- disadvantage: '—'
+  use: 'uf+2'
+  kind: 'whiff'
+  startup: 'i16'
+  why:
+    en: 'Homing — catches a sidestep and the whiff after it at once; launches on hit.'
+    de: 'Homing — fängt Sidestep und den Whiff danach in einem; launcht auf Hit.'
