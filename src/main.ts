@@ -800,8 +800,8 @@ function renderKChecks(){
 function muSlug(c){ return String(c).toLowerCase().replace(/\s+/g,"-"); }
 // Local character portraits (data/Image/Characters/<Character>.png), bundled + hashed by Vite.
 // Keyed by the exact `character` field (spaces preserved), matching each matchup row.
-var CHAR_IMG = import.meta.glob("../data/Image/Characters-web/*.png", { eager: true, query: "?url", import: "default" });
-var MU_IMG = {}; for (var _ik in CHAR_IMG){ MU_IMG[_ik.substring(_ik.lastIndexOf("/")+1).replace(/\.png$/i,"")] = CHAR_IMG[_ik]; }
+var CHAR_IMG = import.meta.glob("../data/Image/Characters-web/*.jpg", { eager: true, query: "?url", import: "default" });
+var MU_IMG = {}; for (var _ik in CHAR_IMG){ MU_IMG[_ik.substring(_ik.lastIndexOf("/")+1).replace(/\.[a-z0-9]+$/i,"")] = CHAR_IMG[_ik]; }
 function muDerive(c){
   var fd=FD[c]||{};
   function num(s){var m=String(s||"").match(/-?\d+/);return m?parseInt(m[0]):null;}
