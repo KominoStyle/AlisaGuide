@@ -155,7 +155,7 @@ var SECTIONS = [
   {id:"matchups", num:"10", lv:1, title:{en:"Matchups",de:"Matchups"}, blocks:[
     {t:"lead", x:{en:"Pick a character below to study that matchup. Each one is built the same way: **what hurts**, **what to duck & step**, **how to punish**, and **Alisa's plan** \u2014 with every move tappable for frames. For anyone not yet listed, apply the same four questions and read the per-character anti-strats on TekkenDocs. Frames are current-patch (Season 3). Frame data: TekkenDocs / Wavu Wiki.",
       de:"W\u00e4hl unten einen Charakter, um das Matchup zu lernen. Jedes ist gleich aufgebaut: **Was tut weh**, **Was ducken & steppen**, **Wie bestrafen** und **Alisas Plan** \u2014 jeder Move ist f\u00fcr Frames antippbar. F\u00fcr noch nicht Gelistete dieselben vier Fragen anwenden und die Anti-Strats pro Charakter auf TekkenDocs lesen. Frames sind aktueller Patch (Season 3). Frame-Daten: TekkenDocs / Wavu Wiki."}},
-    {t:"h3", x:{en:"Choose a character",de:"Charakter w\u00e4hlen"}},
+    {t:"h3", id:"mu-choose-h", x:{en:"Choose a character",de:"Charakter w\u00e4hlen"}},
     {t:"matchups"},
     {t:"h3", x:{en:"Universal answers",de:"Universelle Antworten"}},
     {t:"p", x:{en:"They **backdash** → [[uf2]] (homing) or dash-up [[df4]]. They **jab-press** → [[c11]] or [[df4]]. They **throw** → break it (generic grabs break with 1 or 2, both-arms grabs with 1+2). They do a launching **low / snake-edge** → block on reaction, then [[uf44]]. They run a **pressure string** → fuzzy-guard, or duck/sidestep the part you've labbed, then punish.",
@@ -947,7 +947,7 @@ function callIcon(v){ return v==="key"?"\u25C6":v==="warn"?"\u26A0":"\u25B8"; }
 function renderBlock(b){
   switch(b.t){
     case "lead": return '<p class="lead">'+fmt(L(b.x))+'</p>';
-    case "h3": return '<h3>'+fmt(L(b.x))+'</h3>';
+    case "h3": return '<h3'+(b.id?' id="'+esc(b.id)+'"':'')+'>'+fmt(L(b.x))+'</h3>';
     case "p": return '<p>'+fmt(L(b.x))+'</p>';
     case "call": return '<div class="call '+b.v+'"><div class="ch">'+callIcon(b.v)+' '+esc(L(b.h))+'</div><p>'+fmt(L(b.x))+'</p></div>';
     case "loop": return renderLoop();
@@ -1182,7 +1182,7 @@ function onDocClick(e){
   var opp=e.target.closest('[data-opp]');
   if(opp){ var parts=opp.getAttribute('data-opp').split('|'); openOppSheet(parts[0], parts.slice(1).join('|')); return; }
   var mup=e.target.closest('[data-mu]');
-  if(mup){ state.muChar=mup.getAttribute('data-mu'); document.body.style.overflow=''; save(); render(); var lg=document.querySelector('#matchups .mu-legend'); if(lg){ var y=lg.getBoundingClientRect().top+window.scrollY-78; window.scrollTo({top:y,behavior:'smooth'}); } return; }
+  if(mup){ state.muChar=mup.getAttribute('data-mu'); document.body.style.overflow=''; save(); render(); var tgt=document.getElementById('mu-choose-h')||document.getElementById('matchups'); if(tgt){ var y=tgt.getBoundingClientRect().top+window.scrollY-78; window.scrollTo({top:y,behavior:'smooth'}); } return; }
   var open=e.target.closest('[data-open]');
   if(open) openSheet(open.getAttribute('data-open'));
 }
