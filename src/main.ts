@@ -636,10 +636,10 @@ function openOppSheet(char, mv){
     body=media+'<div class="sh-desc">'+esc(L({en:"Frame data for this move isn't in the database \u2014 open the live current-patch data and clip below.",de:"Frame-Daten f\u00fcr diesen Move sind nicht in der Datenbank \u2014 \u00f6ffne unten die aktuellen Live-Daten und den Clip."}))+'</div>';
   }
   var tagChips=(tags||[]).map(function(t){return '<span class="tag prop oppt">'+esc(t)+'</span>';}).join('');
-  var html='<div class="sh-top"><div><div class="sh-cmd">'+esc(mv)+'</div><div class="sh-lev"><span class="opp-char">'+esc(char)+'</span> \u00b7 '+esc(lev)+'</div></div><button class="sh-close" id="shClose">\u2715</button></div>'
-    +'<div class="sh-tags"><span class="tag prop oppt">'+esc(char)+'</span>'+tagChips+'</div>'
-    +body
-    +'<div class="sh-foot"><span class="sh-data"><span>'+esc(L({en:"Clip: ",de:"Clip: "}))+'<a href="'+oki+'" target="_blank" rel="noopener noreferrer">okizeme.gg</a></span><span>'+esc(L({en:"Full data: ",de:"Volle Daten: "}))+'<a href="'+td+'" target="_blank" rel="noopener noreferrer">tekkendocs.com</a></span></span></div>';
+  var html='<div class="sh-head"><div class="sh-top"><div><div class="sh-cmd">'+esc(mv)+'</div><div class="sh-lev"><span class="opp-char">'+esc(char)+'</span> \u00b7 '+esc(lev)+'</div></div><button class="sh-close" id="shClose">\u2715</button></div>'
+    +'<div class="sh-tags"><span class="tag prop oppt">'+esc(char)+'</span>'+tagChips+'</div></div>'
+    +'<div class="sh-body">'+body
+    +'<div class="sh-foot"><span class="sh-data"><span>'+esc(L({en:"Clip: ",de:"Clip: "}))+'<a href="'+oki+'" target="_blank" rel="noopener noreferrer">okizeme.gg</a></span><span>'+esc(L({en:"Full data: ",de:"Volle Daten: "}))+'<a href="'+td+'" target="_blank" rel="noopener noreferrer">tekkendocs.com</a></span></span></div></div>';
   document.getElementById('sheet').innerHTML=html;
   document.getElementById('overlay').classList.add('open');
   document.getElementById('shClose').addEventListener('click', closeSheet);
@@ -659,12 +659,12 @@ function openSheet(id){
   if(m.note){ var narr=L(m.note); if(narr && narr.length){ notes='<div class="sh-notes"><div class="sh-notes-h">'+esc(L({en:"Notes",de:"Notes"}))+'</div><ul class="sh-notes-list">'+narr.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul></div>'; } }
   var on=state.favs[id]?' on':'';
   var media='<div class="sh-media"><video class="sh-video" src="'+vidUrl(m)+'" autoplay loop muted playsinline disablepictureinpicture preload="metadata" oncontextmenu="return false" onclick="if(this.paused){this.currentTime=0;this.play();}else{this.pause();}" onerror="var w=this.parentElement; if(w){w.style.display=\'none\';}"></video></div>';
-  var html='<div class="sh-top"><div><div class="sh-cmd">'+esc(m.n)+'</div><div class="sh-lev">'+esc(L(m.lev))+'</div></div><button class="sh-close" id="shClose">\u2715</button></div>'
-    +tags+media+stats+ch
+  var html='<div class="sh-head"><div class="sh-top"><div><div class="sh-cmd">'+esc(m.n)+'</div><div class="sh-lev">'+esc(L(m.lev))+'</div></div><button class="sh-close" id="shClose">\u2715</button></div>'
+    +tags+'</div>'+'<div class="sh-body">'+media+stats+ch
     +'<div class="sh-desc">'+moveDesc(m)+'</div>'
     +notes
     +(WARN[id]?'<div class="sh-warn">\u26A0 '+esc(L(WARN[id]))+'</div>':'')
-    +'<div class="sh-foot"><span class="sh-data"><span>'+esc(L({en:"Move clip & data: ",de:"Move-Clip & Daten: "}))+'<a href="'+okiPageUrl(m)+'" target="_blank" rel="noopener noreferrer">okizeme.gg</a></span><span>'+esc(L({en:"Move data: ",de:"Move-Daten: "}))+'<a href="'+tdUrl(m)+'" target="_blank" rel="noopener noreferrer">tekkendocs.com</a></span></span><span class="sh-fav'+on+'" id="sheetFav" data-fav="'+id+'"><span class="st">\u2605</span><span class="sf-lbl">'+(state.favs[id]?tk("fav_saved"):tk("fav_save"))+'</span></span></div>';
+    +'<div class="sh-foot"><span class="sh-data"><span>'+esc(L({en:"Move clip & data: ",de:"Move-Clip & Daten: "}))+'<a href="'+okiPageUrl(m)+'" target="_blank" rel="noopener noreferrer">okizeme.gg</a></span><span>'+esc(L({en:"Move data: ",de:"Move-Daten: "}))+'<a href="'+tdUrl(m)+'" target="_blank" rel="noopener noreferrer">tekkendocs.com</a></span></span><span class="sh-fav'+on+'" id="sheetFav" data-fav="'+id+'"><span class="st">\u2605</span><span class="sf-lbl">'+(state.favs[id]?tk("fav_saved"):tk("fav_save"))+'</span></span></div></div>';
   document.getElementById('sheet').innerHTML=html;
   document.getElementById('overlay').classList.add('open');
   document.getElementById('shClose').addEventListener('click', closeSheet);
@@ -894,10 +894,29 @@ function renderMatchups(){
   var cur = state.muChar || base[0];
   var order=DLC_S1.concat(DLC_S2,DLC_S3);
   var ordered=base.concat(order).filter(function(c){return have[c];});
-  var picker='<div class="mu-picker">'+ordered.map(function(c){return muPickCard(c,cur);}).join("")+'</div>';
+  var picker='<div class="mu-picker mu-modal-grid">'+ordered.map(function(c){return muPickCard(c,cur);}).join("")+'</div>';
   var selM = MU.filter(function(m){return m.c===cur;})[0] || MU[0];
-  return leg+picker+'<div class="mu">'+(selM?renderMuCard(selM):"")+'</div>';
+  var curImg=MU_IMG[cur]||("https://tekkendocs.com/t8/avatars/"+muSlug(cur)+"-brand-512.png");
+  var trigger='<button class="mu-choose" id="mu-choose" aria-haspopup="dialog">'
+    +'<span class="mu-choose-fig"><span class="mu-choose-img">'
+    +'<img src="'+curImg+'" alt="" loading="lazy" onerror="this.style.display=\'none\'; this.parentElement.classList.add(\'noimg\'); this.parentElement.setAttribute(\'data-i\',\''+esc(cur.charAt(0))+'\');">'
+    +'<span class="mu-choose-cta">'+esc(L({en:"⇄ Change",de:"⇄ Wechseln"}))+'</span>'
+    +'</span><span class="mu-choose-name">'+esc(cur)+'</span></span></button>';
+  var modal='<div class="overlay" id="mu-modal" role="dialog" aria-modal="true" aria-label="'+esc(L({en:"Choose matchup",de:"Matchup wählen"}))+'">'
+    +'<div class="sheet mu-sheet">'
+    +'<div class="sh-top"><div>'
+    +'<div class="mu-sheet-title">'+esc(L({en:"Choose matchup",de:"Matchup wählen"}))+'</div>'
+    +'<div class="sh-lev">'+esc(L({en:"41 characters · type to filter · Enter picks first · Esc closes",de:"41 Charaktere · tippen zum Filtern · Enter wählt den ersten · Esc schließt"}))+'</div>'
+    +'</div><button class="sh-close" id="mu-modal-close" aria-label="'+esc(L({en:"Close",de:"Schließen"}))+'">✕</button></div>'
+    +'<div class="ml-searchwrap" style="margin:12px 0 0"><input class="ml-search" id="mu-modal-search" type="search" placeholder="'+esc(L({en:"Type a character…",de:"Charakter tippen…"}))+'" autocomplete="off"></div>'
+    +picker
+    +'</div></div>';
+  return trigger+leg+'<div class="mu">'+(selM?renderMuCard(selM):"")+'</div>'+modal;
 }
+function openMuModal(){ var m=document.getElementById('mu-modal'); if(!m) return; m.classList.add('open'); document.body.style.overflow='hidden'; setTimeout(function(){ var s=document.getElementById('mu-modal-search'); if(s){ s.value=''; filterMuModal(); s.focus(); } },60); }
+function closeMuModal(){ var m=document.getElementById('mu-modal'); if(!m) return; m.classList.remove('open'); document.body.style.overflow=''; var t=document.getElementById('mu-choose'); if(t) t.focus(); }
+function filterMuModal(){ var m=document.getElementById('mu-modal'); if(!m) return; var s=document.getElementById('mu-modal-search'); var q=(s?s.value:'').trim().toLowerCase(); m.querySelectorAll('.mu-pick').forEach(function(b){ b.hidden = b.getAttribute('data-mu').toLowerCase().indexOf(q)===-1; }); }
+function muModalKeys(e){ var m=document.getElementById('mu-modal'); if(!m||!m.classList.contains('open')) return; if(e.key==='Escape'){ closeMuModal(); return; } if(e.key==='Enter' && e.target && e.target.id==='mu-modal-search'){ var first=m.querySelector('.mu-pick:not([hidden])'); if(first){ e.preventDefault(); first.click(); } return; } if(e.key==='Tab'){ var sheet=m.querySelector('.sheet'); if(!sheet) return; var f=sheet.querySelectorAll('button:not([hidden]), input'); if(!f.length) return; var first=f[0], last=f[f.length-1]; if(e.shiftKey && document.activeElement===first){ last.focus(); e.preventDefault(); } else if(!e.shiftKey && document.activeElement===last){ first.focus(); e.preventDefault(); } } }
 function trKeyHtml(input,label,combo){ var code=state.binds[input]; var kl=code?keyLabel(code):'\u2014'; return '<div class="tkey'+(combo?' combo':'')+'" data-input="'+input+'"><span class="tk-note">'+label+'</span><span class="tk-key">'+kl+'</span></div>'; }
 function comboTile(c){ return '<div class="tkey combo" data-combo="'+c.id+'"><span class="cb-del" data-del="'+c.id+'">\u2715</span><span class="tk-note">'+esc(c.btns.join('+'))+'</span><span class="tk-key">'+(c.code?keyLabel(c.code):'\u2014')+'</span></div>'; }
 function builderHtml(){
@@ -1155,6 +1174,9 @@ function setupTrainer(){
 /* ===== global wiring: clicks, sheet close, progress ===== */
 function onDocClick(e){
   if(e.target.closest('#sheet')) return;
+  if(e.target.closest('#mu-choose')){ openMuModal(); return; }
+  if(e.target.closest('#mu-modal-close')){ closeMuModal(); return; }
+  if(e.target.id==='mu-modal'){ closeMuModal(); return; }
   var srt=e.target.closest('[data-sort]');
   if(srt){ state.sort=srt.getAttribute('data-sort'); save(); render(); return; }
   var fav=e.target.closest('[data-fav]');
@@ -1162,7 +1184,7 @@ function onDocClick(e){
   var opp=e.target.closest('[data-opp]');
   if(opp){ var parts=opp.getAttribute('data-opp').split('|'); openOppSheet(parts[0], parts.slice(1).join('|')); return; }
   var mup=e.target.closest('[data-mu]');
-  if(mup){ state.muChar=mup.getAttribute('data-mu'); save(); render(); var sec=document.getElementById('matchups'); if(sec&&sec.scrollIntoView) sec.scrollIntoView({behavior:'smooth',block:'start'}); return; }
+  if(mup){ state.muChar=mup.getAttribute('data-mu'); document.body.style.overflow=''; save(); render(); var lg=document.querySelector('#matchups .mu-legend'); if(lg){ var y=lg.getBoundingClientRect().top+window.scrollY-78; window.scrollTo({top:y,behavior:'smooth'}); } return; }
   var open=e.target.closest('[data-open]');
   if(open) openSheet(open.getAttribute('data-open'));
 }
@@ -1181,6 +1203,8 @@ document.addEventListener('keydown', onKeyDown);
 document.addEventListener('keyup', onKeyUp);
 document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ closeSheet(); document.body.classList.remove('nav-open'); } });
 document.addEventListener('click', onDocClick);
+document.addEventListener('input', function(e){ if(e.target && e.target.id==='mu-modal-search') filterMuModal(); });
+document.addEventListener('keydown', muModalKeys);
 (function(){ var ov=document.getElementById('overlay'); if(ov) ov.addEventListener('click', function(e){ if(e.target===ov) closeSheet(); }); })();
 window.addEventListener('scroll', updateProgress, {passive:true});
 window.addEventListener('resize', updateProgress);
