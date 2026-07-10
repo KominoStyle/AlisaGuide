@@ -24,8 +24,8 @@ import {
 var OPP = RAW_OPP;
 var SECTIONS = [
   {id:"start", num:"00", lv:0, title:{en:"Start here",de:"Los geht's"}, blocks:[
-    {t:"lead", x:{en:"A guide for every rank. Use the controls at the top to set your **language** and your **level** — at lower levels the guide hides the advanced sections so you are not overwhelmed.",
-      de:"Ein Guide für jeden Rang. Stell oben deine **Sprache** und dein **Level** ein — auf niedrigen Stufen blendet der Guide die fortgeschrittenen Sektionen aus, damit du nicht überfordert wirst."}},
+    {t:"lead", x:{en:"A guide for every rank. Use the controls at the top to set your **language** and your **level** — at lower levels the guide hides the advanced sections so you are not overwhelmed. It adapts to you.",
+      de:"Ein Guide für jeden Rang. Stell oben deine **Sprache** und dein **Level** ein — auf niedrigen Stufen blendet der Guide die fortgeschrittenen Sektionen aus, damit du nicht überfordert wirst. Er passt sich dir an."}},
     {t:"call", v:"key", h:{en:"Three things that make this guide work",de:"Drei Dinge, die diesen Guide ausmachen"}, x:{en:"**(1)** Every move has *exact* frames — startup, on block, on hit — and you click it to read the details. **(2)** The **Input Trainer** lets you bind your own keys and see live what you press. **(3)** Tap the **star** on any move to pin it to your **My Setups** list at the top of the move list.",
       de:"**(1)** Jeder Move hat *exakte* Frames — Startup, on Block, on Hit — und du klickst ihn für Details. **(2)** Der **Input-Trainer** lässt dich eigene Tasten zuordnen und live sehen, was du drückst. **(3)** Tipp den **Stern** an einem Move, um ihn oben in der Movelist unter **Meine Setups** zu pinnen."}},
     {t:"call", v:"note", h:{en:"Alisa in one line",de:"Alisa in einem Satz"}, x:{en:"Low damage, elite movement. You win by making the opponent **whiff** and punishing it — not with huge combos. So defense and consistency win you rounds.",
@@ -223,11 +223,9 @@ var T = {
   c_lang:{en:"Language",de:"Sprache"}, c_level:{en:"Level",de:"Level"},
   nav_h:{en:"Sections",de:"Sektionen"},
   hero_eyebrow:{en:"Complete Alisa Guide",de:"Kompletter Alisa-Guide"},
-  hero_sub:{en:"Bosconovitch \u00b7 Beginner to Tekken God",de:"Bosconovitch \u00b7 Beginner bis Tekken God"},
+  hero_sub:{en:"Bosconovitch \u00b7 from Beginner to God of Destruction Infinity",de:"Bosconovitch \u00b7 vom Beginner zum God of Destruction Infinity"},
   hero_thesis:{en:"Alisa doesn't win with damage. She wins with <b>whiffs</b> \u2014 she forces the opponent to swing at air and punishes it.",
     de:"Alisa gewinnt nicht durch Schaden. Sie gewinnt durch <b>Whiffs</b> \u2014 sie zwingt den Gegner, ins Leere zu schlagen, und bestraft es."},
-  hero_note:{en:"Every move below has exact frames you can click into. Set your <b>level</b> and <b>language</b> above \u2014 the guide adapts to you.",
-    de:"Jeder Move unten hat exakte Frames, die du anklicken kannst. Stell oben dein <b>Level</b> und deine <b>Sprache</b> ein \u2014 der Guide passt sich an."},
   foot_h:{en:"Sources & notes",de:"Quellen & Hinweise"},
   foot_1:{en:"Built on our own <b>canonical local content</b>, targeting Tekken 8 Season 3 (<b>Ver. 3.01.01</b>). Frame data is cross-checked against <a href=\"https://tekkendocs.com\" target=\"_blank\" rel=\"noopener noreferrer\">TekkenDocs</a> and <a href=\"https://wavu.wiki\" target=\"_blank\" rel=\"noopener noreferrer\">Wavu Wiki</a>; the gameplan structure is inspired by <a href=\"https://gajimaru.guide\" target=\"_blank\" rel=\"noopener noreferrer\">gajimaru.guide</a>, expanded with basics, opponent-reading, defense, matchups, a punisher reference, a combo framework, and a live input trainer.",
     de:"Basiert auf unseren eigenen <b>kanonischen lokalen Daten</b>, Ziel ist Tekken 8 Season 3 (<b>Ver. 3.01.01</b>). Frame-Daten werden mit <a href=\"https://tekkendocs.com\" target=\"_blank\" rel=\"noopener noreferrer\">TekkenDocs</a> und <a href=\"https://wavu.wiki\" target=\"_blank\" rel=\"noopener noreferrer\">Wavu Wiki</a> abgeglichen; die Gameplan-Struktur ist inspiriert von <a href=\"https://gajimaru.guide\" target=\"_blank\" rel=\"noopener noreferrer\">gajimaru.guide</a>, erweitert um Basics, Gegner-Lesen, Defense, Matchups, eine Punisher-Referenz, ein Combo-Gerüst und einen Live-Input-Trainer."},
